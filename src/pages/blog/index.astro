@@ -99,6 +99,11 @@ const posts = (await getCollection('blog')).sort(
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
+                                    <p>
+                                        {post.data.tags.map((tag) => (
+                                            tag
+                                        )).join(', ')}
+                                    </p>
 								</a>
 							</li>
 						))

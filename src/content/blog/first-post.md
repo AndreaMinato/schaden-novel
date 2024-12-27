@@ -1,16 +1,117 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '/blog-placeholder-3.jpg'
+title: Capitolo 2176 - Paura Persistente
+pubDate: 2024-12-26T23:00:00.000Z
+tags:
+    - mga
+    - novel
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+“Woosh!!!”
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Proprio in quel momento, una figura apparì all’improvviso vicino al posto dove Chu Feng stava meditando prima.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+Era quel vecchio monaco misterioso.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Il suo sguardo era fisso sul cielo ed era pieno di stupore.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+Un’altra persona non avrebbe scoperto nulla di speciale, ma lui poteva vedere questo fenomeno.
+
+“Sembra che sia stata una leggendaria Divina Tribolazione.”
+
+“Ma il novanta per cento del suo potere aleggia ancora nel cielo. È un potere così spaventoso, ma ne è disceso solo un decimo?”
+
+“Non si è scatenata la potenza della Divina Tribolazione solo perché è disceso solo un decimo del suo potere?”
+
+“Come ci è riuscito? Non solo allena una leggendaria tecnica misteriosa punitiva, è anche riuscito a ridurne l’impatto di un decimo?”
+
+Il vecchio monaco spostò gli occhi verso la direzione in cui era andato Chu Feng. Iniziò a riflettere.
+
+“Che origini ha esattamente quel ragazzo?”
+
+“Che provenga dal clan Celeste Chu?” Più ci pensava, più il suo sguardo si riempiva di emozioni contrastanti.
+
+Se qualcuno lo avesse visto in questo stato, sarebbe rimasto incredulo.
+
+Questo perché pochissimi erano riusciti a sbalordirlo, figuriamoci un ragazzino.
+
+…..
+
+“Mio padre e mio nonno sono davvero sbalorditivi. Se non fosse stato per questa tecnica, sarebbe stato quasi impossibile avanzare di livello.”
+
+Chu Feng era nascosto nel vuoto mentre volava verso la famiglia Tang. Anche se era già al secondo livello del Semi Martial Ancestor, stava provando ancora paura.
+
+Questo perché, mentre il suo avanzamento di livello era sembrato normale, non lo era stato affatto. Aveva anche sperimentato il processo di purificazione della misteriosa tecnica divina punitiva.
+
+La prima purificazione non era stata sconvolgente come dicevano le leggende, in effetti non aveva nemmeno causato fenomeni nel mondo.
+
+Anche così, Chu Feng aveva comunque la sensazione di essere appena sfuggito ad una calamità.
+
+Prima di superare l’ostacolo che lo separava dal secondo livello, aveva percepito un potere davvero spaventoso nel cielo, una forza che lo aveva preso di mira. Il potere della Divina Tribolazione.
+
+Se tutta quell’energia si fosse precipitata su di lui, Chu Feng era certo che sarebbe stato annientato senza risparmiare nemmeno la sua anima.
+
+Tuttavia ne era disceso solo un decimo, tutto grazie a suo padre Chu Xuanyuan e a suo nonno Chu Hanxian.
+
+Quando suo padre gli aveva insegnato la tecnica misteriosa della punizione divina, gli aveva anche impartito il metodo per gestirla.
+
+Dopotutto era un potere capace di causare un’enorme devastazione. Più si provava ad avanzare di livello, più sarebbe stata spaventosa la Divina Tribolazione. Sarebbe stato impossibile resistervi direttamente, anche con una determinazione davvero salda.
+
+Era necessario utilizzare un metodo particolare per tollerarla, e quello più facile sarebbe stato la tempra del proprio corpo. Sfruttando la Divina Tribolazione, si poteva purificare il proprio corpo per adattarsi.
+
+Ad ogni avanzamento di livello, si poteva gradualmente aumentare la forza del processo di purificazione, in modo da poter affrontare una Divina Tribolazione ancora più formidabile.
+
+Tuttavia la Divina Tribolazione rimaneva terrificante. Senza un processo per temprarsi, figuriamoci adattarsi, una persona avrebbe rischiato di venire annientata.
+
+Chu Feng aveva ricevuto la prima purificazione della Divina Tribolazione. Il motivo per cui aveva ricevuto solo un decimo del potere della Divina Tribolazione era proprio grazie a quella formazione di occultamento.
+
+Nessuno avrebbe pensato che una mera formazione di occultamento sarebbe riuscita ad eludere la tecnica misteriosa punitiva e a fare discendere solo un decimo del potere della leggendaria Divina Tribolazione.
+
+Tuttavia Chu Feng lo sapeva, ed era tutto merito di suo padre e di suo nonno.
+
+“È proprio all’altezza della sua reputazione. Sembra che in futuro sarà molto difficile progredire.” Chu Feng si accigliò lievemente. Dopo la prima purificazione, non era più così sicuro di sé.
+
+Anche se la Divina Tribolazione non sembrava aver causato trambusto, al punto da non aver toccato nemmeno l’erba e gli alberi nella regione attorno, non significava che fosse estremamente debole.
+
+Era molto più spaventosa del potere completo della misteriosa tecnica punitiva.
+
+Questo perché quel decimo di potere aveva colpito Chu Feng senza sprecare nemmeno un briciolo della sua energia.
+
+Anche se era riuscito a resistere senza rimanere ferito, lo aveva fatto con grande difficoltà. Per questo aveva capito che era solo l’inizio e che il suo avanzamento di livello sarebbe stato ancora più arduo.
+
+La prossima volta sarebbe stato impossibile che discendesse di nuovo solo un decimo del potere della Divina Tribolazione, sarebbe stato almeno al venti per cento.
+
+Più la sua coltivazione fosse stata formidabile, più sarebbe stata forte la punizione divina.
+
+Aspetto più importante, una volta che il suo potere avesse superato il cinquanta per cento, avrebbe assunto una forma visibile a tutti.
+
+Allora non solo quel potere sarebbe stato sconfinato, ma avrebbe avuto uno slancio enorme.
+
+In altre parole, se Chu Feng non avesse voluto seminare il caos quando tentava di avanzare di livello, avrebbe dovuto trovare un nascondiglio prima.
+
+La formazione di occultamento che aveva usato ormai aveva perso la sua efficacia.
+
+Per arrivare al terzo livello, avrebbe dovuto resistere al 100% della forza della Divina Tribolazione.
+
+Così doveva abituarsi alla forza sconfinata della tecnica misteriosa, altrimenti sarebbe stato spacciato.
+
+Il suo futuro percorso delle arti marziali sarebbe stato pieno di difficoltà.
+
+“Questa famiglia Tang non mi considera proprio una minaccia.”
+
+In un batter d’occhio era arrivato a destinazione. Aveva scoperto che la famiglia Tang non aveva nemmeno attivato la sua formazione difensiva e che aveva rilassato la sua sorveglianza. Era una differenza davvero drastica in confronto a quando si erano preparati ad affrontare la famiglia Cao.
+
+“Che sia una trappola?” Lo sguardo di Chu Feng cambiò. Alla fine decise di nascondere la sua aura e di infiltrarsi di nascosto nella famiglia Tang.
+
+D’altronde non poteva ignorarli, non poteva contenere la rabbia e l’odio che provava nei loro confronti.
+
+All’inizio fu molto attento mentre si infiltrava nella famiglia Tang. Tuttavia presto scoprì di essersi sbagliato, non c’era nessun pericolo, la famiglia Tang non lo considerava proprio una minaccia.
+
+Non solo ogni forma di sorveglianza era stata allentata, nessuno degli esperti era rimasto nella famiglia Tang. non c’era nemmeno un Semi Martial Ancestor.
+
+All’improvviso Chu Feng vide una serva. Era la stessa serva che aveva fatto rapporto di nascosto a Tang Ying dell’intenzione dei suoi due fratelli maggiori di farla sposare con la famiglia Cao.
+
+Chu Feng poteva considerarla un’aiutante fidata di Tang Ying, così la catturò non appena la trovò con la guardia abbassata e la portò in un’area isolata.
+
+“Lord Chu Feng, è lei?!”
+
+La serva spaventata smise di mostrare paura nel momento in cui lo vide, rivelò perfino un’espressione contenta.
