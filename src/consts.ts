@@ -3,4 +3,3 @@
 
 export const SITE_TITLE = 'Schaden Novels';
 export const SITE_DESCRIPTION = 'La casa di tutte le novel tradotte da Schadenfreude';
-export const SITE_URL = "https://schaden-novel.netlify.app/"
