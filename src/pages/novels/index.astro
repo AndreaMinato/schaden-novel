@@ -21,15 +21,34 @@ const chapters = (await getCollection("chapters"))
 <html lang="en">
     <head>
         <BaseHead title="Novelle" description={SITE_DESCRIPTION} />
+        <style>
+            .tags {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin: 1rem 0;
+                list-style: none;
+                padding-bottom: 2rem;
+            }
+
+            .tag{
+                border-color: var(--accent);
+                border-width: 1px;
+                border-style: solid;
+                padding: 0.2rem 1rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
         <Header />
 
         <Chapters chapters={chapters}>
-            <ul>
+            <ul class="tags">
                 {
                     tags.map((tag) => (
-                        <li>
+                        <li class="tag">
                             <a href={`/novels/${tag}`}>{tag}</a>
                         </li>
                     ))

@@ -7,6 +7,18 @@
     {
       "title": "MGA",
       "path": "[[workspace]]/src/content/novels/mga"
+    },
+    {
+      "title": "ATG",
+      "path": "[[workspace]]/src/content/novels/atg"
+    },
+    {
+      "title": "TMW",
+      "path": "[[workspace]]/src/content/novels/tmw"
+    },
+    {
+      "title": "HTK",
+      "path": "[[workspace]]/src/content/novels/htk"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [
