@@ -5,15 +5,15 @@
   "frontMatter.content.publicFolder": "public",
   "frontMatter.content.pageFolders": [
     {
-      "title": "blog",
-      "path": "[[workspace]]/src/content/blog"
+      "title": "MGA",
+      "path": "[[workspace]]/src/content/novels/mga"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
       "pageBundle": false,
-      "previewPath": "'blog'",
+      "previewPath": "'mga'",
       "filePrefix": null,
       "clearEmpty": true,
       "fields": [

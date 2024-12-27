@@ -1,0 +1,42 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
+import { getCollection } from "astro:content";
+import Chapters from "src/components/Chapters.astro";
+
+const tags = [
+    ...new Set(
+        (await getCollection("chapters")).flatMap(({ data }) => data.tags),
+    ),
+];
+
+const chapters = (await getCollection("chapters"))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 10);
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead title="Novelle" description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+
+        <Chapters chapters={chapters}>
+            <ul>
+                {
+                    tags.map((tag) => (
+                        <li>
+                            <a href={`/novels/${tag}`}>{tag}</a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </Chapters>
+
+        <Footer />
+    </body>
+</html>
