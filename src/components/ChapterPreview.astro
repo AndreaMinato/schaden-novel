@@ -10,12 +10,11 @@ const { title, tags, pubDate, heroImage } = data;
 
 <li class="chapter-preview">
     <a href={`/novels/${id}/`}>
-        <img width={720} height={360} src={heroImage} alt="" />
-        <h4 class="title">{title}</h4>
+        <h5 class="title">{title}</h5>
         <p class="date">
             <FormattedDate date={pubDate} />
         </p>
-        <p>
+        <p class="tags">
             {tags.map((tag) => tag).join(", ")}
         </p>
     </a>
@@ -44,7 +43,11 @@ const { title, tags, pubDate, heroImage } = data;
         margin: 0;
         color: rgb(var(--gray));
     }
-    .chapter-preview a:hover h4,
+    .tags {
+        margin: 0;
+
+    }
+    .chapter-preview a:hover h5,
     .chapter-preview a:hover .date {
         color: rgb(var(--accent));
     }
