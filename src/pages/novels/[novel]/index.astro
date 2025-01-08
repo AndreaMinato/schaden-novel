@@ -11,29 +11,32 @@ import Chapters from "src/components/Chapters.astro";
 const { novel } = Astro.params;
 
 const chapters = (
-    await getCollection("chapters", ({ data }) => {
-        return data.tags.includes(novel);
-    })
+  await getCollection("chapters", ({ data }) => {
+    return data.tags.includes(novel);
+  })
 ).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 export async function getStaticPaths() {
-    const tags = [
-        ...new Set(
-            (await getCollection("chapters")).flatMap(({ data }) => data.tags),
-        ),
-    ];
-    return tags.map((tag) => ({ params: { novel: tag } }));
+  const tags = [
+    ...new Set(
+      (await getCollection("chapters")).flatMap(({ data }) => data.tags),
+    ),
+  ];
+  return tags.map((tag) => ({ params: { novel: tag } }));
 }
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <BaseHead title={novel} description={SITE_DESCRIPTION} />
-    </head>
-    <body>
-        <Header />
-        <Chapters chapters={chapters} />
-        <Footer />
-    </body>
+  <head>
+    <BaseHead title={novel} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+
+    <Chapters chapters={chapters}>
+      <h3 style="padding-bottom: 2rem;">{novel}</h3>
+    </Chapters>
+    <Footer />
+  </body>
 </html>

@@ -1,24 +1,38 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import Chapter from "@/layouts/Chapter.astro";
+import Chapter from "../../../layouts/Chapter.astro";
+import ChapterJumper from "../../../components/ChapterJumper.astro";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
-    const posts = await getCollection("chapters");
-    return posts.map((post) => {
-        const [novel, slug] = post.id.split("/");
-        return {
-            params: { novel, slug },
-            props: post,
-        };
-    });
+  const posts = await getCollection("chapters");
+  return posts.map((post) => {
+    const [novel, slug] = post.id.split("/");
+    return {
+      params: { novel, slug },
+      props: post,
+    };
+  });
 }
 type Props = CollectionEntry<"chapters">;
 
 const post = Astro.props;
+const [novel, slug] = post.id.split("/");
 const { Content } = await render(post);
+
+const chapters = (
+  await getCollection("chapters", ({ data }) => {
+    return data.tags.includes(novel);
+  })
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const thisChapter = chapters.findIndex((chapter) => chapter.id === post.id);
+const prev = chapters[thisChapter + 1];
+const next = chapters[thisChapter - 1];
 ---
 
-<Chapter {...post.data}>
-    <Content />
+<Chapter data={post.data} next={next} prev={prev}>
+  <ChapterJumper chapters={chapters} />
+
+  <Content />
 </Chapter>
