@@ -19,6 +19,10 @@
     {
       "title": "HTK",
       "path": "[[workspace]]/src/content/novels/htk"
+    },
+    {
+      "title": "LRG",
+      "path": "[[workspace]]/src/content/novels/lrg"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [
@@ -45,7 +49,7 @@
           "name": "tags",
           "type": "categories",
           "single": false,
-          "choices": ["htk", "mga", "tmw", "atg"]
+          "choices": ["htk", "mga", "tmw", "atg", "lrg"]
 
         },
         {
