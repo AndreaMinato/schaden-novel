@@ -1,0 +1,119 @@
+---
+title: Capitolo 545 - Vita precedente e presente (prima parte)
+pubDate: 2024-06-02T01:46:59.554Z
+tags:
+    - tmw
+---
+
+
+I tratti usati nel dipinto dell’antica Grande Imperatrice erano raffinati e precisi. Lo stile del ritratto era esteticamente splendido. Sembrava fosse stato scolpito poco a poco dalle tecniche meticolose di una donna impareggiabile e talentuosa.
+
+Mentre i tratti usati nel ritratto del Lord dello Yang Azzurro erano rozzi e ampi. Lo stile era turbolente, come se fosse stato disegnato a caso da un pittore licenzioso dopo un po’ di bevute.
+
+I due stili erano in netto contrasto ed era chiaro che appartenevano a persone diverse.
+
+Dopo essere entrati nella torre dell’Avvento Divino, Yi Yun e Lin Xintong avevano visti questi due quadri. Allora, avevano sentito l’aura dietro i loro rispettivi ritratti e si erano seduti di fronte ad essi a riflettere, ottenendo molte ispirazioni.
+
+Tuttavia oggi, dopo che Yi Yun e Lin Xintong avevano coltivato il Sutra del Cuore della Grande Imperatrice, rivedere i due ritratti diede loro una sensazione completamente diversa.
+
+Yi Yun aveva la sensazione che i due ritratti probabilmente fossero stati disegnati rispettivamente dall’antica Grande Imperatrice e dal Lord dello Yang Azzurro. I tratti contenevano le leggi che coltivavano.
+
+Mentre Yi Yun li guardava, inavvertitamente entrò in trance. Poi vide una scena del vasto Mare Inattraversabile, con il Lord dello Yang Azzurro che volava nel cielo brandendo una spada.
+
+Il Lord dello Yang Azzurro teneva una giara di vino in una mano e una spada nell’altra. Menò un fendente verso il guerriero con la corazza nera, facendo brillare un raggio di energia nel cielo.
+
+Stavolta la scena era molto più vivida rispetto alla proiezione della formazione. Sembrava che stesse accadendo proprio di fronte ai suoi occhi.
+
+Era proprio un attacco che divideva i mari, capace di annientare demoni e divinità!
+
+Tuttavia, proprio mentre Yi Yun stava cercando di comprendere l’attacco, all’improvviso il Lord dello Yang Azzurro, che aveva ucciso il guerriero con la corazza nera, all’improvviso sembrò percepire qualcosa e spostò lo sguardo verso il basso. Fissò direttamente Yi Yun.
+
+Poi scoppiò a ridere con forza!
+
+Non era una scena del disco della formazione. E Yi Yun fu sconvolto da questa occhiata.
+
+Il Mare Inattraversabile di fronte a lui era diventato confuso. Sembrava che i suoi pensieri fossero stati trasportati attraverso lo spazio tempo infinito, ripercorrendo i fiumi della storia fino a raggiungere un mondo misterioso…
+
+…
+
+In un antico Regno Divino, c’era un palazzo magnifico che torreggiava sopra le nuvole. Le mura erano piene di raffigurazioni del sole, della luna e delle stelle. Emanavano un’aura imponente e solenne.
+
+In una piazza di fronte al palazzo, delle guardie dalle corazze dorate erano in fila ai lati della strada. Rimanevano immobili come una serie di torri dorate. Emanavano un’aura tirannica.
+
+Yi Yun si era ritrovato in questo strano mondo all’improvviso. Questo cambio di scena allarmò il giovane. Ignorando il magnifico palazzo, solo le guardie lo fecero barcollare.
+
+La forza di queste guardie era indescrivibile!
+
+Tuttavia, stranamente, sembravano non aver notato la sua comparsa.
+
+In quel momento risuonò il ruggito di un drago. Yi Yun si girò e vide dodici draghi dei fiumi che trainavano una nave spirituale di giada. La nave si fermò lentamente e quattro donne di palazzo aprirono la tenda. Una splendida donna uscì portando un bambino in fasce.
+
+Il bambino era paffuto e nei suoi occhi brillanti si poteva vedere un bagliore sconfinato. Era chiaro che fosse estremamente intelligente.
+
+Vedendolo, Yi Yun rimase sbalordito. Ebbe la sensazione che il portamento del bambino fosse un po’ simile al suo. Sentiva anche di essere lui il bambino.
+
+“Perché sto vedendo queste scene?”
+
+Yi Yun guardò le scene impressionanti da spettatore. L’antico palazzo, le guardie potenti e i draghi dei fiumi che trainavano la nave spirituale. Alla fine era arrivata una splendida donna impareggiabile che teneva un bambino tra le braccia.
+
+Era facile capire che fosse un impero divino e una terra di dei. Sia la donna che il bambino erano di origini nobili. Erano figure benedette dal cielo.
+
+Yi Yun aveva la sensazione di stare sperimentando un’altra vita. Assomigliavano alle esperienze della prova delle ossessioni.
+
+Un ciclo di vita diverso gli diede pensieri diversi…
+
+…
+
+“Congratulazioni alla sua sacra maestà. Il dodicesimo principe è nato accompagnato da un cielo coperto da una nebbia viola. Ha un fisico di puro Yang perfetto. La sua costituzione è davvero ottima ed è destinato ad ottenere risultati spettacolari in futuro!”
+
+“Grazie alla saggezza della sua sacra maestà, la nostra grande dinastia Qian sta sperimentando un’epoca d’oro. Adesso il nostro impero è al suo picco, e riceviamo tributi da ogni dove. I vari principi e i loro figli sono grandi talenti. Ora che il dodicesimo principe ha mostrato tracce del suo talento da saggio, la nostra grande dinastia Qian è destinata ad essere illustre.”
+
+Le voci confuse degli ufficiali risuonarono nelle orecchie di Yi Yun. Yi Yun si era trasformato nel bambino tra le braccia della donna. Stava guardando il mondo attraverso i suoi occhi.
+
+Nella grande sala, sul trono in alto, c’era un uomo solenne. Il suo aspetto era un po’ confuso.
+
+Emanava un’aura maestosa radiosa come il sole. La gente non riusciva a guardarlo direttamente.
+
+In quel momento l’uomo rise. Era molto soddisfatto dalla nascita del dodicesimo principe. Chiaramente nutriva grandi speranze nei confronti di questo bambino.
+
+Con il passare del tempo, il bambino iniziò a crescere lentamente.
+
+Yi Yun da uno spettatore era diventato il bambino. Sperimentò la sua vita e guardò il mondo dalla sua prospettiva.
+
+Lo accompagnò mentre coltivava e otteneva ispirazioni nomologiche. Non importava che tecnica di coltivazione incontrava, poteva memorizzarla e capirla facilmente.
+
+La grande dinastia Qian aveva molti talenti sbalorditivi. Erano tutte figure sconvolgenti. Una dopo l’altra diedero indicazioni al bambino e lo aiutarono più che potevano.
+
+La forza del bambino aumentò molto velocemente. Superava di gran lunga i talenti tra i suoi coetanei. La gente parlava solo bene di lui.
+
+Fin dalla nascita, mentre praticava le arti marziali, la vita era stata facile per lui. Era indubbiamente fortunato.
+
+Lentamente crebbe. Aveva un atteggiamento diretto e anticonformista. Fece amicizia con eroi da ogni dove ed era lodato da tutti.
+
+La posizione del Sacro Imperatore della grande Dinastia Qian non era ereditaria. Fin dai tempi antichi, veniva passata alla persona più capace. Tuttavia, visto che il dodicesimo principe era troppo talentuoso, naturalmente divenne lui il capo.
+
+Così il Sacro Imperatore abdicò il trono per passarlo a qualcuno di più capace e andò in isolamento ad allenarsi.
+
+Il dodicesimo principe ereditò il trono e divenne il monarca più giovane in tutta la storia della grande dinastia Qian.
+
+Nel decimo anno da quando divenne Sacro Imperatore, incontrò una donna com’era scritto nelle stelle.
+
+Era una persona impareggiabile. Era apparsa nella grande dinastia Qian come una luna brillante. Era sia bella che intelligente.
+
+Le sue origini non erano sbalorditive. Proveniva da una piccola setta, ma questo la rendeva solo più impressionante. Era semplicemente incredibile che una giovane avesse un talento del genere nonostante provenisse da una piccola setta.
+
+Quell’anno, il dodicesimo principe era al picco della sua vita. Era al comando di un antico paese ed era potente e pieno di spirito. Era impareggiabile tra i suoi coetanei.
+
+Le donne talentuose che di solito rifiutavano gli altri, finivano per corteggiarlo, ma lui non era mai rimasto incantato da loro.
+
+Solo quando incontrò lei ne rimase affascinato, quella ragazza splendida come una luna brillante.
+
+Il suo nome era Bai Yueyin.
+
+Era diversa da quelle ragazze. Le sue origini umili le davano un fascino indescrivibile. Era silenziosa e pensierosa. Non aveva la minima arroganza. Invece mostrava sempre un sorriso che assomigliava ad una brezza primaverile.
+
+Iniziò a discutere di arti marziali con lei. Le conoscenze e la comprensione di Bai Yueyin riguardo alle arti marziali lo sorpresero molto. Dopotutto proveniva da una setta ordinaria, era molto raro che una persona come lei fosse così informata.
+
+In questo modo senza accorgersene si innamorò di Bai Yueyin.
+
+
