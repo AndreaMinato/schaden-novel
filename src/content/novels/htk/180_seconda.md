@@ -1,5 +1,5 @@
 ---
-title: Capitolo 180 – Fei: "Sto solo passando di qui... non badate a me..." (seconda parte)
+title: 'Capitolo 180 – Fei: "Sto solo passando di qui... non badate a me..." (seconda parte)'
 pubDate: 2024-05-17T20:41:47.880Z
 tags:
     - htk
@@ -62,8 +62,3 @@ Per rimanere prudente, il gigante pelato non reagì immediatamente, ma suggerì 
 "Da chi?" L'uomo pelato e muscoloso cambiò espressione e gli era già venuta in mente un'ipotesi.
 
 "Dal gruppo di mercenari della Lama di Sangue!" Fei lo scandì parola per parola e ormai la sua espressione era diventata completamente gelida. Il suo sguardo era tagliente come una lama. Lasciò che la sua energia divampasse e questo improvviso cambio di atmosfera intimidì il gruppo di mercenari della Lama di Sangue.]]></content:encoded>
-
-
-
-
-

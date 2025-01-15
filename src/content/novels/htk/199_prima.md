@@ -1,5 +1,5 @@
 ---
-title: Capitolo 199: Tu... sei un'esperta o no? (prima parte)
+title: 'Capitolo 199: Tu... sei un'esperta o no? (prima parte)'
 pubDate: 2024-05-18T15:41:47.885Z
 tags:
     - htk
@@ -46,5 +46,3 @@ La folla guardò indietro e vide un gruppo di circa cinquecento uomini e donne c
 Erano le truppe che il principe Arshavin aveva mandato per scortare la principessa nella capitale.
 
 "Lungo la strada sono accaduti molti eventi interessanti. Questo viaggio ha superato di gran lunga le mie aspettative..." La principessa mostrò un'espressione rilassata. Sorrise e disse: "Ma, re Alexander, nel regno di Blackstone hai commesso molte infrazioni alla legge imperiale e non sarà facile uscirne. Temo che alcune persone ti attaccheranno per questo a parte il Cavaliere Dorato Sutton." Disse la principessa con un lieve sorriso timido.
-
-
