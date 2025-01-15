@@ -1,0 +1,74 @@
+---
+title: Capitolo 709 - Rafforzare l’Impero (seconda parte)
+pubDate: 2024-06-08T21:43:07.724Z
+tags:
+    - htk
+---
+
+Guardò i sei schiavi catturati e, anche se queste persone sembravano spaventate all’apparenza, Fei notò l’odio e la ferocia nascosti nei loro sguardi. Capì che dovevano essere i più ingrati del gruppo, così sogghignò: “Giustiziateli!”
+
+“No…”
+
+“Fermi…”
+
+“Non uccidete i nostri fratelli!”
+
+Sparrow, Barbossa e altri schiavi gridarono nel panico.
+
+Tuttavia, prima che potessero finire di parlare, la brillante energia di un coltello fece volare le teste dei sei schiavi.
+
+Il sangue schizzò dai loro colli, erano stati tutti eliminati da Robbin.
+
+“Tu…” Anche se Sparrow e Barbossa non erano troppo familiari con questi schiavi uccisi e non avevano grandi rapporti con loro, ebbero la sensazione che la loro fine presagisse il loro destino.
+
+Impallidirono e iniziarono a tremare.
+
+Videro il re di Chambord spostare gli occhi su di loro e l’intento omicida sconfinato che emanava fu troppo intenso per loro. A differenza di ieri quando il sovrano li aveva minacciati soltanto, ora stava davvero pensando di eliminarli tutti.
+
+Sparrow e Barbossa erano persone intelligenti e capirono subito la situazione; si erano accorti che la ribellione dei sei schiavi aveva fatto riconsiderare al re i suoi piani e che potevano essere eliminati da un momento all’altro.
+
+Sparrow e Barbossa alla fine si spaventarono di fronte alla morte.
+
+Bam! Si inginocchiarono tremanti, senza osare dire una parola. Si prostrarono e implorarono pietà.
+
+In quel momento, queste due persone indisciplinate si erano davvero arrese e non osarono più avere secondi fini. Erano terrorizzati e persero ogni intenzione di ribellarsi.
+
+Gli altri schiavi si resero conto della situazione e si inginocchiarono, anche loro erano spaventati dall’aura gelida del re.
+
+L’espressione di Fei si calmò.
+
+Ucciderli prima di cercare di educarli sarebbe stato un abuso di potere.
+
+Anche se Fei aveva ordinato di giustiziare gli schiavi che si erano ribellati, era un caso particolare visto che non si erano resi conto dei loro errori.
+
+Dopotutto Fei non era un sovrano che uccideva indiscriminatamente. Avrebbe eliminato i nemici che provavano a fare del male ai suoi cari e al suo regno, ma non poteva uccidere con leggerezza.
+
+“Intensificate le pattuglie su questa montagna. Convocate anche Drogba e Pierce, e lasciate che addestrino questi bastardi. Spiegate loro le leggi di Chambord e i nostri piani. Cacciate via da qualche parte a circa venti chilometri di distanza da Chambord chiunque non voglia partecipare al nostro programma. Se oseranno mettere piede a Chambord in futuro, condannateli a morte sul posto!
+Chi è disposto a rimanere, potrà bere la pozione Hulk diluita. Se qualcuno di loro osa ribellarsi, giustiziate anche loro!” Ordinò Fei.
+
+Robbin annuì e inviò il messaggio.
+
+Fei rifletté e si rese conto di non avere altro tempo da sprecare al riguardo.
+
+All’improvviso, scatenò le sue fiamme d’energia dorate simile alle onde di un oceano e scomparì dalla montagna delle cinque spade celesti con l’enorme Xuan’ge.
+
+…
+
+Il sole si levò nel cielo il giorno dopo.
+
+Fei era di fronte ad un’enorme finestra alta fino al soffitto nel palazzo divino del re e sospirò mentre guardava lo splendido paesaggio.
+
+Dopo aver fatto colazione con le sue splendide mogli ed essersi goduto un po’ di tempo insieme, lasciò il castello celeste.
+
+Non si diresse verso Chambord, ma a sud, voleva andare a San Petersburg.
+
+Era la seconda volta che il re visitava la capitale questo mese.
+
+Tuttavia lo scopo di questo viaggio era diverso, aveva intenzione di aiutarli.
+
+Dopotutto c’erano amici di Chambord nella capitale.
+
+Avrebbe trovato fiumi di sangue lungo il suo cammino e la gloria del re di Chambord sarebbe diventata brillante come il sole del mattino.
+
+
+

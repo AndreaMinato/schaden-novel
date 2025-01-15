@@ -1,0 +1,115 @@
+---
+title: Capitolo 620 - Sperimentare in prima persona
+pubDate: 2024-06-05T04:41:47.971Z
+tags:
+    - htk
+---
+
+Quando Trace, uno dei guardiani del Senato Imperiale, era stato lanciato a terra come spazzatura, a tutte le persone nel palazzo si mozzò il fiato.
+
+I membri d’élite di classe lunare erano al picco della scala gerarchica a Zenit e non ce n’erano molti. Tuttavia Trace era stato annientato in pochi secondi come un bambino di tre anni che aveva cercato di opporsi ad un uomo forzuto. Questa scena drammatica significava solo una cosa: il re di Chambord era troppo potente!
+
+Anche nelle loro stime più pessimistiche, il re di Chambord non dovrebbe essere così potente.
+
+L’espressione di Matthewson cambiò all’istante. In quanto generale esperto, finalmente si rese conto di quanto si era sbagliato. Aveva sopravvalutato ciecamente la forza del suo gruppo e aveva riposto troppa fiducia in Trace e, allo stesso tempo, non si era reso conto di quanto era formidabile il re di Chambord… Ora erano spacciati.
+
+Anche Alpha, il vecchio con il pizzetto, mostrò uno sguardo terrorizzato e non poté reprimere la paura.
+
+Il sindaco Soroyov era disperato. Impallidito, gli si afflosciarono le gambe e cadde a terra.
+
+<em>Bam! Bam! Bam!</em> Si prostrò continuamente e la sua testa aveva iniziato a gonfiarsi e a sanguinare.
+
+Implorò balbettando: “Signore… sua maestà, per favore mi risparmi. Io… sono stato costretto. Non ho fatto nulla…”
+
+Fei alla fine si girò e lo guardò.
+
+“Non ti ucciderò.”
+
+Soroyov divenne estatico. Si prostrò di nuovo e disse: “Sì, grazie sua maestà! Grazie. Grazie per la sua generosità. È proprio giusto…”
+
+“Non ti ucciderò, ma mi assicurerò che tu capisca cosa significa una vita peggiore della morte!” Il tono di Fei sembrava freddo come un pezzo di antico ghiaccio che faceva raggelare chiunque lo sentiva.
+
+Fei non era mai stato così arrabbiato da quando era venuto nel continente di Azeroth. Ciò che era accaduto alle venti guardie di Ribry lo disgustava. Se il sovrano non avesse tentato di reprimere la rabbia, avrebbe ridotto in scheletri ogni soldato della città delle Due Bandiere dalla parte del principe ereditario Arshavin.
+
+Soroyov si irrigidì dopo aver sentito le parole di Fei.
+
+Fei mosse le dita con un’espressione disgustata e una scia d’energia argentea brillò nel palazzo cupo, per poi entrare nel corpo di Soroyov.
+
+Un momento dopo, quest’uomo grasso come un maiale iniziò ad urlare in modo straziante. Era chiaro che stesse soffrendo moltissimo visto che presto divenne fradicio di sudore. Iniziò a tremare e a rotolarsi per terra incontrollabilmente, presto perse la voce dopo aver gridato. Mentre i suoi arti fremevano, lacrime e moccio iniziarono a scorrere per la sua faccia; si stava dimenando come un animale.
+
+Fei si guardò attorno con ferocia e disse con tono freddo: “Il prossimo!” Era lo stesso ordine crudele che Trace aveva dato un momento fa.
+
+Sembrava il giudizio del cupo mietitore.
+
+Tutti nel palazzo, indipendentemente dal loro livello, tremarono istintivamente.
+
+Dopo un po’ di silenzio di tomba, un comandante brandì una spada e gridò con intento omicida. Poi si fece avanti e cercò di attaccare Fei.
+
+Il sovrano scosse lievemente un braccio.
+
+<em>Bam!</em>
+
+Questo comandante della legione del Sangue di Ferro al picco delle quattro stelle non riuscì ad avvicinarsi entro dieci metri da Fei. Esplose come un palloncino facendo schizzare carne, arti spezzati e ossa in ogni direzione.
+
+“Scappiamo! Scappiamo in direzioni diverse! Dobbiamo fare sapere a sua altezza il principe ereditario cosa sta succedendo! Dobbiamo uscire!”
+
+L’emissario speciale Matthewson si era già arreso ed era disperato; sapeva che non ne sarebbe uscito vivo oggi.
+
+<em>’Il re di Chambord è imprudente e non baderà alla mia identità speciale di emissario del quartier generale militare; mi ucciderà senza esitare!’</em> Pensò.
+
+Perciò gli era subito venuto in mente di scappare.
+
+Prima di finire di dire agli altri di fuggire, aveva già scatenato le sue fiamme d’energia rosse. Mentre il fuoco da guerriero a cinque stelle avvolgeva il suo corpo, sfrecciò verso il muro di pietra dietro di lui e cercò di scappare.
+
+<em>Whoosh! Whoosh! Whoosh! Whoosh!</em> Fiamme d’energia apparirono ovunque e la gente iniziò a fuggire.
+
+La maggior parte delle persone nel palazzo erano guerrieri e comandanti esperti, e capirono subito le intenzioni di Matthewson. Cominciarono a muoversi in direzioni diverse e cercarono di distrarre Fei.
+
+“Scappare? Potete farlo davvero?” Fei sogghignò e batté il pavimento con i piedi.
+
+Tutte le persone che stavano correndo impallidirono e caddero a terra, senza eccezioni. Come se fossero rimaste gravemente ferite, sputarono sangue e provarono stordimento; anche Matthewson. La differenza di forza tra di loro era incalcolabile!
+
+“Ho detto che nessuno potrà scappare!” Il mormorio da cupo mietitore di Fei gelò il sangue nelle vene della gente.
+
+Un’energia invisibile si diffuse nell’area e avvolse l’intero palazzo.
+
+Di fronte al potere assoluto, ogni piano e complotto era inutile.
+
+“No, re di Chambord, non puoi trattarmi così. Sono un emissario speciale del quartier generale militare e rappresento sua maestà l’imperatore Yassin. Non puoi trattarmi così…” Matthewson alla fine si spaventò. Continuava ad urlare: “Mi sono sbagliato! Mi scuso! So di essermi sbagliato! Però tutti qui sono membri d’élite dell’impero e Zenit dipende da noi! Siamo la colonna portante…”
+
+“Sei un bastardo! Siete tutti bastardi! Dovreste essere uccisi 10.000 volte e l’impero dovrebbe vergognarsi di voi!” Fei scosse la testa e puntò il dito verso qualcosa mentre diceva con sincerità: “Mi vergogno solo a guardarvi. Sono loro i veri eroi dell’impero, i veri guerrieri e colonne portanti di Zenit. Al loro confronto, cosiddetti membri d’élite come voi mi fanno vomitare!”
+
+Dove Fei stava indicando, Ribry stava versando una bottiglietta di Pozione della Giovinezza Completa nella bocca di Arthur.
+
+Questa guardia coraggiosa riprese un po’ di lucidità e le sue ferite guarirono.
+
+Tuttavia, anche se la sua pelle era ricresciuta ed era tornata a coprire il suo corpo, non gli rimaneva troppa energia dopo le torture; era qualcosa che questa pozione non poteva curare all’istante.
+
+Tremò lievemente e il suo sguardo sembrava vacuo, ma era evidente l’entusiasmo e l’odio nei suoi occhi.
+
+“Eh? Di nuovo tu?” Fei si fermò a guardare il vecchio con il pizzetto.
+
+Mentre mostrava un’espressione disgustata, Fei disse: “Non cambierai mai. Credi di essere intelligente, ma stai solo cercando di morire. Ti ho già avvertito una volta; credi davvero che non sapessi cosa stavi facendo nella capitale? È stato Chris Sutton a mandarti qui o sei venuto qui da solo?”
+
+Il vecchio di nome Alpha aveva perso un orecchio per mano di Fei, quando aveva causato un conflitto tra il sovrano e il cavaliere del Sole Dorato, Chris Sutton, nella montagna delle due torri.
+
+Allora lo aveva solo avvertito, ma questo vecchio aveva cercato di cospirare di nuovo contro di lui.
+
+In quel momento, anche se il vecchio odiava molto Fei, non poté più reprimere la paura. Mentre lo guardava con ferocia, non sapeva se si sarebbe dovuto inginocchiare o difendersi; aveva perso tutto il suo coraggio.
+
+“Sembra che tu sia qui da solo. Anche se il cavaliere del sole dorato, Chris Sutton, è aggressivo e arrogante, è un vero guerriero e segue le regole. Tu invece sei come una mosca a cui piace solo lo sporco.” Disse con leggerezza Fei.
+
+Le parole di Fei fecero quasi gridare Alpha. Si era reso conto che il sovrano di Chambord conosceva il suo capo meglio di lui… era ironico e triste allo stesso tempo.
+
+Fei non voleva parlare più con questa persona astuta e crudele.
+
+<em>Boom!</em>
+
+Con un cenno della mano, Alpha fu ridotto in una nuvola di sangue dopo che il vecchio mostrò un’espressione di rimpianto.
+
+Scie di energia di spada argentata volarono attorno e trafissero i corpi degli altri nemici nel palazzo. Mentre riecheggiavano grida di sottofondo, Fei si rivolse verso Trace, il guardiano del Senato Imperiale, che stava cercando di guarire bevendo una pozione e aveva intenzione di reagire.
+
+“Sembra che ti piaccia scorticare gli esseri umani?” Chiese Fei. “Che ne dici di sperimentarlo in prima persona?”
+
+
+

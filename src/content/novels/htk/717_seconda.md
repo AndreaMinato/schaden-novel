@@ -1,0 +1,61 @@
+---
+title: Capitolo 717 - Macellare maiali (seconda parte)
+pubDate: 2024-06-09T05:43:07.726Z
+tags:
+    - htk
+---
+
+“Ahahah! Due contro uno? Come potrei lasciarvelo fare? Ucciderò un debole maiale come te e poi distruggerò l’altro!” Fei rise con arroganza come un demone e scosse il braccio destro. Il suo potere terrificante divampò dalle sue mani e fece a pezzi il membro d’élite di classe lunare dell’elemento fuoco. Poi si girò e scagliò un pugno. L’energia dorata crebbe e ridusse le lame del vento in puri elementi, creando un vuoto tra Fei e il terzo nemico.
+
+…..
+
+“Grandioso!” Non poté trattenersi dal gridare il Cavaliere del Sole Dorato Chris Sutton, si sentiva ribollire il sangue.
+
+Pensò: <em>’Questo è il sovrano di Chambord! Un maledetto ba****do, un sovrano arrogante e un macellaio assassino! I suoi nemici sperimenteranno un terrore e un dolore senza precedenti. Tuttavia i suoi alleati si sentiranno in paradiso! Non è la sensazione migliore al mondo vederlo causare incubi ai nemici?’</em>
+
+Sutton iniziò a provare compassione per il povero guerriero dell’elemento vento di Leon.
+
+“Grandioso! Potere! Potere!”
+
+“Uccidilo! Uccidilo! Uccidi quel maiale di Leon!”
+
+I soldati di Zenit dentro e fuori dalle mura difensive urlarono con entusiasmo e ciò che era appena accaduto li entusiasmava.
+
+Erano disperati e non si aspettavano che ci fosse un potente esperto nascosto tra di loro; non se l’erano nemmeno sognato.
+
+Ora erano entusiasti. Gli arroganti membri d’élite di classe lunare di Leon che stavano deridendo Zenit adesso erano stati distrutti con facilità! Non c’era sensazione più piacevole!
+
+I soldati recuperarono il morale.
+
+…..
+
+“Maledetto sporco zenitiano! Ti ucciderò!”
+
+Uno dei suoi compagni era rimasto gravemente ferito e l’altro era morto. Questo riempì di frustrazione il guerriero dell’elemento vento. Dato che era il più forte tra di loro, aveva la sensazione che fosse un affronto alla sua dignità ed era infuriato come un leone a cui era stata rubata la compagna.
+
+Fluttuava a mezz’aria, lontano dal raggio d’azione delle frecce magiche. Gli elementi del vento di colore verde brillante volavano attorno a lui, sembravano fiamme.
+
+L’esperto fece un cenno e questa energia volò in avanti, trasformandosi in varie armi letali che piovvero contro Fei come una tempesta.
+
+Il sovrano fu avvolto all’istante dalla raffica.
+
+“Ahahah! Un impero di basso livello è troppo debole. Sei solo un misero insetto, come osi resistere all’impero Leon? Vuoi morire! Oggi ti ucciderò, conquisterò la città e annienterò ogni zenitiano più alto di una ruota! Ahahah!”
+
+Il membro d’élite di classe lunare di Leon rise a mezz’aria.
+
+Era sicuro che nessuno potesse sfuggire a questa tempesta di lame.
+
+Pensò: <em>’Non potrebbe farcela nemmeno se fosse il doppio più forte di me.’</em>
+
+I soldati di entrambi gli imperi stavano combattendo ferocemente, ma si erano fermati momentaneamente a guardare lo scontro.
+
+Vedendo il loro esperto entrare in vantaggio, i soldati di Leon esultarono.
+
+I soldati di Zenit invece si preoccuparono e iniziarono a disperarsi. Dato che la battaglia era stata troppo breve, non avevano ancora riconosciuto Fei. Ora stavano pensando: <em>’Che la sua dominanza sia destinata a durare poco?’</em>
+
+Solo il Cavaliere del Sole Dorato Sutton lo aveva riconosciuto, così non era preoccupato.
+
+Aveva assistito alla forza del re di Chambord in passato, così sapeva che questo esperto di Leon non poteva fargli nulla.
+
+
+

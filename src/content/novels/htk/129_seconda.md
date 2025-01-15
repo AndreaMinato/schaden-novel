@@ -1,0 +1,133 @@
+---
+title: Capitolo 129 – Branco di Pazzi (seconda parte)
+pubDate: 2024-05-15T17:41:47.875Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Tutti sentirono il rumore dei loro denti che battevano.
+
+<em>Bang bang bang bang!</em>
+
+Drogba estrasse la spada dal suo corpo e la lanciò via, poi si leccò le labbra, prese un po' a pugni la sua ferita facendo schizzare altro sangue e mostrò un sogghigno entusiasta, come se non sentisse nessun dolore e gridò: "Chi è il prossimo? Avanti! Ahahah!"
+
+Il gruppo di persone di fronte a lui si spaventò così tanto che le loro gambe si afflosciarono.
+
+"Tu, fuori dalle palle!" Drogba indicò una guardia muscolosa del regno Shenhua.
+
+L'uomo avanzò tremante e spinto dalla paura iniziò a ruggire come un pazzo; cominciò ad ondeggiare lo spadone come la pala di un mulino e cominciò a caricare come una bestia ferita.
+
+<em>Bang!</em>
+
+Ancora un pugno.
+
+Stavolta la guardia non riuscì nemmeno a raggiungere Drogba. Questo pazzo aveva finto di non essere bravo a schivare, ma chi sapeva che avrebbe evitato all'istante il colpo e avrebbe spaccato la testa della guardia con un pugno.
+
+Questa guardia era un guerriero ad una stella, ma era così scosso da essere spaventato a morte. In più Drogba era stato potenziato dalla Pozione di Hulk, la sua robustezza e il suo potere superavano di gran lunga le aspettative della gente normale, inoltre questo tipo era mostruosamente astuto e così era riuscito di nuovo ad uccidere la guardia con un pugno.
+
+Vedendo i fluidi cerebrali rossi e bianchi che colavano dalla mano di Drogba, tutti rabbrividirono incessantemente.
+
+Troppo brutale, troppo violento e crudele!
+
+Fei ne fu inquietato, perché questo Drogba era così ossessionato a spaccare i crani della gente? Era troppo anormale! Doveva cambiare un po' l'atteggiamento di questo tipo, altrimenti influenzerà l'immagine salutare e amichevole di Chambord!
+
+"Fuori dal ca**o!" Drogba indicò un tipo davanti a lui.
+
+Si sentì un odore disgustoso, questo sciocco sfortunato che era stato indicato si era spaventato al punto da cagarsi e pisciarsi addosso, e collassò direttamente sul posto.
+
+Passarono un po' di minuti e a quattro o cinque guerrieri fu spaccato il cranio, i loro cadaveri giacevano accanto a Drogba. Il guerriero aveva altri tre grossi buchi sanguinosi nel suo corpo, ma non erano ferite letali e non mostrava il minimo dolore.
+
+Fei pensò che fosse sufficiente, questo folle si era vantato abbastanza, così gli fece cenno di tornare da lui.
+
+Chi prese il suo posto fu il Cavaliere Dorato del capricorno Pierce.
+
+Tutti pensarono che, dopo il pazzo a cui piaceva spaccare la testa alla gente, sarebbe sceso in campo qualcuno di normale, ma dopo circa dieci minuti, tutti si disperarono vedendo la pila di poltiglia accanto a Paul Pierce.
+
+Quest'uomo dai capelli bianchi era ancora più pazzo.
+
+Non importava contro chi combattesse, gridava solo "Lunga vita al re Alexander, Excalibur!" Caricava, poi l'avversario sarebbe stato fatto a pezzi misteriosamente e sarebbe stato ridotto in poltiglia, era davvero terrificante. Quest'uomo muscoloso dai capelli bianchi sembrava poter scatenare una forza invisibile, inarrestabile e tagliente, che non poteva essere fermata da armature, scudi e armi. Tutti ebbero l'impulso di gridare quando videro i resti per terra.
+
+Ad un tipo piace distruggere i crani e l'altro preferiva farli a pezzi!
+
+Erano tutti pazzi a Chambord?
+
+Tutti i principi dei regni nemici si abbracciarono tremanti e piangenti.
+
+Il terzo che scese in campo fu Brook.
+
+Quest'uomo almeno era un po' più normale al contrario dei suoi compagni di prima. Ma il potenziamento che aveva ottenuto grazie alla pozione Hulk gli aveva permesso di aumentare la sua forza ed esperti ad una o due stelle non potevano affatto rivaleggiare con lui. Dopo aver battuto cinque avversari di fila, finì con successo la sua missione.
+
+Fei stava dando apposta opportunità di combattere ai suoi uomini, permettendo loro di sperimentare dei duelli, in modo da prepararli all'imminente esercitazione militare di Zenit.
+
+Naturalmente voleva anche dimostrare la forza di Chambord di fronte alla principessa e al Dio della Guerra Arshavin.
+
+Chiaramente Fei raggiunse il suo obiettivo.
+
+Quando i principi e le guardie dalla parte di Paris furono fatti a pezzi spietatamente uno per uno, la principessa, Arshavin e gli altri, dagli sguardi irritati e scontenti di prima, iniziarono a rivelare shock e dubbi. La forza di Chambord aveva superato di gran lunga le loro aspettative e c'erano anche alcuni misteriosi fattori che non potevano analizzare con chiarezza. In quel momento perfino Arshavin che all'inizio era insoddisfatto di Fei, non aveva altra scelta se non mettere da parte la sua scontentezza e riconsiderare i rapporti che avrebbe avuto in futuro con questo regno di sesto livello.
+
+Alla fine i soli nemici rimasti sulla montagna orientale furono i principi di una decina di regni.
+
+Questi uomini erano abbastanza forti, ma come potevano queste mammolette viziate abituarsi a scene del genere? Avevano iniziato già ad abbracciarsi l'un l'altro e piangere chiamando le loro mamme.
+
+In quel momento però Fei fece di nuovo una mossa sorprendente. Mandò il suo cognato Bast che non aveva la minima energia stellare o forza magica.
+
+"Che anche questo vecchio che non può nemmeno camminare bene sia un esperto?"
+
+Arshavin non percepì la minima traccia di potere da questo vecchio, nemmeno forza fisica. Pensò perfino che la sua potenza fosse arrivata al punto che nemmeno un membro d'élite a sei stelle non poteva individuare, così la sua espressione divenne seria.
+
+Ma chi avrebbe pensato...
+
+"Coff coff coff!"
+
+Questo vecchio di bell'aspetto si schiarì la voce, tirò fuori un grosso libro e disse: "Va bene, secondo i miei calcoli accurati, disturbando la cerimonia di incoronazione del re, avete distrutto proprietà, calpestato piantagioni, fatto perdere tempo... Umh, in totale avete causato dei danni che arrivano a 230.000 monete d'oro. Se siete disposti a pagare il doppio del prezzo come compenso, il mio re sarà incredibilmente generoso e sarà disposto a lasciarvi andare vivi!"
+
+Arshavin che stava cercando di guarire sputò una boccata di sangue.
+
+Un membro d'élite.
+
+Esattamente, ma nel trattare.
+
+Queste parole però furono musica celestiale per questi principi tremanti. A queste persone sembrò quasi che questo vecchio fosse un amichevole saggio dalla barba bianca disceso dal cielo, quasi volevano strisciare da lui e abbracciare le sue gambe piangendo.
+
+"Pagare, pagheremo! Il re Alexander è incredibilmente saggio, grande e generoso!"
+
+Le parole di Bast erano preziose quanto la legna di inverno per i principi. Finché fossero sopravvissuti, che importava quanto avrebbero dovuto pagare? Anche se la cifra era un po' troppo esagerata.
+
+Quasi senza incontrare nessuna resistenza, tutti i principi non videro l'ora di firmare l'accordo con Bast e, in un batter d'occhio, Chambord ricevette quasi 800.000 monete d'ora come "compenso per i danni" e aveva ottenuto una ricchezza sconcertante.
+
+Stavolta perfino l'intelligente principessa si stupì.
+
+Era stato così facile... e quell'enorme somma di soldi ora era nelle sue mani?
+
+Prima molte persone avevano immaginato che, data la personalità crudele del re, questi principi fossero spacciati. Chi avrebbe pensato che avrebbe usato questo metodo e avrebbe sistemato la questione. Pensandoci, anche la saggia principessa provò interesse e non poté che lodarlo per questa mossa brillante. Questo non solo avrebbe evitato di incutere le ire di molti regni, ma avrebbe aiutato ad accumulare un'enorme somma di denaro per sviluppare Chambord! Era come cogliere due piccioni con una fava!
+
+Aveva sempre più il presentimento che non avrebbe dovuto sottovalutare questo re Alexander.
+
+Molto presto le guardie arrivarono e scacciarono i principi dalla montagna come se fossero dei mendicanti, e l'ufficiale di prigione Oleg li portò nella prigione Lista Nera. Prima che quei regni mandassero il loro "compenso per i danni", questi principi sarebbero stati tenuti lì come ostaggi.
+
+Il sole era già sorto e la temperatura era aumentata un po' di più.
+
+Nella cima della montagna ora erano rimasti solo i membri di Chambord e la gente della fazione della principessa.
+
+Circa duecento cavalieri d'élite erano stati ridotti a solo venti, il comandante Romain e la spadaccina Susan erano tutti feriti, la ragazza vestita di viola Ziyan e il Dio della Guerra Arshavin erano in condizioni ancora peggiori e potevano solo rimanere seduti a terra ad incanalare la loro energia per guarirsi.
+
+Questo sarebbe dovuto essere un momento vittorioso, alcuni cavalieri erano perfino pronti ad esultare...
+
+Ma....
+
+L'atmosfera non sembrava allegra come immaginavano.
+
+La principessa chinò la testa e non parlò.
+
+E Fei rimase sul posto, guardando in silenzio lei e Arshavin. La sua espressione di sicuro non era contenta, né rispettosa...
+
+Rivelava solo... indifferenza e disgusto.
+
+Il suo sguardo era ancora più freddo rispetto a come aveva osservato Paris e gli altri.
+
+
+

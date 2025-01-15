@@ -1,0 +1,73 @@
+---
+title: Capitolo 197 – Imbattuto (seconda parte)
+pubDate: 2024-05-18T13:41:47.884Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Dopo una serie di bombardamenti d'energia, l'erba fu ricoperta dal sangue. C'erano macchie cremisi ovunque e apparentemente i due uomini erano gravemente feriti e sarebbero dovuti crollare da un momento all'altro.
+
+L'inseguimento continuò.
+
+Ma...
+
+Dopo averli inseguiti per più di dieci minuti, gradualmente Alan si rese conto che c'era qualcosa di strano.
+
+"Strano... anche due bufali morirebbero dopo aver sanguinato così tanto. Perché quei due topi sono pieni di vigore e vitalità?" Alan si fermò, poi si diede una pacca sulla testa e si perse nel prato secco dove li stava inseguendo.
+
+"Due codardi, massacrerò l'intera città di Chambord prima, vediamo per quanto tempo potrete nascondervi!"
+
+Gridò deliberatamente Alan per poi girarsi.
+
+Stavolta non stava fingendo, voleva proprio tornare indietro. Se i due Cavalieri Sacri codardi non fossero apparsi, se ne sarebbe dovuto andare. Anche se avrebbe ottenuto grandi meriti per averli uccisi, non avrebbe ricevuto nulla se i suoi altri compagni avessero conquistato la città per primi. Avrebbero saccheggiato tutti i tesori.
+
+"Ahah. Non andare, sei proprio deludente, ci stavamo solo divertendo, perché vuoi andartene?"
+
+"Giusto, non ci hai ancora raggiunto?"
+
+I due uomini alti e muscolosi riapparirono e iniziarono a ridere. Uscirono dall'erba alta dietro, iniziando ad inseguire e ad insultare Alan, a quanto pareva non erano soddisfatti perché il nemico si stava ritirando.
+
+"Ahahah, voi due cod..." Alan rise e si girò.
+
+Stava per deriderli spietatamente, ma non riuscì nemmeno a dire la parola "codardo" prima di rimanere sbalordito a fissare gli oggetti che stavano portando Drogba e Pierce. Erano due cadaveri decapitati che non potevano essere più morti di così. Li stavano tenendo come galline e strizzandoli un po' avrebbero schizzato sangue a terra.
+
+"Come avete potuto... voi..."
+
+Alan capì all'istante cos'era successo quando vide i due uomini ridere con godimento come se avessero vinto alla lotteria. Erano completamente illesi e puliti quasi al punto da essere vergognosi.
+
+"Sono stato... ingannato!"
+
+Non c'era da meravigliarsi che i due avessero sanguinato un po' troppo dopo essere stati "feriti". Chiunque sarebbe diventato una mummia dopo un'emorragia del genere, come potevano ancora correre?
+
+"Voi... siete imperdonabili! Dovreste morire diecimila volte!" Ringhiò Alan.
+
+"Paul. Guarda, guarda, sembra che il ragazzino giallo si sia arrabbiato con noi!" Drogba sorrise con orgoglio: "Com'era la mia idea?" Fece una domanda e si rispose: "Ahah, sono un fottuto genio!"
+
+"Didier, sono diventato troppo dispettoso a forza di frequentarti!" Il cavaliere dello Zodiaco del Capricorno Pierce rise.
+
+"La pagherete con la vita!"
+
+Alan era estremamente arrabbiato, gli fumavano le orecchie e il suo sguardo ardeva per la furia. Energia blu di tipo acqua divampò attorno a lui. Dalle fiamme risuonava il rumore di onde che si infrangevano. Un potere invisibile controllò la lama affilata. All'improvviso vorticò furiosamente e una lieve increspatura d'energia iniziò a diffondersi attorno...
+
+"Ratti maledetti, mi avete fatto proprio arrabbiare..."
+
+La spada avvolta da energia blu si trasformò in un fulmine all'improvviso e lanciò innumerevoli fendenti. L'erba alta due metri attorno a loro fu falciata e la luce di spada divenne sempre più affilata e rapida fino ad essere invisibile ad occhio nudo. Il suono delle onde che emetteva dava la sensazione di essere in un vasto oceano.
+
+"Tecnica d'energia... Onda Furiosa dai Mille Strati!!"
+
+Gridò Alan, muovendo le spade più volte. In un momento, il suono della marea divenne assordante come un ruggito... Le luci delle lame nel cielo apparirono all'improvviso, formando una rete di bagliori che caricò verso Drogba e Pierce da ogni lato.
+
+Drogba gridò: "Ah, bene, si è arrabbiato...", poi aggiunse all'improvviso urlando: "Lunga vita a sua maestà... vieni a me armatura del toro!"
+
+Quando disse queste parole, accadde qualcosa di strano.
+
+Il suo corpo robusto come un toro iniziò a fluttuare come se non ci fosse più gravità. Poi uscì una luce nera dalla sua fronte che si trasformò in una scatola di ferro. Sopra il contenitore c'era incisa l'immagine vivida di un toro.
+Un momento dopo si aprì rivelando un lampo di luce dorata e un enorme toro d'acciaio che si divise in 125 parti. Ognuno di questi pezzi si mossero come se fossero dotati di vita propria. Si trasformarono in fiamme dorata che atterrarono sul corpo di Drogba.
+
+Alla fine l'enorme totem del toro dorato costituito da 125 stelle scintillanti apparì come per magia. Brillava dietro Drogba in modo misterioso. Il corpo dell'enorme toro emanava un'aura antica e sconosciuta. Quando ruggì con orgoglio, la forza che rivelò quasi fece inginocchiare i presenti da quanto era prepotente.
+
+

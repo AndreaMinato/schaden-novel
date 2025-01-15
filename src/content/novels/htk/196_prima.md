@@ -1,0 +1,70 @@
+---
+title: Capitolo 196 - Distruggerò il tuo Cuore (prima parte)
+pubDate: 2024-05-18T12:41:47.884Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Mentre il fuoco ardeva nel cielo, le figure lamentose e in difficoltà gradualmente si zittirono e smisero di muoversi.
+
+Tuttavia la vita a volte era capace di fare miracoli. Anche se il fuoco era molto violento, diversi cavalieri con le corazze nere riuscirono a sopravvivere.
+
+Anche se erano in pessime condizioni, le loro armature di ferro li avevano salvati. Il metallo conduceva calore velocemente, ma non poteva andare a fuoco. I cavalieri che si erano persi tra il fumo si protessero dal calore usando la loro energia da guerriero di bassissimo livello e caricarono fuori dall'incendio spingendo i cavalli a correre in avanti e orientandosi usando i ruggiti amplificati del loro capo dal volto sfigurato.
+
+I tre re con le corone dorate erano stati influenzati meno dal fuoco rispetto ai soldati ordinari. Avevano guerrieri a due stelle al loro fianco a proteggerli. Anche se erano solo a due stelle, la loro energia era sufficiente ad avvolgere i sovrani e a respingere le fiamme e il fumo.
+
+L'erba secca delle pianure non riuscì a bruciare troppo a lungo. Dopo dieci minuti il fuoco si calmò.
+
+In quel momento, circa cinque-seicento cavalieri su millecinquecento erano sopravvissuti al mare di fiamme.
+
+Dietro di loro c'erano ancora scintille sotto la cenere. Alcuni cavalieri non erano ancora morti e i loro arti gravemente deformati dal calore stavano ancora fremendo, muovendosi di riflesso. Era una scena terrificante. L'intera pianura era nera come l'inferno.
+Era difficile guardarla. Un odore fetido di bruciato misto alla puzza di carne arrostita si disperse nell'aria e la gente poteva ancora distinguere i cavalieri dalle loro cavalcature dalla dimensione delle sculture di carbone. A volte sarebbe risuonato un tonfo. Era il rumore degli organi interni che esplodevano. Liquido rosso e bianco sarebbe schizzato dalle statue nere e sarebbe esploso come fuochi d'artificio.
+
+I cavalieri che erano usciti dalle fiamme ed erano sopravvissuti erano tutti membri d'élite che avevano partecipato a numerose battaglie. Ora però non osarono voltarsi e vedere cos'era successo dietro di loro. Chi aveva visto per caso questa scena infernale avrebbe subito piegato la schiena e vomitato o pianto. Molti di loro persero momentaneamente la capacità di pensare, tremanti e sconvolti come se avessero perso l'anima. Era una scena terrificante, era un inferno.
+
+Il capo dal volto sfigurato fermò il cavallo e si incupì dopo essersi voltato.
+
+Aveva partecipato a più di cento battaglie ed era riuscito a diventare un cavaliere del palazzo imperiale dopo aver accumulato abbastanza meriti militari per dieci anni. Da quando era sceso nel campo di battaglia per la prima volta a sedici anni, le cicatrici sul suo viso erano state la sua più grande medaglia, la sua armatura speciale per lui era solo il secondo simbolo più importante della sua autorità nonostante provenisse dal palazzo dei cavalieri imperiali.
+Fino ad ora, pensava di aver afferrato l'essenza della guerra e che non avrebbe subìto nessuna perdita a giocare in un regno remoto... Chi si poteva immaginare che non solo molti dei suoi uomini sarebbero morti, ma che avrebbe fallito!
+
+"Squadra! Tornate in formazione!" Gridò il cavaliere con il volto sfigurato e il suono del corno riecheggiò di nuovo.
+
+Tra i cinque-seicento cavalieri sopravvissuti, solo quattrocento di loro erano in grado di combattere. Gli uomini si organizzarono velocemente in una squadra e caricarono tutti verso la collina a circa cinquanta metri di distanza da loro mentre il loro capo la indicava con la spada ruggendo "Vendetta!" così forte che sembrava un tuono.
+
+L'uomo con la cicatrice caricava proprio di fronte e il resto dei cavalieri neri lo seguiva.
+
+Sulla collina, sotto la strana bandiera del cane a due teste con una spada e un'ascia che si incrociavano, c'era un comandante dall'armatura nera di Chambord con meno di cinquanta soldati attorno. Era chiaro che gli uomini di Chambord fossero agitati. Sembrava che non avessero previsto che l'invasore sarebbe sopravvissuto al grande incendio. Anche se avessero voluto, era troppo tardi per loro scappare .
+
+Gli invasori percorsero il divario di cinquanta metri in dieci secondi.
+
+"Uccideteli! Decapitateli! Caricate nel castello di Chambord e bruciate quegli insetti di Chambord!"
+
+Questo era il solo pensiero del cavaliere sfigurato e di ogni altro invasore.
+
+Stavano per impazzire!
+
+.....
+
+<em>Tink! Tink! Tink!</em>
+
+Una serie di clangori metallici risuonarono nella foresta. Anche se era giorno, apparirono scintille brillanti sotto gli alberi.
+
+Due figure volarono nell'aria e si scontrarono in un attimo di secondo.
+
+Era un duello di spadaccini.
+
+A mezz'aria, il cavaliere Dick attaccò ventitré volte e Lampard colpì ventisei volte. La differenza di numero di attacchi era importante. Quando entrambi atterrarono di nuovo sul suolo, spuntarono delle ferite profonde un pollice sulla spalla, sul braccio e sulla coscia di Dick.
+
+<em>Puff! Puff! Puff! Puff!</em>
+
+Dopo un breve momento di silenzio, più di una decina di alberi ampi un piede di diametro cedettero. I tagli erano così puliti da poter essere usati come specchi. Erano stati causati dall'energia da guerriero invisibile trapelata dalla raffica di colpi. Dato che stavano usando tecniche così raffinate, gli alberi rimasero intatti anche dopo essere stati attraversati da energia da guerriero. Solo quando il vento soffiò gli alberi iniziarono a cadere.
+
+"Ottime tecniche di spada!" Il guerriero a quattro stelle Dick si girò e guardò l'enorme spadone nelle mani di Lampard. Mostrò uno sguardo sorpreso e disse: "Non avrei mai pensato che un maestro come te fosse nascosto nel regno di Chambord. La tua spada è circa quaranta libbre più pesante della mia, ma sei riuscito a colpirmi tre volte di più. Devo ammettere che la tua tecnica è superiore!"
+
+"Umpf." Lampard non rispose.
+
+

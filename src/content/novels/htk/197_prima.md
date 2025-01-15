@@ -1,0 +1,53 @@
+---
+title: Capitolo 197 – Imbattuto (prima parte)
+pubDate: 2024-05-18T13:41:47.884Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+"Ohoh.. oh... oh..."
+
+Dick stava cercando di dire qualcosa, ma dalla gola gli sfuggì solo un rumore simile al ruggito di una bestia disperata. Guardò il braccio di Lampard che emergeva dal suo braccio e la sua ultima espressione della sua faccia prima arrogante fu di rimpianto. Poi la spada sferragliò a terra, era morto non appena aveva smesso di respirare. Lampard lo spinse lievemente, facendo cadere il suo corpo freddo.
+
+Poi un'improvvisa ondata di fuoco e fiamme apparì in lontananza, occupando metà del cielo.
+
+Lampard rimase scioccato, scattò e un secondo dopo apparì su un albero alto cento metri.
+
+Guardò in lontananza. Vide le fiamme che coprivano l'intera prateria. Lampard sapeva che era opera del capo dell'esercito Brook. Tuttavia Lampard si innervosì di nuovo. L'altra squadra doveva affrontare un maestro quasi al picco delle quattro stelle. Queste fiamme non avrebbero bruciato quell'assassino, anche se avrebbe eliminato più di mille cavalieri neri. Non c'era nessun esperto che poteva contendere con quel guerriero insieme a Brook, la situazione sarebbe precipitata finché fossero arrivati rinforzi nemici.
+
+Doveva aiutarli.
+
+Dopo un chiaro fischio, i più di venti arcieri spariti nella foresta erano accorsi sotto l'albero.
+
+"Lord Lampard!"
+
+"Sono tutti qui? Ci sono stati dei feriti?"
+
+"Sì signore, siamo tutti qui. Stanno tutti bene a parte Andy e Taylor che hanno subìto ferite marginali. I duecentocinquanta invasori sono rimasti tutti tra gli alberi, non èci siamo fatti scappare nessuno di loro."
+
+"Bel lavoro, ma lo scontro non è ancora finito, dividetevi in due gruppi, andate ad aiutare immediatamente Lord Drogba e Lord Pierce. Io aiuterò Lord Brook... Ricordate, la situazione è urgente e dovete essere veloci!" Lampard guardò i volti dei venti soldati, alcuni di loro stavano sanguinando. Anche se avevano il vantaggio di essere in un terreno familiare e avevano ucciso più di duecento cavalieri neri nella foresta, i venti uomini avevano fatto molti sacrifici. Tuttavia Lampard non poteva pensarci troppo in questo momento, poté solo dire piano: "Fate attenzione!" Poi, con un lampo, scomparì all'istante.
+
+Il fulmine d'argento tuonò e le saette di Lampard si precipitarono sulle colline distanti dov'era piantata la bandiera del cane a due teste con l'ascia.
+
+Allo stesso tempo, risuonò una serie di fischi frettolosi. Riecheggiarono tonfi di zoccoli e i cavalli che erano stati lasciati nelle foreste tornarono. I soldati feriti di Chambord salirono sulle cavalcature e si diressero verso il prato molto lontano.
+
+Lì i loro fratelli erano ancora impegnati in una battaglia sanguinosa per difendere la loro terra natìa.
+
+.....
+
+"Eheh, guarda quei due topolini, dove possono scappare?"
+
+I capelli scompigliati e gialli come l'erba del cavaliere nero Alan erano permeati da fiamme blu. L'energia dell'acqua blu scattò dalla sua mano verso Drogba e Pierce, costringendoli ad allontanarsi. Si potevano intravedere solo due sederoni e pozze di sangue tra l'erba.
+
+Sembrava il gioco del gatto col topo, il nemico era contento delle loro grida disperate.
+
+"Ahah, fermatevi e fate una pausa! Eheh, potete ancora scappare con delle ferite così gravi?" I capelli gialli di Alan stavano svolazzando al vento. Balzò e vide i due uomini che scappavano più avanti, poi estese la sua energia di spada blu acqua e la tirò verso di loro, sollevando polvere ed erba lungo il suo cammino.
+
+Era stata una figura potente ad ordinargli di venire qui. Naturalmente il cavaliere imperiale Alan era ben consapevole che i due che stavano fuggendo erano persone importanti sotto il comando del sovrano di Chambord. Avrebbe ottenuto un grande merito e una grossa ricompensa se avesse potuto ucciderli. Perciò non badò agli altri arcieri a cavallo che erano scappati e inseguì solo Drogba e Pierce.
+
+
+

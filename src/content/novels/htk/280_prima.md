@@ -1,0 +1,81 @@
+---
+title: Capitolo 280 - Guerriero di Massimo Livello (prima parte)
+pubDate: 2024-05-22T00:41:47.904Z
+tags:
+    - htk
+---
+
+Un momento dopo, tutte le frecce verdi fluttuarono giù e coprirono l’uomo di quest’uomo misterioso. Ogni dardo era lungo un metro e, i simboli e le rune li facevano sembrare veri oggetti.
+
+Le frecce lo facevano sembrare un enorme riccio da lontano.
+
+Al cenno dell’uomo misterioso, il potere distruttivo esplose. I dardi sfrecciarono spietatamente in ogni direzione e i sibili assordarono Fei.
+
+Fei non poteva nascondersi più visto che l’attacco era ad ampio raggio.
+
+Di fronte ai dardi taglienti e potenti, Fei concentrò la sua energia Zen nei pugni e scagliò un colpo. Con le fiamme alle mani e il ruggito di una tigre, usò i Pugni di Fuoco e il Colpo della Tigre.
+
+Questo inflisse un’enorme quantità di danni.
+
+<em>Boom! Boom! Boom! Boom!</em>
+
+Più di una decina di frecce furono fatte a pezzi.
+
+Visto che era una tecnica ad ampio raggio, il potere contenuto in ogni dardo era molto più debole era molto più debole. Questo era il motivo per cui Fei era riuscito ad affrontarlo.
+
+Tuttavia questo contrattacco forzò Fei ad uscire dalla sua modalità furtiva.
+
+“Colpo del Dito!”
+
+La voce dell’uomo risuonò di nuovo mentre volava ancora un grosso polverone.
+
+Stavolta l’uomo si mosse. Cambiò posizione e indicò Fei.
+
+<em>Boop! Boop! Boop! Boop!</em>
+
+Sembrava che una serie di bolle stessero scoppiando.
+
+Fei aveva la sensazione di essere in una prigione invisibile, non poteva schivare affatto l’attacco.
+
+Quando l’uomo misterioso si mosse, un enorme dito lungo più di quattro metri apparì sulla testa di Fei. Era così dettagliato che si poteva vedere l’unghia e l’impronta digitale. Iniziò a calare su Fei come se fosse un gigante che schiacciava una formica.
+
+Fei impallidì. Passò all’istante alla modalità barbaro e numerosi marchi di pugni cristallini apparirono di nuovo.
+
+Stavolta scelse di usare il Pugno Gelido del Cielo, un Solo Colpo per Uccidere!
+
+Insieme all’Abilità Colpo, poteva raddoppiare la sua forza per pochi secondi. Era l’attacco più potente di Fei!
+
+Tuttavia…
+
+<em>Boom! Boom! Boom!</em>
+
+Il colpo più forte di Fei ruppe solo una piccola porzione del dito verde. Il resto stava ancora premendo su di lui.
+
+…..
+
+Dopo venti minuti.
+
+Bene.”
+
+L’uomo misterioso ritirò le mani dopo aver lanciato dieci attacchi.
+
+Le sue sopracciglia simili a coltelli si rilassarono. Guardò Fei con calma, ma senza emozione. Nessuno poteva capire cosa stesse pensando e non sembrava nemmeno che avesse quasi ucciso il maledetto re qualche minuto fa.
+
+Fei era a circa venti metri dall’uomo ed era scioccato.
+
+Era stato lo scontro più pericoloso e duro a cui avesse partecipato da quando era arrivato nel continente Azeroth.
+
+Sia in quanto a potere, che esperienza, angolazione degli attacchi, l’uomo di fronte a lui era di gran lunga più bravo. Verso la fine della battaglia, Fei aveva usato tutti e sette i suoi personaggi e aveva pianificato numerosi contrattacchi e trappole. Tuttavia quest’uomo l’aveva respinto con facilità.
+
+In effetti non si era nemmeno mosso, ma Fei era scappato in giro come una scimmia a cui aveva preso fuoco il sedere.
+
+C’era un enorme divario di livello.
+
+Fei era in una pessima situazione.
+
+Tutto il suo equipaggiamento di sesto e di settimo livello del mondo di Diablo era completamente distrutto. La loro durabilità era finita sotto lo zero e non potevano più essere riparati. Questi oggetti gli erano costati più di 200.000 monete d’oro e adesso erano sfasciati.
+
+Inoltre il corpo resistente del barbaro non aveva potuto resistere, era pieno di ferite e il sangue che continuava a scorrere dalle sue ferite macchiava le mani di Fei. In effetti, eccetto per i punti vitali e il viso di Fei, era ricoperto di ferito ovunque.
+
+
+

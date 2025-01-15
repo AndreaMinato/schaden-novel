@@ -1,0 +1,51 @@
+---
+title: Capitolo 281 - Rapido Aumento di Forza (seconda parte)
+pubDate: 2024-05-22T01:41:47.904Z
+tags:
+    - htk
+---
+
+Cech era migliorato drasticamente e viste le sue origini nobili, era molto più bravo a disciplinare i soldati rispetto a persone come Pierce, Drogba e Oleg che erano persone comuni. Fei aveva assegnato le cariche giuste ai suoi uomini e aveva dato loro completa fiducia. Così il sistema funzionava bene.
+
+Torres era la guardia del corpo personale di Fei e si impegnava molto a diventare più potente. Perciò parlava e si allenava con Lampard, nemmeno a lui piaceva addestrare soldati. La forza del giovane era aumentata di molto negli ultimi giorni.
+
+Dopo che tornò dalle montagne Moro, Fei fece colazione con Angela ed Emma. Dopo aver trascorso un po’ di tempo con le ragazze, iniziò ad allenarsi nella tenda centrale.
+
+Entrò direttamente nel mondo di Diablo dopo pranzo.
+
+Da quando Akara e Cain avevano visto gli oggetti nella misteriosa stanza di pietra, erano impazziti di curiosità e avevano iniziato a studiarli. Fei non riuscì a parlare con i due, così lui ed Elena continuarono il loro viaggio. Usando il portale nel Campo delle Ranger, arrivarono nel Porto Kurast.
+
+Il Porto Kurast era una città affacciata sul mare, tra l’oceano e la foresta.
+
+La maggior parte degli edifici erano costruiti usando legno e erano sull’acqua, e la città era divisa in aree principali. A parte alcune zone d’inventario e portali, c’erano più di una decina di NPC. Alcuni avevano il compito di dare missioni e altri vendevano oggetti come pozioni e altro ancora.
+
+Come nella seconda mappa di Lut Gholein, questi NPC non avevano una loro intelligenza. Simili a robot, comunicavano solo seguendo il copione prestabilito. Erano quasi identici agli NPC nel gioco della vita precedente di Fei.
+
+In effetti, solo gli NPC del Campo delle Ranger avevano una loro intelligenza e gli avevano portato esperienze che non aveva incontrato nella sua vita precedente.
+
+Ciò che c’era di diverso nel Porto Kurast era la mappa molto più grande e misteriosa rispetto alle due aree precedenti. I demoni e i mostri qui erano più potenti, e Fei, barbaro di livello 46, doveva fare attenzione quando li affrontava.
+
+Questo era uno dei benefici del mondo di Diablo.
+
+Mentre i personaggi di Fei aumentavano di livello, anche i mostri che avrebbe dovuto affrontare avrebbero fatto lo stesso. Il nuovo ambiente in cui Fei si lanciava era sempre più pericoloso e doveva rimanere in allerta per gestirlo. In questo modo, la sua esperienza di combattimento e la comprensione della sua forza sarebbero aumentate. Danzare sull’orlo della morte era l’allenamento migliore per un guerriero; non era come alcuni giochi facili e noiosi che Fei aveva visto nella sua vita precedente.
+
+Oltre ad innumerevoli pericoli, aveva anche ottenuto moltissimi punti esperienza.
+
+Quando arrivò lo scadere delle quattro ore e trenta minuti, Fei non aveva ancora completato la terza missione della mappa. Aveva passato la maggior parte del tempo a viaggiare e ad uccidere i mostri lungo la strada. Ma prima di andarsene dal Mondo di Diablo, era aumentato di livello tre volte, il suo barbaro era arrivato al livello 49.
+
+Naturalmente, oltre ad un aumento di forza, Fei era andato dal NPC che vendeva equipaggiamenti e aveva comprato un’altra serie di oggetti per 200.000 monete d’oro. Aveva preso un’armatura con 200 punti difesa, un elmo con 100 punti difesa, un paio di guanti buoni, stivali e una cintura.
+
+Tuttavia questi oggetti erano tutti di colore blu al livello 5. In confronto a quelli arancioni che aveva prima, i loro stili, gradi e adattabilità erano inferiori. Questo irritò un po’ Fei.
+
+Però si potevano comprare raramente oggetti di livello 6 da NPC. Aveva ottenuto la maggior parte di essi come bottino dopo aver ucciso un mostro e non erano affatto comuni.
+
+Tuttavia Fei non era troppo preoccupato dato che aveva accesso alla Saggezza del Re Demoniaco.
+
+Il libro conteneva molte tecniche di forgia divine e incanti. Se Cain ed Akara avessero potuto tradurle completamente, Charsi probabilmente sarebbe riuscita a creare oggetti di sesto livello arancioni; forse perfino arrivare al livello 7 o al leggendario livello 8 non sarebbe stato più un sogno.
+
+Dopo che tornò nel mondo reale, era già sera.
+
+In quel momento, due gruppi di onorabili ospiti si presentarono al campo uno dopo l’altro.
+
+
+

@@ -1,0 +1,49 @@
+---
+title: Capitolo 452 - Cambio nella modalità Incubo (seconda parte)
+pubDate: 2024-05-29T04:41:47.939Z
+tags:
+    - htk
+---
+
+“Cosa sta succedendo? Tutte le mie statistiche si sono azzerate all’improvviso? Com’è successo?”
+
+Fei era scioccato. Se si fossero resettati tutti i valori, allora il suo duro lavoro sarebbe andato sprecato.
+
+“Ma sento ancora una marea di potere nel mio corpo, e sembra ancora più forte di prima?”
+
+Fei chiuse questo pannello digitale e iniziò a percepire con attenzione il potere dels uo corpo. Evocò i Figli di Bul-Kathos e usò la sua tecnica più potente, Turbine. Un’ondata di energia di spada si precipitò in avanti e scavò un solco profondo più di dieci metri. La sensazione tirannica si disperse nell’area e foschia argentata scorreva nell’aria.
+
+“Anche se il mio livello e le mie statistiche sono sparite, ho ancora la mia forza. In effetti sono diventato ancora più forte!”
+
+Tutte le preoccupazioni di Fei scomparirono dopo aver fatto questa scoperta.
+
+<em>’Se non sbaglio, il mio potere è cambiato qualitativamente una volta entrato in modalità Incubo. Prima la mia energia ha preso la forma di un cristallo trasparente quando lasciava il mio corpo, adesso…’</em> mentre Fei ci pensava, usò il Pugno Gelido del Cielo. All’istante un marchio argentato delle dimensioni di un metro cubo apparì e sfrecciò nel cielo.
+
+Questo dimostrava l’ipotesi di Fei. Dopo che il suo potere era aumentato di livello, era cambiato anche il suo colore.
+
+L’energia argentata era una forma di energia più di cento volte più potente dell’energia trasparente come un cristallo.
+
+<em>’Ahah! Che sorpresa! Dato che il mio potere è cambiato, dovrei cambiare il nome di questa tecnica. D’ora in avanti il Pugno Gelido del Cielo diventerà…’</em> Fei ci pensò contento e si inventò un nome fico: “Il Pugno Invincibile dell’Imperatore!”
+
+Questo nome rifletteva un po’ l’ambizione di Fei. Rivelava il desiderio di Fei di essere un grande sovrano ed era contrapposto al leggendario Pugno del Drago dell’Imperatore Yassin.
+
+Al momento la tecnica di Fei doveva essere ancora perfezionata e raffinata, e non poteva competere con il mitico Pugno del Drago. Tuttavia Fei credeva che un giorno anche la sua tecnica sarebbe diventata una leggenda.
+
+“Yassin non è inferiore a nessuno! Che dichiarazione eroica!”
+
+Dopo aver ripensato alla famosa frase di Yassin, Fei si emozionò. I pugni dell’Imperatore Yassin avevano sconfitto moltissimi maestri e a chiunque sarebbe ribollito il sangue pensando ad una leggenda del genere.
+
+Fei aprì il pannello del suo status. Dopo averci riflettuto su un po’, mise tutti i cinque nuovi punti attributo nella Forza. Aveva cambiato i suoi piani, dato che poteva usare tutti e sette i personaggi come desiderava, non aveva bisogno di pensare a come equilibrarne le statistiche e poteva fare del suo meglio per enfatizzare i vantaggi di ogni modalità. E il vantaggio principale del suo barbaro era la forza fisica.
+
+Però decise di conservare i punti abilità che aveva ottenuto senza usarli.
+
+Quando entrò nell’Abisso del Male e iniziò la sua prima missione, era un barbaro di primo livello.
+
+Anche se la forza dei mostri era aumentata drasticamente, anche lui era cambiato. Inoltre aveva completato questa missione nella modalità normale e sapeva dove andare; in effetti poteva esplorarlo ad occhi chiusi. In meno di venti minuti, uccise tutti i mostri nella grotta e accumulò più di 70 gocce di liquido dorato nel suo corpo.
+
+Dopo aver lasciato l’abisso, uccise altri mostri e ad 80 gocce, aumentò di nuovo di livello.
+
+Mentre un raggio di luce dorata calava giù dal cielo, le 80 gocce di liquido dorato diventarono una corrente calda che si fuse con tutte le cellule del suo corpo. Dopo che la sua potenza aumentò di nuovo, ripose tutti i punti attributo in Forza senza toccare il punto abilità.
+
+
+

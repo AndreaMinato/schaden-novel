@@ -1,0 +1,61 @@
+---
+title: Capitolo 715 - Un Pugno (prima parte)
+pubDate: 2024-06-09T03:43:07.725Z
+tags:
+    - htk
+---
+
+“Come osi ferirmi? Sporco zenitiano! Muori! Morite tutti!” Questo membro d’élite di classe lunare che si era ferito per via della sua imprudenza si era infuriato.
+
+Ondeggiò velocemente un braccio e scaricò una spaventosa quantità d’energia verso il basso. L’elemento del fuoco si riversò giù, spazzando via l’energia dorata.
+
+La tecnica finale del Cavaliere del Sole Dorato era stata smantellata e l’energia dell’elemento metallo tagliente scomparì come un cubo di ghiaccio sotto il sole.
+
+Anche i sedici soldati d’élite di Zenit che erano balzati nell’aria furono respinti come se si fossero scontrati con un muro invisibile, sputando boccate di sangue.
+
+“C’è un divario così enorme tra di noi?” Chris Sutton non poté che sorridere con amarezza dopo aver assistito alla scena.
+
+Tuttavia non esitò, né si fermò. Fece un salto e attaccò questo membro d’élite di classe lunare, avvicinandosi al nemico come una falena in volo verso le fiamme.
+
+<em>’Devo rallentarli anche a costo di morire!’</em> Pensò.
+
+L’energia del fuoco bruciante soffiò contro questo cavaliere di bell’aspetto e scosse i suoi capelli.
+
+…..
+
+Sulle mura difensive.
+
+<em>Whoosh! Whoosh! Whoosh!</em>
+
+Le frecce magiche che contenevano un’energia immensa piovevano come gocce di pioggia in una tempesta.
+
+Le fiamme d’energia attorno alle frecce illuminarono i volti arrabbiati dei soldati di Zenit e volevano tutti fare a pezzi quei due demoni. Tuttavia i due membri d’élite di Leon erano troppo veloci. Erano fulminei come fantasmi e i guerrieri a cinque stelle che stavano operando le enormi balestre magiche non riuscivano ad individuarli.
+
+Zenit era in una pessima situazione.
+
+Non avevano membri d’élite di classe lunare dalla loro parte che avrebbero potuto almeno rallentare il nemico. Anche se i dardi magici erano potenti e potevano ferire i loro guerrieri, non potevano colpire il bersaglio con precisione nemmeno tirando frecce costantemente.
+
+Tuttavia, ognuno di questi dardi magici era difficile da produrre ed era costoso, così non c’erano molte riserve. In momenti come questi però non potevano fermarsi. Se avessero interrotto le loro raffiche, i membri d’élite di classe lunare di Leon avrebbero raggiunto all’istante le mura difensive.
+
+Il Dio della Guerra di Zenit si alzò immediatamente. Anche se non sembrava ansioso, in realtà era molto nervoso.
+
+Di questo passo il nemico avrebbe fatto breccia nella capitale nel giro di pochi minuti.
+
+Una volta che avessero esaurito le frecce magiche, San Petersburg sarebbe stata conquistata.
+
+In quel momento si girò e guardò il palazzo reale accanto alla montagna al centro della città, ma provò anche vergogna.
+
+Zenit era sotto un’enorme pressione. Se l’imperatore Yassin fosse comparso e avesse ucciso i membri d’élite di classe lunare di Leon, avrebbe ribaltato la situazione. Tuttavia, i nemici non avevano ancora schierato i loro guerrieri più formidabili, stavano tutti aspettando che l’imperatore Yassin facesse la prima mossa dato che non erano sicuri della sua forza.
+
+Una volta che i nemici avessero capito quanto era davvero forte Zenit, avrebbero lanciato i loro attacchi più terrificanti.
+
+In quel momento Arshavin ripensò al re di Chambord per qualche motivo.
+
+Rimpianse un po’ la sua decisione e pensò: ‘<em>Se fossimo rimasti in buoni rapporti, quel tipo arrogante sarebbe stato qui e avrebbe dato un’ulteriore protezione all’impero.’</em>
+
+Tuttavia ci pensò solo per un secondo.
+
+Scosse velocemente la testa con derisione: <em>’Perché ho pensato a quello spregevole ribelle? Quello sciocco arrogante e spudorato probabilmente sta guardando l’impero bruciare. Probabilmente non vede l’ora che Zenit crolli! Perché verrebbe qui? Umpf!’</em>
+
+
+

@@ -1,0 +1,68 @@
+---
+title: Capitolo 281 - Rapido Aumento di Forza (prima parte)
+pubDate: 2024-05-22T01:41:47.904Z
+tags:
+    - htk
+---
+
+Dopo questa battaglia, Fei aveva perso le forze e non voleva nemmeno muovere un dito. Tutte le sue ferite esterne e interne gli dava la sensazione di essere stato morso da una marea di formiche. Ogni volta che si muoveva, gli sembrava di venire infilzato da degli aghi; avrebbe sudato a profusione a causa del dolore.
+
+Dopo un po’ di riposo, Fei riacquistò lucidità tra il vento freddo.
+
+Si alzò a fatica ed estrasse una pozione curativa dal suo inventario. Dopo averla svuotata, le sue ferite scomparirono e si sentì molto meglio.
+
+Dopo che era diventato più potente, gli effetti della pozione curativa erano diminuiti.
+
+Era prevedibile.
+
+Il motivo era semplice. Se un barbaro di livello 10 aveva 100 punti salute, allora al livello 46 avrebbe avuto più di 600 punti salute. La pozione curativa che poteva ripristinare 50 punti salute non sarebbe stata così efficace. Quando Fei era appena arrivato nel continente Azeroth, metà bottiglietta di pozione curativa aveva potuto salvare Pierce che era stato sull’orlo della morte. Ma ora poteva solo curare un po’ delle sue ferite visto che Pierce adesso era un guerriero a quattro stelle.
+
+Dopo aver finito la pozione, anche la sua fatica scomparì.
+
+Visto che era una persona che imparava dalle sue esperienze, Fei ripensò a questa battaglia pericolosa.
+
+Quell’uomo misterioso era troppo potente e conosceva molte tecniche di combattimento. Colpo di Spada, di Lama, di Palmo, delle Frecce, del Pugno e del Dito… aveva usato facilmente queste tecniche, ma avevano inflitto molti danni. Il barbaro di livello 46 di Fei era equivalente ad un guerriero a sette stelle, ma era stato comunque malmenato. Sembrava un adulto che aveva picchiato un bambino.
+
+Tuttavia non stava pensando alla forza di quest’uomo misterioso.
+
+Per qualche motivo, aveva la sensazione di stare ignorando qualcosa di importante.
+
+Dopo essersi accigliato e aver cercato di ottenere quel momento di ispirazione, ancora non riuscì a capire. Rimase fermo per circa tre minuti e sentì un’enorme quantità di dolore alla testa. Il sudore scorreva come una fontana sulle sue tempie… Tutto questo era stato causato dalle sue intense riflessioni.
+
+Un’altra brezza soffiò… Quando Fei sospirò e fu sul punto di arrendersi, risuonò un ronzio nella sua testa. Ogni blocco che aveva ostacolato i suoi pensieri si aprì e poté concentrarsi.
+
+<em>Boom!</em>
+
+Fei rilassò le sopracciglia e lanciò un pugno all’improvviso.
+
+Il marchio di un pugno trasparente volò per circa dieci metri per poi fermarsi per un secondo. La luce attorno al marchio diminuì e le sue dimensioni si ridussero drasticamente. Ma dopo questo cambiamento, continuò a dirigersi verso la regione dei sigilli spaziali dei due esperti. Le energie verdi e rosse accesero all’istante il cielo e l’energia da guerriero si riversò in ogni direzione, come se numerosi guerrieri si stessero scambiando dei colpi.
+
+Fei aggrottò di nuovo le sopracciglia.
+
+Questo pugno non era stato all’altezza delle sue aspettative.
+
+Rimase sul posto e rifletté ancora per un po’. Ripeté nella sua testa i movimenti di quell’uomo misterioso… Quella presenza, stato mentale, sicurezza e quel controllo…
+
+<em>Boom! Boom! Boom! Boom!</em>
+
+Rifletté mentre lanciava pugni e si allenava. Stava sperimentando qualcosa di mai provato prima.
+
+Fei si allenò fino all’alba ed ebbe la sensazione di aver capito qualcosa.
+
+Passò alla modalità Assassino e uscì dal campo di battaglia prendendo una via speciale. Dopo aver esaurito il suo potere spirituale, lo allenò ulteriormente usando i metodi della pergamena viola. Dopo che il suo potere spirituale aumentò un po’, annuì con soddisfazione e scomparì dalle montagne Moro.
+
+…..
+
+Il sole del mattino illuminò il mondo.
+
+Dopo il coprifuoco più severo, le restrizioni e numerose ricerche, tornò un’atmosfera occupata e prospera nell’area degli accampamenti.
+
+La competizione si sarebbe tenuta tra due giorni e tutti e 244 i regni affiliati si stavano preparando; sei regni affiliati erano stati condannati a morte per aver collaborato con gli assassini di Spartax. Tutti gli esperti dei regni affiliati si stavano concentrando e stavano cercando di raggiungere il picco delle loro condizioni. Alcuni si stavano allenando tra di loro nelle cinquanta arene della spada nel campo. Stavano cercando di usare metodi diversi per aumentare la loro forza almeno una volta prima della competizione.
+
+Le truppe di spedizione di Chambord non erano diverse.
+
+L’addestramento dei Cavalieri dello Zodiaco e dei Poliziotti era gestito da Peter-Cech, il capo del settore militare.
+
+
+
+

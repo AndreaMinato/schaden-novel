@@ -1,0 +1,73 @@
+---
+title: Capitolo 285 - Battaglia della Regione Settentrionale numero 8 (seconda parte)
+pubDate: 2024-05-22T05:41:47.905Z
+tags:
+    - htk
+---
+
+Era un bel numero.
+
+Chambord era nella regione più a nord e naturalmente era rientrata nella categoria settentrionale; c’erano cinquanta regni lì. In quanto cinese, gli piacevano numeri come “6” e “8” dato che rappresentavano la fortuna e la ricchezza.
+
+Il pomeriggio prima della competizione ci fu un incontro tra i capi di Chambord tenuta dal sovrano in persona. Il re lodò i capi e i soldati per il loro enorme aumento di forza. Poi ricompensò la gente che aveva dato contributi straordinari e dichiarò il suo obiettivo in questa gara. Spronò anche i guerrieri di Chambord a lavorare particolarmente sodo, combattere e uccidere i nemici…
+
+Alla fine dell’incontro, furono determinate le liste degli incontri individuali e formarono una legione di cinquanta persone composte da Cavalieri dello Zodiaco e Poliziotti.
+
+Dopodiché tutti si prepararono per la competizione.
+
+Nell’area del campo, la gente gridava e i cavalli ruggivano. Le armi erano taglienti e le bandiere erano brillanti. Il loro spirito omicida aumentò vertiginosamente…
+
+…..
+
+La luna nel cielo era argentata.
+
+Nel campo di battaglia nelle montagne Moro.
+
+Il marchio di un pugno sfrecciò nell’aria nella notte cupa. Dopo che una serie di scintille brillarono, risuonò un fragore.
+
+“Bene.” Commentò piano l’uomo misterioso, ma le sue labbra fremettero un po’.
+
+Non si aspettava che il giovane re di fronte a lui sarebbe cresciuto così velocemente.
+
+Il marchio del pugno di Fei superava la velocità del suono e aveva creato un marchio rosso nel cielo. Presto si trasformò in una stella nel cielo… Questo attacco era identico a quello che aveva prodotto l’uomo misterioso la scorsa notte. Il suo controllo era così buono che il guerriero misterioso quasi pensò che fosse stato lui a scagliare il pugno.
+
+Questo era un livello di “controllo granulare” che era difficile da ottenere.
+
+Aspetto più terrificante, aveva percepito un altro aumento di forza nel re, adesso era al picco del livello intermedio delle sette stelle. Era il genio più grande che avesse mai visto!
+
+<em>’Che mostro!’</em>
+
+Pensò l’uomo misterioso.
+
+Pensò che sarebbe passato un po’ di tempo prima che il sovrano comprendesse le note, ma sembrava che un po’ del suo “materiale da insegnare” non sarebbe stato utile.
+
+“Whoosh!”
+
+ L’uomo misterioso fece un cenno e un altro pacco verde scattò verso Fei. Poi scomparì di nuovo.
+
+“Torna domani!” La voce priva d’emozione risuonò nelle orecchie di Fei.
+
+Anche se la forza di Fei era aumentata drasticamente, non capiva ancora come l’uomo se ne fosse andato, era troppo potente.
+
+Fei aveva ricevuto un altro libro delicato, era simile alle note che aveva ricevuto la scorsa notte. Anch’esse erano fatte di pelle giallo chiaro ed era piegata verticalmente in modo ordinato. La sola differenza era il titolo e il contenuto:
+
+“Tecnica della forza a spirale e tecnica degli strati di forza nascosti.”
+
+Le scritte sotto erano uguali: “Dal primo principe Yassin al sovrano di Zenit.”
+
+Fei rifletté e capì cosa intendeva l’uomo.
+
+La “tecnica della forza a spirale e quella degli strati di forza nascosti” erano di livello avanzato. Sovrapponendo la sua energia, avrebbe aumentato drasticamente i danni inflitti dai suoi attacchi. Tuttavia queste tecniche avanzate potevano essere prodotte solo usando il controllo granulare. Questo era il motivo per cui l’uomo gli aveva dato le note ieri.
+
+Questo guerriero misterioso era come un maestro a cui non piaceva parlare. Stava indicando un percorso di coltivazione a Fei.
+
+Forse aveva visto che Fei era forte, ma che gli mancavano i fondamentali. Questo era il motivo per cui all’inizio lo aveva messo sotto pressione e gli aveva fatto rendere conto cosa gli mancava.
+
+“Ma perché è così buono con me?”
+
+Fei non lo sapeva.
+
+Anche se si riteneva carismatico e bello, sapeva che dovevano esserci altri motivi. L’uomo misterioso doveva avere i suoi piani…
+
+
+

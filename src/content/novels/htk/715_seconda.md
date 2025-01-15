@@ -1,0 +1,142 @@
+---
+title: Capitolo 715 - Un Pugno (seconda parte)
+pubDate: 2024-06-09T03:43:07.725Z
+tags:
+    - htk
+---
+
+Nel cielo sopra San Petersburg.
+
+“Va bene, puoi fare la tua mossa ora. Sistema quel membro d’élite di Leon fuori dalle mura difensive e uccidi i due in volo.” Disse all’improvviso Paris. Aveva osservato la situazione per un po’ e pensava che fosse il momento perfetto.
+
+“Va bene.”
+
+“Eheh, ricordati di non usare tutta la tua forza all’inizio, ragazzo. Fa sembrare che tu sia solo di due livelli più forte rispetto al nemico. Inoltre mostrati il più arrogante possibile!”
+
+Fei guardò la Donna Demoniaca e capì subito cosa stava pensando.
+
+<em>’È proprio una donna astuta e spaventosa.’</em> Pensò Fei.
+
+…..
+
+Chris Sutton sputò una boccata di sangue e fu scaraventato all’indietro come un aquilone rotto.
+
+Il membro d’élite di Leon lo aveva sconfitto in una sola mossa.
+
+L’elemento del fuoco lo aveva bruciato all’istante, danneggiando i suoi canali d’energia e i suoi organi interni. Un livello di dolore senza precedenti lo aveva sopraffatto, facendolo sudare copiosamente mentre si stavano formando fessure sulla sua pelle.
+
+Sapeva che il suo avversario stava cercando di torturarlo bruciandolo lentamente dall’interno.
+
+<em>’È la fine per me? Sto morendo per l’impero! Signorina Paris, mi stai guardando? Ora sono un vero uomo e mi sto facendo carico delle mie responsabilità! Non ho portato vergogna al palazzo dei cavalieri imperiali e non ho perso la dignità di fronte ai nemici. Se… mia cara Paris, potessi vederti un’ultima volta prima di morire, sarei soddisfatto!</em>’ Pensò Sutton
+
+Durante i suoi ultimi momenti non era spaventato, né arrabbiato; provava solo rimpianto.
+
+…
+
+Chris Sutton si era innamorato di lei quando l’aveva incontrata per la prima volta. All’inizio pensava che la sua posizione, la sua fama, la sua forza e il suo bell’aspetto gli avrebbero permesso di conquistarla, ma aveva fallito.
+
+Paris l’aveva sempre trattato come un fratello minore. Lo adorava, ma non l’aveva mai considerato come un possibile compagno.
+
+“Eheh, sei ancora un ragazzino. Sei troppo giovane e aggressivo, non sai nulla.” Questa era la risposta che aveva ricevuto quando Sutton le aveva confessato i suoi sentimenti.
+
+Prima Sutton non aveva capito.
+
+Tuttavia, dopo che aveva sentito che Paris era stata sconfitta a Chambord, era stato persuaso dal vecchio di nome Alpha ad affrontare il re di Chambord ed era stato usato da lui.
+
+Dopo essere stato surclassato alle Due Torri, aveva passato il tempo ad allenarsi diligentemente e aveva compreso gradualmente cosa intendeva Paris.
+
+…
+
+“Ahahah! Sei solo una formica! Come osi ferirmi? Ti ucciderò usando il metodo più doloroso! Brucerò tutta la tua carne e lascerò intatta solo la tua pelle! Ahahah!” Il membro d’élite di Leon rise con ferocia mentre cercava di afferrare Sutton con le sue mani circondate da fiamme d’energia.
+
+Sutton non aveva paura, stava sorridendo.
+
+Ce l’aveva messa tutta e non si sentiva in debito con nessuno.
+
+Quando chiuse gli occhi e attese la morte, accadde un imprevisto.
+
+Una mano calda gli toccò la schiena. Una vasta quantità d’energia fluì nel suo corpo, sbarazzandosi dell’elemento fuoco nel suo corpo e guarendolo all’istante.
+
+Sutton riaprì gli occhi incredulo.
+
+Poi vide un pugno dorato sfrecciare da dietro di lui.
+
+Si scontrò con il palmo del membro d’élite di Leon.
+
+Un momento dopo, Sutton vide il sorriso malvagio dell’uomo irrigidirsi, rimpiazzato da shock e terrore.
+
+Poi l’uomo fu scaraventato via come se fosse stato colpito da un martello e sputò una boccata di sangue.
+
+
+Capitolo  716 - Inganno (prima parte)
+
+La prima cosa che pensò il cavaliere del Sole Dorato fu: “I rinforzi!”
+
+<em>’Chi è? Come mai è così potente? Mi ha guarito facilmente con un tocco e ha scaraventato via un membro d’élite di classe lunare con un pugno! Nemmeno i guardiani del Senato Imperiale sono così forti!’</em> Continuò a pensare: <em>’Quando è apparso un esperto così potente?’</em>
+
+Pensò ad ogni famoso maestro o eremita a San Petersburg, ma scartò un’ipotesi dopo l’altra.
+
+“Non ce ne sono altri. Che sia un asso nella manica della famiglia reale?”
+
+Il Cavaliere del Sole Dorato era emozionato e si girò subito dopo essere atterrato; voleva vedere chi era questo esperto che lo aveva salvato durante questo momento critico.
+
+Una raffica di vento soffiò e ne vide solo la schiena.
+
+Quella persona fece un enorme passo avanti e Sutton ebbe la sensazione che un’enorme montagna gli fosse passata accanto.
+
+“È lui!2
+
+Anche se Sutton aveva visto solo la sua schiena, l’aveva identificato all’istante. Era rimasto impressionato in modo profondo da quest’uomo e non se lo sarebbe mai dimenticato.
+
+Il Pugno Dominatore del Cielo, il re di Chambord!
+
+“È il sovrano di Chambord!” Sutton all’improvviso si riempì di emozioni contrastanti.
+
+La sua prima reazione fu di concludere che aveva perso di nuovo.
+
+Dalle voci che aveva sentito, si era reso conto che il divario tra di loro era già enorme nonostante si fosse impegnato duramente negli ultimi sei mesi.
+
+Ora non poteva nemmeno capire a che livello fosse arrivato.
+
+Questo lo fece sentire avvilito e frustrato.
+
+Si era reso conto che il sovrano di Chambord era ad un livello completamente diverso! Tutti nella capitale sapevano che era una figura importante a San Petersburg, che chiamava il principe ereditario per nome e aveva sconfitto quel vecchio mostro del Senato Imperiale in un colpo solo…
+
+La comparsa di un esperto così terrificante era una buona notizia.
+
+Sutton iniziò a calmarsi ed ebbe la sensazione che le mura difensive a San Petersburg dietro di lui fossero diventate impenetrabili!
+
+…..
+
+Dopo che Fei salvò il Cavaliere del Sole Dorato, si fece avanti e inseguì il membro d’élite di classe lunare di Leon, attaccandolo continuamente.
+
+Ogni volta che si spostava, avrebbe scagliato un pugno.
+
+Il guerriero di Leon ne fu scioccato e perse il coraggio di reagire quando percepì il potere nascosto negli attacchi di Fei.
+
+A mezz’aria, continuò ad arretrare con un’espressione ansiosa. Anche se aveva cercato di scappare, era stato preso di mira dall’energia spirituale di Fei e non poteva scappare.
+
+Così dovette contrattaccare per difendersi.
+
+Le fiamme dorate e quelle rosse si accesero, si scontrarono e si dispersero.
+
+Primo pugno!
+
+Secondo pugno!!
+
+Terzo pugno!!!
+
+Dopo il terzo colpo, non risuonarono più altri rumori.
+
+Fei si fermò sul posto e la sua aura divenne pesante e instabile come un’enorme montagna.
+
+Quel giovane d’élite di Leon non era in una buona situazione. Era già caduto a terra e il sangue colava dagli orifizi del suo volto.
+
+Fece del suo meglio per alzare una mano e indicare Fei, chiedendo con voce roca e ad occhi spalancati: “Chi… chi sei tu? Zenit non ha altri esperti, chi sei tu?”
+
+“Non meriti di saperlo.” Rispose con noncuranza Fei senza nemmeno guardarlo.
+
+Questo membro d’élite di classe lunare così arrogante adesso sembrava timido e debole di fronte ad una persona potente.
+
+
+

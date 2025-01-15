@@ -1,0 +1,48 @@
+---
+title: Capitolo 218 – Un Invito da una Vecchia Amica (prima parte)
+pubDate: 2024-05-19T10:41:47.890Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Allo stesso tempo.
+
+Mille metri a monte dalla riva del fiume accanto all'accampamento di Chambord, dentro un enorme campo pesantemente difeso che occupava un'area quasi dieci volte più grande di quella di Fei.
+
+Dentro la grossa tenda al centro, una figura sedeva da sola su una lastra di pietra, puliva gentilmente la lama nella sua mano.
+
+Era una spada ordinaria.
+
+Ma quest'uomo era circondato da un'aura tagliente, simile ad innumerevoli spade brandite contemporaneamente. L'energia terrificante divampava e frustava, ma era ben controllata nel raggio di dieci metri attorno a lui. Ad un angolo della sua bocca apparì una curva solitaria, ma entusiasta, come se avesse trovato qualcosa che gli avrebbe permesso di rallentare e dare un'occhiata al suo giocattolo.
+
+"19 anni, un uomo che ha sconfitto il Cavaliere Dorato Sutton. Umpf, è una degna sfida per la mia spada!"
+
+.....
+
+Il tempo volò.
+
+In un istante, al sole sorto da ovest delle montagne Moro rimaneva solo un mezzo sorriso. Il cielo si era incupito gradualmente, ponendo fine agli allenamenti, gli accampamenti di ogni regno sottoposto divennero rumorosi e presto le pianure si animarono.
+
+La notte era il momento più chiassoso tra gli accampamenti.
+
+Tra i circa venti accampamenti dei battaglioni, a parte i guerrieri d'élite dei regni partecipanti, c'erano anche piccole e grandi carovane di ogni paese, insieme ad artigiani e venditori ambulanti. L'esercitazione militare era anche una grande occasione per fare affari per loro. Si radunavano in un distretto speciale stabilito specificatamente dall'impero e, quando calava la notte, aprivano i negozi. All'improvviso risuonavano in continuazione voci di mercanti che urlavano per attirare l'attenzione dei clienti, l'aria si riempiva di profumo d'alcool e carne, si sentirono ruggiti di risate e imprecazioni, e l'intero distretto si animò pieno di rumore ed entusiasmo.
+
+"Se volete vendicarvi, prima dovete diventare più forti. Tuttavia c'è sempre un limite per la forza di un individuo. Se volete uccidere Kulun che è sotto le forti difese della famiglia Tolemy, dovete diventare assassini solitari dell'oscurità e coltivare le tecniche più sbalorditive.
+Dovete prendere familiarità con ogni struttura e funzione di ogni parte del corpo, e apprendere la psicologia di ogni tipo di persona. Dovete imparare a nascondervi e a proteggervi, cogliere l'occasione, come sopportare, come scegliere, prepararvi, come distinguere le menzogne dalla verità, come confondere gli avversari, usare ogni tipo di armi... Naturalmente, aspetto più importante, dovete indurire il vostro cuore!"
+
+Nell'accampamento di Chambord, Fei stava istruendo Inzagi e i quattro orfani sopravvissuti.
+
+I quattro orfani si chiamavano Kawani, Michael-Irvine, Gonzalez e David. Avevano sperimentato delle difficoltà inimmaginabili fin da piccoli e poi era accaduta una tragedia. Dopo aver visto le persone a loro più care morire di fronte ai loro occhi, la loro maturità aveva superato di gran lunga qualsiasi persona ordinaria.
+L'odio indimenticabile li aveva resi estremamente duri, avrebbero potuto usare dei coltelli da macellaio senza la minima esitazione. Anche se non avevano il talento miracoloso di Inzagi, avevano comunque una predisposizione a diventare assassini per via di ciò che avevano sperimentato.
+I quattro orfani e Inzagi erano come fratelli, e la loro lealtà nei confronti di Fei per aver salvato le loro vite era assolutamente garantita. Così Fei aveva deciso di addestrarli per diventare assassini come Inzagi e finalmente avrebbe potuto crescere dei guardiani oscuri. Questi cinque giovani sarebbero stati il primo gruppo di cupi mietitori che Fei avrebbe allenato.
+
+"Un assassino, amati dalle notte vagano tra le ombre, non hanno titoli prominenti, ma possono compiere imprese illustri..."
+
+Fei passò alla modalità Assassino, scatenando tutta la sua energia senza riserve e facendo sentire agli altri quest'aura erratica, cupa ed esotica. Mentre scattava, aveva già cambiato posto nell'accampamento 20 o 30 volte, e quando si teletrasportava, la sensazione tagliente che emanava non si era indebolita minimamente. Era uno stato davvero magico, chiaramente sapevi che c'era un assassino terrificante accanto a te, ma avresti dimenticato facilmente e inconsciamente della sua esistenza nel momento in cui avessi perso la concentrazione.
+
+
+

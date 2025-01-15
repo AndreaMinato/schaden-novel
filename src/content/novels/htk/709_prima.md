@@ -1,0 +1,51 @@
+---
+title: Capitolo 709 - Rafforzare l’Impero (prima parte)
+pubDate: 2024-06-08T21:43:07.723Z
+tags:
+    - htk
+---
+
+Dopo un giro per la città, Fei divenne piuttosto soddisfatto.
+
+Poi si diresse verso il centro amministrativo, convocò tutti gli ufficiali di alto livello e sentì il rapporto riguardo ai lavori sulle difese. Riferì anche le sue idee e piani per il futuro, assicurandosi che sapessero a cosa dare priorità.
+
+Fei rifletté per un po’ ed ebbe la sensazione di non essersi perso nulla. Poi lasciò Chambord e andò nella montagna su cui era stata posata la Xuan’ge.
+
+Anche se la vetta non era troppo ripida, Fei aveva tagliato la sua cima usando energia di spada, facendola sembrare molto più scoscesa rispetto a prima.
+
+Ora i dirupi erano alti diverse centinaia di metri ed erano scivolosi. I guerrieri che non avevano raggiunto le sei stelle e i maghi al di sotto delle quattro stelle non sarebbero riusciti a scappare da qui da soli. Così la Xuan’ge e gli schiavi della nave erano stati tenuti temporaneamente qui.
+
+Quando Fei arrivò, la stazione di teletrasporto più elementare ideata da Cain e Akara era stata già preparata. Era il prodotto più recente del laboratorio dei due scienziati pazzi ed era facile da trasportare e usare. Perfino i soldati ordinari che avevano qualche conoscenza riguardo alla magia avrebbero potuto montarla.
+
+Questa stazione in particolare era alimentata da cristalli magici e sembrava una piccola piattaforma circolare fatta da sei settori circolari. Era ampia circa metri ed emanava una fiamma magica alta circa tre metri. Poteva ospitare quattro persone alla volta.
+
+C’erano sei schiavi a terra vicino, erano feriti ed erano stati legati con delle corde.
+
+“Cos’è successo?” Chiese accigliato Fei.
+
+Prima che Robbin potesse parlare, Sparrow e Barbossa accorsero e cercarono di giustificarsi. Sparrow disse con un brillante sorriso: “Sua maestà, così è il famoso re di Chambord! Ahah, ne siamo onorati! Deve sapere che ho già sentito di parlare di lei quando ero nell’impero Ormond. Perfino i feroci ormondiani hanno parlato del suo potere e della sua gloria! Ahah, siamo…”
+
+“Non sprecare il mio tempo, rispondimi direttamente.” Fei aggrottò le sopracciglia con impazienza e la sua aura tirannica si espanse attorno.
+
+Sparrow aprì la bocca, ma esitò.
+
+Barbossa intervenne con un sorriso e disse: “Non è niente di importante. Hanno un cattivo temperamento e c’è stato qualche conflitto con i soldati di Chambord. Questo è il motivo per cui sono stati legati. Non si preoccupi sua maestà. Finché io e Jack li disciplineremo e li puniremo, capiranno come comportarsi…”
+
+Fei scosse la testa e non ascoltò le fesserie di Barbossa. Invece guardò Robbin.
+
+Robbin era sempre conciso e diretto, e spiegò: “Questi schiavi ci hanno attaccato all’improvviso e hanno cercato di sottrarci la stazione di teletrasporto, rapendo i soldati venuti qui a portare cibo e acqua, per cercare di scappare. Li ho sconfitti e ho aspettato l’arrivo di sua maestà.”
+
+Questi schiavi erano feroci e non tutti erano facili da domare. Anche se li aveva sbalorditi con il suo potere ed era stato tollerante nei loro confronti, alcuni avevano mostrato intenti malvagi. Anche se i poliziotti non erano deboli, erano stati attaccati a sorpresa. Uno dei poliziotti era rimasto gravemente ferito ed era stata una fortuna che fosse stato salvato in tempo e non fosse morto.
+
+Dopo aver sentito cos’era successo, Fei si preoccupò; ebbe la sensazione di aver commesso un enorme errore.
+
+Chambord avrebbe dovuto affrontare molte sfide e i potenti ormondiani potevano attaccarli da un momento all’altro.
+
+Nonostante questo aveva deciso di tenere questi feroci schiavi solo perché i loro capi assomigliavano a Jack Sparrow e a Hector Barbossa.
+
+Fei si era reso conto che questi schiavi erano una fonte di instabilità e che avrebbero potuto causare grossi guai durante momenti critici, rischiando di fare perdere la guerra a Chambord.
+
+In quanto sovrano, Fei doveva considerare il quadro generale e non poteva fare più decisioni seguendo le sue preferenze in questa era caotica.
+
+
+

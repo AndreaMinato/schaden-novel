@@ -1,0 +1,126 @@
+---
+title: Capitolo 127 – Vi darò una possibilità (seconda parte)
+pubDate: 2024-05-15T15:41:47.874Z
+tags:
+    - htk
+---
+
+Mi sono pescata il 122 seconda parte, grazie per la segnalazione ed ecco il link! https://www.novelleleggere.com/2021/06/13/capitolo-122-era-tutta-una-messinscena-seconda-parte/
+Capitolo sponsorizzato, ringraziamo Federico!
+0 capitoli in coda (Federico), 0/5
+-Schadenfreude
+
+Passò alla modalità assassino.
+
+Iniziò a camminare mentre muoveva le dita.
+
+Quando arrivò a circa venti iarde di distanza da Paris, tornò alla modalità barbaro e rilasciò tutto il suo potere. La sua forza fisica iniziò ad aumentare e non si fermò. Il potere devastante sembrava uno tsunami e tutte le persone attorno lo percepirono.
+
+Guardò lo splendido viso di Paris, ma poi spostò gli occhi sull'assassino che usava la spada. Fei rise: "Sei uno spadaccino. Sono disposto a darti una possibilità. Non ci sono trappole magiche in questo raggio di venti iarde. Se potrai sconfiggermi ti lascerò andare!"
+
+In quel momento tutti sentirono la sete di battaglia di Fei.
+
+L'assassino strinse la spada con forza e si girò verso Paris.
+
+"Alexander, ignorerai davvero tutta la tua gente e la lascerai soffrire? Se non coopererai e sprecherai tempo, il tuo palazzo sarà distrutto e la tua gente verrà ridotta in pile di ossa... Quei banditi si fermeranno solo se darò l'ordine." L'espressione di Paris cambiò lievemente mentre lo minacciava.
+
+Fei ridacchiò: "Alcuni verranno ridotti in pile di ossa, ma non sarà la mia gente."
+
+"Cosa intendi dire?" Paris ebbe un brutto presentimento.
+
+"Significa che sua maestà l'ha già previsto..."
+
+Risuonò una voce acuta nella montagna. Presto un'altra bellezza apparì di fronte alla folla. Indossava un'armatura magica rossa e teneva un arco dorato. La corazza magica brillava sotto il sole e la faceva sembrare un valkiria celeste.
+
+Ogni uomo presente rimase sconvolto. Le donne istintivamente si confrontarono con lei, perfino Paris e Tanasha non fecero eccezione.
+
+Era una scena incredibile.
+
+Naturalmente la sua comparsa era stata ancora più sconvolgente visto che stava tenendo una testa.
+
+<em>Bam!</em>
+
+La testa viaggiò roteò formando un arco perfetto e atterrò ai piedi di Paris.
+
+"Questo bastardo ha fatto delle cose orribili nella tenuta del visconte Louise, così l'ho decapitato. Anche gli altri sono stati uccisi!"
+
+Fei ebbe l'impulso di abbracciarla e stamparle un bacio sulla guancia. Elena aveva fatto una comparsa così spettacolare e fica che nemmeno lui avrebbe potuto dirlo meglio.
+
+Paris si inquietò dopo aver visto la testa.
+
+Quest'uomo era il comandante che aveva mandato a guidare i gruppi dei banditi. Era un guerriero a quattro stelle e visto che tutti gli esperti sarebbero andati sul picco della montagna orientale, nessuno avrebbe potuto minacciarlo. Paris non si sarebbe mai aspettata che il suo seguace sarebbe stato decapitato e qualcuno le avrebbe tirato la testa ai suoi piedi. Era tutto chiaro; dato che il comandante era già morto, i gruppi dei banditi dovevano aver fatto la stessa fine.
+
+Questa conclusione quasi la fece crollare.
+
+Tragico! Era la prima volta che Paris si sentiva in questo modo. La sua situazione era ancora peggiore, era disperata. Ogni volta che sfoderava un asso nella manica e pensava di poter vincere, la realtà le faceva sembrare tutto uno scherzo. Il piccolo re di fronte a lei sembrava un ostacolo invalicabile. Poteva distruggere ogni preparativo di Paris e trasformarsi una delle donne più spaventose a San Petersburg in un pagliaccio.
+
+Paris era caduta in un momento di depressione senza precedenti.
+
+Si sentì ancora più impotente.
+
+Durante questo terribile silenzio, il grosso cane, il Tornado Nero, tornò a camminare con agilità.
+
+Condusse Elena, Bast, Brook e gli altri capi di Chambord oltre il territorio pieno di trappole magiche e li portò accanto a Fei.
+
+Tutti i capi erano apparsi sul picco della montagna orientale.
+
+Era un gruppo che nessuno poteva ignorare, perché c'era anche un re incredibile.
+
+Tutti capirono che l'ultimo trucco di Paris aveva fallito. I principi e gli emissari che stavano deridendo Fei si spaventarono così tanto che quasi si cagarono addosso. Impallidirono e rimpiansero di averlo preso in giro; volevano prendersi a schiaffi, perché avevano parlato prima...
+
+Mentre la gente poteva dubitare della loro strategia e avrebbe potuto pensare che fossero sopravvissuti per un colpo di fortuna, di sicuro doveva riconoscere che Fei era diventato il solo vincitore. Pensandoci, molti si erano resi conto che il sovrano era riuscito a mantenere il suo vantaggio per tutto questo tempo.
+Dall'assassinio e dal tradimento dell'ex capo dei ministri alla strategia del fingersi morti quando la battaglia tra Paris e Tanasha aveva raggiunto il culmine, fino ad usare la forza e l'intelligenza per uccidere diversi guerrieri stellari di alto livello, resuscitare tutti i cadaveri e in qualche modo sconfiggere i gruppi di banditi che sarebbero dovuti essere inarrestabili... Fei aveva affrontato questa serie di situazioni complicate con calma. Era già superiore alla maggior parte dei re dell'impero Zenit e non era da meno rispetto a Paris o a Tanasha che erano famose per la loro potenza e la loro intelligenza.
+
+Forza formidabile, intelligenza imprevedibile e trastegie, personalità dura e valorosa...
+
+"È questo il vero lato del piccolo re?"
+
+Mentre la maggior parte della gente era rimasta scioccata dalla forza di Fei, Paris e Tanasha avevano notato qualcos'altro. Erano rimaste sbalordite dalla potenza generale di Chambord. La vera forza di questo regno aveva superato di gran lunga le loro aspettative. Avevano eliminato silenziosamente una decina di gruppi di banditi con dei guerrieri a tre-quattro o anche cinque stelle, ed erano intervenuti anche dei maghi... era davvero spaventoso.
+Come poteva un regno affiliato di sesto livello possedere una forza del genere? Chambord era molto più formidabile di regni di secondo o anche di primo grado.
+
+"Cos'è successo in questo regno?"
+
+Paris si sistemò i capelli che erano stati scompigliati da una brezza e sorrise.
+
+In una situazione così disperata, questa bellezza dal sangue freddo tornò a sorridere. Tuttavia questo sorriso non era seducente come prima; era più naturale e reale, come se tutto il vento avesse tirato via la sua maschera. Come una ragazza rifiutata dal suo amato, Paris sospirò e fece un cenno.
+
+Poi l'assassino dietro di lei fece un passo avanti e si mise tra lei e Fei.
+
+<em>Buzz!</em>
+
+L'assassino si tolse la maschera che portava rivelando un bel viso. La spada tagliente nelle sue mani cominciò a tremare e a ronzare; era il segno che questo spadaccino stava per attaccare a tutta forza.
+
+"Ah! È uno dei due celati, lo spadaccino Dani. È il principe più grande del regno Nadeko, un regno affiliato di primo livello. Di solito si allena in un picco innevato del suo territorio. Non posso crederci che sia stato disposto a diventare un assassino per Paris!" Qualcuno lo riconobbe.
+
+Anche Fei ne fu sorpreso.
+
+Dopo che "Una Spada" aveva mostrato la sua forza inarrestabile e se n'era andato silenziosamente dopo aver scioccato tutti, non si aspettava che avrebbe visto uno dei secondi in classifica tra tutti i giovani guerrieri e maghi di Zenit.
+
+"Sono disposto ad affrontarti in duello. Se perderò morirò, ma se vincerò, per favore lascia andare Paris." Questa era la prima volta che il "Celato nel Picco Nevoso" aveva parlato. Il suo tono era profondo e molto maestoso. Fei doveva ammettere che questo principe di nome Dani era un uomo valoroso. L'unica pecca era la sua espressione preoccupata.
+
+Fei non si aspettava che avrebbe implorato pietà per Paris e avrebbe rischiato la vita per lei.
+
+"Ne parleremo dopo aver combattuto."
+
+Fei stese le braccia e ruggì.
+
+Un secondo dopo, numerose fiamme brillanti apparirono sul suo corpo. Questo fuoco era di vario colore. Mentre bruciava, la sua armatura, i suoi guanti da combattimento, la sua cintura e i suoi stivali iniziarono ad emanare una sensazione potente che coprì interamente Fei. Era completamente avvolto da quest'armatura misteriosa.
+
+Era un equipaggiamento diverso da una comune armatura nel continente Azeroth.
+
+Ogni pezzo di armatura emanava uno strano bagliore ed era ricoperto da incisioni magiche. Era evidente quanto fosse potente. Anche se non assomigliava ad una pesante corazza da cavaliere, ogni punto vitale di Fei era protetto. I guanti d'arme proteggevano anche le sue dita, ma erano più forti e versatili dell'artiglio di metallo che usava uno degli assassini. Coprivano bene le sue mani, ma non limitavano i suoi movimenti o la sua percezione; i guanti d'arme sembravano un paio di mani di ferro nati apposta per lui.
+
+Fei sporse le braccia.
+
+Un paio di lame, una verde e una viola, apparirono nelle sue mani. Queste due armi avevano una forma strana, ma erano taglienti e sottili.
+
+Questa era la prima volta che Fei evocava quest'armatura in pubblico.
+
+Dopo aver indossato il suo equipaggiamento più forte, la sua forza aumentò precipitosamente e la folla lo guardò scioccato.
+
+Stadi iniziali delle quattro stelle... stadi intermedi... stadi superiori...
+
+"Solo lei può decidere il suo fato. Allo stesso modo, solo tu puoi decidere se sopravviverai o no!" Fei scosse la testa e disse: "Attaccherò solo una volta; se potrai sopravvivere, potrai andartene vivo da qui.”
+
+
+

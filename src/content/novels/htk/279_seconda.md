@@ -1,0 +1,93 @@
+---
+title: Capitolo 279 - Collisione (seconda parte)
+pubDate: 2024-05-21T23:41:47.903Z
+tags:
+    - htk
+---
+
+L’energia traboccò e i marchi cristallini furono distrutti uno dopo l’altro. Le ondate d’energia si spostarono per lo spazio e ogni roccia che ostacolava il fendente fu ridotta in una nuvola di polvere.
+
+Alla fine la lama arrivò sopra la testa di Fei. Dopo un breve momento di pausa, calò verso il basso e avvolse completamente Fei, dandogli la sensazione che fosse arrivata un’apocalisse.
+
+“Oscuramento del Cielo!!!”
+
+Ruggì Fei mentre numerosi marchi trasparenti si consolidarono in un’enorme mano ampia dieci metri. La mano era così nitida che si poteva vedere ogni linea del palmo. Quando Fei ruggì, la mano si chiuse lentamente formando un pugno; le dita lasciarono una serie di immagini residue e sembrava un fiore di cristallo che chiudeva lentamente i petali.
+
+<em>Boom!</em>
+
+L’enorme mano di cristallo si scontrò con la gigantesca lama verde. In quel momento il tempo si congelò. Quel breve momento sembrava lungo quanto un secolo.
+
+Poi, come un vulcano in eruzione, l’energia esplose in ogni direzione. Il campo di battaglia adesso era pieno di devastazione. Le correnti avevano attivato più di una decina di formazioni e gli elementi colorati parevano splendidi fuochi d’artificio che accendevano il cielo notturno.
+
+Fei non aveva il lusso di godersi il paesaggio.
+
+L’enorme forza repulsiva spinse metà del suo corpo e gli aveva fatto vomitare una boccata di sangue. Anche se la lama verde era stata indebolita dal marchio cristallino, non si era frantumata. Il bagliore verde attorno divenne fioco e si formarono delle crepe per la lama. Si avventò di nuovo su Fei senza dargli un momento di tregua.
+
+<em>Buzz!</em>
+
+In questo momento critico, il corpo di Fei iniziò a diventare sfocato e scomparì.
+
+<em>Boom!</em>
+
+La lama verde menò un fendente verso il basso e lasciò un’enorme voragine nel terreno.
+
+Fei era già apparso sopra l’uomo.
+
+Si era teletrasportato usando la Telecinesi dell’Incantatrice.
+
+Era poi passato alla modalità barbaro; non aveva scelta.
+
+Al momento il barbaro era il personaggio più potente con cui aveva più familiarità. Estrasse un paio di spade fatte di Resti Demoniaci e l’Essenza di Pietra Nera dal suo inventario. Con slancio, puntò alla testa dell’uomo.
+
+Un contrattacco!
+
+Era parte del piano di Fei.
+
+La migliore difesa era un buon attacco. Se fosse rimasto passivo, forse non sarebbe riuscito a resistere al terzo colpo di quest’uomo. Perciò doveva usare Telecinesi e prendere l’iniziativa.
+
+“Colpo di Palmo!”
+
+Anche se Fei aveva colto l’opportunità perfetta per contrattaccare, l’uomo sembrò rimanere impassibile.
+
+La sua voce priva d’emozione risuonò di nuovo. Era fermo, ma un’enorme mano verde apparì sopra la sua testa. Questa mano era simile a quella del Pugno Gelido del Cielo, ma era meno appariscente; aveva solo una forma e non era troppo nitida, ma bloccò facilmente l’attacco di Fei.
+
+<em>Crack!</em>
+
+Sia la mano verde che le lame crepitarono.
+
+Fei rimase scioccato.
+
+Era la prima volta che vedeva armi fatte da Resti Demoniaci spaccarsi. L’equipaggiamento fatto con i Resti Demoniaci poteva contrattaccare naturalmente l’energia da guerriero. Era ovvio che la mano verde fosse fatta da energia da guerriero e non si era comunque frantumata sotto l’attacco. La qualità e lo spessore dell’energia da guerriero verde erano impressionanti.
+
+<em>Chi è?
+
+Chi è?
+
+Chi ca**o è?</em>
+
+Pensò con sgomento Fei, ma non osò rallentare. Sfruttando il contraccolpo dell’impatto, si levò al cielo e scomparì.
+
+Fei passò alla modalità Assassino e scomparì nel cielo notturno usando le sue tecniche furtive.
+
+Dopo aver valutato la situazione, aveva capito di non poter vincere direttamente. Osservò con attenzione l’uomo e la sua presenza mentre cercava di trovare un punto debole.
+
+Fei cambiò continuamente la sua posizione con cautela mentre continuava ad osservare.
+
+Alla fine arrivò di fronte a lui ed ebbe l’occasione di vederne il volto.
+
+Era una faccia molto comune dai lineamenti morbidi e le labbra sottili. L’uomo teneva ancora gli occhi chiusi, ma le sue sopracciglia erano taglienti come coltelli. Emanava una vaga e potente sensazione dal corpo.
+
+Non lo aveva mai visto prima.
+
+Inoltre non sentiva nessun intento omicida provenire da lui.
+
+Era anche sicuro che non fosse l’assassino che aveva cercato di ucciderlo in passato. Aspetto ancora più sorprendente era il fatto che aveva la sensazione di averlo visto prima.
+
+“Colpo di Frecce!”
+
+Mentre Fei stava cercando di trovare un punto debole, la voce risuonò di nuovo. L’energia da guerriero verde coprì il suo corpo e numerosi dardi apparirono attorno a lui.
+
+Fei sbiancò. Sapeva che non si sarebbe più potuto nascondere.
+
+
+

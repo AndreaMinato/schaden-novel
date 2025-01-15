@@ -1,0 +1,75 @@
+---
+title: Capitolo 241 - Improvviso Arrivo (seconda parte)
+pubDate: 2024-05-20T09:41:47.895Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Ad essere franchi, avevano una fiducia pazzesca simile a quella che i religiosi avevano nel loro dio.
+
+Questa credenza era basata sull’immagine invincibile dipinta dal loro re.
+
+Era un’immagine già profondamente impressa nelle loro ossa e nelle loro anime.
+
+Mentre tutti i membri di Chambord guardavano in direzione del palco nonostante non potessero vederlo, sentirono all’improvviso delle grida: “Re di Chambord! Re di Chambord! Re di Chambord! Re di Chambord!”
+
+Ondate di cori riecheggiavano all’arena e tutti i membri di Chambord ebbero la sensazione di ritrovarsi in una tempesta di suoni. Le forti acclamazioni li fecero barcollare. Si scambiarono tutti delle occhiate e videro espressioni sorridenti uno sulle facce dell’altro.
+
+“Questo… sua maestà ha vinto?” Oleg, che aveva padroneggiato l’arte della lusinga, reagì per primo. Il grassone gridò e balzò dal terreno per cercare di vedere meglio il palco.
+
+<em>Woosh! Woosh Woosh!</em>
+
+Tutti si mossero. Nell’accampamento di Chambord, tutti iniziarono a cercare di salire su qualcosa di alto. Nonostante il loro re gli avesse ordinato di non lasciare l’accampamento, potevano comunque raggiungere un punto alto per guardare da lontano.
+
+Dopotutto non potevano trattenere le loro emozioni dopo aver sentito tutte le acclamazioni.
+
+Si stavano già immaginando il loro sovrano stare sul palco con i suoi lunghi capelli neri che svolazzavano al vento, ammirato da decine di migliaia di persone mentre il settimo cavaliere della giustizia giaceva a terra sanguinando!
+
+<em>Crack!</em>
+
+Visto il numero di persone che erano salite su tende per cercare di vedere il palco, alcune non riuscirono a reggere il peso e collassarono…
+
+“Sua maestà… sua maestà ha vinto?” Angela corse fuori dalla tenda centrale e chiese con tono tremante: “Peter, Torres, ditemi… ha vinto?”
+
+Dopo aver sentito questo, Cech e Torres balzarono giù dalle tende e si chinarono su un ginocchio di fronte ad Angela. Risposero rispettosamente: “Sua altezza, anche se non siamo sicuri dei dettagli, siamo certi che sua maestà ha vinto! Non percepiamo più l’altra ondata di energia e possiamo sentire solo il potere di sua maestà.”
+
+“Ottimo, ottimo!” Un sorriso brillante illuminò il viso della ragazza mentre diceva: “Presto, preparatevi a dare il bentornato a sua maestà! Dobbiamo tenere grandi festeggiamenti stavolta.”
+
+“Come desidera sua maestà!”
+
+Dopo aver sentito l’ordine della futura regina, tutti i soldati si esaltarono ancora di più mentre iniziavano i preparativi.
+
+Angela, d’altra parte, pensò un po’ di più alla situazione e poi tornò nella tenda centrale per ringraziare il Dio della Guerra per aver protetto Alexander.
+
+“Devo sorridere e accogliere Alexander mentre ritorna!”
+
+…..
+
+Fei indossò un mantello marrone mentre camminava lentamente per le strade formate dagli accampamenti.
+
+Ignorò i guerrieri e gli schiavi che stavano chiacchierando tra di loro sul duello; stava ripensando e ricreando la battaglia che aveva appena fatto nella sua mente.
+
+Fei aveva scoperto di avere un’abilità di apprendimento terrificante, avrebbe afferrato qualcosa a cui non aveva mai pensato prima subito dopo ogni combattimento. Dopo aver lottato contro quattro cavalieri della giustizia, aveva la sensazione che fossero scomparse molte incognite che aveva riguardo alla via della coltivazione!
+
+“Che sia l’effetto di Impara? Una delle tre abilità miracolose che ho ottenuto dal Mondo di Diablo? Anche se ero intelligente prima, non ero così acuto.”
+
+Perfino Fei che adorava vantarsi e lodarsi era stato stupito dal suo talento.
+
+Rifletté mentre organizzava tutte queste nuove idee e ispirazioni che aveva ottenuto dai combattimenti, e all’improvviso…
+
+“Uh?” L’espressione di Fei cambiò.
+
+All’improvviso ebbe la sensazione terrificante di essere stato preso di mira da un mostro.
+
+“Qualcuno mi sta seguendo? Un guerriero super potente?”
+
+Fei non questionò le capacità percettive del suo barbaro di livello 40. In quel momento era sicuro di essere seguito. Inoltre questa bestia nascosta era di gran lunga superiore al suo livello; Fei ebbe la sensazione di essere un granello di sabbia di fronte ad un oceano.
+
+Inoltre questa persona aveva un manifesto intento omicida.
+
+
+

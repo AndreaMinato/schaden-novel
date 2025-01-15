@@ -1,0 +1,93 @@
+---
+title: Capitolo 648 - Aumento di Forza di Chambord (prima parte)
+pubDate: 2024-06-06T08:41:47.976Z
+tags:
+    - htk
+---
+
+Nelle ultime quattro ore, Fei ed Elena avevano sperimentato la battaglia più dura che avessero mai combattuto.
+
+Era una fortuna che avessero fatto uno scontro simile in modalità Normale e si erano potuti coordinare molto meglio.
+
+Come l’ultima volta, Fei affrontò Talic direttamente. Usando lo Spaccapietre del Re Immortale e lo stile di combattimento del barbaro, era riuscito a sconfiggere Talic, che brandiva due spade e Korlic, che usava la sua ascia da battaglia.
+
+Invece Elena e Madawc avevano iniziato una battaglia a lungo raggio. Usando le sue tecniche di tiro con l’arco incredibili, aveva battuto il terzo Antico Madawc, che aveva padroneggiato Doppio Lancio.
+
+Questa missione era dura, e Fei ed Elena erano rimasti entrambi gravemente feriti, specialmente Fei. Alla fine, aveva consumato tutte le pozioni che aveva e i suoi punti salute erano scesi pericolosamente. Anche Elena era coperta di sangue. Se non fosse stato per la protezione offerta dal nuovo oggetto, il Guscio del Kraken, l’Abbraccio di M’avina, sarebbe rimasta ancora più ferita di Fei.
+
+Naturalmente più c’erano rischi, più ci sarebbero state ricompense.
+
+Ora il barbaro di Fei aveva raggiunto il livello 99, il limite di questa modalità.
+
+Com’era successo in modalità Normale, due nuvole di foschia dorata fuoriuscirono dalle statue ed entrarono nel corpo di Fei dopo che Talic e Korlic erano stati sconfitti. Questo significava che Fei stava per trasformarsi di nuovo.
+
+Inoltre, aveva ricevuto l’essenza e la comprensione di Talic e Korlic per quanto riguardava Turbine e Attacco Volante, queste due abilità erano ancora più formidabili.
+
+Quando usò lo Spaccapietra del Re Immortale per attivare queste due tecniche, la sensazione primitiva e violenta era sparita, rimpiazzata da un’aura piena di vita. Sembrava che queste due  abilità avessero uno spirito proprio e Fei poteva controllarle ancora meglio.
+
+Solo in quanto a danni inflitti, queste due tecniche potevano rivaleggiare con tecniche da combattimento di livello mitiche usate da signori di classe solare.
+
+Anche la valchiria Elena aveva fatto molti progressi. Adesso era un’arciera di livello 90 in modalità incubo e il suo corpo era stato potenziato dalla nuvola dorata che proveniva dalla statua di Madawc. Stava diventando più potente e stava andando oltre le possibilità di un arciere. Anche lei aveva ricevuto l’essenza e la comprensione del Doppio Lancio, che era una tecnica simile a quelle del tiro con l’arco.
+
+Dopo la battaglia, sia Fei che Elena erano esausti.
+
+Anche se avevano usato Pozioni della Giovinezza completa per guarire, la loro fatica a livello spirituale sarebbe durata ancora a lungo.
+
+Fei ricadde indietro e si sedette su una pila di neve accanto all’altare, per poi afferrare una manciata di neve per togliere il sangue dal suo corpo. Solo allora si sentì un po’ più rinfrescato.
+
+Elena non aveva fretta. Pulì la sua arma e la sua armatura con grazia, e prestò tornò alla sua solita posizione accanto a Fei.
+
+“Ci sposeremo tra due giorni, sei contenta?” Fei sorrise e la stuzzicò.
+
+“Eh.” Elena annuì con un sorriso, non era affatto timida.
+
+Era fatta così, non aveva mai nascosto il suo amore per Fei e non era timida come le ragazze giovani e conservative. Aveva sempre espresso i suoi sentimenti e la sua personalità non sarebbe cambiata solo perché era innamorata.
+
+“Ahah! E se delle persone provassero a causare trambusto durante il nostro matrimonio?" Disse Fei alzandosi mentre accarezzava i lunghi capelli rossi della valchiria e sentiva il loro profumo sulle sue dita. Sapeva che non sarebbe andato tutto liscio e glielo stava facendo sapere in anticipo.
+
+“Uccidere!” Elena strinse con fermezza il suo arco da battaglia e fece vibrare la corda.
+
+Fei rise, l’unico modo di affrontare i problemi di Elena era sempre semplice e diretto.
+
+“Va bene, ascolterò la mia adorabile Elena, sua altezza. Uccideremo chiunque proverà a provocarci durante il giorno del nostro matrimonio.” Disse Fei mentre portava il suo enorme martello da guerra sulle spalle, non sembrava affatto un re in quel momento.
+
+Calpestando la neve densa, Fei si avvicinò verso la sola entrata della Fortezza della Pietra del Mondo che era dietro una cascata congelata. Allo stesso tempo, rise e disse: “Tuttavia dobbiamo solo diventare più forti se vogliamo dare una lezione ai nostri nemici. Dobbiamo impegnarci in questi due giorni. Se possiamo sconfiggere Baal nel Trono della Distruzione, potremo elevare la nostra forza allo stadio successivo.”
+
+Elena arrossì un po’ dopo aver sentito il tono giocoso di Fei, la sua bellezza era impareggiabile e metteva in ombra la natura attorno a lei. Tuttavia, stava camminando dietro Fei e il re non vide la scena splendida.
+
+I due ruppero il ghiaccio duro fuori dalla Fortezza della Pietra del Mondo e passarono per l’entrata oscura.
+
+Dovevano combattere di nuovo.
+
+La Fortezza della Pietra del Mondo era divisa in tre piani e il terzo conduceva al terrificante Trono della Distruzione. Era un palazzo pieno di potere infernale ed era sanguinoso e mostruoso.
+
+Il boss finale, Baal, si nascondeva lì insieme ai mostri e ai demoni infernali più terrificanti.
+
+Fei poté entrare nella stanza della Pietra del Mondo e affrontare il vero Baal solo dopo aver ucciso la maggior parte dei nemici. Allora sarebbe riuscito ad avanzare al livello di difficoltà successivo.
+
+Dopo circa quattro ore, Fei ed Elena superarono i primi due piani della fortezza, ma il limite di tempo giornaliero era sul punto di scadere e così furono costretti ad uscire dal mondo di Diablo.
+
+…..
+
+Divino palazzo del re.
+
+Dopo essere tornato nel mondo reale, Fei si risedette sul Trono del Caos e chiuse gli occhi, ripensando a cos’era successo nel mondo di Diablo e sulle tecniche di Talic e Korlic. Poi sospirò e iniziò a riflettere sulla situazione di Chambord.
+
+Poteva capire che c’era aria di tempesta.
+
+Stavolta non stava affrontando solo avversari come il principe Arshavin, ma varie fazioni fuori da Zenit. Chambord stava crescendo troppo velocemente e moltissimi la stavano guardando come se fosse un enorme pezzo di carne.
+
+Lo scontro imminente sarebbe stato una battaglia all’ultimo sangue per Fei e per l’intero paese.
+
+Ci sarebbe stato un massacro il giorno del matrimonio di Fei.
+
+Tuttavia, quanti assi nella manica aveva il sovrano?
+
+Mentre Fei stava riflettendo su come poteva superare la sfida imminente, accaddero dei cambiamenti improvvisi. Diverse fluttuazioni d’energia apparirono attorno al divino palazzo del re e si dispersero nell’aria come fumo. Erano instabili, ma tutte potenti, ognuna era alla classe lunare.
+
+Fei cambiò colore, ma presto si entusiasmò dopo aver pensato a qualcosa.
+
+“Ahahahah! Grandioso! Sono tutti avanzati di stadio durante questo momento critico! Ora ogni problema è risolto! Ahahahah! Possiamo creare noi una tempesta e lasciare che quei cospiratori feroci paghino con il loro sangue!”
+
+
+

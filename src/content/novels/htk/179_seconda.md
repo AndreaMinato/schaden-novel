@@ -1,0 +1,71 @@
+---
+title: Capitolo 179 – Panorama di Montagne e Laghi (seconda parte)
+pubDate: 2024-05-17T19:41:47.880Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Tuttavia questa Bestia Ruggente del Fuoco all'improvviso divenne aggressiva quando vide un estraneo avvicinarsi. Alzò gli zoccoli di fronte e fu sul punto di batterli con forza a terra. Il grosso cane nero spalancò gli occhi e abbaiò con rabbia. Accadde una scena buffa, questa Bestia Ruggente del Fuoco ritirò i suoi zoccoli con fare imbarazzato, sembrava un tirapiedi che era stato rimproverato dal suo capo. Tuttavia non era disposta a lasciare che Modric e Zolasc si avvicinassero.
+
+Anche Fei provò un po' di imbarazzo.
+
+Non si aspettava che questa bestia non gli avrebbe dato un po' di "rispetto". Quando fu sul punto di passare alla modalità Druido e parlare a questo "piccoletto", una splendida donna si avvicinò. Le sue dita sottili, ma simili alla giada diedero una piccola pacca sulla testa della Bestia Ruggente del Fuoco e sorrise mentre faceva un cenno verso Modric e il vecchio Zolasc. Accadde qualcosa di scioccante. La feroce Bestia Ruggente del Fuoco si avvicinò alle due persone e si inginocchiò ubbidientemente.
+
+"Come ci sei riuscita Angela?"
+
+Chiese con un sorriso Fei mentre le truppe iniziavano ad uscire dalla fortezza di Blackstone. Stava cavalcando Nerino con la sua fidanzata tra le braccia. Sentendo il suo lieve profumo, il vento autunnale non sembrava più così gelido.
+
+Anche se il mattino era freddo, Angela non voleva stare nella carovana. Indossava un sottile abito bianco. L'orlo svolazzava al vento e copriva solo due terzi della sua coscia. Sotto il vestito, indossava dei jeans neri attillati.
+Sembrava favolosa con il contrasto di nero e bianco. Era stata la sua idea chiedere a Fei di cavalcare con lei su Nerino. Alla ragazza non importava di mostrare quanto si stesse innamorando velocemente, né dei sorrisi timidi e degli sguardi delle persone attorno. Sentiva solo le forti braccia di Fei attorno alle sue braccia e le spalle grosse e calde dietro.
+
+"Non so proprio." Angela si accigliò sentendo questa domanda: "Sento che mi possono capire; sono gentili e adorabili, come dei bambini..."
+
+Era la stessa risposta.
+
+Fei sorrise. Aveva ipotizzato che, per qualche misterioso motivo, Angela avesse un potere sconosciuto che avrebbe dato un senso di intimità agli animali. Quando i soldati avevano cercato di addestrare le Bestie Ruggenti del Fuoco e i cavalli da guerra, aveva utilizzato molto bene la sua abilità. Non importava quanto fosse feroce o aggressivo l'animale, sarebbe diventato calmo e adorabile di fronte a questa ragazza e al suo sorriso puro.
+
+Tuttavia era ovvio che Angela stessa non avesse scoperto nulla delle sue capacità.
+
+Mentre i due stavano parlando, la squadra stava già marciando fuori dalla fortezza di Blackstone passando per il cancello.
+
+"Non posso lasciare questa fortezza al regno di Blackstone e a quel re diabolico e ambizioso!"
+
+Dopo che tutti uscirono, Fei usò la sua forza da barbaro e fece collassare molte mura e costruzioni. Questa fortezza che era stata costruita con attenzione e mantenuta da diverse generazioni di sovrani fu ridotta in una terra desolata. Se il regno di Blackstone avesse voluto farle recuperare la sua gloria, avrebbe dovuto trascorrere almeno tre anni a ripararla.
+
+.....
+
+Il giorno dopo, la marcia delle truppe di spedizione stava procedendo molto bene.
+
+Più l'esercito si addentrava tra le montagne del Sole Ardente, più trovava pericoli. C'erano strani terreni e dirupi ovunque. Alberi centenari bloccavano la luce del sole, tenendo il terreno all'ombra.
+Quando arrivò mezzogiorno, si stava già facendo buio. Di notte, apparì un'enorme foschia bianca che diminuì drasticamente la visibilità. Ai lati della strada c'erano pietre e alberi, spessi strati di foglie e muschio secco dall'odore un po' marcio riempivano la strada. Senza chiari punti di riferimento, era molto facile perdersi.
+
+A questo punto Fei fu contento di avere Zolasc, il GPS che non aveva bisogno di una batteria per funzionare.
+
+Come aveva detto l'anziano, conosceva ogni strada delle montagne. Non importava se fosse una via pulita o un percorso abbandonato da molto tempo, li aveva tutti presenti. Ogni volta che sembrava non ci fosse via d'uscita, poteva indicare la via e risparmiare molti problemi alle truppe.
+
+L'esercito trovò un po' di miniere di Blackstone lungo la strada e Fei avrebbe mandato il guardiano grasso Oleg per distruggerle, uccidere le guardie e liberare gli schiavi.
+
+Dato che gli schiavi di Chambord erano stati radunati dal sovrano di Blackstone, Fei non dovette mandare i suoi uomini a prendersene cura e a riportarli a Chambord. C'erano un bel po' di persone che, come il vecchio Zolasc, sapevano come attraversare le montagne. Tutti gli schiavi delle miniere non vedevano l'ora di tornare a casa, così si inginocchiarono per ringraziare Fei e, contenti, scomparirono tra la nebbia con i loro compagni dello stesso regno.
+
+Dopo altre tre ore di marcia, le montagna del Sole Ardente erano già così buie che era difficile viaggiare. Anche se non era ancora giunto il tramonto, i grossi alberi bloccavano la luce.
+
+"Sua maestà, ricordo che c'è un lago non troppo lontano. C'è anche una grande area coperta da piccole rocce buona per sistemare un accampamento. Che ne dice se riposiamo lì per la notte?" Suggerì il vecchio Zolasc a cavallo della Bestia Ruggente del Fuoco.
+
+"Va bene!" Fei annuì mentre guardava Angela che stava già dormendo tra le sue braccia.
+
+Dopo mezz'ora, trovarono un piccolo lago limpido. L'erba che cresceva attorno era gialla e un po' secca, sembrava uno splendido tappeto. Non troppo lontano, c'era una grossa foresta fatta da grosse pietre. Il terreno non era male e le rocce erano piatte e secche. Era un ottimo punto dove erigere un accampamento.
+
+In autunno, questo panorama di montagne e laghi era affascinante.
+
+Tuttavia Fei si accigliò.
+
+C'erano già dei fuochi e delle luci attorno al lago, e sentiva molti suoni. C'erano già delle persone lì e tante.
+
+
+
+
+

@@ -1,0 +1,114 @@
+---
+title: Capitolo 127 – Vi darò una possibilità (prima parte)
+pubDate: 2024-05-15T15:41:47.874Z
+tags:
+    - htk
+---
+
+Mi sono pescata il 122 seconda parte, grazie per la segnalazione ed ecco il link! https://www.novelleleggere.com/2021/06/13/capitolo-122-era-tutta-una-messinscena-seconda-parte/
+Capitolo sponsorizzato, ringraziamo Federico!
+1 capitoli in coda (Federico), 0/5
+-Schadenfreude
+
+
+Sia la principessa che Paris avevano scelto Chambord, un piccolo regno remoto, come campo di battaglia. Non avevano mai considerato i cittadini e il re di questo posto nei loro piani. Ai loro occhi, queste persone erano come delle formiche. In effetti nemmeno i loro sottoposti consideravano Chambord, lo ritenevano più un pezzo di terra che apparteneva all'impero Zenit. Non rispettavano minimamente Fei, né la sua gente.
+
+Dal loro punto di vista, non appena questo regno era stato scelto come campo di battaglia, il re Alexander e la sua gente sarebbero andati incontro ad una fine tragica e ridicola. Sarebbero stati un piccolo contorno in questo scontro letale e avrebbero assistito alla gloria del vincitore. Il loro destino era di morire con i perdenti e venire ridotti in rovine ed ossa.
+
+Vigeva la legge della giungla, a nessuno importava delle grida del debole.
+
+Tuttavia ciò che avevano appena visto contraddiceva tutto questo.
+
+I cosiddetti deboli non stavano piangendo, stavano usando i loro pugni barbarici per rivalersi su queste persone orgogliose e arroganti. Poi avevano usato i loro sporchi piedi per dare loro dei calci. Avevano umiliato questi invasori!
+
+Chi era il pagliaccio?
+
+Sicuramente questo piccolo re di fronte a loro non lo era.
+
+Chi dominava la situazione?
+
+Sicuramente non loro.
+
+Il sole del mattino era diventato rosso sangue e il picco della montagna orientale non era mai stato così gelido prima d'ora.
+
+"Com'è possibile? Come ci sei riuscito?" Chiese con voce tremante la bellezza dal sangue freddo, aveva fatto la domanda che si stavano facendo tutti quanti.
+
+"È facile! Fingere di essere morti... non è niente di così tecnico..." Disse Fei mentre versava l'ultima acqua rimasta sul viso di Emma. La ragazza era l'ultimo corpo che giaceva ancora a terra. Era stata colpita al petto da Paris ed era rimasta un po' ferita. Fei la aiutò a rialzarsi e continuò: "Eheh, gente potente e influente come voi guarderebbe solo persone del suo stesso livello. Prestereste attenzione a spazzatura come noi?" Fei rispose con una domanda, che però zittì velocemente le persone attorno.
+
+Non avevano nemmeno badato agli uomini di Chambord. Li avevano trattati come sporchi insetti, senza dare loro il minimo rispetto. Durante la feroce battaglia, nessuno aveva sprecato tempo a vedere se la gente di Chambord fosse davvero morta o stesse fingendo... Era stato il loro punto cieco e questo li aveva portati a fare un errore di giudizio.
+
+Tuttavia Paris non era sciocca. Rispose accigliata indicando Angela ed Emma
+
+"Impossibile. Ho sentito chiaramente il suo cuore che smetteva di battere. E ho colpito nel petto la ragazzina bionda..."
+
+Fei gettò un'occhiata verso di lei come se stesse fissando un idiota e poi mostrò un'armatura da donna raffinata. L'armatura di ferro raffinato aveva il segno di un palmo. "Hai ragione, se non fosse stato per quest'armatura, sarebbe morta. Mi sono proprio spaventato quando l'hai colpita!"
+
+La folla era rimasta sorpresa.
+
+Nessuno si aspettava che questo re barbaro avesse prestato così tanta attenzione ai dettagli. Non era affatto taccagno, aveva perfino armato la sua domestica insignificante. Era ragionevole che questa ragazza fosse sopravvissuta ad uno dei colpi di Paris con quell'armatura spessa.
+
+Paris era la sola a non essere ancora convinta.
+
+Sapeva che il vero motivo non era così semplice, ma se questo maledetto non aveva intenzione di dirlo, si poteva solo rassegnare.
+
+Paris si rese conto di non poter più capire nulla di questo re e delle sue intenzioni. "Che genere di persona è? Un idiota? Un genio? Un eroe? Un bugiardo?" Paris era molto sicura dei suoi istinti ed era capace di comprendere un uomo dopo averlo incontrato per un po' di secondi, ma in realtà doveva mettere in discussione tutto ciò che pensava di aver capito di lui. Per un po' non trovò le parole per descriverlo.
+
+Sotto gli sguardi della folla, tutta la gente di Chambord che aveva partecipato a questa battaglia nel picco della montagna orientale era resuscitata. Gradualmente molti capirono che queste persone erano entrate in uno "stato di morte apparente" utilizzando un qualche tipo di pozione magica; erano riusciti a "resuscitare" dopo essere stati rianimati con dell'acqua fredda... Ma non riuscirono comunque ad accettare la verità dopo aver visto tutti i cadaveri a terra. Questo significava che tutti i potenti guerrieri stellari di Paris e della principessa erano periti, mentre tutti gli uomini di Chambord destinati a morire invece erano rimasti illesi?
+
+"Ahah, avanti. Cosa ne facciamo di questi bastardi?"
+
+Fei voleva proprio umiliare i suoi nemici e non c'era modo migliore se non mostrare un atteggiamento del genere. Si sedette con noncuranza su una roccia alta una iarda a gambe incrociate e indicò gente importante come Paris senza la minima preoccupazione mentre si rivolgeva alle sue guardie.
+
+Nessuna delle guardie di Chambord fu cortese.
+
+"Facile! Uccidiamo tutti gli uomini e ci teniamo tutte le donne... Eheh!" Il Cavaliere Dorato del Toro Drogba rise con fare osceno. Se Emma non gli avesse lanciato un'occhiata assassina, avrebbe sicuramente detto qualcosa di ancora più inappropriato.
+
+"Eh, dipende da sua maestà." Disse Barrack. Era molto leale a Fei.
+
+"Che ne dite di consegnarli alla principessa?" Il tipo basso, Essien, sembrava stupido, ma in realtà era abbastanza astuto.
+
+"..." Lampard non disse nulla. Si limitò a stringere ancora di più la presa sulla sua enorme spada nera.
+
+"Woof! Woof! Woof! Woof! Woof!" Il grosso cane nero abbaiò con ferocia verso Paris.
+
+Fei non disse nulla. Masticò un filo d'erba che aveva preso da qualche parte e sorrise alla donna.
+
+Il suo atteggiamento poco serio fece infuriare la fazione di Paris.
+
+"È un po' troppo presto per festeggiare, non credi? Re Alexander, devo ammettere che mi hai sorpreso di nuovo, ma sfortunatamente... Credi che tu abbia il controllo della situazione visto che ci stai trattenendo qui? Sei troppo ingenuo. Ahahahah... Guarda il tuo regno. Ascolta bene!" Paris si era ricomposta e tornò a mostrare il suo sorriso seducente che avrebbe potuto eccitare qualsiasi uomo.
+
+Come se stessero cercando di dimostrare le sue parole, si sollevarono cinque o sei scie di fumo. La gente nella montagna orientale vide chiaramente che alcuni edifici nel regno avevano preso fuoco. Stavano bruciando molto velocemente. Sentirono perfino delle grida.
+
+Gli uomini di Chambord rimasero scioccati.
+
+Paris aveva riacquistato la sua sicurezza e mostrò un largo sorriso: "Eheh, proprio triste. Mi sono appena ricordata di aver mandato un po' di banditi prima di venire qui. Alexander, se ritirerai le trappole magiche e ci lascerai andare, potrei fermarli prima che derubino e uccidano tutti i nobili, saccheggiando perfino il tuo palazzo..."
+
+Dopo aver detto questo, non continuò a parlare. Si limitò a sorridere e guardò Fei.
+
+Era molto sicura di sé. Anche se Fei aveva fatto questa messinscena per controllare la situazione nel picco della montagna orientale, non significava che aveva la vittoria in pugno. Paris aveva un altro asso nella manica che avrebbe potuto aiutarla a sopravvivere.
+
+Dopo aver sentito queste parole, i principi e gli emissari dei vari regni ripresero speranza. Tornarono a mostrare arroganza. Paris era proprio una delle donne più spaventose di San Petersburg. Aveva sempre un asso nella manica. Molti principi ed emissari non poterono trattenersi dal prendersi gioco di Fei.
+
+"Ahah, perché non distruggi tutte le tue trappole ora piccolo re? Altrimenti il tuo regno verrà ridotto in una pila di macerie..."
+
+"Se il tuo regno verrà distrutto, allora non conterai più nulla, ahah!"
+
+"Sei stato abbastanza fortunato dall'evitare un disastro; sarebbe intelligente riconoscere i tuoi limiti!"
+
+"Alexander, vale più la pena vantarsi o proteggere i tuoi cittadini? I tuoi cittadini stanno piangendo e urlando, se sei un re generoso, perché non pensi a loro?"
+
+Erano stati i regni di Shenui, Luna e Chata a parlare. Il principe Boyou era uno di quelli che stava urlando più forte, come se fosse lui a controllare la situazione e non Fei.
+
+Fei cambiò espressione, ma non fu colto dal panico.
+
+Si girò e guardò la principessa Tanasha e questa dea dell'intelligenza sembrò capire la situazione. Sospirò abbassando la testa. Non disse nulla, ma la spadaccina Susan gridò: "Alexander, non puoi lasciarli andare! Uccidili subito..."
+
+Fei sogghignò mentre guardava Arshavin, il dio della guerra di Zenit.
+
+"Se mi aiuterai ad uccidere questa donna, ti darò tre castelli molto più grandi e ricchi di quello di Chambord. Sarai ancora un re sotto l'impero Zenit!" Disse Arshavin.
+
+Fei sbuffò freddamente, ma non rispose.
+
+
+
+

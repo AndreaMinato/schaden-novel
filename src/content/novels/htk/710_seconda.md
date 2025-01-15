@@ -1,0 +1,53 @@
+---
+title: Capitolo 710 - Situazione Caotica (seconda parte)
+pubDate: 2024-06-08T22:43:07.724Z
+tags:
+    - htk
+---
+
+“Uccidere!” Granello il Barbarossa ruggì e menò fendenti dorati d’energia.
+
+Le sue tecniche di spada erano raffinate e uccise velocemente tre esperti di Leon che avevano superato la linea difensiva.
+
+Allo stesso tempo, dato che aveva usato un po’ troppa forza, una ferita lunga più di venti centimetri sulla sua vita si riaprì. Il sangue schizzò, macchiando all’istante il suo mantello.
+
+L’intenso dolore lo fece chinare su un ginocchio, ma usò la spada come appoggio e non cadde a terra.
+
+Annaspò come un pesce fuori dall’acqua, inspirando l’aria permeata dal sapore e dall’odore del sangue.
+
+Ora Granello non sembrava più l’uomo al controllo della pattuglia imperiale di San Petersburg, maestoso e potente, era in pessime condizioni.
+
+C’erano più di venti gravi ferite sul suo corpo. Anche se aveva schivato colpi ai suoi punti vitali, le lesioni erano profonde al punto da mostrare le ossa. Ora erano solo mezze guarite. La sua armatura magica fatta dal migliore tipo di ferro era danneggiata. Era stata forata e pendeva dal suo corpo a stento.
+
+Granello era macchiato di sangue ed era esausto. Le sue labbra erano nere e gran parte della barba rossa a cui era affezionato era stata tagliata. In effetti l’attacco di prima non aveva solo tagliato un po’ della sua barba, ma aveva anche lasciato una ferita sul suo collo. Se non avesse schivato in tempo, sarebbe stato decapitato.
+
+Granello fece del suo meglio per alzarsi facendo leva sulla spada.
+
+La sua visuale si stava oscurando e il suo corpo barcollava. Si reggeva in piedi a stento e si rese conto che due terzi dei soldati d’élite attorno al secondo principe Dominguez erano stati uccisi, chi era sopravvissuto era ferito e le loro armi erano danneggiate.
+
+Anche la Donna Demoniaca Paris era in pessime condizioni. Il suo abito da bianco era diventato rosso. Le sue splendide braccia e gambe erano coperte di ferite, anche lei stava facendo del suo meglio per resistere.
+
+Questa donna intelligente non poteva fare nulla contro questo svantaggio numerico.
+
+Anche se il secondo principe Dominguez era protetto al centro, con il cagnolino Oka ai suoi piedi, nemmeno lui era in buone condizioni.
+
+Era stato trafitto da tre frecce e non aveva avuto il tempo di estrarle nonostante ne avesse tagliato via le aste.
+
+Così sentiva un dolore intenso mentre si muoveva, come se qualcuno lo stesse penetrando con dei coltelli, persone ordinarie non avrebbero potuto sopportarlo.
+
+Nonostante questo, Dominguez in qualche modo era riuscito comunque a mantenere il suo temperamento nobile. Dava ordini ai soldati con un sorriso e cercava di difendersi dai nemici. Non sembrava nemmeno che fosse ferito, non traspariva dolore dalla sua espressione.
+
+Dato che Dominguez manteneva la calma, il resto dei soldati continuavano a mostrare forza e motivazione.
+
+I guerrieri affaticati guardavano il secondo principe di Zenit con ammirazione e fermavano gli attacchi nemici con tutte le loro forze. Anche se alcune delle loro armi si spezzavano, avrebbero rallentato il nemico a mani nude. Avrebbero protetto Dominguez fino all’ultimo respiro.
+
+Granello si era già precipitato avanti e cercò di bloccare l’assalto nemico sfruttando il terreno e le enormi rocce che avevano spostato prima.
+
+“Sua altezza, i nostri fratelli non possono resistere! Possiamo ritirarci per ora? Non possiamo più caricare verso la capitale!” Gridò mentre decapitava sei soldati ormondiani.
+
+I trecento soldati erano tutti membri d’élite della pattuglia imperiale ed erano potenti e leali. Tuttavia, in netto svantaggio numerico, non potevano utilizzare così tanto la loro esperienza in combattimento e circa duecento di loro erano morti.
+
+Granello diventava afflitto ogni volta che pensava alle perdite.
+
+
+

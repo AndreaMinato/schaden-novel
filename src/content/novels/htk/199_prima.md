@@ -1,0 +1,50 @@
+---
+title: Capitolo 199: Tu... sei un'esperta o no? (prima parte)
+pubDate: 2024-05-18T15:41:47.885Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Dopo essere entrate nel territorio dell'impero, le truppe di spedizione iniziarono a muoversi molto più lentamente.
+
+Da un lato, era per aspettare che Lampard e gli altri tornassero nell'esercito principale, dall'altro Fei era molto curioso. Diversamente della giurisdizione dei paesi ausiliari, l'impero Zenit era un territorio vasto diviso in sette province. In ogni provincia c'erano diverse città che erano molto più notevoli di Chambord, sia il settore militare che amministrativo erano gestiti in modo perfetto.
+Questo era l'obiettivo a cui aspirava Fei. Per sviluppare una città forte, non era fattibile contare semplicemente sul livello di conoscenza di qualcuno che era stato un otaku durante la sua vita passata.
+
+Quando stava per arrivare il tramonto, le truppe di Chambord e la carovana Soros arrivarono nella provincia Ernst. Un ampio fiume lontano separava di netto il nord dal sud. Vicino al fiume c'era una vecchia città dieci volte più grande di Chambord. Era chiamata il primo punto di controllo militare delle Sorgenti Termali nell'area settentrionale dell'impero.
+Secondo la legge, l'esercito degli imperi ausiliari non aveva il permesso di entrare in città usando il traghetto. Inoltre le truppe potevano solo accamparsi nella periferia del lago e mandare delle persone in città per acquistare provviste. Fei portò Angela ed Emma a cercare una parte del fiume dove l'acqua scorreva più gentilmente per andare a pesca. La spadaccina bionda Susan della principessa all'improvviso si avvicinò.
+
+"Ora la principessa se ne andrà?" Quando sentì l'annuncio di Susan, Fei rimase stordito.
+
+"Sì, sua maestà, ora siamo entrati nel territorio dell'impero e sua altezza il principe Arshavin ha mandato qualcuno ad incontrarci. Presto arriverà alla porta delle Sorgenti Termali. Ora la situazione è complicata, perciò la principessa deve tornare il prima possibile." Rispose con pazienza la donna dai lunghi capelli biondi.
+
+La spadaccina orgogliosa come un pavone stava mostrando un atteggiamento sorprendentemente amichevole e anche molto rispettoso nei confronti di Fei. In realtà il motivo dietro questo cambiamento era molto semplice; durante la battaglia alle Due Torri, Fei aveva sconfitto uno degli onorati cavalieri della giustizia, il Cavaliere Dorato Chris Sutton. Grazie a questa vittoria, la posizione di Fei era migliorata drasticamente. Nell'impero i guerrieri forti venivano rispettati ed era una regola comune. Anche se la spadaccina Susan non era molto flessibile, la principessa aveva menzionato questo punto in modo che potesse capire. L'ascesa del sovrano di Chambord era inarrestabile, sia della sua forza che del suo prestigio. Fei aveva già ciò di cui aveva bisogno per ottenere il rispetto di persone come la principessa.
+
+"Bene, se la situazione è così, allora può andare..."
+
+Il tramonto dorato era splendente e all'improvviso Fei provò un senso di perdita.
+
+Pensò: <em>'È davvero strano ah, ci siamo visti solo tre volte, anche l'interazione più amichevole che abbiamo avuto è stato rimanere seduti faccia a faccia a mangiare. Non può essere considerato nemmeno un incontro serio perché le ho rubato la scodella. Perché mi sento così? Forse in questi giorni mi sono abituato a vedere quel paio di occhi blu scuro che mi fissano in lontananza?'</em>
+
+Fei sorrise con emozioni contrastanti.
+
+In quel momento l'accampamento rumoroso si calmò all'improvviso.
+
+La principessa Tanasha, che non era mai apparsa prima, uscì all'improvviso dalla vettura magica. Il suo abito color blu cielo dai motivi splendidi strisciava a terra e i suoi colori lisci color lino riflettevano il bagliore del tramonto. Sembrava una donna vulnerabile e poco importante, ma possedeva un fascino impareggiabile, così l'intero accampamento puntò gli occhi su di lei.
+
+Camminò gentilmente fino alla sponda del fiume e si fermò di fronte a Fei. La donna saggia guardò le acque brillanti e poi sorrise per la prima volta di fronte a Fei, sembrava non avesse idea cosa dire. Dopo molto tempo: "Grazie per la medicina re Alexander."
+
+Fei non ci badò, ma il capitano dei cavalieri Romain e la spadaccina Susan rimasero sbalorditi. Da ciò che ricordavano, la loro principessa reale non aveva mai detto "assurdità" del genere... Cosa le stava succedendo oggi?
+
+In quel momento risuonò il rumore di zoccoli da molto lontano.
+
+La folla guardò indietro e vide un gruppo di circa cinquecento uomini e donne che cavalcavano lungo la riva del fiume. Ognuno di loro aveva un atteggiamento spavaldo e un po' di cavalieri tenevano un lungo stendardo che raffigurava due teste d'orso bianco era straordinario. Era il segno della divisione invincibile dell'accampamento degli Eroi del Sangue di Ferro capeggiato dal Dio della Guerra di Zenit Andrew Arshavin. Sulla bandiera c'era anche un'ascia doppia con un marchio nero e uno bianco. Lo stendardo sembrava un drago che volava tra le raffiche di vento.
+
+Erano le truppe che il principe Arshavin aveva mandato per scortare la principessa nella capitale.
+
+"Lungo la strada sono accaduti molti eventi interessanti. Questo viaggio ha superato di gran lunga le mie aspettative..." La principessa mostrò un'espressione rilassata. Sorrise e disse: "Ma, re Alexander, nel regno di Blackstone hai commesso molte infrazioni alla legge imperiale e non sarà facile uscirne. Temo che alcune persone ti attaccheranno per questo a parte il Cavaliere Dorato Sutton." Disse la principessa con un lieve sorriso timido.
+
+

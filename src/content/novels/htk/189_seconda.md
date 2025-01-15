@@ -1,0 +1,101 @@
+---
+title: Capitolo 189 – La Battaglia più Dura (seconda parte)
+pubDate: 2024-05-18T05:41:47.882Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+<em>Boom!</em>
+
+Come se la lancia d'argento non potesse sopportare l'impatto, si riempì di crepe ed esplose. L'energia argentata da guerriero che si era formata perse il controllo e si disperse in ogni direzione sotto forma di numerosi coltelli. Tutti gli alberi e le montagne attorno al campo di battaglia furono scossi da questa forza! Rimasero tutti danneggiati e venne spazzato via perfino uno strato di terreno, sollevando polvere. Era una scena scioccante.
+
+Aspetto ancora più magico era che, nonostante l'energia argentata da guerriero avesse causato scompigli, la gente dietro Fei sembrava protetta da uno scudo invisibile. Non era accaduto nulla a loro! Fei rimase seduto su Nerino con calma. Non era caduto nemmeno un granello di sporco sul suo abito e i suoi capelli non si erano nemmeno mossi.
+
+Dopo un momento, la polvere cadde a terra.
+
+"Uh? Va bene, sei degno di essere il mio avversario..." Dopo aver visto quello che era successo, il giovane cavaliere con l'armatura dorata rimase sorpreso. Un momento dopo tornò a mostrare arroganza: "Sono nato nella nobile famiglia Chris. A due anni ho brandito la lancia.
+A tre anni ho formato energia da guerriero. A sei anni sono diventato lo scudiero di un cavaliere, a dieci anni mi sono unito al seguito di un cavaliere. A quattordici anni avevo già partecipato a battaglie, ucciso generali e tagliato bandiere. A quindici anni sono entrato nel dipartimento della giustizia dei cavalieri del palazzo imperiale e a sedici anni sono diventato uno dei dieci cavalieri della giustizia e il futuro candidato per la carica di Grande Guerriero.
+Dovresti essere orgoglioso di poter resistere ad uno dei miei attacchi. Tuttavia non significa che tollererò che un selvaggio come te macchi la gloria e l'onore dell'impero! Dovrai espiare i tuoi crimini con la vita!"
+
+Il giovane cavaliere si avvicinò sempre di più a Fei con un'espressione orgogliosa. Mentre stava mormorando tra sé e sé, parlò del suo viaggio glorioso mentre provava a distruggere la sicurezza di Fei.
+
+"Cavolo, osi paragonarti a me?" Fei sogghignò: "Sono nato in ospedale con un parto cesareo. A tre anni sono andato all'asilo, a sei anni sono andato alle elementari. A dodici anni sono andato alle medie e a quindici alle superiori. A diciotto anni sono andato all'università.
+Ero uno dei tre migliori studenti ogni anno e sono stato anche il supervisore della mia classe. La mia media non è mai calata in diciannove anni e i miei voti non sono mai scesi oltre il novanta. Il mio istruttore mi ha sempre lodato in ogni udienza e non ho passato solo undici prove all'università..." Fei ne parlò con un'espressione ancora più arrogante. "Puoi competere con me?" Chiese.
+
+Anche se non sapeva di cosa stesse parlando Fei, il giovane cavaliere con l'armatura dorata si arrabbiò vedendo il suo sguardo sdegnoso e arrogante.
+
+"Va bene, ti darò l'opportunità di affrontarmi e ti farò vedere che un selvaggio di bassa classe come te non può partecipare alla battaglia del trono! Posso ucciderti con il mio mignolo!"
+
+Il giovane cavaliere si trasformò in una fiamma d'argento che si levò al cielo. In pochi scatti, apparì sulla cima meridionale delle Due Torri. Rimase fermò sul posto e non si mosse nonostante il forte vento. Sembrava un dio della guerra in attesa di lottare.
+
+"Ahaha, ottimo! Fammi vedere come potrai uccidermi con il tuo mignolo!"
+
+Rispose all'istante Fei. Il suo desiderio di combattere aumentò all'impazzata, come dell'acqua che ribolliva. Da quando era arrivato nel continente Azeroth ed era diventato il sovrano di Chambord, era la quarta volta che incontrava un esperto che gli dava un senso di minaccia.
+Gli altri tre erano stati Una Spada, l'anziano con i capelli bianchi e il Dio della Guerra di Zenit Arshavin. In confronto agli avversari che non potevano nemmeno resistere, un nemico valoroso fece ribollire il sangue di barbaro nel corpo di Fei. Ridendo, Fei scattò verso la montagna nord delle Due Torri usando la sua forza fisica.
+
+I due guerrieri si fronteggiarono.
+
+Sul picco a sud, il genio con l'armatura dorata non esitò a scatenare tutto il suo potere.
+
+Un'energia di metallo argentata avvolse tutto il suo corpo e continuava a crescere come se non avesse limiti. L'energia sembrava leggera come la seta. Emise dei clangori metallici, come se contenesse numerose spade che si scontravano tra di loro. Un uccello volò vicino a lui e fu ridotto all'istante in una foschia di sangue dopo un grido; era stato fatto a pezzi solo dall'energia da guerriero nella montagna.
+
+Sul picco a nord, Fei ruggì lievemente.
+
+Fiamme colorate apparirono all'istante sul suo corpo e potere magico si agitò attorno a lui. Un'armatura stretta e delicata comparve sul suo corpo. Non sembrava ingombrante e pesante; enfatizzava le forme snelle di Fei. Ogni componente della corazza conteneva complicati simboli magici. Dalla sensazione feroce che davano, l'armatura non sembrava un oggetto, ma parte del corpo di Fei.
+
+I due esperti non nascosero la loro forza e la gente sotto le montagne rimase sbalordita.
+
+Cech, Torres e Oleg alzarono lo sguardo. Anche se l'avversario era uno dei dieci cavalieri della giustizia del palazzo imperiale ed era molto famoso, ormai erano convinti che il loro sovrano fosse invincibile. La forza del loro re era sempre stato un mistero per loro nonostante fossero in rapporti molto stretti con lui. Potevano solo intuire che il loro sovrano era molto potente, così questa era un'ottima opportunità per vedere la sua potenza.
+
+Non troppo lontano da loro, anche più di cento cavalieri con le armature dorate stavano fissando i picchi delle montagne. Come i chambordiani, anche loro avevano molta fiducia nelle capacità del loro capo. Tuttavia, un anziano con il pizzetto su un cavallo nero e magro strinse gli occhi; brillò una luce cupa nel suo sguardo, ma nessuno capì cosa stesse pensando.
+
+Allo stesso tempo, anche la gente della carovana Soros alzò lo sguardo verso le montagne. Perfino la principessa tra le truppe di spedizione di Chambord sollevò le tende della carrozza per la prima volta e prestò attenzione allo scontro insieme ad Angela ed Emma che erano sedute accanto a lei.
+
+.....
+
+San Petersburg.
+
+In una fortezza così alta che raggiungeva le nuvole, un uomo dall'aspetto valoroso aprì all'improvviso gli occhi. Si alzò e camminò verso una finestra dell'edificio di pietra. Spostò lo sguardo verso le nuvole cupe come se avesse visto qualcosa e disse: "Chi è questa persona? Sta facendo scatenare la sua energia da guerriero al piccolo Sutton? Mi incuriosisce!"
+
+Allo stesso tempo, un po' di persone potenti nella sacra capitale percepirono l'energia familiare da lontano.
+
+"Uh? Il piccolo Sutton ha trovato un avversario?"
+
+"Ahah, un lago calmo non può forgiare un grande marinaio. È un bene che questo ragazzino fallisca a volte..."
+
+"Chi? Chi sta affrontando quel ragazzino irritante? Eheh, sarebbe ottimo se venisse ucciso!"
+
+Molti divennero pensosi e usarono il loro potere spirituale per indagare.
+
+La capitale San Petersburg era stata costruita più di un secolo fa non aveva visto la luce del sole e i fiori per molto tempo. L'orgoglio di Zenit, questa enorme città che era stata chiamata "Fortezza Inconquistabile" era rimasta nuvolosa per più di due settimane. Era umida e cupa, e ogni suo abitante provava un'insicurezza e un disagio senza precedenti.
+
+.....
+
+"Selvaggio, spero che non mi deluderai!"
+
+Il giovane cavaliere rise mentre scuoteva la lancia. Un po' di raggi argentati si trasformarono in una lancia. Dopo un momento di pausa, scattarono verso Fei. Squarciando l'aria, emisero una serie di esplosioni tra le montagne.
+
+<em>Tink!</em>
+
+Fei scagliò un pugno ed emise un clangore metallico.
+
+Stava indossando un paio di oggetti rari di livello 6, i guanti da battaglia del titano. Sul metallo erano incisi molti simboli magici mistici e portavano anche degli uncini neri. Come uno strato di scaglie di drago, proteggevano le mani e gli avambracci di Fei. Le sue capacità difensive potevano competere con ogni metallo e potevano raddoppiare la forza di un barbaro trasmettendo la sua forza.
+Il potere devastante impattò direttamente sulle lance d'energia prima ancora che potessero raggiungere Fei. Questi proiettili furono ridotti a pezzi a circa cinque metri di distanza da Fei mentre solcavano l'aria!
+
+"Selvaggio, tira fuori la tua arma! Altrimenti non potrai competere con me!"
+
+Gridò il giovane cavaliere mentre faceva un balzo. Mentre era a mezz'aria afferrò la lancia con entrambe le mani, facendola ronzare e vibrare. L'arma si trasformò in numerose proiezioni mentre colpiva. Questo attacco era veloce come un fulmine ed era terrificante.
+Coprì completamente Fei come una tempesta creando un fragore assordante. Fei ebbe la sensazione che più di una decina di armi affilate stessero puntando verso di lui.
+
+"Le mie armi sono i pugni!"
+
+Fei rise come se non fosse spaventato. Scagliò continuamente dei pugni con entrambe le mani. Non era veloce e non era lento! Anche se sembravano deboli, le numerose proiezioni d'energia sembravano scomparire come neve al sole. Questo assalto non torse nemmeno un capello a Fei.
+
+Il giovane cavaliere cambiò espressione. Ruggì e strinse l'impugnatura della lancia con una mano e spinse in avanti. Il suo intero corpo sembrò fondersi con l'arma mentre si trasformava in una scia dorata e argentata che sfrecciava nell'aria. Trafisse all'istante la difesa dei pugni di Fei e mirò al suo cuore! La punta della lancia dorata rilasciò delle scintille e presto delle fiamme a causa della frizione dell'aria!
+
+
+

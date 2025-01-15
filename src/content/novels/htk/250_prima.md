@@ -1,0 +1,66 @@
+---
+title: Capitolo 250 - Fiume di Sangue (prima parte)
+pubDate: 2024-05-20T18:41:47.897Z
+tags:
+    - htk
+---
+
+Capitolo regolare,
+0 capitoli in coda, 0/5
+-Schadenfreude
+
+Nuvole cupe si spostavano lentamente da est e coprivano l’enorme campo di battaglia dalla luna.
+
+I venti freddi mescolati alle grida terrificanti delle bestie demoniache erano davvero spaventosi. Le potenti formazioni magiche attorno venivano attivate regolarmente mentre dei mostri di basso livello sfortunati camminavano nei dintorni; venivano ridotti in cenere o congelati.
+
+Fei poteva vagare liberamente per il campo di battaglia come se fosse un fantasma. Iniziò dalla parte ovest e si avvicinò al centro.
+
+Dell’energia da guerriero potente e tagliente sarebbe apparsa all’improvviso e avrebbe attaccato in modo irregolare. Faceva esplodere qualsiasi ostacolo che incontrava e la polvere stava volando ovunque… Era energia residua lasciata dai due esperti. I due guerrieri erano così potenti che alcuni dei loro attacchi si erano congelati a mezz’aria e si sarebbero riattivati a caso come delle bombe ad orologeria. Al loro interno, avevano il potenziale di uccidere un guerriero a sei stelle.
+
+Fei poteva solo aggirarsi nei dintorni usando la modalità Barbaro che era sensibile ai pericoli. Poteva percepire l’energia residua ed evitarla.
+
+“Entrambi provenivano da ovest. Uno stava correndo e l’altro lo inseguiva. L’inseguitore lo ha raggiunto qui e hanno combattuto.”
+
+“La persona che stava correndo era quella che ha provato ad uccidermi…”
+
+“Che potere terrificante! Uno qualsiasi dei loro attacchi può distruggere montagne… le montagne e le colline nel raggio di due-tre chilometri sono state tutte distrutte. Numerosi animali e bestie non hanno nemmeno avuto l’occasione di scappare… Sono stati tutti seppelliti vivi qui…”
+
+“La loro energia residua si è consolidata e congelata nell’aria. Il pugno e lo spirito della spada si sono mantenuti a mezz’aria come i miei marchi. Sono ad un altro livello!”
+
+“Non hanno combattuto a lungo… hanno finito in meno di dieci minuti…”
+
+“Uh? Sembra che l’assassino che voleva uccidermi sia rimasto ferito, gravemente ferito… la sua presenza si è indebolita… meno di sei stelle… Uh? Sembra che abbia usato qualche tecnica segreta per uscirne vivo!”
+
+“Chi è stato a ferire in quel modo l’assassino? L’inseguitore non ha continuato a rincorrerlo dopo questo punto…”
+
+Fei poteva solo fare ipotesi percependo l’energia residua lasciata dai due esperti. Proprio come un cacciatore esperto che poteva dedurre cos’era accaduto guardando le tracce, l’istinto del barbaro di Fei poteva fargli intuire com’era andato lo scontro di una mezza giornata fa.
+
+Il fatto che l’assassino avesse perso era un’ottima notizia per lui.
+
+Almeno per un po’, l’assassino terrificante non sarebbe riuscito a prenderlo di mira. Fei aveva guadagnato un po’ di tempo per migliorare ed architettare tattiche e trappole.
+
+“Chi è quell’assassino? Perché mi ha attaccato?”
+
+“Chi lo ha sconfitto? Perché quella persona ha inseguito l’assassino?”
+
+Queste erano le domande che preoccupavano di più Fei.
+
+Dopo aver trascorso altro tempo attorno al campo di battaglia a cercare altre tracce, le sue conclusioni rimasero più o meno le stesse.
+
+Si stava facendo davvero tardi e Fei decise di andarsene.
+
+Usando la stessa tattica, Fei passò alla modalità Incantatrice e danzò di nuovo con il cupo mietitore. Usando il collegamento più debole nella formazione, Fei uscì con cautela dal campo di battaglia come un cane stanco.
+
+Proprio come la volta precedente, aveva esaurito la sua energia spirituale.
+
+Passò alla modalità assassino per creare un po’ di trappole magiche attorno. Dopo essere passato al personaggio dell’Incantatrice, iniziò ad allenare la sua energia spirituale seguendo le indicazioni della pergamena viola.
+
+Dopo venti minuti, Fei aprì gli occhi con soddisfazione, il suo potere spirituale era arrivato al livello 220.
+
+“Ahahahahah… forse in meno di un mese diventerò un guerriero d’élite di classe lunare!”
+
+Fei mise via le trappole magiche attorno a lui e ruggì. Quando le bestie demoniache nelle montagne Moro ulularono in risposta, Fei si trasformò in un’ombra e scomparì velocemente.
+
+Se non fosse mancata un’ora all’alba, avrebbe attraversato di nuovo la formazione e avrebbe usato questa tattica estrema per migliorare la sua energia spirituale.
+
+
