@@ -1,5 +1,5 @@
 ---
-title: Capitolo 180 – Fei: "Sto solo passando di qui... non badate a me..." (prima parte)
+title: 'Capitolo 180 – Fei: "Sto solo passando di qui... non badate a me..." (prima parte)'
 pubDate: 2024-05-17T20:41:47.880Z
 tags:
     - htk
@@ -78,7 +78,3 @@ Fei sorrise all'adolescente biondo accanto a lui e gli diede un'occhiata content
 "Attaccate dai fianchi!"
 
 Fei fece un gesto, poi il guardiano Oleg, Torres e Cech condussero dieci cavalieri sacri e iniziarono ad avvicinarsi velocemente da tre direzioni. Fei portò solo il vecchio Zolasc e Modric, e si diressero con noncuranza e tranquillità verso la luce dei falò distante.
-
-
-
-

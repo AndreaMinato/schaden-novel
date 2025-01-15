@@ -1,5 +1,5 @@
 ---
-title: 'Capitolo 199: Tu... sei un'esperta o no? (prima parte)'
+title: Capitolo 199 - Tu... sei un'esperta o no? (prima parte)
 pubDate: 2024-05-18T15:41:47.885Z
 tags:
     - htk
