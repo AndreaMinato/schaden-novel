@@ -121,6 +121,21 @@ const { title, description, pubDate, updatedDate, heroImage } = data;
           <slot />
         </div>
       </article>
+      <nav>
+        <ol>
+          <li>
+            <a class={prev ? "" : "disabled"} href={`/novels/${prev?.id}/`}>
+              <span>Previous</span>
+            </a>
+          </li>
+
+          <li>
+            <a class={next ? "" : "disabled"} href={`/novels/${next?.id}/`}>
+              <span>Next</span>
+            </a>
+          </li>
+        </ol>
+      </nav>
       <Footer />
     </main>
   </body>
