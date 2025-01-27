@@ -2,61 +2,61 @@
 import BaseHead from "@/components/BaseHead.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
+import { SITE_TITLE, SITE_DESCRIPTION, defaultSort } from "@/consts";
 import { getCollection } from "astro:content";
 import Chapters from "src/components/Chapters.astro";
 
 const tags = [
-    ...new Set(
-        (await getCollection("chapters")).flatMap(({ data }) => data.tags),
-    ),
+  ...new Set(
+    (await getCollection("chapters")).flatMap(({ data }) => data.tags),
+  ),
 ];
 
 const chapters = (await getCollection("chapters"))
-    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-    .slice(0, 10);
+  .sort(defaultSort)
+  .slice(0, 10);
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <BaseHead title="Novelle" description={SITE_DESCRIPTION} />
-        <style>
-            .tags {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-                margin: 1rem 0;
-                list-style: none;
-                padding-bottom: 2rem;
-            }
+  <head>
+    <BaseHead title="Novelle" description={SITE_DESCRIPTION} />
+    <style>
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+        list-style: none;
+        padding-bottom: 2rem;
+      }
 
-            .tag{
-                border-color: var(--accent);
-                border-width: 1px;
-                border-style: solid;
-                padding: 0.2rem 1rem;
-                border-radius: 0.5rem;
-                cursor: pointer;
-            }
-        </style>
-    </head>
-    <body>
-        <Header />
+      .tag {
+        border-color: var(--accent);
+        border-width: 1px;
+        border-style: solid;
+        padding: 0.2rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
 
-        <Chapters chapters={chapters}>
-            <ul class="tags">
-                {
-                    tags.map((tag) => (
-                        <li class="tag">
-                            <a href={`/novels/${tag}`}>{tag}</a>
-                        </li>
-                    ))
-                }
-            </ul>
-        </Chapters>
+    <Chapters chapters={chapters}>
+      <ul class="tags">
+        {
+          tags.map((tag) => (
+            <li class="tag">
+              <a href={`/novels/${tag}`}>{tag}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </Chapters>
 
-        <Footer />
-    </body>
+    <Footer />
+  </body>
 </html>

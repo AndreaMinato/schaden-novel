@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import Chapter from "../../../layouts/Chapter.astro";
 import ChapterJumper from "../../../components/ChapterJumper.astro";
 import { render } from "astro:content";
+import { defaultSort } from "src/consts";
 
 export async function getStaticPaths() {
   const posts = await getCollection("chapters");
@@ -24,7 +25,7 @@ const chapters = (
   await getCollection("chapters", ({ data }) => {
     return data.tags.includes(novel);
   })
-).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+).sort(defaultSort);
 
 const thisChapter = chapters.findIndex((chapter) => chapter.id === post.id);
 const prev = chapters[thisChapter + 1];

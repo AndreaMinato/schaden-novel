@@ -5,20 +5,21 @@ import Footer from "@/components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
 import Chapters from "src/components/Chapters.astro";
 import { getCollection } from "astro:content";
+import { defaultSort } from "../consts";
 
 const chapters = (await getCollection("chapters"))
-    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-    .slice(0, 10);
+  .sort(defaultSort)
+  .slice(0, 10);
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    </head>
-    <body>
-        <Header />
-        <Chapters chapters={chapters} />
-        <Footer />
-    </body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <Chapters chapters={chapters} />
+    <Footer />
+  </body>
 </html>
