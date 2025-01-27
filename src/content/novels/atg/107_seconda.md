@@ -1,96 +1,138 @@
 ---
 title: Capitolo 107 - Ode della Fenice, frammenti (seconda parte)
-pubDate: 2023-08-22T13:59:48.836Z
+pubDate: 2024-05-27T01:22:06.261Z
 tags:
     - atg
 ---
 
+
 Yun Che fu scioccato nello scoprire che l'interno delle Rovine era in realtà una semplice stanza di pietra, subito oltre il sigillo. La sala era spaziosa in modo innaturale, e misurava almeno un centinaio di metri sia in lunghezza che in larghezza. Figurarsi duecento persone, ce ne sarebbero state senza problemi anche duemila. Ad entrambi i lati della stanza c'erano delle lunghe scale di pietra, come se ci fosse un secondo piano, più in alto. Nella parte anteriore della sala c'era un sentiero, largo circa una dozzina di metri. In fondo alla stanza, c'era un sigillo rosso che ruotava delicatamente, sospeso a mezz'aria, identico a quello all'esterno.
+
 
 Il sigillo aveva chiuso l'entrata, ma non era insonorizzato. Le grida dei Mercenari Black Demon continuavano a raggiungerli.
 
+
 “Distruggete questa barriera!” era la voce di Black Demon.
+
 
 Dopo quelle parole, si sentirono una serie di schianti, e degli urli che sembravano i lamenti di un maiale morente: “AH! FUOCO! La mia mano va a fuoco! AHHHH!!!”
 
+
 “Indietro! Tornate tutti indietro! Dannazione! Con una barriera così strana, all'interno ci deve essere di sicuro un tesoro divino! Tutti voi, organizzate dei turni per sorvegliare questo posto! Mi rifiuto di credere che non usciranno più!”
+
 
 Anche se erano in un rifugio sicuro, l'ombra della paura si estendeva ancora su tutti i membri del clan della Fenice e le voci dei mercenari li fecero disperare ancora di più. Yun Che corrugò la fronte e dopo averci pensato a lungo disse a Lan Xueruo: “Sorella Maggiore, quanto tempo servirà alla tua Aquila delle Nevi Gigante per svegliarsi?”
 
+
 Lan Xueruo scosse la testa, preoccupata: “Non ne ho idea nemmeno io. Stavolta Piccola Snow non ha esaurito solo le sue energie, ma anche la sua forza vitale. Potrebbe passare molto tempo prima che si riprenda; forse una settimana, forse un mese... forse anche di più.”
+
 
 “Se si svegliasse, quante persone potrebbe trasportare?”
 
+
 “Dovrebbe riuscire a portarne dieci senza alcun problema.” rispose Lan Xueruo.
+
 
 “Dieci persone...” Yun Che guardò la folla di oltre duecento persone all'interno della stanza di pietra e aggrottò le sopracciglia. Se l'Aquila delle Nevi Gigante si fosse svegliata, avrebbe potuto fuggire insieme a Lan Xueruo senza difficoltà. Ma era convinto che, con il suo carattere, non sarebbe mai stata disposta a abbandonare tutti i membri di quel clan.. anche se non aveva alcun obbligo nei loro confronti e non doveva proteggere le loro vite.
 
+
 “Alla fine ci siamo nascosti qui. Spero che questo non offenda il divino Spirito della Fenice.” Feng Baichaun era in piedi di fronte all'entrata, con un volto tenebroso e frustrato, oltre che addolorato e rassegnato.
+
 
 “Almeno vi siete temporaneamente salvati la vita. Le Fenici sono Spiriti Divini, non possono affatto incolparvi per una cosa del genere.” disse Yun Che, raggiungendo Feng Baichuan.
 
+
 “Spero che tu abbia ragione.” Feng Baichuan sospirò: “In tutti questi anni, il nostro clan è sempre rimasto al suo posto e ha badato a sé stesso. Siamo sempre stati cauti, e non abbiamo mai osato fare nulla che potesse far arrabbiare lo Spirito della Fenice, perché eravamo semplicemente fin troppo terrorizzati. Chi avrebbe mai pensato che alla fine l'avremmo fatto proprio oggi... e nonostante tutto, questo può essere solo un riparo temporaneo; hai sentito anche tu le voci di quei criminali. Ovviamente continueranno a sorvegliare costantemente l'entrata delle Rovine. Qui non abbiamo cibo, né una sorgente d'acqua; non potremo restare qui dentro molto a lungo. Specialmente i bambini e gli anziani... Sigh.”
+
 
 “Per quanto riguarda il cibo e l'acqua, ne ho un po'. A duecento persone dovrebbero bastare per circa due settimane, se lo si risparmia.” disse Yun Che.
 
+
 “Tu?” Feng Baichuan guardò Yun Che, con un'espressione stupita sul volto. Yun Che era vestito con abiti semplici e ordinati, non aveva nulla con sé, come poteva avere abbastanza cibo e acqua per far sopravvivere duecento persone per più di dieci giorni?
+
 
 Yun Che non si preoccupò di perdere tempo con inutili spiegazioni; con un movimento della mano sinistra, diede a Feng Baichuan sei anelli spaziali azzurri. Quegli anelli spaziali erano stati anch'essi presi, ovviamente, dalla tesoreria dello Xiao Sect. Contenevano acqua e ogni genere di vivanda.
 Evidentemente, la tesoreria non era stata destinata dalla Frazione Esterna dello Xiao Sect solo a custodire gli oggetti di valore, ma anche a essere un riparo di emergenza per situazioni disperate. Le misure di sicurezza della tesoreria erano incredibilmente difficili da oltrepassare. Quindi, se si fosse verificata una catastrofe, avrebbero potuto rifugiarsi nella tesoreria, e lì avrebbero avuto abbastanza cibo e acqua da sopravvivere per un po', fino a quando non avessero potuto superare il momento di crisi.
 
+
 Dopo aver ispezionato per un po' gli anelli spaziali, sul volto di Feng Baichuan apparvero gioia e sorpresa. Allora, la voce di Yun Che giunse da dietro di lui: “Capoclan Feng, ci sono alcune cose che non capisco molto bene. Il tuo clan possiede il sangue della Fenice, che è una creatura primordiale, divina. Coloro che possiedono il sangue della Fenice sono molto più nobili e potenti di chi ha del comune sangue mortale, quindi come mai non potete superare il decimo livello dell'Elementary Profound Realm? Ricordo che hai parlato di una 'maledizione', una volta, le due cose sono collegate?”
+
 
 Feng Baichuan era scioccato e per un po' rimase in silenzio.
 
+
 “Sono stato troppo presuntuoso. Dev'essere il segreto più importante del tuo clan, non avrei dovuto chiedere così tante spiegazioni.” disse Yun Che non appena si accorse del silenzio di Feng Baichuan.
+
 
 “No!” Feng Baichuan scosse la testa, e rise di sé stesso: “Come potrebbe essere un 'segreto del clan' una cosa del genere? È solo la punizione e il castigo che dobbiamo sopportare.”
 
+
 “Punizione? Castigo?” Yun Che era sorpreso.
+
 
 Feng Baichuan socchiuse gli occhi e disse con un volto tetro: “La Fenice è una Primordial Divine Beast. Discese sul Profound Sky Continent molto tempo fa, per lasciarvi le sue fiamme, perciò creò molti luoghi in cui mettere alla prova chi desiderasse i suoi doni. Coloro che superavano le prove ereditavano il suo sangue, che sarebbe stato ereditato anche dalle loro future generazioni.
 Così nacque il clan della Fenice. Secondo i racconti tramandati dai nostri antenati, la Fenice creò due terreni di prova, nel Profound Sky Continent. Uno di essi si trova nel lontano Impero della Divina Fenice, l'altro è quello in cui ci troviamo in questo momento. L'unica differenza tra i due è che quello nell'Impero della Divina Fenice è sempre stato conosciuto da tutti, e ha dato origine al potentissimo 'Sect della Divina Fenice', mentre questo luogo non è stato scoperto da nessuno, fino a quando i nostri antenati lo trovarono per puro caso. Nessuno si sarebbe mai aspettato che nella remota e pericolosa Catena Montuosa delle Diecimila Bestie ci fosse davvero una rovina lasciata da una Primordial Divine Beast dell'Era Primordiale.”
 
+
 “Quindi, stai dicendo che questo è solo un terreno di prova e non c'è nessun tesoro, al contrario di quello che credono quei dannati mercenari là fuori?” Yun Che si batté un dito sul mento.
 
-“Proprio così.” annuì Feng Baichuan: “I nostri antenati, a quei tempi, superarono la prova. A quell'epoca, il 'Sect della Divina Fenice' dell'Impero della Divina Fenice era già diventata la famiglia protettrice dell'Impero e la loro influenza era vasta quanto il cielo. Fu allora che l'Impero acquisì il nome 'Impero della Divina Fenice'.
+
+“Proprio così.” annuì Feng Baichuan: “I nostri antenati, a quei tempi, superarono la prova. A quell'epoca, il 'Sect della Divina Fenice' dell'Impero della Divina Fenice era già diventata la famiglia protettrice dell'Impero e la loro influenza era vasta quanto il cielo. Fu allora che l'Impero acquisì il nome 'Impero della Divina Fenice'. 
 Anche il territorio di prova della Fenice divenne una delle zone più strettamente sorvegliate e protette di tutta la Sect della Divina Fenice, e solo i migliori dei loro discepoli potevano entrarvi. Persino con queste restrizioni, il loro sangue, proveniente dalla Fenice, era diventato il loro più grande orgoglio e onore. Se avessero sentito anche solo accennare che il Sangue della Fenice era apparso anche in un altro luogo, saremmo sicuramente andati incontro a rovina e devastazione, non ad una cooperazione fraterna.”
+
 
 Yun Che annuì silenziosamente, trovandosi d'accordo con lui. L'Impero della Divina Fenice inizialmente si chiamava Regno Grand Asura. Ma dopo che il Sect della Divina Fenice era salito al potere e aveva supportato la nuova famiglia imperiale, persino il nome dell'Impero era stato cambiato. Di conseguenza, il Sangue della Fenice era diventato il simbolo della gloria dell'impero. Se avessero davvero scoperto l'esistenza di un altro clan con nelle vene il Sangue della Fenice, avrebbero sicuramente preso qualsiasi genere di provvedimento necessario a sbarazzarsene.
 
+
 “Dopo aver superato la prova, i nostri antenati trasmisero il Sangue della Fenice generazione dopo generazione. Quando raggiunse la dodicesima generazione, il nostro clan era già diventato un Sect prosperoso e potente, ma non si era mai dato ufficialmente il nome di 'Clan della Fenice' e tutti avevano sempre tenuto nascosto il Marchio della Fenice sulla loro fronte, in presenza di altre persone. Ma in quella generazione, uno dei nostri antenati combatté con qualcuno usando il potere del Sangue della Fenice e delle fiamme mostruose diedero accidentalmente fuoco a una piccola città, ardendo vive tutte le trentaduemila persone innocenti che vi abitavano.
+
 
 Yun Che: “...”
 
+
 “Un crimine così disumano fece infuriare lo Spirito della Fenice del nostro terreno di prova, che ci punì severamente. Tutti i membri del clan nati in quella generazione furono marchiati con un sigillo maledetto legato direttamente al loro Sangue della Fenice, reprimendo la loro Profound Strength al decimo livello dell'Elementary Profound Realm e impedendogli di superarlo, per quanto si allenassero durante la loro vita. Inoltre il Marchio della Fenice divenne rosso scuro e non poté più essere nascosto. Era come se quel marchio fosse un emblema, per ricordare costantemente ai membri del clan quel terribile crimine che avevano commesso.”
+
 
 “I nostri antenati avevano molti nemici potenti. Con la loro Profound Strength ristretta a un livello così insignificante, non ebbero altra scelta che isolarsi dal mondo... con loro grande orrore, in seguito scoprirono che la maledizione veniva trasmessa alle generazioni successive. I loro bambini avevano tutti il marchio rosso scuro sulla fronte, fin dalla nascita. Allo stesso modo, in tutta la loro vita la loro Profound Strength non riusciva mai a superare il decimo livello dell'Elementary Profound Realm.
 I nostri antenati tentarono innumerevoli volte di rimuovere la maledizione, ma in fin dei conti era qualcosa che proveniva dallo Spirito della Fenice; come poteva essere qualcosa con la quale dei semplici umani avrebbero potuto interferire?
 Ad oggi, sono passati mille anni, ma la maledizione è ancora insita nel nostro sangue e non è mai scomparsa. Il nostro clan può solo nascondersi nella Catena Montuosa delle Diecimila Bestie e occuparsi del villaggio, pregando quotidianamente per espiare il peccato dei nostri antenati e implorare il perdono del divino Spirito della Fenice.”
 
+
 “Ormai, il nostro clan è andato incontro ad un declino che ci ha portato a come siamo ora; persino un piccolo gruppo di mercenari riesce a metterci all'angolo e farci disperare, eheh....” Feng Baichuan rise amaramente, rassegnato. Nel suo tono solenne c'era fin troppa frustrazione, senso di impotenza e rifiuto di sé stesso.
+
 
 Quello inizialmente era un segreto del clan che non sarebbe mai stato rivelato a degli stranieri, ma siccome quel giorno erano stati ridotti in una condizione così miserabile, il cosiddetto sangue nelle vene e i cosiddetti segreti del clan erano ormai uno scherzo. Forse i membri di quel clan desideravano solo non aver mai ereditato il Sangue della Fenice, ma essere nati con il sangue di comuni mortali.
 Yun Che capì anche come mai Feng Baichuan non aveva portato subito il suo clan in quelle rovine nonostante l'enorme pericolo. Senza dubbio erano spaventati. Il loro clan aveva trascorso mille anni e chissà quante dozzine di generazioni a implorare perdono, aspirando così tanto a ricevere misericordia dallo Spirito della Fenice da chiederlo persino nei loro sogni; come avrebbero mai potuto osare far qualcosa che avrebbe potuto essere anche solo minimamente irrispettoso verso lo Spirito della Fenice?
 
+
 Si volt, e fissò il sigillo rosso che si trovava davanti al sentiero nel lato della stanza opposto all'entrata, e chiese: “Capoclan Feng, per curiosità, i luoghi in cui si devono affrontare le Prove della Fenice si trovano oltre quel sigillo?”
+
 
 “Esatto.” annuì Feng Baichuan: “Questi due sigilli sono tutto ciò che ci hanno lasciato i nostri antenati. Solo chi possiede il Sangue della Fenice può aprirli, perché il loro scopo è impedire agli stranieri di entrare nel Territorio Sacro e in quelli dove si svolgono le prove.”
 
+
 In una frazione di secondo, Yun Che prese la sua decisione e disse: “In tal caso, potresti aprire quel sigillo per me?”
+
 
 “Stai pensando di...?” Feng Baichuan gli lanciò un'occhiata.
 
+
 “Proprio così!” annuì Yun Che: “Vorrei vedere che genere di prove sono state messe a punto da una Primordial Divine Beast come la Fenice. In questo momento ne ho la possibilità, è naturale che io voglia fare un tentativo.”
+
 
 Feng Baichuan non gli rispose subito negativamente, ma, al contrario, gli chiese: “Qual è il livello della tua Profound Strength?”
 
+
 “Primo livello del Nascent Profound Realm.” Yun Che rispose sinceramente.
+
 
 “Non se ne parla!!” sul volto di Feng Baichuan apparve una forte delusione e rifiutò con decisione: “Non fraintendermi, non è mia intenzione impedirti di provarci. È solo che... all'epoca in cui i nostri antenati affrontavano le prove, la loro Profound Strength era già allo Spirit Profoud Realm, e inoltre possedevano delle Abilità Profound di attributo Fuoco. E anche così, riuscivano ad ottenere solamente il Sangue della Fenice e la Pillola della Divina Fenice con estrema difficoltà. Ci sono stati anche alcuni che hanno affrontato le prove e hanno ottenuto la Pillola della Divina Fenice solo in seguito, ma nessuno di loro aveva una Profound Strength al di sotto dello Spirit Profound Realm.”
 
+
 “Da quando la maledizione ci ha colpiti, nessuno ha mai più superato le prove. Nessuno è mai riuscito neppure a superare la prima. Dopotutto, con una Profound Strength solamente al decimo livello dell'Elementary Profound Realm, come potevamo superare l'ostacolo costituito dalle Fiamme della Fenice?
 E in tutti questi anni, alcuni dei membri del clan che volevano superare le prove a tutti i costi sono persino morti all'interno del Territorio Sacro, non ne sono mai usciti. Con la tua Profound Strength al primo livello del Nascent Profound Realm, non c'è assolutamente nessuna possibilità che tu riesca in qualche modo a cavartela e a superare le prove, anzi, potresti persino perdere la vita!”
+
+
 
 
 

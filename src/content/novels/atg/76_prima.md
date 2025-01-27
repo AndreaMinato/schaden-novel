@@ -1,9 +1,10 @@
 ---
 title: Capitolo 76 – Ti distruggerò prima io!
-pubDate: 2023-07-22T13:58:46.331Z
+pubDate: 2024-05-25T18:22:06.254Z
 tags:
     - atg
 ---
+
 
 Xiao Luocheng si era improvvisamente fatto avanti e questo senza dubbio andava contro le aspettative di chiunque. Anche se Yun Che aveva rubato la scena, sconfiggendo consecutivamente cinque avversari e lasciando senza parole tutto il pubblico, il suo prestigio era ancora incomparabile a quello di Xiao Luocheng. Tutto quello che Yun Che aveva mostrato, era sufficiente per farlo entrare di diritto tra i giovani più talentuosi di tutta New Moon City; ma Xiao Luocheng era un genio incredibile, degno di guadagnarsi l’accesso a uno dei Quattro Maggiori Sect. Se Yun Che l’avesse sfidato da un momento all’altro, non sarebbe stato poi così sorprendente e, al massimo, tutti avrebbero pensato che si stesse sopravvalutando. Ma anche se Xiao Luocheng avesse preso da sé l’iniziativa di andare da lui, sarebbe stata vista semplicemente come una provocazione…
 Era davvero possibile che Xiao Luocheng volesse duellare con Yun Che? Impossibile! Assolutamente impossibile. Considerando lo status sociale, l’orgoglio e la forza di Xiao Luocheng, perché mai avrebbe dovuto abbassarsi volontariamente al livello di un nuovo studente del Palazzo Profound New Moon, appena ammesso, e sfidarlo? Ma se non erano quelle le sue intenzioni, allora cosa voleva fare di preciso?
@@ -59,6 +60,8 @@ Nel profondo degli occhi di Yun Che, brillò una luce incredibilmente minacciosa
 Non ti ho prestato attenzione, non ti ho provocato. Eppure, tu vuoi distruggermi.
 Perciò, in questo caso……
 Ti distruggerò prima io!!
+
+
 
 
 

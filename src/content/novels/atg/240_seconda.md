@@ -1,122 +1,177 @@
 ---
 title: Capitolo 240 - Incontro tra Marito e Moglie (seconda parte)
-pubDate: 2024-05-20T08:30:51.867Z
+pubDate: 2024-06-01T14:22:06.330Z
 tags:
     - atg
 ---
+
 
 CAPITOLO SPONSORIZZATO, ringraziamo Riccardo B :)
 Ricordo che se volete potete fare donazioni <a href="http://novelleleggere.com/programmazione/">QUI</a>.
 -Schadenfreude
 
+
 Yun Che raddrizzò il suo tronco. Piegando in avanti la sua gamba destra, chiuse gli occhi e afferrò lo spadone. Dopo aver mantenuto a lungo questa posizione, aprì improvvisamente gli occhi e ringhiò prima di menare un fendente con entrambe le braccia...
+
 
 Ma questa serie di movimenti erano stati fatti senza riversarci molta energia.
 
+
 "Cosa stai facendo?" Chiese Jasmine non riuscendo a reprimere la sua curiosità.
+
 
 Yun Che ritirò le mani, sospirò di sollievo e disse: "Jasmine, cosa ne pensi delle mie possibilità di vincere domani?"
 
+
 "Se me l'avesse chiesto un'altra persona con le tue stesse capacità avrei risposto zero! Anche se usasse tutte le sue forze non potrebbe scambiare più di dieci mosse. Ma tu... probabilmente hai una piccola possibilità." Rispose Jasmine. "Perché quando stai per perdere diventi un folle che non si arrende mai!"
+
 
 "Eheh, grazie per il complimento." Sorrise Yun Che piuttosto soddisfatto.
 
+
 "Complimento? Ero sarcastica!" Disse con serietà Jasmine: "Sento che non sei così sicuro di sconfiggere Xia Qingyue, ma non hai intenzione di perdere. Così nemmeno io potrò anticipare cosa farai. Tuttavia ti devo avvertire, è meglio che non provi ad attivare il terzo realm del Dio Malvagio. Nel luogo della prova del Dio Drago hai attivato forzatamente il secondo cancello e se non fossi avanzato all'improvviso nella Grande Via del Budda saresti morto lì. Non avrai una fortuna del genere ogni volta!"
+
 
 "Non sono una persona che non si arrende mai; se l'avversario di domani fosse stato Ling Yun o anche Xiao Jie non mi sarebbe importato di perdere, ma contro Xia Qingyue... Non posso assolutamente farlo! Questo non è un problema di vittoria o di sconfitta, ma riguarda la dignità di un uomo!"
 
+
 "La dignità di un uomo?"
+
 
 "...Questa è una questione tra adulti, i ragazzini non possono capire." Rispose sogghignando Yun Che.
 
+
 "Ragazzini? Umpf! Tutto ciò che so sorpassa la tua conoscenza decine di milioni di volte!" Sbuffò sdegnata Jasmine: "Non hai ancora risposto alla mia domanda. Che stai facendo?"
 
+
 "Niente di che, stavo provando il Secondo stile di spada di Sirius in base allo stadio fondamentale del Tomo del Dio della Prigione Sirius, ma evidentemente sono stato un po' troppo ottimista." Disse con riluttanza Yun Che. Aveva provato molte volte, ma i suoi sforzi si erano rivelati inutili.
+
 
 "Jasmine, non hai davvero alcun indizio sul secondo stile di spada di Sirius?" Chiese all'improvviso Yun Che. Al momento, di tutte le sue tecniche profound d'attacco, Fendente del Lupo Celeste era la più potente ed era solo il primo stile del Tomo del Dio della Prigione Sirius. Il secondo stile dev'essere ancora più spaventoso.
 "Quella volta ho solo sfogliato il Tomo del Dio della Prigione Sirius mentre mio fratello si stava allenando, così mi ricordo lo stadio fondamentale e il primo stile di spada..."
 Accennando a questo, Jasmine sembrò ricordarsi di qualcosa e dopo un po' comparvero delle memorie nella mente di Yun Che... In quelle scene c'era un giovane uomo di bell'aspetto e con il volto dai contorni indistinti che stava brandendo un'enorme spadone ancora più grande del suo corpo. Ogni mossa dell'arma sollevava raffiche e faceva tremare la terra...
 
+
 "È..."
+
 
 "Questa è una scena del mio Fratellone che si stava allenando. Il suo stile proviene per la maggior parte dal Tomo del Dio della Prigione Sirius, ma ci sono solo i movimenti e non le profound art. Inoltre non posso garantire che non ci siano errori o dimenticanze. Che tu riesca o no ad ottenerne qualcosa, dipende tutto da te." Disse irresponsabilmente Jasmine.
 
+
 Yun Che non aggiunse altro. Dopo essersi calmato, iniziò ad osservare in silenzio la figura che stava brandendo lo spadone, più e più volte...
+
 
 Il giorno dopo, arena della Villa della Spada Celestiale.
 
+
 Il sole doveva ancora sorgere, ma l'arena era già piena di gente. Questo era l'ultimo giorno della gara e i contendenti erano due giovani impareggiabili che avevano soltanto diciassette anni.
+
 
 Uno era Yun Che, che aveva la più bassa profound energy del torneo, eppure aveva sconfitto consecutivamente avversari che lo superavano di livello e, alla fine, era arrivato miracolosamente alla battaglia finale, ogni suo combattimento era quasi leggendario. Era il primo discepolo al True Profound realm del Torneo!
 
+
 L'altra era Xia Qingyue, che aveva rivelato la sua vera forza ieri, aveva sconfitto Ling Yun e aveva stupito tutti i presenti. Dopo l'incontro di ieri era diventata il genio numero uno dell'Impero Ventoblu. In più aveva rimpiazzato Ling Yun diventando la numero uno della giovane generazione. In futuro sarebbe diventata una grandissima esperta il cui nome avrebbe fatto tremare tutto Ventoblu.
+
 
 E la Villa della Spada Celestiale, che aveva sempre mantenuto un ruolo decisivo nella battaglia finale, era stata ridotta ad essere soltanto una spettatrice. Ling Yuefeng era arrivato molto presto, ma rimase seduto in silenzio per tutto il tempo senza dire una parola. C'era anche Ling Yun accanto a lui. Non parlò nemmeno lui, ma la sua espressione era molto tranquilla; almeno in superficie non sembrava aver subito un duro colpo.
 
+
 Naturalmente non era stato troppo debole, era la sua avversaria che era così potente da aver superato ogni aspettativa.
+
 
 Il programma di oggi in teoria prevedeva due incontri nell'arena. La prima battaglia avrebbe deciso il terzo e il quarto posto, ma Ling Jie si era arreso in anticipo. Ling Yun, che all'inizio avrebbe dovuto ottenere il primo posto, era arrivato al terzo. Prima del torneo tutti avevano cercato di prevederne i risultati ed erano certi che Ling Yun avrebbe ottenuto il primo posto.
 Se non avessero visto il combattimento tra lui Xia Qingyue, nessuno avrebbe mai pensato ad una conclusione del genere.
 
+
 "...La battaglia finale del torneo: Yun Che della Famiglia Imperiale Ventoblu contro Xia Qingyue di Frozen Cloud Asgard. Che i due contendenti entrino nell'arena!"
+
 
 Dichiarò Ling Wugou dal centro del campo.
 
+
 "Fratello Minore Yun, buona fortuna!"
+
 
 "Buona fortuna cognato!"
 
+
 Yun Che si alzò e chiese : "Yuanba, speri che vinca io o tua sorella?"
+
 
 Xia Yuanba rimase scombussolato: "Eh..." Si grattò la testa e disse: "Se il cognato vincerà certamente ne sarò contento e anche se vincesse la Sorellona lo sarei." Dopo aver detto questo, gli occhi di Xia Yuanba iniziarono a brillare: "Wow! Prima potevo soltanto assistere al torneo nei miei sogni, ma ora la Sorellona e il Cognato competeranno per il primo posto; sembra davvero un sogno. Comunque tra voi due... spero comunque che vincerai tu."
 
+
 "Oh? Perché?" Chiese con un sorriso Yun Che.
+
 
 "Umh... perché la Sorellona è comunque una ragazza sai ed è anche la moglie del cognato. Mi sembra più ragionevole." Rispose in modo un po' confuso Xia Yuanba.
 
+
 "Ahahahah." Yun Che iniziò a ridere e diede una pacca sulla spalla di Xia Yuanba: "Ben detto. In quanto uomo non mi importa di perdere contro altri, ma non posso perdere contro mia moglie!! Anche se fosse una tigre o una fenice, devo... cavalcarla!!"
 
+
 Xia Yuanba strabuzzò gli occhi e annuì stordito. Anche se non aveva completamente capito le parole di Yun Che, pensava che fossero sensate.
+
 
 Questo ragionamento fece sorridere in maniera beffarda Cang Yue, ma non lo riproverò.
 Queste parole piene di arroganza e machismo devono sembrare ripugnanti dalla prospettiva di una ragazza, ma quando le diceva Yun Che non le sembravano strane, anzi sentiva che facessero parte della sua indole.
 
+
 Sotto gli sguardi di diverse migliaia di persone, Yun Che andò verso il centro dell'arena nel lato opposto di fronte a Xia Qingyue.
+
 
 La ragazza aveva un velo di ghiaccio che le copriva la faccia, rendendo impossibile distinguere i tratti del suo volto. Tuttavia l'aveva già visto di sfuggita ieri ed era abbastanza per scolpirlo nel suo cuore. I due rimasero di fronte l'uno all'altra in silenzio... A parte pochissimi, nessuno dei presenti avrebbe pensato che fossero davvero marito e moglie.
 
+
 Ricordando il matrimonio e la convivenza di allora... Allora era stata riconosciuta come la figlia amata dal cielo ed era stata accettata da tempo come discepola di Frozen Cloud Asgard. Lui invece era solo un perdigiorno con delle profound vein distrutte senza futuro ed era disprezzato da tutti; il loro divario di differenza era come quello tra il cielo e la terra. Comunque durante i pochi giorni in cui aveva interagito Yun Che aveva già prodotto una piccola fessura nel cuore freddo e indifferente di Xia Qingyue. Tuttavia degli imprevisti li avevano separati... Quando si erano incontrati di nuovo, le loro vite erano già completamente cambiate.
+
 
 Lei era diventata ancora più benedetta dal cielo e aveva raggiunto un piano irraggiungibile che scioccava i suoi coetanei.
 
+
 E di fronte a lei, per un miracolo, quel giovane debole eppure risoluto era diventato ancora più audace ed era maturato tantissimo fino a raggiungere alti livelli in meno di due anni. In passato poteva essere soltanto oppresso dagli altri ed era stato scacciato via dalla sua famiglia; ora invece poteva essere orgoglioso della sua profound strength e far parte dei migliori esperti nell'Impero Ventoblu.
+
 
 Era come un insieme di eventi inspiegabili, questa coppia non si sarebbe dovuta più rincontrare, eppure erano su questo palco.
 
+
 "Qingyue, sai perché ho partecipato al torneo stavolta?" Disse Yun Che per primo guardando Xia Qingyue negli occhi e sorridendo lievemente.
+
 
 Senza aspettare la risposta di Xia Qingyue, aggiunse: "Il primo motivo era per realizzare il sogno della Sorella Maggiore Xueruo e l'ho già fatto. Per quanto riguarda la seconda ragione..."
 
+
 Yun Che stese la mano destra in avanti facendo brillare una luce grigia e afferrò l'impugnatura di Dragon Fault. La punta dell'arma in cui era inciso un potente dragone, naturalmente cadde verso il basso, trapassando il terreno sotto di lui con una forte esplosione. Una raffica di forza soverchiante si diffuse in tutte le direzioni.
+
 
 "Te lo dirò dopo che ti avrò sconfitto!"
 
+
 L'istante in cui Dragon Fault entrò in campo, come previsto, il potere dello Spadone Sky Profound sbalordì l'intera arena. Nell'Impero Ventoblu si sapeva che esistevano solo sette Armi Sky Profound; questo spadone non era mai stato visto prima!
 
+
 "Questa forza imponente... è un'Arma Sky Profound! E di alta qualità!"
+
 
 "Sembra sia un altro spadone... uno Spadone Sky Profound, perché non ne ho mai sentito parlare?
 Che la Famiglia Imperiale Ventoblu la stesse nascondendo per tutto questo tempo?"
 
+
 "Spadone... Spadone Sky Profound?" Gridò di sorpresa Ling Jie, poi strinse silenziosamente i denti: "Non c'era da meravigliarsi che non volesse un risarcimento per aver rotto il suo spadone Earth Profound. Sembra che abbia davvero un'arma Sky Profound... In altre parole si stava ancora trattenendo nel combattimento di ieri e non ha usato tutta la sua forza... Uh? Padre, cos'è successo? Ah? Fratellone, anche la tua espressione è diventata molto strana."
+
 
 "Padre, non sembra come quella spada?" Chiese all'improvviso Ling Yun.
 
+
 Ling Yuefeng non rispose e tirò fuori un antico libro di antiche testimonianze storiche dal suo anello spaziale. Sfogliò le prime pagine e il suo sguardo si fermò per un momento, sollevò una mano e, guardando l'enorme spada nelle mani di Yun Che, disse a bassa voce: "Secondo le informazioni che abbiamo ricevuto riguardo a Yun Che negli ultimi giorni, prima è andato nella Terra Desolata e ha trascorso cinque mesi lì prima di uscirne?"
+
 
 "In effetti sì." Annuì Ling Yun.
 
+
 "Sembra che non mi possa sbagliare." Ling Yuefeng chiuse i registri e li mise nel suo anello spaziale: "Senza dubbio quella spada è Dragon Fault."
+
+
 
 
 

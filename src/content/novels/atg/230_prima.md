@@ -1,119 +1,175 @@
 ---
 title: Capitolo 230 – Furia del Signore Supremo (prima parte)
-pubDate: 2024-05-19T22:30:51.865Z
+pubDate: 2024-06-01T04:22:06.328Z
 tags:
     - atg
 ---
 
 
+
+
 Capitolo SPONSORIZZATO da Riccardo B.! Grazie mille!
 -Alstor
+
 
 Per i membri della Villa della Spada Celestiale, le spade non erano semplici armi ma un vero e proprio stile di vita. Le tre Spade Sky Profound della Villa erano famose in tutto l'Impero Ventoblu – erano la Spada Limitless, la Spada Celeste Yuan e la Spada Celeste Yang, che tutti i membri del Sect ritenevano dei tesori sacri.
 Anche se le ultime due erano singolarmente più deboli della Spada Limitless, erano state progettate per essere usate contemporaneamente dalla stessa persona. Le forze delle due spade si completavano l'un l'altra e se impugnate simultaneamente potevano tenere testa alla Spada Limitless. Però negli ultimi secoli nessuno era riuscito a domarle entrambe.
 
+
 La Spada Limitless apparteneva a Ling Yuefeng.
 Ling Yun tre anni prima aveva dominato la Spada Celeste Yuan e la Spada Celeste Yang era stata padroneggiata da Ling Jie. Ma ora, Ling Yun aveva usato la sua Profound Strength per cedere temporaneamente a suo fratello il controllo della Spada Celeste Yuan, permettendogli di usarle contemporaneamente e sfruttare la Combinazione Yuan Yang.
 
+
 Con la Spada Celeste Yuan nella mano sinistra e la Spada Celeste Yang nella destra, Ling Jie incrociò davanti a sé le due lame, una arancione e l'altra celeste. Lo spazio circostante tremava come uno specchio d'acqua attraversato dalle onde, a causa dell'energia delle due spade. Gli occhi di Ling Jie assunsero un'espressione fredda, e disse a bassa voce: “Capo, sei ancora più forte di quanto mi aspettassi. Finalmente capisco perché tutti i tuoi precedenti avversari sono stati ridotti in quelle condizioni con solo qualche colpo. A quanto pare lo spadone, che quasi tutti ritengono un'arma inefficace, è davvero abbastanza terrificante... sto usando due Armi Sky Profound. Sono in enorme vantaggio dal punto di vista dell'equipaggiamento. Anche se riuscissi a sconfiggerti, non potrei certo andarne orgoglioso, tuttavia se non userò la Spada Celestiale Yuan di mio fratello non potrò mai batterti.”
+
 
 Poco prima, quando aveva colpito Yun Che, gli spettatori avevano pensato che fosse stato costretto a ritrarre velocemente la spada per evitare il contrattacco di Yun Che e che solo per questo non era riuscito a ferirlo gravemente. Solo Ling Jie sapeva che non era stato costretto a indietreggiare, ma che la Spada Celeste Yang non era riuscita neppure a scalfirgli l'osso. Non riusciva ad immaginare come il suo corpo potesse essere diventato così estremamente robusto.
 
+
 La potenza del suo spadone era semplicemente scioccante, ma le sue capacità difensive non erano minimamente inferiori a quelle offensive.
+
 
 “Le armi fanno parte della propria forza totale. Riuscire a padroneggiarne una molto potente rappresenta una grande capacità. Non ti stai approfittando di un vantaggio. Anche saper impugnare due spade contemporaneamente è molto più difficile che usarne solo una. Se eseguito scorrettamente, è uno stile di combattimento che può rendere ancora più deboli di quando si usa una spada sola. Se riuscirai a sfruttare al massimo la forza di entrambe le spade, sarà una prova del tuo talento... su, fammi vedere cosa sei in grado di fare impegnandoti al massimo!”
 
+
 Le parole di Yun Che lo fecero sembrare molto rilassato, ma nei suoi occhi c'era un bagliore molto serio, perché l'aura di Ling Jie era molto più temibile di prima. Dopo che aveva unito l'energia delle due spade, che si completavano a vicenda, la forza che emanavano era diventata incredibilmente maggiore.
+
 
 Ling Jie fece scattare i polsi. Quel lieve movimento fece scaturire due l'energia delle spade, che fece tremare leggermente l'aria circostante. Ling Jie stava rilasciando tutta la sua Profound Strength e tutta la forza delle spade, era come se si trovasse sulla cima di una montagna, più in alto delle nuvole, e potesse distruggere il mondo con un solo fendente.
 
+
 RIIIP!!
+
 
 La Spada Celeste Yang volò via dalla mano di Ling Jie e si diresse verso Yun Che come se fosse fatta di luce. Contemporaneamente, Ling Jie si trasformò in un'illusione. La lama lucente tra le sue mani divenne più sottile, e poi svanì nel nulla come se fosse stata nascosta nell'aria stessa.
 
+
 Le due spade, una dal davanti e una da sinistra, colpirono in direzione del loro avversario. Quando erano ancora a trenta metri di distanza, Yun Che si sentì come se le loro punte lo avessero già raggiunto, ma non riusciva a vedere neppure la loro ombra. Percepiva solamente due lame prive di forma, così terrificanti da essere indescrivibili. Stavolta, non cercò di respingerle con lo spadone perché erano troppo affilate e avrebbero potuto facilmente lacerare la Profound Energy prodotta dall'attacco.
+
 
 La Combinazione Yuan Yang non era da sottovalutare. Era semplicemente troppo più forte di quanto fosse la Spada Celeste Yang da sola.
 
+
 Yun Che usò l'Ombra del Dio Stellare. Creò immediatamente tre cloni, facendo colpire alle due Spade Celesti solamente delle immagini residue. Ling Jie gridò ferocemente e ruotò su se stesso con grande agilità. La Spada Celeste Yang emise istantaneamente trenta raggi di luce. Come una stella cadente, la Spada Celeste Yuan si diresse verso la schiena di Yun Che. Le due Spade Sky Profound, una tra le mani di Ling Jie e l'altra guidata dalla sua energia spirituale, sembrarono intrecciarsi.
+
 
 Chi-chi-chi!
 
+
 Ling Jie aveva usato solo la Spada Celeste Yang, quindi il suo attacco fu completamente respinto dallo spadone e non riuscì neppure a raggiungere il suo avversario. Ma, a quel punto, Yun Che sentì chiaramente che l'onda d'urto del suo spadone veniva tagliata come se fosse un drappo di seta. Ritrasse rapidamente la Spada Colossale del Signore Supremo e la usò per difendersi. Le decine di raggi d'energia creati dalle sue Spade Celesti perforarono la Profound Energy che permeava lo spadone e lo colpirono con una pioggia di fendenti.
+
 
 DingDingDingDingDingDingDing...
 
+
 “Haa!!”
+
 
 Yun Che sferrò un altro attacco con la sua arma e ancora una volta l'esplosione di energia respinse tutti i raggi. Intanto, si ritirò velocemente. Abbassò lo sguardo, e osservò la Spada Colossale del Signore Supremo... in quell'istante, si accorse che sulla sua lama nera come l'inchiostro erano stati incise parecchie decine di tagli e graffi di varie misure. I più piccoli erano grandi quanto un granello di sabbia, mentre i i più grandi misuravano quasi due pollici.
 
+
 La potenza combinata di due Armi Sky Profound non era un qualcosa al quale una normale Arma Earth Profound poteva resistere.
+
 
 Usando entrambe le Spade, Ling Jie aveva guadagnato un enorme vantaggio dopo solo qualche attacco. Non lasciò a Yun Che il tempo di riprendere fiato e incrociò entrambe le lame davanti al petto. La luce arancione e quella turchese diventarono incredibilmente luminose, quasi accecanti...
 
+
 “Spada Assoluta Heaven's Might... Moon Break! Haa!!”
+
 
 Dopo un selvaggio urlo di Ling Jie, le due spade gemelle spararono improvvisamente due raggi d'energia dei rispettivi colori, creando una lama a forma di croce estremamente appuntita e tagliente...
 
+
 Nella maggior parte dei Sect che usavano delle spade, il principio di base era di non dare importanza alla forza degli attacchi, ma alla loro rapidità. Ciò valeva anche per la Villa della Spada Celestiale. Un combattente veloce che sapeva usare una spada veloce poteva facilmente controllare l'andamento della battaglia e uccidere l'avversario in un sol colpo. La Spada Assoluta Heaven's Might Absloute Sword comprendeva sette livelli. Sei mesi fa Ling Jie aveva già padroneggiato la tecnica “Sun Pierce”. Si trattava dell'attacco più potente di tutta la Villa della Spada Celestiale, mentre la “Moon Break” appena usata da Ling Jie era il più rapido ed improvviso.
+
 
 Ed era una “Moon Break” sferrato usando la Combinazione Yuan Yang!
 
+
 Ling Jie era molto vicino a Yun Che. Lui vide soltanto un bagliore arancione e turchese e subito dopo la punta dei due raggi di Profound Energy allo Sky Profound Realm era già a pochi centimetri da lui...
+
 
 Bang!!!
 
+
 La punta della “Moon Break” colpì la Spada Colossale del Signore Supremo, che Yun Che aveva prontamente posizionato di fronte a sé. Con un'esplosione fragorosa, l'energia delle spade scoppiò violentemente. Dopo un solo istante dall'impatto con i raggi arancione e turchese, un numero incalcolabile di raggi d'energia si diressero verso Yun Che come una tempesta...
+
 
 Lo spadone vibrò violentemente e Yun Che indietreggiò il più velocemente possibile. Richiamando a sé tutta la sua Profound Strength, usò l'Ombra del Dio Stellare e scattò in aria, ad un'altezza di varie decine di metri, riuscendo a scappare dall'imprevedibile attacco dei raggi creati dalla Moon Break. Tuttavia, sui suoi vestiti erano apparsi moltissimi strappi e aveva riportato parecchie ferite superficiali. Sulla sua fronte c'era un taglio orizzontale, da cui colava lentamente un rivolo di sangue fresco, che però si interruppe dopo pochi istanti.
 
+
 Come c'era da aspettarsi da... un membro della Villa della Spada Celestiale...
+
 
 Yun Che si allarmò e atterrò lentamente. Quando i suoi piedi toccarono il pavimento, sollevò improvvisamente le braccia... la Spada Colossale del Signore Supremo era stata spezzata in due. La metà che era stata tagliata cadde a terra con un rumore assordante, creando un'enorme frattura nel pavimento, dalla quale si diffusero parecchie crepe.
 
+
 L'Arena cadde nel silenzio più assoluto. Tutti avevano gli occhi spalancati e per parecchio tempo le loro bocche non emisero una sola parola. Specialmente i più giovani, che sentivano dei brividi correre lungo la loro schiena, lungo le loro braccia e persino tra i loro denti.
+
 
 Quella battaglia aveva iniziato a far capire loro quanto fosse spaventosamente forte la Villa della Spada Celestiale, il Sect più potente di tutto l'Impero Ventoblu.
 
+
 Quei raggi d'energia privi di forma e quelle tecniche strabilianti che avevano gelato il sangue nelle vene e tolto il respiro al pubblico, sebbene si trovasse a trecento metri di distanza. Quell'immensa aura che non avrebbe potuto provenire da qualcuno allo Spirit Profound Realm e quelle Abilità Profound che superavano ogni aspettativa. Tutto questo aveva completamente annientato tutte le loro convinzioni sulle spade. Erano così maestose da sorpassare ogni altra spada o Abilità Profound. Di fronte a quello spettacolo, ogni altra Profound Art incentrata sulle spade sembrava la luce di una lucciola davanti a quella della luna.
+
 
 “Questa è... la Villa della Spada Celestiale.” Un anziano sospirò profondamente.
 
+
 “L'energia che emette con quelle spade è davvero già così terribile, anche se è solo al sesto livello dello Spirit Profound Realm. Se non l'avessi visto con i miei occhi, non ci avrei mai creduto.”
+
 
 “È troppo spaventoso... ma anche quel Yun Che è straordinariamente forte. E pensare che è riuscito a resistere così a lungo contro Ling Jie... se fossi stato al suo posto, probabilmente sarei crollato dopo due soli attacchi.”
 
+
 “Comunque, ormai il suo spadone è spezzato. La sua sconfitta è inevitabile.”
+
 
 “Sì, non male. È riuscito a usare così bene la Moon Break, è sufficiente a lasciarmi piacevolmente sorpreso.” Ling Yuefeng annuì e l'espressione sul suo volto divenne molto più tranquilla.
 
+
 “Ad essere sinceri, Ling Jie non avrebbe potuto vincere se non avesse usato la Combinazione Yuan Yang.” disse Ling Yun.
+
 
 Ling Yuefeng annuì in silenzio. Non poteva negarlo.
 
+
 “Fratello Minore Yun...” quando la Spada Colossale del Signore Supremo si spezzò, Cang Yue, che fino ad allora era stata divorata dalla tensione, si rattristò di colpo. Quello spadone era stata l'arma di Yun Che da quella che le sembrava un'eternità, era quasi come un suo braccio. E ora che si era spezzato, Yun Che non avrebbe potuto resistere ancora per molto. Cang Yue si portò una mano al petto e sussurrò dolcemente: “Va tutto bene, Fratello Minore Yun. Hai già dimostrato di essere straordinario. Ti donerò la gloria. E anche il resto della Famiglia Imperiale lo farà.”
+
 
 “Riuscendo a classificarsi tra i primi quattro, ha superato di gran lunga le mie previsioni. Per il Palazzo Profound Ventoblu, avere un discepolo del genere è una fortuna che si presenta solo una volta ogni cento anni. Principessa Cang Yue, questo ragazzo che hai incontrato a New Moon City diventerà sicuramente un Trono che farà tremare tutto il mondo.” Qin Wushang non poté fare a meno di ridere, con un tono estremamente calmo. Yun Che, arrivando fino a quel punto, aveva già soddisfatto ogni suo desiderio.
 
+
 “Già, mio Cognato è davvero incredibile. Il suo avversario proviene dalla Villa della Spada Celestiale. Ma una sconfitta è pur sempre una sconfitta. Il Cognato è arrivato tra i migliori quattro, questo è più che sufficiente a esserne per sempre orgogliosi.” Xia Yuanba strinse i pugni e parlò con un po' di fatica, in un tono che conteneva un leggero rimpianto... ovviamente non voleva che Yun Che perdesse e sperava che potesse riuscire ad avanzare di ancora un passo e raggiungere le finali. Per tutti quelli che l'avevano deriso e coloro che l'avevano cacciato... per far sì che potessero solo ammirarlo.
+
 
 Quando la Spada Colossale del Signore Supremo si ruppe, anche Ling Jie rimase sorpreso. Non continuò immediatamente ad attaccare, ma abbassò le sue spade e disse con una voce carica di rimorso: “Mi... mi dispiace, non ho fatto apposta... che ne diresti se, se... alla fine del duello ti regalerò un altro spadone. Nella Terrazza delle Spade ci sono anche parecchi spadoni molto forti.”
 
+
 Guardando la Spada Colossale del Signore Supremo, Yun Che si sentì momentaneamente demoralizzato. Ma dopo aver ascoltato la proposta di Ling Jie scosse la testa: “Non ce n'è bisogno. E non devi scusarti con me. È stata solo colpa della mia distrazione, non sono riuscito ad evitare che si spezzasse.”
+
 
 Yun Che fece qualche passo in avanti e raccolse la metà della lama che era caduta a terra, dicendo a bassa voce: “Vecchia amica, mi hai accompagnato durante la crescita della mia forza, mi hai accompagnato per un lungo periodo di dure battaglie. In effetti, è davvero ora che tu abbia il riposo che meriti. Non preoccuparti, farò in modo che non ti sia sacrificata invano. Stai tranquilla, mi vedrai vincere questo incontro.”
 
-Mentre Yun Che sussurrava, inserì la metà spezzata dello spadone nella Sky Poison Pearl. Proprio mentre si stava preparando a mettere via anche la parte che aveva ancora in mano, la sentì tremare con forza. Il mezzo spadone brillava di una debole e sottile luce nera, che splendeva con tranquillità.
+
+Mentre Yun Che sussurrava, inserì la metà spezzata dello spadone nella Perla del Veleno Celeste. Proprio mentre si stava preparando a mettere via anche la parte che aveva ancora in mano, la sentì tremare con forza. Il mezzo spadone brillava di una debole e sottile luce nera, che splendeva con tranquillità.
+
 
 Yun Che era stupito... la maggior parte delle Armi Sky Profound possedeva una coscienza spirituale di basso livello, ma le Armi Earth Profound ne erano completamente prive. Eppure, quella reazione indicava chiaramente che la coscienza della Spada Colossale del Signore Supremo si stava manifestando!
 
+
 Anche se la Spada Colossale del Signore Supremo era un'Arma Earth Profound, era diversa da tutte le altre perché in passato era stata usata dal Signore Supremo. In passato, il Signore Supremo l'aveva impugnata e aveva combattuto per più di cinquemila chilometri, sferrando innumerevoli fendenti che avevano ucciso migliaia di nemici. Era impossibile sapere il numero esatto di coloro che erano morti a causa sua, né quanto sangue fresco avesse bevuto. Essendo sempre circondata da intento omicida, malvagità, auree imponenti, eroismo e dall'odore del sangue che permea i campi di battaglia, aveva gradualmente sviluppato una coscienza propria.
+
 
 Era la spada del Signore Supremo, di un dominatore, un re che in guerra aveva mietuto decine di migliaia di nemici. Come poteva accettare la sconfitta, come poteva accettare di essere distrutta!?
 
+
 Percependo la vibrazione della Spada Colossale del Signore Supremo, Yun Che si calmò nuovamente e cominciò a sogghignare: “Va bene! Ora capisco. Sei uno spadone che ho scelto per proteggere gli altri, ma prima ancora sei la spada di un Signore Supremo. Può esserci solo la morte, non si deve mai fuggire! Anche se ti sei spezzata, non sei disposta ad arrenderti...”
 
+
 Yun Che sollevò in alto la metà della Spada Colossale del Signore Supremo che stringeva fra le mani e puntò la lama spezzata verso Ling Jie: “Finirò questa battaglia insieme a te! Potrai vendicarti tu stessa per essere stata distrutta!”
+
+
 
 
 
