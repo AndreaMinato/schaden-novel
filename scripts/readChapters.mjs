@@ -53,37 +53,39 @@ function createFile({
 }
 
 export function writeChapters(path, TAG) {
-  const rl = createInterface({
-    input: createReadStream(path),
-    output: undefined,
-    console: false
-  })
+  return new Promise((resolve) => {
+    const rl = createInterface({
+      input: createReadStream(path),
+      output: undefined,
+      console: false
+    })
 
-  let title = ''
-  let content = ''
+    let title = ''
+    let content = ''
 
-  rl.on('line', function (line) {
-    if (regx.test(line)) {
-      if (title) {
-        createFile({
-          title: title,
-          content: content,
-          tag: TAG
-        })
+    rl.on('line', function (line) {
+      if (regx.test(line)) {
+        if (title) {
+          createFile({
+            title: title,
+            content: content,
+            tag: TAG
+          })
+        }
+        title = line
+        content = ''
+      } else {
+        content += line + '\n'
       }
-      title = line
-      content = ''
-    } else {
-      content += line + '\n'
-    }
-  });
+    });
 
-  rl.on('close', function () {
-    createFile({
-      title: title,
-      content: content,
-      tag: TAG
+    rl.on('close', function () {
+      createFile({
+        title: title,
+        content: content,
+        tag: TAG
+      })
+      resolve()
     })
   })
-
 }
