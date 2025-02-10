@@ -73,9 +73,9 @@ async function loadAll() {
   await loadNovel('1UAr63ltyIGu9a8cbxL7nziRYzJeW2X_x96oWyEMxhbA', 'atg')
   await loadNovel('1c3IGtRohe6IklxlFy2Cn0Ts__WbQQBX-ikNJ7wCZx30', 'htk')
   await loadNovel('1AKE2CdyIllmsBW3ItSwlE7E9VjQMRYduZFla_vY5mPU', 'tmw')
-  await loadNovel('1NlmUC5zJDSA1GeOP-zXzeOiSD8LGufki2AIB5equGQE', 'lrg')
+  // await loadNovel('1NlmUC5zJDSA1GeOP-zXzeOiSD8LGufki2AIB5equGQE', 'lrg')
   // await loadNovel('1i2opAYNXvXzMrPJI5E4b-8xNtx1vj0iL3lRBFbD-sgk', 'cd')
-  await loadNovel('17m97EysE3iS2x1ufHCUZHBBXMzpmqyzIo7erIp60Z6A', 'mw')
+  // await loadNovel('17m97EysE3iS2x1ufHCUZHBBXMzpmqyzIo7erIp60Z6A', 'mw')
 }
 
 loadAll()
