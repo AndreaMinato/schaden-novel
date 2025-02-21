@@ -80,11 +80,13 @@ export function writeChapters(path, TAG) {
     });
 
     rl.on('close', function () {
-      createFile({
-        title: title,
-        content: content,
-        tag: TAG
-      })
+      if(title && content){
+        createFile({
+          title: title,
+          content: content,
+          tag: TAG
+        })
+      }
       resolve()
     })
   })

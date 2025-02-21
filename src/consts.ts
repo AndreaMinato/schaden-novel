@@ -42,7 +42,5 @@ export function defaultSort(a: ChapterCollectionReturn, b: ChapterCollectionRetu
     }
 
   }
-
-  console.log('fallback for ' + a.id + ' and ' + b.id)
   return b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 }

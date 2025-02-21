@@ -1,2 +1,0 @@
-build-cache/data-store.json filter=lfs diff=lfs merge=lfs -text
-./build-cache/*.json filter=lfs diff=lfs merge=lfs -text
