@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "import:all": "node ./scripts/import.mjs",
+    "import:docs": "node ./scripts/import_ids.mjs"
+
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.8",
