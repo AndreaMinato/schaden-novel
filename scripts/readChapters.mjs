@@ -19,7 +19,7 @@ function createFile({
   content,
   tag
 }) {
-  let number = title.match(/[0-9]+/)[0]
+  let number = title.match(/Capitolo\s+(\d+)/i)[1]
 
   const difference = 0// -6000 + parseInt(number)
   const date = Date.now() + difference * 60 * 60 * 1000
