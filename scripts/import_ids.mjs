@@ -55,23 +55,25 @@ async function loadNovel(novel) {
 
 
 const novels = {
-  mga: [],
   atg: [],
-  tmw: [],
+  cd: [],
   htk: [],
   lrg: [],
-  cd: [],
+  mga: [],
   mw: [],
+  overgeared: [],
+  tmw: [],
 }
 
 async function loadAll() {
-  await loadNovel('mga')
   await loadNovel('atg')
+  await loadNovel('cd')
   await loadNovel('htk')
+  await loadNovel('lrg')
+  await loadNovel('mga')
+  await loadNovel('mw')
+  await loadNovel('overgeared')
   await loadNovel('tmw')
-  // await loadNovel('lrg')
-  // await loadNovel('cd')
-  // await loadNovel('mw')
 }
 
 loadAll()
