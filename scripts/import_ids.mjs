@@ -58,6 +58,7 @@ const novels = {
   atg: [],
   cd: [],
   htk: [],
+  issth: [],
   lrg: [],
   mga: [],
   mw: [],
@@ -69,6 +70,7 @@ async function loadAll() {
   await loadNovel('atg')
   await loadNovel('cd')
   await loadNovel('htk')
+  await loadNovel('issth')
   await loadNovel('lrg')
   await loadNovel('mga')
   await loadNovel('mw')
