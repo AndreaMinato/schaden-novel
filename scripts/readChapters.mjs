@@ -13,6 +13,10 @@ tags:
 
 const regx = /Capitolo [0-9]/g
 
+const regxPrimaInsideBrackets = /[\[\(](.*?prima.*?)[\]\)]/gi
+const regxSecondaInsideBrackets = /[\[\(](.*?seconda.*?)[\]\)]/gi
+const regxTerzaInsideBrackets = /[\[\(](.*?terza.*?)[\]\)]/gi
+const regxQuartaInsideBrackets = /[\[\(](.*?quarta.*?)[\]\)]/gi
 
 function createFile({
   title,
@@ -24,14 +28,17 @@ function createFile({
   const difference = 0// -6000 + parseInt(number)
   const date = Date.now() + difference * 60 * 60 * 1000
 
-  if (title.includes('prima')) {
+  if (regxPrimaInsideBrackets.test(title)) {
     number += '_a'
   }
-  if (title.includes('seconda')) {
+  if (regxSecondaInsideBrackets.test(title)) {
     number += '_b'
   }
-  if (title.includes('terza')) {
+  if (regxTerzaInsideBrackets.test(title)) {
     number += '_c'
+  }
+  if (regxQuartaInsideBrackets.test(title)) {
+    number += '_d'
   }
   const path = './src/content/novels/' + tag + '/' + number + '.md'
 

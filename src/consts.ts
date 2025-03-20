@@ -26,10 +26,22 @@ export function defaultSort(a: ChapterCollectionReturn, b: ChapterCollectionRetu
     let BNumber = parseInt(bId)
 
     if (aId.includes('_b')) {
-      ANumber += 0.5
+      ANumber += 0.1
     }
     if (bId.includes('_b')) {
-      BNumber += 0.5
+      BNumber += 0.1
+    }
+    if (aId.includes('_c')) {
+      ANumber += 0.2
+    }
+    if (bId.includes('_c')) {
+      BNumber += 0.2
+    }
+    if (aId.includes('_d')) {
+      ANumber += 0.3
+    }
+    if (bId.includes('_d')) {
+      BNumber += 0.3
     }
 
     if (
