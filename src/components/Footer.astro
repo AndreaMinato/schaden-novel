@@ -4,6 +4,9 @@ const today = new Date();
 
 <footer>
     &copy; {today.getFullYear()} Schadenfreude. All rights reserved.
+    <div class="home-link">
+        <a href="/">Home</a>
+    </div>
     <div class="social-links">
         <a href="https://github.com/AndreaMinato/schaden-novel" target="_blank">
             <span class="sr-only">Go to this site GitHub repo</span>
@@ -43,6 +46,16 @@ const today = new Date();
         background: linear-gradient(var(--gray-gradient)) no-repeat;
         color: rgb(var(--gray));
         text-align: center;
+    }
+    .home-link {
+        margin-top: 1em;
+    }
+    .home-link a {
+        text-decoration: none;
+        color: rgb(var(--gray));
+    }
+    .home-link a:hover {
+        color: rgb(var(--gray-dark));
     }
     .social-links {
         display: flex;
