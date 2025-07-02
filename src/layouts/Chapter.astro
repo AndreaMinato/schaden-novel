@@ -83,18 +83,42 @@ const { title, description, pubDate, updatedDate, heroImage } = data;
       <nav>
         <ol>
           <li>
-            <a class={prev ? "" : "disabled"} href={`/novels/${prev?.id}/`}>
+            <a class={prev ? "" : "disabled"} href={`/novels/${prev?.id}/`} data-nav="prev">
               <span>Previous</span>
             </a>
           </li>
 
           <li>
-            <a class={next ? "" : "disabled"} href={`/novels/${next?.id}/`}>
+            <a class={next ? "" : "disabled"} href={`/novels/${next?.id}/`} data-nav="next">
               <span>Next</span>
             </a>
           </li>
         </ol>
       </nav>
+
+      <script>
+        // Keyboard navigation for Cmd+Left/Right
+        document.addEventListener('keydown', function(event) {
+          // Check if Cmd (Meta) key is pressed
+          if (event.metaKey) {
+            if (event.key === 'ArrowLeft') {
+              // Navigate to previous chapter
+              const prevLink = document.querySelector('a[data-nav="prev"]:not(.disabled)') as HTMLAnchorElement;
+              if (prevLink) {
+                event.preventDefault();
+                window.location.href = prevLink.href;
+              }
+            } else if (event.key === 'ArrowRight') {
+              // Navigate to next chapter
+              const nextLink = document.querySelector('a[data-nav="next"]:not(.disabled)') as HTMLAnchorElement;
+              if (nextLink) {
+                event.preventDefault();
+                window.location.href = nextLink.href;
+              }
+            }
+          }
+        });
+      </script>
       <article>
         <div class="hero-image">
           {
@@ -124,13 +148,13 @@ const { title, description, pubDate, updatedDate, heroImage } = data;
       <nav>
         <ol>
           <li>
-            <a class={prev ? "" : "disabled"} href={`/novels/${prev?.id}/`}>
+            <a class={prev ? "" : "disabled"} href={`/novels/${prev?.id}/`} data-nav="prev">
               <span>Previous</span>
             </a>
           </li>
 
           <li>
-            <a class={next ? "" : "disabled"} href={`/novels/${next?.id}/`}>
+            <a class={next ? "" : "disabled"} href={`/novels/${next?.id}/`} data-nav="next">
               <span>Next</span>
             </a>
           </li>
