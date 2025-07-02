@@ -1,15 +1,16 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+import ResumeReading from "./ResumeReading.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
 <header>
     <nav>
-        <h2><a href="/">{SITE_TITLE}</a></h2>
         <div class="internal-links">
             <HeaderLink href="/">Home</HeaderLink>
             <HeaderLink href="/novels">Novelle</HeaderLink>
         </div>
+        <ResumeReading />
     </nav>
 </header>
 <style>
@@ -28,22 +29,13 @@ import { SITE_TITLE } from "../consts";
         text-decoration: none;
     }
     nav {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
+        gap: 1em;
     }
-    @media screen and (max-width: 600px) {
-        nav {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
 
-    }
-    @media screen and (max-width: 340px) {
-        nav {
-          grid-template-columns: 1fr
-        }
-
-    }
     nav a {
         padding: 1em 0.5em;
         color: var(--black);
@@ -55,6 +47,7 @@ import { SITE_TITLE } from "../consts";
         border-bottom-color: var(--accent);
     }
     .internal-links {
-        place-self: center
+        display: flex;
+        flex-wrap: nowrap;
     }
 </style>

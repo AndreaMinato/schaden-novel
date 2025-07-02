@@ -1,0 +1,102 @@
+---
+// This component will be client-side rendered to access localStorage
+---
+
+<div id="resume-reading-container">
+  <select class="resume-select">
+    <option value="">Resume</option>
+  </select>
+</div>
+
+<script>
+  function getAllSavedNovels() {
+    const savedChapters = JSON.parse(
+      localStorage.getItem("savedChapters") || "{}",
+    );
+    const novels = Object.keys(savedChapters);
+
+    if (novels.length === 0) {
+      return [];
+    }
+
+    // Sort novels by most recent timestamp
+    return novels
+      .map((novel) => {
+        const chapterData = savedChapters[novel];
+        return {
+          novel: novel,
+          chapterId: chapterData?.chapterId,
+          timestamp: chapterData?.timestamp || 0,
+          url: chapterData?.chapterId
+            ? `/novels/${chapterData.chapterId}/`
+            : null,
+        };
+      })
+      .filter((item) => item.chapterId && item.url)
+      .sort((a, b) => b.timestamp - a.timestamp);
+  }
+
+  function handleNovelSelect(event: Event) {
+    const target = event.target as HTMLSelectElement;
+    const selectedValue = target.value;
+    if (selectedValue) {
+      window.location.href = selectedValue;
+    }
+  }
+
+  function updateResumeReadingDisplay() {
+    const select = document.querySelector(".resume-select") as HTMLSelectElement;
+    if (!select) return;
+
+    const savedNovels = getAllSavedNovels();
+
+    // Clear existing options except the first one
+    while (select.options.length > 1) {
+      select.remove(1);
+    }
+
+    // Add new options
+    savedNovels.forEach((novel) => {
+      if (novel.url) {
+        const option = document.createElement("option");
+        option.value = novel.url;
+        option.textContent = novel.chapterId.replaceAll("/", " - ");
+        select.appendChild(option);
+      }
+    });
+  }
+
+  // Update display when page loads
+  document.addEventListener("DOMContentLoaded", updateResumeReadingDisplay);
+  // Also update when localStorage changes (if user navigates to another page)
+  window.addEventListener("storage", updateResumeReadingDisplay);
+
+  const select = document.querySelector(".resume-select") as HTMLSelectElement;
+  select.addEventListener("change", handleNovelSelect);
+</script>
+
+<style>
+
+
+  .resume-select {
+    padding: 0.5em;
+    color: var(--black);
+    border: 1px solid rgb(var(--gray));
+    border-radius: 4px;
+    background: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    min-width: 150px;
+  }
+
+  .resume-select:hover {
+    border-color: var(--accent);
+  }
+
+  .resume-select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.2);
+  }
+
+</style>

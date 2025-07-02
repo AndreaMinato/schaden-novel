@@ -9,9 +9,11 @@ type Props = {
   data: CollectionEntry<"chapters">["data"];
   next?: CollectionEntry<"chapters">;
   prev?: CollectionEntry<"chapters">;
+  novel?: string;
+  slug?: string;
 };
 
-const { next, prev, data } = Astro.props;
+const { next, prev, data, novel, slug } = Astro.props;
 const { title, description, pubDate, updatedDate, heroImage } = data;
 ---
 
@@ -97,6 +99,29 @@ const { title, description, pubDate, updatedDate, heroImage } = data;
       </nav>
 
       <script>
+                                // Save current chapter for resume reading
+        function saveCurrentChapter() {
+          const article = document.querySelector('article');
+          if (!article) return;
+
+          const novel = article.dataset.novel;
+          const slug = article.dataset.slug;
+
+          if (novel && slug) {
+            const chapterId = novel + '/' + slug;
+
+            const savedChapters = JSON.parse(localStorage.getItem('savedChapters') || '{}');
+            savedChapters[novel] = {
+              chapterId: chapterId,
+              timestamp: Date.now()
+            };
+            localStorage.setItem('savedChapters', JSON.stringify(savedChapters));
+          }
+        }
+
+        // Save chapter when page loads
+        document.addEventListener('DOMContentLoaded', saveCurrentChapter);
+
         // Keyboard navigation for Cmd+Left/Right
         document.addEventListener('keydown', function(event) {
           // Check if Cmd (Meta) key is pressed
@@ -119,7 +144,7 @@ const { title, description, pubDate, updatedDate, heroImage } = data;
           }
         });
       </script>
-      <article>
+      <article data-novel={novel} data-slug={slug}>
         <div class="hero-image">
           {
             heroImage && (

@@ -32,7 +32,7 @@ const prev = chapters[thisChapter + 1];
 const next = chapters[thisChapter - 1];
 ---
 
-<Chapter data={post.data} next={next} prev={prev}>
+<Chapter data={post.data} next={next} prev={prev} novel={novel} slug={slug}>
   <ChapterJumper chapters={chapters} />
 
   <Content />
