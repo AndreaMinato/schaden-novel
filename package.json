@@ -5,17 +5,22 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:incremental": "node ./scripts/build-incremental.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "import:all": "node ./scripts/import.mjs",
     "import:docs": "node ./scripts/import_ids.mjs",
-    "deploy": "npm run build && netlify deploy --prod --dir=dist"
+    "deploy": "npm run build:incremental && netlify deploy --prod --dir=dist",
+    "deploy:clean": "npm run build && netlify deploy --prod --dir=dist",
+    "cache:status": "node ./scripts/cache-manager.mjs status",
+    "cache:clear": "node ./scripts/cache-manager.mjs clear",
+    "cache:info": "node ./scripts/cache-manager.mjs info"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.2.0",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.5.1"
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.4.1",
+    "astro": "^5.11.0"
   },
   "devDependencies": {
     "cheerio": "^1.0.0"
