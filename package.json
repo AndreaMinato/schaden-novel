@@ -5,16 +5,12 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "build:incremental": "node ./scripts/build-incremental.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "import:all": "node ./scripts/import.mjs",
     "import:docs": "node ./scripts/import_ids.mjs",
-    "deploy": "npm run build:incremental && netlify deploy --no-build --prod --dir=dist",
-    "deploy:clean": "npm run build && netlify deploy --prod --dir=dist",
-    "cache:status": "node ./scripts/cache-manager.mjs status",
-    "cache:clear": "node ./scripts/cache-manager.mjs clear",
-    "cache:info": "node ./scripts/cache-manager.mjs info"
+    "deploy": "netlify deploy --prod --dir=dist"
+
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
