@@ -1,7 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import Chapter from "../../../layouts/Chapter.astro";
-import ChapterJumper from "../../../components/ChapterJumper.astro";
 import { render } from "astro:content";
 import { defaultSort } from "src/consts";
 
@@ -33,7 +32,5 @@ const next = chapters[thisChapter - 1];
 ---
 
 <Chapter data={post.data} next={next} prev={prev} novel={novel} slug={slug}>
-  <ChapterJumper chapters={chapters} />
-
   <Content />
 </Chapter>
