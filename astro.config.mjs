@@ -8,12 +8,6 @@ export default defineConfig({
 	site: 'https://schaden-novel.netlify.app/',
   cacheDir: './build-cache',
 	integrations: [mdx(), sitemap()],
-	experimental: {
-		contentIntellisense: true,
-	},
-	build: {
-		concurrency: 5,
-	},
 	server: {
 		port: 4321,
 	},
