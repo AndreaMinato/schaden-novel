@@ -58,7 +58,7 @@ function createFile({
     path,
     base
       .replace('[TAG]', tag)
-      .replace('[TITLE]', title.replace(':', '-'))
+      .replace('[TITLE]', title.replaceAll(':', '-'))
       .replace('[CONTENT]', content)
       .replace('[DATE]', new Date(date).toISOString())
   )
