@@ -78,6 +78,7 @@ async function loadAll() {
   // await loadNovel('17m97EysE3iS2x1ufHCUZHBBXMzpmqyzIo7erIp60Z6A', 'mw')
   // await loadNovel('1ltYlFG6qnH-rT8-aPtbCJeGZepsR_AX8x2mK9ieVGng', 'overgeared')
   // await loadNovel('1XNSlUXLISdDebkLiWmRx90Utc5MfJjbxk0qezNwlqHM', 'issth')
+  await loadNovel('1UlpiIFhcvkDo_yB9YKpgubhRmxeSFxZKtcflD2Sunok', 'rtw')
 }
 
 loadAll()

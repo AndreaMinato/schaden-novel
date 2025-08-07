@@ -10,9 +10,6 @@ tags:
 [CONTENT]
 `
 
-
-const regx = /Capitolo [0-9]/g
-
 const regxPrimaInsideBrackets = /[\[\(](.*?prima.*?)[\]\)]/gi
 const regxSecondaInsideBrackets = /[\[\(](.*?seconda.*?)[\]\)]/gi
 const regxTerzaInsideBrackets = /[\[\(](.*?terza.*?)[\]\)]/gi
@@ -24,20 +21,28 @@ function createFile({
   tag
 }) {
   let number = title.match(/Capitolo\s+(\d+)/i)[1]
-
   const difference = 0// -6000 + parseInt(number)
   const date = Date.now() + difference * 60 * 60 * 1000
 
-  if (regxPrimaInsideBrackets.test(title)) {
+
+  const contains = {
+    title,
+    prima: Boolean(title.match(regxPrimaInsideBrackets)),
+    seconda: Boolean(title.match(regxSecondaInsideBrackets)),
+    terza: Boolean(title.match(regxTerzaInsideBrackets)),
+    quarta: Boolean(title.match(regxQuartaInsideBrackets))
+  }
+
+  if (contains.prima) {
     number += '_a'
   }
-  if (regxSecondaInsideBrackets.test(title)) {
+  else if (contains.seconda) {
     number += '_b'
   }
-  if (regxTerzaInsideBrackets.test(title)) {
+  else if (contains.terza) {
     number += '_c'
   }
-  if (regxQuartaInsideBrackets.test(title)) {
+  else if (contains.quarta) {
     number += '_d'
   }
   const path = './src/content/novels/' + tag + '/' + number + '.md'
@@ -70,8 +75,9 @@ export function writeChapters(path, TAG) {
     let title = ''
     let content = ''
 
+    const titleRegex = /Capitolo\s+[0-9]/g
     rl.on('line', function (line) {
-      if (regx.test(line)) {
+      if (titleRegex.test(line)) {
         if (title) {
           createFile({
             title: title,
@@ -87,7 +93,7 @@ export function writeChapters(path, TAG) {
     });
 
     rl.on('close', function () {
-      if(title && content){
+      if (title && content) {
         createFile({
           title: title,
           content: content,

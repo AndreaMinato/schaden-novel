@@ -63,6 +63,7 @@ const novels = {
   mga: [],
   mw: [],
   overgeared: [],
+  rtw: [],
   tmw: [],
 }
 
@@ -75,6 +76,7 @@ async function loadAll() {
   await loadNovel('mga')
   await loadNovel('mw')
   await loadNovel('overgeared')
+  await loadNovel('rtw')
   await loadNovel('tmw')
 }
 
