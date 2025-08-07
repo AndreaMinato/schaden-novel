@@ -135,6 +135,18 @@ const mw = defineCollection({
     schema: novelSchema,
 });
 
+const rtw = defineCollection({
+    loader: glob({
+        base: './src/content/novels/rtw',
+        pattern: '**/*.{md,mdx}',
+        generateId: ({ entry, base }) => {
+            const relativePath = entry.replace(base + '/', '');
+            return `rtw/${relativePath.replace(/\.(md|mdx)$/, '')}`;
+        },
+    }),
+    schema: novelSchema,
+});
+
 export const collections = {
     chapters,
     mga,
@@ -145,5 +157,6 @@ export const collections = {
     issth,
     cd,
     lrg,
-    mw
+    mw,
+    rtw
 };

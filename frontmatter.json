@@ -27,6 +27,10 @@
     {
       "title": "Overgeared",
       "path": "[[workspace]]/src/content/novels/overgeared"
+    },
+    {
+      "title": "RTW",
+      "path": "[[workspace]]/src/content/novels/rtw"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [
@@ -53,7 +57,7 @@
           "name": "tags",
           "type": "categories",
           "single": false,
-          "choices": [ "atg", "cd", "htk", "lrg", "mga", "mw", "overgeared", "tmw" ]
+          "choices": [ "atg", "cd", "htk", "lrg", "mga", "mw", "overgeared", "rtw", "tmw" ]
 
         },
         {
