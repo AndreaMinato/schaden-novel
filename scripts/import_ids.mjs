@@ -51,9 +51,6 @@ async function loadNovel(novel) {
   console.log(`End ${novel}`)
 }
 
-
-
-
 const novels = {
   atg: [],
   cd: [],
