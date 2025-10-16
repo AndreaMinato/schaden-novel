@@ -10,7 +10,7 @@
     "import:all": "node ./scripts/import.mjs",
     "import:docs": "node ./scripts/import_ids.mjs",
     "deploy": "netlify deploy --prod --dir=dist",
-    "git:sync": "git add . && git commit -m 'update' && git push && git checkout .",
+    "git:sync": "git add ./src/content && git commit -m 'update' && git push && git checkout .",
     "publish": "pnpm import:docs && pnpm run deploy && pnpm git:sync"
   },
   "dependencies": {
