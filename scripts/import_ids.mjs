@@ -54,22 +54,14 @@ async function loadNovel(novel) {
 const novels = {
   atg: [],
   cd: [],
-  htk: [
-    'https://docs.google.com/document/d/1B1vLyfimRpHeJsdLOJYKbgOAOPA5WfK-SuEg76SMvyE/edit?usp=sharing',
-    'https://docs.google.com/document/d/1oSqWhpfB8tjC_kSgs5gj1K4w8hvf5GfGOj_O5LWotPk/edit?usp=sharing'
-  ],
+  htk: [],
   issth: [],
   lrg: [],
-  mga: [
-    'https://docs.google.com/document/d/1JCesv6WKcdMzEi79HoBL8WoWxS4CyW918zUDr24_ioE/edit?usp=sharing',
-    'https://docs.google.com/document/d/1pK7H9NgGbJwR4Nq5bhbc9tcInbP7Y0EEyMPa_Ez-PM4/edit?usp=sharing',
-  ],
+  mga: [],
   mw: [],
   overgeared: [],
   rtw: [],
-  tmw: [
-    'https://docs.google.com/document/d/12rFuZY46MklQXIwFb-AkxgX3py1ZCX8L0RONgZMh_JM/edit?usp=sharing'
-  ],
+  tmw: [],
 }
 
 async function loadAll() {
