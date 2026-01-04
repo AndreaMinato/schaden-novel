@@ -11,7 +11,7 @@
     "import:docs": "node ./scripts/import_ids.mjs",
     "deploy": "netlify deploy --prod --dir=dist",
     "git:sync": "git add ./src/content && git commit -m 'update' && git push && git checkout .",
-    "publish": "pnpm import:docs && pnpm run deploy && pnpm git:sync"
+    "publish": "pnpm import:docs && pnpm git:sync && pnpm run deploy"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
