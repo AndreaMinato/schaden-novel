@@ -3,23 +3,322 @@ import BaseHead from "@/components/BaseHead.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
-import Chapters from "src/components/Chapters.astro";
+import ChapterPreview from "src/components/ChapterPreview.astro";
 import { getCollection } from "astro:content";
 import { defaultSort } from "../consts";
 
-const chapters = (await getCollection("chapters"))
-  .sort(defaultSort)
-  .slice(0, 10);
+const allChapters = await getCollection("chapters");
+
+// Group chapters by novel tag and track latest pubDate
+const chaptersByNovel = allChapters.reduce(
+  (acc, chapter) => {
+    const tag = chapter.data.tags[0]; // Primary tag is the novel
+    if (!acc[tag]) {
+      acc[tag] = { chapters: [], latestPubDate: chapter.data.pubDate };
+    }
+    acc[tag].chapters.push(chapter);
+    if (chapter.data.pubDate > acc[tag].latestPubDate) {
+      acc[tag].latestPubDate = chapter.data.pubDate;
+    }
+    return acc;
+  },
+  {} as Record<string, { chapters: typeof allChapters; latestPubDate: Date }>,
+);
+
+// Sort each novel's chapters by chapter number and take last 5
+// Sort sections by most recently published
+const novelSections = Object.entries(chaptersByNovel)
+  .map(([tag, { chapters, latestPubDate }]) => ({
+    tag,
+    chapters: chapters.sort(defaultSort).slice(0, 3),
+    totalCount: chapters.length,
+    latestPubDate,
+  }))
+  .sort((a, b) => b.latestPubDate.valueOf() - a.latestPubDate.valueOf());
+
+const novelNames: Record<string, string> = {
+  mga: "Martial God Asura",
+  atg: "Against the Gods",
+  overgeared: "Overgeared",
+  tmw: "True Martial World",
+  htk: "Hail the King",
+  issth: "I Shall Seal the Heavens",
+  cd: "Coiling Dragon",
+  lrg: "LRG",
+  mw: "Martial World",
+  rtw: "Release That Witch",
+};
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      .page-layout {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 2rem;
+        align-self: start;
+        max-height: calc(100vh - 4rem);
+        overflow-y: auto;
+      }
+
+      .sidebar-title {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgb(var(--gray));
+        margin: 0 0 1rem 0;
+        padding-left: 0.75rem;
+      }
+
+      .sidebar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .sidebar-nav a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 0.75rem;
+        border-radius: 8px;
+        text-decoration: none;
+        color: rgb(var(--gray-dark));
+        font-size: 0.9rem;
+        transition: all 0.15s ease;
+      }
+
+      .sidebar-nav a:hover {
+        background: rgba(var(--gray-light), 0.7);
+        color: var(--accent);
+      }
+
+      .sidebar-nav .chapter-count {
+        margin-left: auto;
+        font-size: 0.75rem;
+        color: rgb(var(--gray));
+        background: rgba(var(--gray-light), 0.8);
+        padding: 0.15rem 0.5rem;
+        border-radius: 100px;
+      }
+
+      .content {
+        min-width: 0;
+      }
+
+      .novel-section {
+        margin-bottom: 3rem;
+        scroll-margin-top: 2rem;
+      }
+
+      .novel-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid rgb(var(--gray-light));
+      }
+
+      .novel-header h2 {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+
+      .novel-header h2 a {
+        text-decoration: none;
+        color: rgb(var(--black));
+        transition: color 0.2s ease;
+      }
+
+      .novel-header h2 a:hover {
+        color: var(--accent);
+      }
+
+      .novel-header .view-all {
+        font-size: 0.875rem;
+        color: var(--accent);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .novel-header .view-all:hover {
+        text-decoration: underline;
+      }
+
+      .chapters-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Mobile: hide sidebar, show dropdown */
+      .mobile-nav {
+        display: none;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        padding: 0.75rem 1rem;
+        margin: 0 -1rem 1.5rem;
+        border-bottom: 1px solid rgb(var(--gray-light));
+      }
+
+      .mobile-nav select {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        border: 1px solid rgb(var(--gray-light));
+        border-radius: 8px;
+        background: #fff;
+        color: rgb(var(--gray-dark));
+        cursor: pointer;
+      }
+
+      @media (max-width: 900px) {
+        .page-layout {
+          display: block;
+          padding: 1rem;
+        }
+
+        .sidebar {
+          display: none;
+        }
+
+        .mobile-nav {
+          display: block;
+        }
+
+        .novel-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+
+        .novel-header h2 {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <Header />
-    <Chapters chapters={chapters} />
+
+    <div class="page-layout">
+      <aside class="sidebar">
+        <p class="sidebar-title">Novel</p>
+        <ul class="sidebar-nav">
+          {
+            novelSections.map((section) => (
+              <li>
+                <a href={`#${section.tag}`}>
+                  {novelNames[section.tag] || section.tag}
+                  <span class="chapter-count">{section.totalCount}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </aside>
+
+      <main class="content">
+        <nav class="mobile-nav">
+          <select id="novel-select">
+            <option value="">Vai a una novel...</option>
+            {
+              novelSections.map((section) => (
+                <option value={section.tag}>
+                  {novelNames[section.tag] || section.tag} ({section.totalCount})
+                </option>
+              ))
+            }
+          </select>
+        </nav>
+
+        {
+          novelSections.map((section) => (
+            <section class="novel-section" id={section.tag}>
+              <div class="novel-header">
+                <h2>
+                  <a href={`/novels/${section.tag}`}>
+                    {novelNames[section.tag] || section.tag}
+                  </a>
+                </h2>
+                <a href={`/novels/${section.tag}`} class="view-all">
+                  Tutti i {section.totalCount} capitoli →
+                </a>
+              </div>
+              <ul class="chapters-list">
+                {section.chapters.map((chapter) => (
+                  <ChapterPreview {...chapter} />
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+      </main>
+    </div>
+
     <Footer />
+
+    <script>
+      // Mobile dropdown navigation
+      const select = document.getElementById("novel-select") as HTMLSelectElement;
+      select?.addEventListener("change", (e) => {
+        const target = e.target as HTMLSelectElement;
+        if (target.value) {
+          const section = document.getElementById(target.value);
+          section?.scrollIntoView({ behavior: "smooth" });
+          target.value = "";
+        }
+      });
+
+      // Highlight active section in sidebar
+      const sections = document.querySelectorAll(".novel-section");
+      const navLinks = document.querySelectorAll(".sidebar-nav a");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => {
+                const el = link as HTMLElement;
+                el.style.background =
+                  link.getAttribute("href") === `#${entry.target.id}`
+                    ? "rgba(35, 55, 255, 0.08)"
+                    : "";
+                el.style.color =
+                  link.getAttribute("href") === `#${entry.target.id}`
+                    ? "var(--accent)"
+                    : "";
+              });
+            }
+          });
+        },
+        { rootMargin: "-20% 0px -70% 0px" }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    </script>
   </body>
 </html>
