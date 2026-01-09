@@ -2,19 +2,44 @@
 import BaseHead from "@/components/BaseHead.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, defaultSort } from "@/consts";
+import { SITE_DESCRIPTION } from "@/consts";
 import { getCollection } from "astro:content";
-import Chapters from "src/components/Chapters.astro";
 
-const tags = [
-  ...new Set(
-    (await getCollection("chapters")).flatMap(({ data }) => data.tags),
-  ),
-];
+const allChapters = await getCollection("chapters");
 
-const chapters = (await getCollection("chapters"))
-  .sort(defaultSort)
-  .slice(0, 10);
+// Get unique tags and count chapters per tag
+const novelData = allChapters.reduce(
+  (acc, chapter) => {
+    chapter.data.tags.forEach((tag) => {
+      if (!acc[tag]) {
+        acc[tag] = { count: 0, latestDate: chapter.data.pubDate };
+      }
+      acc[tag].count++;
+      if (chapter.data.pubDate > acc[tag].latestDate) {
+        acc[tag].latestDate = chapter.data.pubDate;
+      }
+    });
+    return acc;
+  },
+  {} as Record<string, { count: number; latestDate: Date }>,
+);
+
+const novels = Object.entries(novelData)
+  .map(([tag, data]) => ({ tag, ...data }))
+  .sort((a, b) => b.count - a.count);
+
+const novelNames: Record<string, string> = {
+  mga: "Martial God Asura",
+  atg: "Against the Gods",
+  overgeared: "Overgeared",
+  tmw: "True Martial World",
+  htk: "Hail the King",
+  issth: "I Shall Seal the Heavens",
+  cd: "Coiling Dragon",
+  lrg: "LRG",
+  mw: "Martial World",
+  rtw: "Release That Witch",
+};
 ---
 
 <!doctype html>
@@ -22,40 +47,226 @@ const chapters = (await getCollection("chapters"))
   <head>
     <BaseHead title="Novelle" description={SITE_DESCRIPTION} />
     <style>
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        margin: 1rem 0;
-        list-style: none;
-        padding-bottom: 2rem;
+      main {
+        width: 960px;
+        max-width: calc(100% - 2rem);
+        margin: 0 auto;
+        padding: 2rem 1rem 4rem;
       }
 
-      .tag {
-        border-color: var(--accent);
-        border-width: 1px;
-        border-style: solid;
-        padding: 0.2rem 1rem;
-        border-radius: 0.5rem;
-        cursor: pointer;
+      .hero {
+        text-align: center;
+        padding: 3rem 0 4rem;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+        background: linear-gradient(135deg, var(--accent) 0%, #6366f1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.02em;
+      }
+
+      .hero p {
+        color: rgb(var(--gray));
+        font-size: 1.1rem;
+        margin: 0;
+      }
+
+      .novels-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .novel-card {
+        position: relative;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow:
+          0 1px 3px rgba(0, 0, 0, 0.04),
+          0 4px 12px rgba(0, 0, 0, 0.06);
+        transition:
+          transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+          box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: cardFadeIn 0.5s ease-out both;
+      }
+
+      .novel-card:hover {
+        transform: translateY(-6px);
+        box-shadow:
+          0 8px 24px rgba(35, 55, 255, 0.12),
+          0 16px 48px rgba(35, 55, 255, 0.08);
+      }
+
+      .novel-card a {
+        display: block;
+        padding: 1.75rem;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .novel-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--accent) 0%, #6366f1 100%);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      .novel-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .novel-tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        background: rgba(35, 55, 255, 0.08);
+        padding: 0.25rem 0.75rem;
+        border-radius: 100px;
+        margin-bottom: 0.75rem;
+      }
+
+      .novel-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: rgb(var(--black));
+        margin: 0 0 0.75rem 0;
+        line-height: 1.3;
+      }
+
+      .novel-meta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.875rem;
+        color: rgb(var(--gray));
+      }
+
+      .novel-meta span {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+
+      .novel-meta svg {
+        width: 16px;
+        height: 16px;
+        opacity: 0.7;
+      }
+
+      @keyframes cardFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .novel-card:nth-child(1) {
+        animation-delay: 0ms;
+      }
+      .novel-card:nth-child(2) {
+        animation-delay: 50ms;
+      }
+      .novel-card:nth-child(3) {
+        animation-delay: 100ms;
+      }
+      .novel-card:nth-child(4) {
+        animation-delay: 150ms;
+      }
+      .novel-card:nth-child(5) {
+        animation-delay: 200ms;
+      }
+      .novel-card:nth-child(6) {
+        animation-delay: 250ms;
+      }
+      .novel-card:nth-child(7) {
+        animation-delay: 300ms;
+      }
+      .novel-card:nth-child(8) {
+        animation-delay: 350ms;
+      }
+      .novel-card:nth-child(9) {
+        animation-delay: 400ms;
+      }
+      .novel-card:nth-child(10) {
+        animation-delay: 450ms;
+      }
+
+      @media (max-width: 720px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .novels-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .novel-card a {
+          padding: 1.25rem;
+        }
       }
     </style>
   </head>
   <body>
     <Header />
 
-    <Chapters chapters={chapters}>
-      <ul class="tags">
+    <main>
+      <div class="hero">
+        <h1>Novelle</h1>
+        <p>Scegli una novel da leggere</p>
+      </div>
+
+      <ul class="novels-grid">
         {
-          tags.map((tag) => (
-            <li class="tag">
-              <a href={`/novels/${tag}`}>{tag}</a>
+          novels.map((novel) => (
+            <li class="novel-card">
+              <a href={`/novels/${novel.tag}`}>
+                <span class="novel-tag">{novel.tag}</span>
+                <h2 class="novel-title">
+                  {novelNames[novel.tag] || novel.tag}
+                </h2>
+                <div class="novel-meta">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                    </svg>
+                    {novel.count} capitoli
+                  </span>
+                </div>
+              </a>
             </li>
           ))
         }
       </ul>
-    </Chapters>
+    </main>
 
     <Footer />
   </body>
