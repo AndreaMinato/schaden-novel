@@ -9,7 +9,7 @@
     "astro": "astro",
     "import:all": "node ./scripts/import.mjs",
     "import:docs": "node ./scripts/import_ids.mjs",
-    "deploy": "netlify deploy --prod --dir=dist",
+    "deploy": "pnpm build && netlify deploy --prod --dir=dist --no-build",
     "git:sync": "git add ./src/content && git commit -m 'update' && git push && git checkout .",
     "publish": "pnpm import:docs && pnpm git:sync && pnpm run deploy"
   },
