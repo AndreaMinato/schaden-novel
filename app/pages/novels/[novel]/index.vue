@@ -16,7 +16,7 @@ const { data: chapters } = await useAsyncData(
     <h1>{{ novel }} — {{ chapters?.length ?? 0 }} chapters</h1>
     <ul v-if="chapters">
       <li v-for="ch in chapters" :key="ch.path">
-        <NuxtLink :to="ch.path">{{ ch.title }}</NuxtLink>
+        <NuxtLink :to="`/novels${ch.path}`">{{ ch.title }}</NuxtLink>
       </li>
     </ul>
     <p v-else>No chapters found for "{{ novel }}"</p>

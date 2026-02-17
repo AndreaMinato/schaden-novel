@@ -15,7 +15,7 @@ const { data: chapters } = await useAsyncData(
     <p>Infrastructure validation — {{ chapters?.length ?? 0 }} recent lrg chapters loaded</p>
     <ul v-if="chapters">
       <li v-for="ch in chapters" :key="ch.path">
-        <NuxtLink :to="ch.path">{{ ch.title }}</NuxtLink>
+        <NuxtLink :to="`/novels${ch.path}`">{{ ch.title }}</NuxtLink>
       </li>
     </ul>
   </div>
