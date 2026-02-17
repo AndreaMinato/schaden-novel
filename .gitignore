@@ -1,8 +1,12 @@
 # build output
 dist/
+.output/
 # generated types
 .astro/
+.nuxt/
 .claude/
+# Nuxt Content database files
+.data/
 
 # dependencies
 node_modules/
