@@ -1,0 +1,3 @@
+# SPA fallback: serve 200.html for any route without a prerendered file
+# This enables client-side routing for non-prerendered chapter pages
+/*    /200.html   200
