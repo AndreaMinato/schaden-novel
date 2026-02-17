@@ -13,15 +13,22 @@
     "publish": "pnpm import:docs && pnpm git:sync && pnpm run deploy"
   },
   "dependencies": {
-    "nuxt": "latest",
     "@nuxt/content": "latest",
     "@nuxt/ui": "latest",
-    "tailwindcss": "latest"
+    "@shikijs/langs": "3.22.0",
+    "nuxt": "latest",
+    "shiki": "3.22.0",
+    "tailwindcss": "latest",
+    "zod": "3.24.4"
   },
   "devDependencies": {
     "cheerio": "^1.1.2"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild", "@parcel/watcher", "vue-demi"]
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "@parcel/watcher",
+      "vue-demi"
+    ]
   }
 }

@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     experimental: {
       sqliteConnector: 'native',  // Node 22.5+ — avoids better-sqlite3 binding issues
     },
+    watch: {
+      enabled: false,  // Disable content watching — 13K files in src/ cause EMFILE on dev server
+    },
   },
   nitro: {
     prerender: {
@@ -15,6 +18,14 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/': { prerender: true },
+  },
+  vite: {
+    server: {
+      watch: {
+        // Ignore old Astro content (13K files) to avoid EMFILE on dev server
+        ignored: ['**/src/**', '**/tmp/**', '**/build-cache/**'],
+      },
+    },
   },
   compatibilityDate: '2025-07-15',
 })
