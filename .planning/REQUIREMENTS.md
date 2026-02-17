@@ -75,31 +75,31 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | — | Pending |
-| INFRA-02 | — | Pending |
-| INFRA-03 | — | Pending |
-| INFRA-04 | — | Pending |
-| INFRA-05 | — | Pending |
-| CATL-01 | — | Pending |
-| CATL-02 | — | Pending |
-| CATL-03 | — | Pending |
-| READ-01 | — | Pending |
-| READ-02 | — | Pending |
-| READ-03 | — | Pending |
-| READ-04 | — | Pending |
-| PROG-01 | — | Pending |
-| PROG-02 | — | Pending |
-| DISC-01 | — | Pending |
-| DISC-02 | — | Pending |
-| OPS-01 | — | Pending |
-| OPS-02 | — | Pending |
-| OPS-03 | — | Pending |
+| INFRA-01 | Phase 1 | Pending |
+| INFRA-02 | Phase 1 | Pending |
+| INFRA-03 | Phase 1 | Pending |
+| INFRA-04 | Phase 1 | Pending |
+| INFRA-05 | Phase 1 | Pending |
+| CATL-01 | Phase 3 | Pending |
+| CATL-02 | Phase 3 | Pending |
+| CATL-03 | Phase 2 | Pending |
+| READ-01 | Phase 2 | Pending |
+| READ-02 | Phase 2 | Pending |
+| READ-03 | Phase 2 | Pending |
+| READ-04 | Phase 2 | Pending |
+| PROG-01 | Phase 2 | Pending |
+| PROG-02 | Phase 3 | Pending |
+| DISC-01 | Phase 3 | Pending |
+| DISC-02 | Phase 3 | Pending |
+| OPS-01 | Phase 4 | Pending |
+| OPS-02 | Phase 4 | Pending |
+| OPS-03 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 19 total
-- Mapped to phases: 0
-- Unmapped: 19
+- Mapped to phases: 19
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-17 after initial definition*
+*Last updated: 2026-02-17 after roadmap creation*
