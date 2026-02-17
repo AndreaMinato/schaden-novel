@@ -23,7 +23,10 @@ Rebuild a proven 10-novel, 13,318-chapter reading site from Astro to Nuxt 4 + Nu
   3. SQLite database size is measured after ingesting one full novel; if it exceeds 10MB, an architecture decision is made before Phase 2 begins
   4. Netlify deployment succeeds with Node 22.5+ and `nativeSqlite: true` — no `better-sqlite3` binding errors
   5. Selective prerender benchmark with ~500 chapters completes within a known time budget, confirming the SPA fallback strategy for remaining chapter pages
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Nuxt 4 + configure per-novel content collections + test pages
+- [ ] 01-02-PLAN.md — Validate build, benchmark scale, deploy to Netlify
 
 ### Phase 2: Chapter Reader
 **Goal**: Readers can open any chapter from a novel's chapter listing and read it with correct typography, prev/next navigation, keyboard shortcuts, and reading progress that survives browser sessions
@@ -66,7 +69,7 @@ Phases execute in order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure Foundation | 0/TBD | Not started | - |
+| 1. Infrastructure Foundation | 0/2 | Not started | - |
 | 2. Chapter Reader | 0/TBD | Not started | - |
 | 3. Full Site Parity | 0/TBD | Not started | - |
 | 4. Operations | 0/TBD | Not started | - |
