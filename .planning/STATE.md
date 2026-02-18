@@ -9,29 +9,29 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 
 ## Current Position
 
-Phase: 2 of 4 (Chapter Reader)
-Plan: 1 of 2 in current phase -- COMPLETE
-Status: 02-01 complete, ready for 02-02
-Last activity: 2026-02-18 — Completed 02-01-PLAN.md (layout + chapter listing)
+Phase: 2 of 4 (Chapter Reader) -- COMPLETE
+Plan: 2 of 2 in current phase -- COMPLETE
+Status: Phase 2 complete, ready for Phase 3
+Last activity: 2026-02-18 — Completed 02-02-PLAN.md (chapter reader)
 
-Progress: [###░░░░░░░] 30%
+Progress: [#####░░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 15.3min
-- Total execution time: 46min
+- Total plans completed: 4
+- Average duration: 12.3min
+- Total execution time: 49min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-infrastructure-foundation | 2/2 | 43min | 21.5min |
-| 02-chapter-reader | 1/2 | 3min | 3min |
+| 02-chapter-reader | 2/2 | 6min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (26min), 01-02 (17min), 02-01 (3min)
+- Last 5 plans: 01-01 (26min), 01-02 (17min), 02-01 (3min), 02-02 (3min)
 - Trend: improving
 
 *Updated after each plan completion*
@@ -56,6 +56,8 @@ Recent decisions affecting current work:
 - [01-02]: SQLite dump 7.9MB for 2,419 chapters — projects to ~45MB at 13K, body-stripping still recommended
 - [02-01]: Client-side localeCompare({ numeric: true }) for chapter sort — Content v3 SQL sorts alphabetically
 - [02-01]: rAF-throttled scroll detection for auto-hide header — avoids @vueuse/core dependency
+- [02-02]: Ascending sort in useChapterNav (prev=lower, next=higher) vs descending in listing page
+- [02-02]: Store route path in localStorage progress (not content path) for direct Phase 3 navigation
 
 ### Pending Todos
 
@@ -65,10 +67,10 @@ None yet.
 
 - [Phase 1]: SQLite dump size MEASURED at ~3.5KB/chapter average (7.9MB for 2,419 chapters) — projecting ~45MB for 13K; body stripping via content:file:afterParse hook recommended before full content migration
 - [Phase 1 - RESOLVED]: Build time at 13K pages — measured 40s for 2,419 chapters; extrapolates to ~3.6 minutes for 13K content processing. Acceptable.
-- [Phase 2]: `queryCollectionItemSurroundings` behavior with SPA fallback routes is undocumented — may need alternative prev/next implementation
+- [Phase 2 - RESOLVED]: `queryCollectionItemSurroundings` — bypassed entirely; custom useChapterNav composable with localeCompare numeric sort provides correct ordering
 
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 02-01-PLAN.md (layout + chapter listing). Ready for 02-02.
-Resume file: .planning/phases/02-chapter-reader/02-01-SUMMARY.md
+Stopped at: Completed 02-02-PLAN.md (chapter reader). Phase 2 complete. Ready for Phase 3.
+Resume file: .planning/phases/02-chapter-reader/02-02-SUMMARY.md
