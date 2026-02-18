@@ -66,7 +66,11 @@ Plans:
   1. Running the import script with a valid Google Docs URL creates a correctly formatted markdown chapter file under the appropriate novel's Nuxt Content directory
   2. Import script surfaces errors visibly when a Google Doc is unavailable, rate-limited, or fails to parse — no silent failures or swallowed exceptions
   3. All ~13,318 existing chapters are accessible in the rebuilt site and match the source markdown content without missing files or formatting regressions
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 04-01-PLAN.md — Port import scripts with error handling (OPS-01, OPS-02)
+- [ ] 04-02-PLAN.md — Migrate content, cleanup legacy, update config (OPS-03)
+- [ ] 04-03-PLAN.md — Build verification and body stripping (OPS-03)
 
 ## Progress
 
