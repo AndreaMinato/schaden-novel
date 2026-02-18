@@ -45,7 +45,7 @@ function createFile({
   else if (contains.quarta) {
     number += '_d'
   }
-  const path = './src/content/novels/' + tag + '/' + number + '.md'
+  const path = './content/' + tag + '/' + number + '.md'
 
   if (existsSync(path)) {
     console.log(`Skip ${path}`);
