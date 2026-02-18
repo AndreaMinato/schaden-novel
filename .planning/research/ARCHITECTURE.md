@@ -1,499 +1,585 @@
-# Architecture Research
+# Architecture Research: SSR Migration
 
-**Domain:** Content-heavy static reading site (novels + chapters)
-**Researched:** 2026-02-17
-**Confidence:** MEDIUM — Nuxt Content v3 docs verified via official sources; build-time performance at scale inferred from benchmarks, not direct 13K-page measurement
-
----
-
-## Standard Architecture
-
-### System Overview
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                          BROWSER (Static)                            │
-├──────────────────────────┬──────────────────────────────────────────┤
-│  Pages (Prerendered HTML) │  Vue SPA layer (client hydration)        │
-│  ┌──────────┐ ┌────────┐  │  ┌──────────────┐  ┌──────────────────┐ │
-│  │  Home    │ │ Novel  │  │  │ useReading   │  │ useKeyboardNav   │ │
-│  │  Page    │ │ Detail │  │  │ Progress     │  │ (arrow keys)     │ │
-│  └──────────┘ └────────┘  │  └──────┬───────┘  └──────────────────┘ │
-│  ┌──────────────────────┐ │         │ localStorage                   │
-│  │  Chapter Reader Page │ │  ┌──────▼───────┐                        │
-│  └──────────────────────┘ │  │ WASM SQLite  │ ← downloaded on 1st   │
-│                            │  │ (content DB) │   content query        │
-│                            │  └──────────────┘                        │
-├──────────────────────────┴──────────────────────────────────────────┤
-│                        NETLIFY CDN                                   │
-│  Static HTML + JS + CSS + SQLite dump (.sqlite or .db)              │
-└─────────────────────────────────────────────────────────────────────┘
-
-┌─────────────────────────────────────────────────────────────────────┐
-│                          BUILD TIME                                  │
-├─────────────────────────────────────────────────────────────────────┤
-│  content/novels/**/*.md                                              │
-│       ↓ (Nuxt Content v3 parses)                                    │
-│  SQLite database (metadata + parsed AST per chapter)                │
-│       ↓ (nuxt generate)                                             │
-│  13,318 prerendered HTML pages + SQLite dump                        │
-│       ↓                                                             │
-│  Netlify deploy                                                      │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-### Component Responsibilities
-
-| Component | Responsibility | Typical Implementation |
-|-----------|----------------|------------------------|
-| `app/pages/index.vue` | Home: latest chapters grouped by novel | `queryCollection` per novel, `select(['path','title','pubDate'])` |
-| `app/pages/novels/index.vue` | Novel catalog with chapter counts | `queryCollection` count per novel |
-| `app/pages/novels/[novel]/index.vue` | Full chapter listing for one novel | `queryCollection(novel).order('path','ASC').all()` |
-| `app/pages/novels/[novel]/[chapter].vue` | Chapter reader | Full content query + `ContentRenderer` |
-| `app/layouts/default.vue` | Site shell (header, footer, nav) | Wraps all pages except chapter reader |
-| `app/layouts/chapter.vue` | Reading-optimized shell | Minimal chrome, full-width prose |
-| `app/components/ChapterNav.vue` | Prev/Next navigation bar | `queryCollectionItemSurroundings()` or precomputed links |
-| `app/components/ResumeReading.vue` | "Continue reading" widget | Reads localStorage on `onMounted` |
-| `app/components/NovelCard.vue` | Novel summary with count + latest chapter | Accepts novel slug + metadata props |
-| `app/components/ChapterListItem.vue` | Single chapter row in a listing | Accepts chapter path + title + pubDate |
-| `app/composables/useReadingProgress.ts` | localStorage read/write for per-novel progress | VueUse `useLocalStorage`, `onMounted`-guarded |
-| `app/composables/useKeyboardNav.ts` | Cmd+Left/Right keyboard chapter nav | `useEventListener` from VueUse |
-| `content.config.ts` | Collection definitions and schemas | `defineContentConfig` with per-novel collections |
-| `scripts/import.mjs` | Google Docs → markdown import pipeline | Node script, cheerio HTML parsing, outputs `.md` |
+**Domain:** SSG-to-SSR migration for content-heavy Nuxt novel reading site
+**Researched:** 2026-02-18
+**Confidence:** MEDIUM-HIGH -- Nuxt/Netlify SSR integration verified via official docs; cold start performance with 13K-chapter SQLite dump is the key uncertainty
 
 ---
 
-## Recommended Project Structure
+## Current Architecture (SSG Baseline)
 
 ```
-schaden-novel/                    # project root
-├── app/                          # all Vue app code (Nuxt 4 convention)
-│   ├── app.vue                   # root component
-│   ├── pages/
-│   │   ├── index.vue             # home page (latest chapters by novel)
-│   │   └── novels/
-│   │       ├── index.vue         # novel catalog
-│   │       └── [novel]/
-│   │           ├── index.vue     # novel detail + full chapter list
-│   │           └── [chapter].vue # chapter reader
-│   ├── layouts/
-│   │   ├── default.vue           # site shell with header/footer
-│   │   └── chapter.vue           # reading layout (no sidebar)
-│   ├── components/
-│   │   ├── AppHeader.vue         # site navigation header
-│   │   ├── AppFooter.vue         # site footer
-│   │   ├── NovelCard.vue         # novel summary card
-│   │   ├── ChapterListItem.vue   # chapter row in listing
-│   │   ├── ChapterNav.vue        # prev/next chapter navigation
-│   │   └── ResumeReading.vue     # "continue reading" localStorage widget
-│   ├── composables/
-│   │   ├── useReadingProgress.ts # localStorage: save/load last chapter per novel
-│   │   └── useKeyboardNav.ts     # Cmd+Arrow keyboard navigation
-│   └── utils/
-│       └── chapterSort.ts        # numeric chapter sort (port from consts.ts)
-├── content/                      # markdown files (Nuxt Content v3 convention)
-│   └── novels/
-│       ├── mga/
-│       │   ├── 1.md
-│       │   ├── 2.md
-│       │   └── ...               # 2,335 chapters
-│       ├── atg/                  # 2,157 chapters
-│       ├── mw/                   # 2,254 chapters
-│       ├── tmw/                  # 1,307 chapters
-│       ├── rtw/                  # 1,498 chapters
-│       ├── overgeared/           # 1,255 chapters
-│       ├── issth/                # 1,407 chapters
-│       ├── htk/                  # 1,020 chapters
-│       ├── lrg/                  # 84 chapters
-│       └── cd/                   # 1 chapter (placeholder)
-├── server/
-│   └── routes/
-│       └── feed.xml.ts           # RSS feed generation
-├── scripts/
-│   ├── import.mjs                # Google Docs → .md (port existing)
-│   ├── import_ids.mjs            # chapter ID utilities
-│   └── readChapters.mjs          # chapter reading utilities
-├── public/
-│   └── robots.txt
-├── content.config.ts             # Nuxt Content v3 collection definitions
-├── nuxt.config.ts                # framework config
-└── package.json
+BUILD TIME (nuxt generate, ~10 min)
+┌─────────────────────────────────────────────────────────────────┐
+│  content/{novel}/*.md  (13,318 files, 170MB)                   │
+│       |                                                         │
+│  Nuxt Content v3 parser -> SQLite DB (native Node 22.5+)       │
+│       |                                                         │
+│  Nitro prerender engine (26,694 routes, concurrency: 4)        │
+│       |                                                         │
+│  .output/public/  (static HTML + JS + CSS + SQL dumps)         │
+│       |                                                         │
+│  scripts/strip-dump-bodies.mjs  (96% dump size reduction)      │
+│       |                                                         │
+│  netlify deploy --prod --dir=.output/public --no-build         │
+└─────────────────────────────────────────────────────────────────┘
+
+RUNTIME (Netlify CDN, no server)
+┌─────────────────────────────────────────────────────────────────┐
+│  CDN serves prerendered HTML (every page is a static file)     │
+│       |                                                         │
+│  Vue hydrates on client                                         │
+│       |                                                         │
+│  Client-side navigation -> WASM SQLite (downloads body-        │
+│  stripped SQL dump, runs queries in browser)                    │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-### Structure Rationale
+### Key SSG-Specific Components (will change or be eliminated)
 
-- **`app/` vs root:** Nuxt 4's key change — all Vue code lives in `app/` to separate framework-controlled directories. Files outside `app/` (server, public, content) remain at root.
-- **`content/novels/[novel]/[chapter].md`:** Nuxt Content v3 maps this to URL path `/novels/[novel]/[chapter]` automatically for `type: 'page'` collections, aligning content location with routes.
-- **`app/layouts/chapter.vue`:** Separate layout from default justifies the reading-focused chrome (no nav clutter, full-width prose, keyboard nav active).
-- **Per-novel directory** rather than flat: mirrors existing Astro structure, enables per-novel collection definitions for targeted queries.
+| Component | SSG Role | SSR Status |
+|-----------|----------|------------|
+| `nitro.prerender.routes` + `prerender:routes` hook | Generates 26,694 route list via `readdirSync` | **Eliminate** -- no prerendering needed |
+| `nitro.prerender.crawlLinks: false` | Prevents crawler discovering 13K chapters | **Eliminate** -- moot without prerendering |
+| `nitro.prerender.concurrency: 4` | Throttles build memory usage | **Eliminate** |
+| `scripts/strip-dump-bodies.mjs` | Reduces client SQL dumps by 96% | **Revisit** -- may still be needed for client-side nav |
+| `routeRules: { '/': { prerender: true } }` | Prerenders home page | **Expand** -- becomes the hybrid rendering control surface |
+| Deploy: `--dir=.output/public --no-build` | Deploys static files only | **Change** -- `nuxt build` outputs to `.netlify/` structure |
 
 ---
 
-## Architectural Patterns
+## Target Architecture (SSR on Netlify)
 
-### Pattern 1: Per-Novel Collections in content.config.ts
+```
+BUILD TIME (nuxt build, target <1 min)
+┌─────────────────────────────────────────────────────────────────┐
+│  content/{novel}/*.md  (13,318 files, 170MB)                   │
+│       |                                                         │
+│  Nuxt Content v3 parser -> SQLite DB + SQL dump files          │
+│       |                                                         │
+│  Nitro builds server bundle + static assets                    │
+│       |                                                         │
+│  .output/                                                       │
+│    ├── server/     (Nitro server -> Netlify Function)          │
+│    └── public/     (static assets, CSS, JS, SQL dumps)         │
+│                                                                 │
+│  Netlify auto-detects preset, deploys:                         │
+│    .netlify/functions-internal/server/  (serverless function)  │
+│    dist/  (static assets served from CDN)                      │
+└─────────────────────────────────────────────────────────────────┘
 
-**What:** Define one collection per novel (10 total) rather than one monolithic collection. Each collection targets a single novel's directory.
-
-**When to use:** Any time you need to list chapters for a specific novel, you query the novel's collection directly instead of filtering 13K records.
-
-**Trade-offs:** 10x more collection definitions but each query is scoped. Eliminates the need for path-prefix `LIKE` filtering on every chapter list query.
-
-**Example:**
-```typescript
-// content.config.ts
-import { defineContentConfig, defineCollection, z } from '@nuxt/content'
-
-const chapterSchema = z.object({
-  title: z.string(),
-  pubDate: z.coerce.date(),
-  tags: z.array(z.string()).optional(),
-})
-
-export default defineContentConfig({
-  collections: {
-    mga: defineCollection({
-      type: 'page',
-      source: 'novels/mga/*.md',
-      schema: chapterSchema,
-    }),
-    atg: defineCollection({
-      type: 'page',
-      source: 'novels/atg/*.md',
-      schema: chapterSchema,
-    }),
-    // ... repeat for all 10 novels
-  }
-})
+RUNTIME (Netlify CDN + Functions)
+┌─────────────────────────────────────────────────────────────────┐
+│                     NETLIFY CDN EDGE                            │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │ Cached responses (ISR/SWR)                               │  │
+│  │ Static assets (JS, CSS, fonts)                           │  │
+│  │ _payload.json files (for client-side nav)                │  │
+│  └────────────────────────┬─────────────────────────────────┘  │
+│                           │ cache MISS                          │
+│  ┌────────────────────────▼─────────────────────────────────┐  │
+│  │         NETLIFY FUNCTION (AWS Lambda, us-east-2)         │  │
+│  │                                                           │  │
+│  │  Cold start:                                              │  │
+│  │    1. Node.js 22 runtime boots                           │  │
+│  │    2. Nitro server initializes                           │  │
+│  │    3. First queryCollection() triggers dump restore      │  │
+│  │       -> SQLite DB created in /tmp/contents.sqlite       │  │
+│  │    4. Page rendered (Vue SSR + content from SQLite)      │  │
+│  │    5. HTML + CDN cache headers returned                  │  │
+│  │                                                           │  │
+│  │  Warm request (same Lambda instance):                    │  │
+│  │    1. SQLite already in /tmp                             │  │
+│  │    2. Page rendered directly from SQLite                 │  │
+│  │    3. HTML + CDN cache headers returned                  │  │
+│  │                                                           │  │
+│  │  Constraints:                                             │  │
+│  │    Memory: 1024 MB default                               │  │
+│  │    Timeout: 60 seconds                                   │  │
+│  │    Response: 6 MB (buffered) / 20 MB (streamed)         │  │
+│  └──────────────────────────────────────────────────────────┘  │
+│                                                                 │
+│                     BROWSER                                     │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │  Initial load: server-rendered HTML (full content)       │  │
+│  │  Client-side nav: fetches _payload.json from CDN         │  │
+│  │  localStorage: reading progress (unchanged)              │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-### Pattern 2: Metadata-Only Queries for Chapter Lists
+---
 
-**What:** Use `select()` to fetch only lightweight fields when building chapter listings. Never load the markdown body/AST when listing chapters.
+## Component Changes: SSG to SSR
 
-**When to use:** Any page that displays a list of chapters (home, novel detail, chapter jumper dropdown).
+### Components That Change
 
-**Trade-offs:** Dramatically reduces the data fetched per query. Critical when WASM SQLite includes parsed ASTs for 13K chapters.
+| Component | Current (SSG) | Target (SSR) | Effort |
+|-----------|---------------|--------------|--------|
+| `nuxt.config.ts` | `nuxt generate` prerender config, readdirSync routes | Remove prerender config, add `@netlify/nuxt`, add ISR routeRules, add `content.database.filename: '/tmp/contents.sqlite'` | Medium |
+| `package.json` build script | `"build": "nuxt build"` (but used as `nuxt generate` for deploy) | `"build": "nuxt build"` (SSR build) | Low |
+| `package.json` deploy script | `netlify deploy --prod --dir=.output/public --no-build` | `netlify deploy --prod --no-build` (auto-detects `.netlify/` structure) or Netlify CI build | Medium |
+| `routeRules` | Only `'/': { prerender: true }` | ISR rules for chapter pages, prerender for static pages | Medium |
 
-**Example:**
-```typescript
-// app/pages/novels/[novel]/index.vue
-const novel = useRoute().params.novel as string
-const { data: chapters } = await useAsyncData(`chapters-${novel}`, () =>
-  queryCollection(novel)
-    .select(['path', 'title', 'pubDate'])
-    .order('path', 'ASC')
-    .all()
-)
+### Components That Are Eliminated
+
+| Component | Why Eliminated |
+|-----------|---------------|
+| `nitro.prerender.routes` (static route array) | No prerendering of RSS/error pages -- SSR serves them dynamically |
+| `nitro.hooks['prerender:routes']` (readdirSync loop) | No prerendering of chapter pages |
+| `getChapterSlugs()` function in nuxt.config.ts | No filesystem-based route generation needed |
+| `scripts/strip-dump-bodies.mjs` | See analysis below -- likely eliminated or greatly simplified |
+| `nitro.prerender.concurrency: 4` | No prerendering |
+| `nitro.prerender.crawlLinks: false` | No prerendering |
+
+### Components That Stay Unchanged
+
+| Component | Why Unchanged |
+|-----------|---------------|
+| `content.config.ts` | Per-novel collections work identically in SSR |
+| `app/pages/*.vue` (all page components) | `useAsyncData` + `queryCollection` works in both SSG and SSR |
+| `app/composables/useReadingProgress.ts` | Already SSR-safe (`import.meta.client` guard) |
+| `app/composables/useChapterNav.ts` | `useAsyncData` works in SSR |
+| `app/composables/useAutoHideHeader.ts` | Client-side only, unaffected |
+| `app/composables/useNovelMeta.ts` | Pure data, no runtime dependency |
+| `app/components/ResumeDropdown.vue` | Already wrapped in `<ClientOnly>` |
+| `app/layouts/default.vue` | No SSG-specific code |
+| `server/routes/rss.xml.ts` | Already uses server-side `queryCollection(event, ...)` |
+| `server/routes/novels/[novel]/rss.xml.ts` | Already uses server-side `queryCollection(event, ...)` |
+| `scripts/import.mjs` | Developer workflow, not deployment |
+
+---
+
+## Data Flow: SSR Chapter Page Request
+
+### First Request (Cold Start, Cache Miss)
+
+```
+1. Browser requests GET /novels/mga/chapter-1500
+        |
+2. Netlify CDN: no cached response -> forward to Function
+        |
+3. Netlify Function (AWS Lambda) cold starts:
+   a. Node.js 22 runtime boots (~100-300ms)
+   b. Nitro server initializes
+   c. Vue SSR begins rendering the page
+   d. useAsyncData calls queryCollection('mga').path('/mga/chapter-1500').first()
+   e. First query triggers dump restore:
+      - Reads SQL dump from bundled assets
+      - Decompresses and loads into SQLite at /tmp/contents.sqlite
+      - THIS IS THE CRITICAL LATENCY POINT (dump size matters)
+   f. SQLite query returns chapter content
+   g. Vue renders HTML with chapter prose
+   h. Nitro adds response headers:
+      Cache-Control: public, max-age=0, must-revalidate
+      Netlify-CDN-Cache-Control: public, max-age=31536000, stale-while-revalidate=31536000, durable
+        |
+4. Netlify CDN caches the response globally (durable directive)
+        |
+5. Browser receives full HTML (chapter content visible immediately)
+   Vue hydrates, localStorage saves reading progress
 ```
 
-### Pattern 3: ContentRenderer for Chapter Pages
+### Subsequent Requests (Cache Hit)
 
-**What:** Query the full document (including body) on chapter reader pages, then pass to `<ContentRenderer>`.
-
-**When to use:** Only on the chapter reader page (`[chapter].vue`). This is the one place where full content is needed.
-
-**Trade-offs:** For prerendered pages, the rendered HTML is embedded at build time. Client-side navigation will fetch from WASM SQLite.
-
-**Example:**
-```typescript
-// app/pages/novels/[novel]/[chapter].vue
-definePageMeta({ layout: 'chapter' })
-
-const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection(route.params.novel as string)
-    .path(route.path)
-    .first()
-)
-
-const { data: surroundings } = await useAsyncData(`nav-${route.path}`, () =>
-  queryCollectionItemSurroundings(
-    route.params.novel as string,
-    route.path,
-    { before: 1, after: 1 }
-  )
-)
-// surroundings[0] = prev chapter, surroundings[1] = next chapter
+```
+1. Browser requests GET /novels/mga/chapter-1500
+        |
+2. Netlify CDN: cached response found -> serve directly
+   (No Function invocation, ~20-50ms response)
+        |
+3. Browser receives cached HTML
+   Vue hydrates, localStorage saves reading progress
 ```
 
-```vue
-<template>
-  <div>
-    <ChapterNav :prev="surroundings?.[0]" :next="surroundings?.[1]" />
-    <ContentRenderer v-if="page" :value="page" />
-    <ChapterNav :prev="surroundings?.[0]" :next="surroundings?.[1]" />
-  </div>
-</template>
+### Client-Side Navigation (SPA transition)
+
+```
+1. User clicks "Next Chapter" link (Vue Router navigation)
+        |
+2. Nuxt fetches _payload.json for the target page:
+   GET /novels/mga/chapter-1501/_payload.json
+        |
+3a. If ISR cached: CDN serves _payload.json directly (no Function)
+        |
+3b. If not cached: Function renders page, returns HTML + payload
+        |
+4. Vue updates DOM with new chapter content
+   localStorage saves new reading progress
 ```
 
-### Pattern 4: SSR-Safe localStorage for Reading Progress
+**Key insight:** With Nuxt 4.3+ payload extraction working for ISR/SWR routes, client-side navigation fetches `_payload.json` from the CDN rather than downloading the full WASM SQLite dump. This means the massive SQL dump download that was a concern in SSG mode is largely eliminated in ISR mode.
 
-**What:** Wrap all `localStorage` access in `onMounted` or use VueUse's `useLocalStorage` (SSR-safe). Never access `window` or `localStorage` at the top level of a composable.
+### Comparison: SSG vs SSR Data Flow
 
-**When to use:** `useReadingProgress` composable, `ResumeReading` component.
+| Aspect | SSG (Current) | SSR (Target) |
+|--------|---------------|--------------|
+| First page load | CDN serves static HTML (~20ms) | CDN serves cached HTML (~20ms) or Function renders (~500-2000ms on cold start) |
+| Build time | ~10 min (26,694 routes) | <1 min (no route prerendering) |
+| Client-side nav | WASM SQLite downloads full dump, queries locally | Fetches _payload.json from CDN (ISR cached) |
+| Content freshness | Stale until next build + deploy | Fresh on next ISR revalidation |
+| Deploy size | ~2GB+ (13K HTML files + assets) | ~50MB (server bundle + static assets) |
+| Cold start cost | None (all static) | ~500-2000ms first request per Lambda instance |
 
-**Trade-offs:** The reading progress widget is only visible after hydration (client-side only). Acceptable for this feature.
+---
 
-**Example:**
+## Critical Architecture Decision: ISR Strategy
+
+The ISR (Incremental Static Regeneration) configuration is the most important architectural decision for SSR migration. It determines performance characteristics for every page type.
+
+### Recommended routeRules Configuration
+
 ```typescript
-// app/composables/useReadingProgress.ts
-import { useLocalStorage } from '@vueuse/core'
+// nuxt.config.ts
+routeRules: {
+  // Home page: prerender at build time (changes rarely, lightweight)
+  '/': { prerender: true },
 
-export function useReadingProgress() {
-  // useLocalStorage is SSR-safe in VueUse — returns null on server
-  const savedChapters = useLocalStorage<Record<string, { path: string; timestamp: number }>>(
-    'savedChapters',
-    {}
-  )
+  // Novel catalog: prerender (10 novels, changes rarely)
+  '/novels': { prerender: true },
 
-  function saveProgress(novel: string, path: string) {
-    savedChapters.value[novel] = { path, timestamp: Date.now() }
-  }
+  // Novel detail pages: ISR with long TTL
+  // Chapters don't change after publish, so cache indefinitely
+  // Revalidated on deploy
+  '/novels/*': { isr: true },
 
-  function getProgress(novel: string) {
-    return savedChapters.value[novel]?.path ?? null
-  }
-
-  return { saveProgress, getProgress }
+  // Chapter pages: ISR with long TTL
+  // Content is immutable after publish -- cache until next deploy
+  '/novels/*/*': { isr: true },
 }
 ```
 
-### Pattern 5: Prerendering All Routes for Static Netlify Deploy
+**`isr: true` (no TTL)** means: render on first request, cache on CDN, serve cached forever, purge only on new deploy. This is ideal because chapter content never changes after publishing.
 
-**What:** Configure Nuxt to prerender every route at build time using `nuxt generate` with `crawlLinks: true`. This generates static HTML for all 13K+ chapter pages.
+**Alternative: `isr: 3600` (1-hour TTL)** would background-revalidate hourly. Unnecessary overhead since content is static.
 
-**When to use:** Required for Netlify static hosting. Every chapter URL must be a pre-built HTML file.
+### What ISR Eliminates
 
-**Trade-offs:** Build time will be significant (see scalability section). All routes must be discoverable by the crawler from `index.vue` links.
+With `isr: true` for chapter pages:
+- First visitor to a chapter triggers server render (~500-2000ms)
+- All subsequent visitors get CDN-cached response (~20-50ms)
+- After a deploy, cache is purged and pages re-render on demand
+- No 10-minute build time. No 26,694 prerendered routes.
+- Effectively "lazy SSG" -- same performance as SSG after first visit
 
-**Example:**
+---
+
+## Nuxt Content v3 SQLite in Netlify Functions
+
+### How It Works
+
+1. **Build time:** Nuxt Content parses all 13,318 markdown files into SQLite and exports SQL dump files (one per collection, gzip + base64 encoded).
+
+2. **Runtime (cold start):** When the Netlify Function receives its first content query, Nuxt Content reads the bundled SQL dump, decompresses it, and restores the data into a SQLite database at `/tmp/contents.sqlite`.
+
+3. **Runtime (warm):** Subsequent requests on the same Lambda instance reuse the SQLite database in `/tmp`. No dump restoration needed.
+
+### Configuration
+
 ```typescript
 // nuxt.config.ts
-export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  future: { compatibilityVersion: 4 },
-
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/sitemap'],
-
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      // Seed the crawler — chapter pages are linked from novel index pages
-      routes: ['/'],
-    },
+content: {
+  database: {
+    type: 'sqlite',
+    filename: '/tmp/contents.sqlite',  // Only writable dir on Lambda
   },
-
-  routeRules: {
-    // Explicit prerender for all novel routes as fallback
-    '/novels/**': { prerender: true },
+  experimental: {
+    sqliteConnector: 'native',  // Node 22.5+ native sqlite (no better-sqlite3 needed)
   },
-})
+  watch: {
+    enabled: false,  // No watching in production
+  },
+},
+```
+
+### Cold Start Performance Concern
+
+This is the highest-risk item in the migration. The SQL dump for 13K chapters with full bodies could be substantial:
+
+| Factor | Estimate | Impact |
+|--------|----------|--------|
+| Raw content | 170MB markdown | Parsed AST is larger than raw markdown |
+| Dump compression | gzip typically 5-10x compression | ~17-34MB compressed per collection |
+| Collections | 10 separate dumps | Each loaded independently on first query for that collection |
+| Restore time | ~200ms per 10MB (from Turso benchmarks) | Could be 500-2000ms for large collections |
+| Lambda memory | 1024 MB default | SQLite + Node.js overhead must fit |
+
+**Mitigations:**
+1. Per-novel collections mean only the queried novel's dump loads on a given request (not all 13K chapters)
+2. ISR caching means cold starts are rare (most requests hit CDN)
+3. Lambda instances stay warm for ~15-30 minutes between requests
+4. If cold start is too slow, increase Lambda memory (more memory = proportionally more CPU on Lambda)
+
+### Alternative: External Database
+
+If cold start proves unacceptable, the fallback is an external database:
+
+| Option | Pros | Cons |
+|--------|------|------|
+| **Turso (LibSQL)** | SQLite-compatible, free tier generous, no cold start restore | Additional service dependency, env vars for auth |
+| **PostgreSQL (Neon/Supabase)** | Managed, no cold start | Different query semantics, connection pooling needed |
+| **In-memory SQLite (`:memory:`)** | No /tmp needed | Restores dump on EVERY request (no persistence between requests) |
+
+**Recommendation:** Start with `/tmp/contents.sqlite`. Measure cold start latency. Only switch to Turso if cold start exceeds 3 seconds.
+
+---
+
+## Deployment Pipeline Changes
+
+### Current (SSG)
+
+```bash
+# package.json scripts
+"build": "nuxt build",                        # actually runs nuxt generate
+"deploy": "pnpm build && netlify deploy --prod --dir=.output/public --no-build"
+
+# Post-build step
+node scripts/strip-dump-bodies.mjs             # strips chapter bodies from SQL dumps
+```
+
+### Target (SSR)
+
+```bash
+# package.json scripts
+"build": "nuxt build",                         # SSR build (generates server bundle)
+"deploy": "pnpm build && netlify deploy --prod --no-build"
+
+# No post-build body stripping needed (see analysis below)
+```
+
+### Netlify Configuration
+
+```toml
+# netlify.toml (new file)
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # AWS_LAMBDA_JS_RUNTIME = "nodejs22.x"  # should be default, but explicit if needed
+```
+
+**Or:** Continue using CLI deploy without `netlify.toml`. Netlify auto-detects Nuxt and configures the Function deployment.
+
+### @netlify/nuxt Module
+
+```typescript
+// nuxt.config.ts
+modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/sitemap', '@netlify/nuxt'],
+```
+
+This module provides:
+- Netlify Blobs integration
+- On-demand cache invalidation
+- ISR with `durable` cache directive
+- Local dev parity (test Netlify primitives with `nuxt dev`)
+- Automatic 404 for missing static assets without Function invocation
+
+---
+
+## Body Stripping Analysis for SSR
+
+### Why Body Stripping Existed
+
+In SSG mode, Nuxt Content generates SQL dump files that get downloaded to the browser for client-side WASM SQLite queries. With 13K chapters of novel content, the unstripped dumps were massive. The `strip-dump-bodies.mjs` script reduced dump size by 96%.
+
+### SSR Changes the Equation
+
+In SSR with ISR:
+1. **Server-side rendering:** Chapter content comes from the server-rendered HTML, not from a client-side SQLite query
+2. **Payload extraction:** Client-side navigation fetches `_payload.json` from CDN (contains the pre-rendered page data)
+3. **WASM SQLite downloads:** May still occur if a client-side content query runs before a cached payload is available
+
+### Recommendation
+
+**Eliminate body stripping initially.** With ISR caching, the path where a browser would need to download the full SQL dump is narrow:
+- ISR-cached pages serve `_payload.json` directly
+- Only truly first-ever visits to uncached pages might trigger WASM SQLite
+- Even then, per-novel collections mean only one novel's dump loads (not all 13K chapters)
+
+If monitoring reveals excessive client-side dump downloads, the stripping script can be re-enabled as a build step. But it should not be the default assumption.
+
+---
+
+## RSS and Sitemap in SSR
+
+### RSS Feeds
+
+The existing server routes (`server/routes/rss.xml.ts` and `server/routes/novels/[novel]/rss.xml.ts`) already use server-side `queryCollection(event, ...)`. They will work identically in SSR mode -- no changes needed.
+
+In SSG mode, these routes were prerendered as static XML files. In SSR mode, they render dynamically on each request. To avoid unnecessary Function invocations:
+
+```typescript
+routeRules: {
+  '/rss.xml': { isr: 3600 },              // Re-generate hourly
+  '/novels/*/rss.xml': { isr: 3600 },     // Re-generate hourly
+}
+```
+
+### Sitemap
+
+`@nuxtjs/sitemap` works in SSR mode. It generates the sitemap dynamically at runtime. With 13K URLs across 10 multi-sitemaps, this is a moderately expensive operation. Cache it:
+
+```typescript
+routeRules: {
+  '/sitemap*.xml': { isr: true },  // Cache until deploy
+}
 ```
 
 ---
 
-## Data Flow
-
-### Build-Time Data Flow
+## Architecture Diagram: Component Boundaries
 
 ```
-content/novels/[novel]/[chapter].md
-        ↓
-Nuxt Content v3 parser (markdown → AST)
-        ↓
-SQLite database (metadata + AST per chapter)
-        ↓
-nuxt generate → Nitro crawler
-        ↓
-  For each route: queryCollection() → HTML page rendered
-        ↓
-.output/public/
-  ├── index.html
-  ├── novels/index.html
-  ├── novels/mga/index.html         ← 2,335 chapter list rows
-  ├── novels/mga/1/index.html       ← chapter rendered to HTML
-  ├── novels/mga/2/index.html
-  └── ... (13,318 chapter files)
-        ↓
-Netlify deploy (CDN-distributed static files)
-```
+┌───────────────────────────────────────────────────────────────┐
+│                    nuxt.config.ts                              │
+│  modules: [@nuxt/content, @nuxt/ui, @nuxtjs/sitemap,         │
+│            @netlify/nuxt]                                      │
+│  routeRules: ISR configuration per route pattern              │
+│  content.database: { type: 'sqlite',                          │
+│                      filename: '/tmp/contents.sqlite' }       │
+└───────────────────┬───────────────────────────────────────────┘
+                    │
+    ┌───────────────┼──────────────────────┐
+    │               │                      │
+    ▼               ▼                      ▼
+┌──────────┐  ┌──────────────┐  ┌─────────────────────┐
+│ content/ │  │ app/         │  │ server/              │
+│          │  │              │  │                       │
+│ 13K .md  │  │ pages/       │  │ routes/              │
+│ files    │  │  index       │  │  rss.xml.ts          │
+│          │  │  novels/     │  │  novels/[novel]/     │
+│ Parsed   │  │   index      │  │   rss.xml.ts         │
+│ at build │  │   [novel]/   │  │                       │
+│ time     │  │    index     │  │ queryCollection(event)│
+│          │  │    [...slug] │  │ (server-side queries) │
+│ SQL dump │  │              │  │                       │
+│ generated│  │ layouts/     │  └─────────────────────┘
+│          │  │  default     │
+│          │  │              │
+│          │  │ composables/ │
+│          │  │  useChapterNav      │
+│          │  │  useReadingProgress │
+│          │  │  useAutoHideHeader  │
+│          │  │  useNovelMeta       │
+│          │  │              │
+│          │  │ components/  │
+│          │  │  ResumeDropdown     │
+└──────────┘  └──────────────┘
 
-### Runtime Data Flow (User Visit)
+         BOUNDARY: Build vs Runtime
+    ─────────────────────────────────────
 
-```
-User visits /novels/mga/1500
-        ↓
-CDN serves prerendered HTML (instant, no server needed)
-        ↓
-Vue hydrates on client
-        ↓
-First content query (e.g., click to /novels/mga/1501 via Vue Router)
-        ↓
-WASM SQLite database dump downloaded from CDN (~?MB — see pitfalls)
-        ↓
-SQLite initialized in browser (IndexedDB or in-memory)
-        ↓
-All subsequent navigation queries run locally in browser
-```
-
-### Reading Progress Data Flow
-
-```
-User lands on /novels/mga/1500
-        ↓
-Chapter.vue calls saveProgress('mga', '/novels/mga/1500') on mount
-        ↓
-useReadingProgress writes to localStorage key 'savedChapters'
-        ↓
-(later) User visits home page /
-        ↓
-ResumeReading component reads localStorage in onMounted
-        ↓
-Displays "Continue: MGA Chapter 1500" link per novel
-```
-
-### RSS Feed Data Flow
-
-```
-server/routes/feed.xml.ts (server route)
-        ↓
-queryCollection('mga').select(['path','title','pubDate']).order('pubDate','DESC').limit(50).all()
-        ↓
-Feed XML built with latest chapters across all novels
-        ↓
-/feed.xml static file (prerendered at build time)
+┌──────────────────────────────────────────────────────────────┐
+│                    NETLIFY INFRASTRUCTURE                     │
+│                                                              │
+│  CDN Edge           │  Function (Lambda)                     │
+│  ┌────────────┐     │  ┌──────────────────────────────────┐ │
+│  │ ISR cache  │     │  │ Nitro server                     │ │
+│  │ _payload   │◄────│──│ SQLite /tmp restore on cold start│ │
+│  │ static JS  │     │  │ Vue SSR rendering                │ │
+│  │ CSS/fonts  │     │  │ Content queries -> chapter HTML  │ │
+│  └────────────┘     │  └──────────────────────────────────┘ │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Integration Points
+## Hybrid Rendering: Prerender vs ISR Decision Matrix
 
-### External Services
-
-| Service | Integration Pattern | Notes |
-|---------|---------------------|-------|
-| Netlify CDN | `nuxt generate` output deployed to `/dist` or `.output/public` | Zero-config Nuxt 4 Netlify detection via `@netlify/plugin-nuxt` |
-| Google Docs | `scripts/import.mjs` runs locally, outputs `.md` to `content/novels/[novel]/` | Not a runtime integration — developer workflow only |
-
-### Internal Boundaries
-
-| Boundary | Communication | Notes |
-|----------|---------------|-------|
-| `content/` ↔ `app/pages/` | `queryCollection()` composable (Nuxt Content API) | Type-safe, auto-imported |
-| `app/pages/` ↔ `app/layouts/` | `definePageMeta({ layout: 'chapter' })` | Chapter pages use reading layout |
-| `app/pages/` ↔ `app/composables/` | Direct import (auto-imported in Nuxt) | Composables accessed in `<script setup>` |
-| `app/composables/useReadingProgress` ↔ browser | VueUse `useLocalStorage` | No server involvement; SSR-safe |
-| `server/routes/feed.xml.ts` ↔ `content/` | `queryCollection(event, ...)` with event parameter | Server-side query requires `event` arg |
-| `nuxt.config.ts` ↔ Netlify | `nitro.prerender` + Netlify adapter auto-detection | Build-time only |
+| Route Pattern | Strategy | Rationale |
+|---------------|----------|-----------|
+| `/` | `prerender: true` | Home page is lightweight, changes only on deploy |
+| `/novels` | `prerender: true` | Catalog of 10 novels, changes only when a novel is added |
+| `/novels/:novel` | `isr: true` | Chapter listing per novel, content rarely changes |
+| `/novels/:novel/:chapter` | `isr: true` | Chapter content is immutable after publish |
+| `/rss.xml` | `isr: 3600` | Hourly refresh for feed readers |
+| `/novels/:novel/rss.xml` | `isr: 3600` | Hourly refresh for per-novel feeds |
+| `/sitemap*.xml` | `isr: true` | Static content, regenerate on deploy only |
+| `/200.html`, `/404.html` | `prerender: true` | Error pages must be static |
 
 ---
 
-## Scalability Considerations
+## Migration Risk Assessment
 
-| Scale | Architecture Adjustments |
-|-------|--------------------------|
-| Current: 13K pages, 10 novels | Pure SSG with `nuxt generate`; all pages prerendered; expect 30-90 min builds |
-| +5K pages (more chapters) | Build time increases proportionally; investigate Netlify build time limits (default: 30 min); may need plan upgrade or build caching |
-| New novels added | Add collection definition to `content.config.ts`; no architectural change needed |
-| 1M+ monthly visitors | CDN handles static files trivially; WASM SQLite downloaded once per visitor, cached; no server scaling needed |
+### LOW RISK (Standard patterns, well-documented)
 
-### Scaling Priorities
+- **Build command change:** `nuxt generate` to `nuxt build` is a one-line change
+- **Module addition:** `@netlify/nuxt` is zero-config
+- **RSS/sitemap routes:** Already server-side, work unchanged
+- **Page components:** `useAsyncData` + `queryCollection` identical in SSR
+- **Composables:** Already SSR-safe
 
-1. **First bottleneck: build time.** The 13,318-page prerender is the main risk. Existing Astro site already handles this, so Nuxt must match it. Use Netlify's build cache plugin to avoid rebuilding unchanged pages. Validate actual build time early in development.
+### MEDIUM RISK (Needs validation)
 
-2. **Second bottleneck: WASM SQLite database size.** Nuxt Content v3 downloads a full SQLite dump to the browser on first content query. With 13K chapters of 170MB markdown, this dump's size is unknown but potentially significant. Use `select()` everywhere to minimize query overhead; the dump size itself cannot be controlled without changing the content architecture.
+- **ISR cache behavior:** Verify `isr: true` purges on deploy for Netlify
+- **Payload extraction for chapters:** Verify `_payload.json` generated for ISR routes
+- **Sitemap with 13K URLs:** May need dynamic sitemap endpoint instead of build-time generation
+- **Deploy script change:** Test CLI deploy vs Netlify CI for SSR output structure
 
----
+### HIGH RISK (Unknown until measured)
 
-## Anti-Patterns
-
-### Anti-Pattern 1: Single Monolithic Chapters Collection
-
-**What people do:** Define one collection for all novels: `source: 'novels/**/*.md'`. Then filter with `where('path', 'LIKE', '/novels/mga/%')` for every novel-specific query.
-
-**Why it's wrong:** Every listing query must scan all 13K records and filter client-side or via LIKE. SQLite handles it, but prerendering means this query runs 13K times during build. Debugging is also harder.
-
-**Do this instead:** Define 10 per-novel collections. Each `queryCollection('mga')` only scans that novel's records (max ~2,335 rows instead of 13,318).
-
-### Anti-Pattern 2: Loading Full Content Bodies in List Views
-
-**What people do:** `queryCollection('mga').all()` without `.select()`, loading full parsed AST for every chapter when building a listing.
-
-**Why it's wrong:** Each chapter body is the full parsed markdown AST. At 13K chapters this multiplies memory usage massively during build and inflates the per-page payload in SSG output.
-
-**Do this instead:** Always use `.select(['path', 'title', 'pubDate'])` for list queries. Only load full content on the chapter reader page.
-
-### Anti-Pattern 3: Using Tags Arrays for Novel Filtering
-
-**What people do:** Port the Astro `tags.includes(novel)` filter directly. The Astro `novelSchema` uses `tags: z.array(z.string())` and filters `data.tags.includes(novel)`.
-
-**Why it's wrong:** Nuxt Content v3 stores arrays as JSON strings in SQLite. There is no native `$contains` operator. The workaround `.where('tags', 'LIKE', '%"mga"%')` works but is fragile and bypasses type safety.
-
-**Do this instead:** Use per-novel collections (Pattern 1). Novel identity comes from which collection you query, not from a tags field. Tags field can be removed from the schema entirely.
-
-### Anti-Pattern 4: Accessing localStorage at Module Scope
-
-**What people do:** `const savedChapters = JSON.parse(localStorage.getItem('savedChapters'))` at the top level of a composable or component script.
-
-**Why it's wrong:** Nuxt renders on the server first (even for static generation). `localStorage` and `window` are undefined in Node.js. This crashes the build.
-
-**Do this instead:** Use VueUse `useLocalStorage` (SSR-aware) or guard with `if (import.meta.client)` / `onMounted`.
-
-### Anti-Pattern 5: Skipping `routeRules` Prerender Fallback
-
-**What people do:** Rely only on `crawlLinks: true` and assume the crawler will find all 13K chapter pages.
-
-**Why it's wrong:** The Nitro crawler starts from `/` and follows links. If the chapter listing page only shows 3 chapters (like the home page in the current Astro site), thousands of chapter URLs will never be discovered.
-
-**Do this instead:** Set `routeRules: { '/novels/**': { prerender: true } }` AND ensure every chapter URL appears as an `<a href>` in the novel's chapter listing page. The novel detail page should render all chapters as links so the crawler finds them.
+- **Cold start latency:** 13K-chapter SQL dump restore time is unknown. Could be 200ms (acceptable) or 5 seconds (unacceptable). Must be measured early.
+- **SQLite /tmp persistence:** Netlify Functions reuse Lambda instances for ~15-30 min. If instance recycling is aggressive, cold starts become frequent.
+- **Memory usage:** SQLite database with 13K chapters of parsed AST in memory. 1024 MB Lambda limit may be tight.
+- **Native SQLite connector on Lambda:** Node 22 `node:sqlite` is used in build. Must verify it works in the Lambda runtime (not just local dev).
 
 ---
 
-## Build Order Implications for Roadmap
+## Suggested Build Order for Migration
 
-The component dependencies create this natural build order:
+Dependencies flow top-down. Each step validates a critical assumption before investing in subsequent work.
 
 ```
-1. content.config.ts + content/ migration
-       ↓ (required before any page can query content)
-2. app/composables/ (useReadingProgress, useKeyboardNav)
-       ↓ (composables are consumed by pages, must exist first)
-3. app/layouts/ (default + chapter)
-       ↓ (pages reference layouts by name)
-4. app/components/ (AppHeader, AppFooter, ChapterNav, etc.)
-       ↓ (components referenced in pages)
-5. app/pages/ — in this order:
-   a. novels/[novel]/index.vue (chapter listing — validates content queries work)
-   b. novels/[novel]/[chapter].vue (reader — validates ContentRenderer + nav)
-   c. novels/index.vue (catalog — builds on listing component)
-   d. index.vue (home — builds on ResumeReading + chapter list patterns)
-       ↓
-6. server/routes/feed.xml.ts (RSS — depends on queryCollection pattern working)
-7. nuxt.config.ts prerender + Netlify deploy (validates full SSG pipeline)
-8. scripts/ port from Astro (import pipeline, standalone from Nuxt)
+Phase 1: Prove SSR Works (HIGH RISK validation)
+├── 1a. Change build command, add @netlify/nuxt module
+├── 1b. Configure content.database for /tmp/contents.sqlite
+├── 1c. Remove all prerender config from nuxt.config.ts
+├── 1d. Deploy to Netlify staging, measure cold start latency
+└── 1e. GATE: If cold start > 3s, investigate Turso before proceeding
+
+Phase 2: ISR Caching Layer
+├── 2a. Add routeRules for ISR on chapter pages
+├── 2b. Verify CDN caching works (check response headers)
+├── 2c. Verify _payload.json generation for ISR routes
+└── 2d. Verify cache purge on deploy
+
+Phase 3: Cleanup and Optimization
+├── 3a. Remove scripts/strip-dump-bodies.mjs
+├── 3b. Remove getChapterSlugs() and prerender hook
+├── 3c. Update deploy script for SSR output
+├── 3d. Add ISR rules for RSS feeds and sitemaps
+└── 3e. Add netlify.toml if needed (or keep CLI deploy)
+
+Phase 4: Validation and Monitoring
+├── 4a. Full site smoke test (all 10 novels, chapter nav, RSS)
+├── 4b. Monitor cold start frequency and latency
+├── 4c. Monitor Function invocation count (should drop as ISR fills cache)
+└── 4d. Compare performance metrics vs SSG baseline
 ```
 
-The chapter reader page (step 5b) is the highest-risk component because it combines: content queries, `ContentRenderer`, `queryCollectionItemSurroundings`, two layouts, keyboard nav, and reading progress. Build it early to surface any Nuxt Content v3 compatibility issues before investing time in catalog/home pages.
+**Phase 1 is the critical gate.** If cold start latency is unacceptable with SQLite `/tmp`, the architecture shifts to an external database (Turso). This must be validated before any other work.
 
 ---
 
 ## Sources
 
-- Nuxt 4 directory structure: https://nuxt.com/docs/4.x/directory-structure (HIGH confidence)
-- Nuxt Content v3 announcement: https://content.nuxt.com/blog/v3 (HIGH confidence)
-- Nuxt Content v3 collections: https://content.nuxt.com/docs/collections/define (HIGH confidence)
-- Nuxt Content v3 queryCollection: https://content.nuxt.com/docs/utils/query-collection (HIGH confidence)
-- Nuxt Content v3 static hosting: https://content.nuxt.com/docs/deploy/static (HIGH confidence)
+- Nuxt on Netlify (official docs): https://docs.netlify.com/build/frameworks/framework-setup-guides/nuxt/ (HIGH confidence)
+- Deploy Nuxt to Netlify: https://nuxt.com/deploy/netlify (HIGH confidence)
+- Nuxt Content v3 serverless hosting: https://content.nuxt.com/docs/deploy/serverless (HIGH confidence)
 - Nuxt Content v3 database: https://content.nuxt.com/docs/advanced/database (HIGH confidence)
-- ContentRenderer component: https://content.nuxt.com/docs/components/content-renderer (HIGH confidence)
-- Nuxt 4 prerendering: https://nuxt.com/docs/4.x/getting-started/prerendering (HIGH confidence)
-- SSG build time at scale: https://github.com/nuxt/nuxt/discussions/26689 (MEDIUM confidence — community discussion, not official benchmark)
-- Array field LIKE workaround: https://zhul.in/en/2025/10/20/nuxt-content-v3-z-array-query-challenge/ (MEDIUM confidence — verified via single source)
-- VueUse useLocalStorage: https://vueuse.org/core/uselocalstorage/ (HIGH confidence)
-- Netlify + Nuxt 4: https://docs.netlify.com/build/frameworks/framework-setup-guides/nuxt/ (HIGH confidence)
+- Nuxt Content v3 Netlify deploy: https://content.nuxt.com/docs/deploy/netlify (HIGH confidence)
+- Netlify Functions overview (constraints): https://docs.netlify.com/build/functions/overview/ (HIGH confidence)
+- ISR and advanced caching with Nuxt 4 on Netlify: https://developers.netlify.com/guides/isr-and-advanced-caching-with-nuxt-v4-on-netlify/ (HIGH confidence)
+- Netlify platform primitives with Nuxt 4: https://www.netlify.com/blog/platform-primitives-with-nuxt-4/ (HIGH confidence)
+- @netlify/nuxt module: https://www.netlify.com/changelog/nuxt-4-support-new-netlify-nuxt-module-for-local-dev/ (HIGH confidence)
+- Nuxt hybrid rendering: https://nuxt.com/docs/4.x/guide/concepts/rendering (HIGH confidence)
+- Netlify Node.js 22 default runtime: https://answers.netlify.com/t/builds-functions-plugins-default-node-js-version-upgrade-to-22/135981 (HIGH confidence)
+- AWS Lambda cold start with SQLite: https://turso.tech/blog/get-microsecond-read-latency-on-aws-lambda-with-local-databases (MEDIUM confidence -- Turso marketing, but technical claims are plausible)
+- Nuxt payload extraction for ISR: https://github.com/nuxt/nuxt/releases/tag/v4.3.0 (MEDIUM confidence -- release notes confirmed feature, not tested at this scale)
 
 ---
 
-*Architecture research for: content-heavy Nuxt 4 novel reading site*
-*Researched: 2026-02-17*
+*Architecture research for: SSG-to-SSR migration of content-heavy Nuxt novel reading site*
+*Researched: 2026-02-18*

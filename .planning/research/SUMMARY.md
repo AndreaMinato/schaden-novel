@@ -1,234 +1,231 @@
 # Project Research Summary
 
-**Project:** schaden-novel — Nuxt 4 rebuild of translated novel reading site
-**Domain:** Content-heavy static reading site (10 novels, 13,318 chapters, SSG to Netlify)
-**Researched:** 2026-02-17
-**Confidence:** MEDIUM-HIGH — stack verified via npm/official docs (HIGH); architecture patterns confirmed via official Nuxt Content v3 docs (HIGH); build-time performance at 13K scale inferred from benchmarks not direct measurement (MEDIUM); feature analysis against competitor sites (MEDIUM)
-
----
+**Project:** Schaden Novel — SSG-to-SSR Migration
+**Domain:** Content-heavy Nuxt 4 site on Netlify (13,318 chapters, 10 novels)
+**Researched:** 2026-02-18
+**Confidence:** MEDIUM-HIGH
 
 ## Executive Summary
 
-This is a rebuild of a proven Astro-based novel reading site into Nuxt 4. The target product is a static, no-auth reading site serving 10 translated novels across 13,318 markdown chapters, deployed to Netlify CDN. The recommended approach is Nuxt 4 + @nuxt/content v3 + @nuxt/ui v4, using full SSG via `nuxi generate`. Because this is a rebuild, not a greenfield project, the MVP is defined as parity with the existing Astro site — not exploration. The major architectural bets are: per-novel Nuxt Content collections (10 collections instead of one monolithic), metadata-only queries for all listing views, and all content queries wrapped in `useAsyncData` to route data through `_payload.json` files instead of triggering WASM SQLite browser downloads.
+This project migrates a proven SSG deployment (26,694 prerendered HTML files, 10-minute builds, manual `netlify deploy --prod --dir=.output/public`) to a hybrid SSR model on Netlify. The motivation is twofold: build speed (10-minute rebuilds for content updates) and new SSR-enabled capabilities (full-content RSS, on-demand rendering). Research identifies two paths — Path A (hybrid prerender + SSR, zero new dependencies, builds stay ~10 min) and Path B (Turso + ISR, builds drop to 1-2 min, one new dependency). The recommendation is to start with Path A to prove Netlify SSR works before committing to an external database.
 
-The single highest-risk technical decision is how Nuxt Content v3 handles static deployments. It ships a full SQLite database dump to the browser on the first client-side content query. With 13,318 chapters and 170MB of source markdown, this dump could reach 100MB+ and make chapter-to-chapter navigation unacceptable. The mitigation is strict: every `queryCollection()` call must be wrapped in `useAsyncData()`, which causes Nuxt to extract the result into a per-page `_payload.json` at build time, bypassing the WASM SQLite download entirely. Violating this pattern anywhere in the codebase reintroduces the problem. This is not a polish concern — it is an architectural constraint that must be enforced from day one.
+The core change is mechanical: remove the `nitro.prerender.routes` array and `prerender:routes` hook that force static-only output, add `routeRules` for hybrid rendering control, and switch the deploy pipeline from `--dir=.output/public --no-build` to Netlify CI (add `netlify.toml`). Every existing page component, composable, and server route works unchanged in SSR mode. The fundamental challenge is the constraint that the 354 MB SQLite database (64 MB unstripped SQL dump) must be available at runtime in a serverless function with a 50 MB zipped bundle limit and 60-second timeout. The mitigation is to continue prerendering all 13K chapter pages at build time — the Lambda only handles metadata-light routes (home, catalog, RSS) that need no body content.
 
-The second risk is build time. Nuxt SSG with 13,318 pages on Netlify will likely exceed 30 minutes (Netlify's default timeout) and exhaust the 300 build minutes/month free tier in 1-2 deploys. The solution is selective prerendering: pre-render only listing pages and the first 1-3 chapters of each novel, then use SPA fallback for all other chapter pages. This must be validated with a benchmark (500 chapters) before the full content migration is committed. Both risks must be resolved in the infrastructure phase before building any features.
-
----
+The highest-risk unknowns are cold start latency with SQLite `/tmp` restoration and whether Netlify's Lambda runtime provides `node:sqlite` on the specific Node 22.x minor version in use. Both must be validated in the first deployment (a canary health-check route) before any further migration work. ISR caching (`isr: true` for chapter pages) is the performance safety net: CDN-cached responses serve most requests, making cold starts rare and user-invisible.
 
 ## Key Findings
 
 ### Recommended Stack
 
-The stack is Nuxt 4 (v4.3.1), @nuxt/ui v4.4.0, and @nuxt/content v3.11.2. Nuxt 4 is the current major (Nuxt 3 reaches EOL July 2026); @nuxt/ui v4 consolidates the previously separate Nuxt UI and Nuxt UI Pro into one free library with 125+ components and Tailwind CSS v4 managed internally — do not install Tailwind separately. Supporting packages are @pinia/nuxt for reading progress persistence, @nuxtjs/sitemap for the 13K-page sitemap, and @nuxtjs/feed for per-novel RSS. Netlify requires Node 22.5+ (not the default 18.x) to use `nativeSqlite: true`, which eliminates the `better-sqlite3` native binding failures common with pnpm v10+.
+The migration requires no new packages for Path A. The existing stack (Nuxt 4.3.1, Nuxt Content v3, native SQLite connector, `@nuxtjs/sitemap`, `feed`) works identically in SSR mode. The build command is already `nuxt build` in `package.json` — the real change is that the `nuxt.config.ts` prerender config is what currently forces static-only output. Removing that config and adding `routeRules` switches the build to SSR mode.
 
 **Core technologies:**
-- nuxt@4.3.1: Framework — current major, avoids mid-project migration from v3
-- @nuxt/content@3.11.2: Markdown pipeline — SQLite backend, required for structured chapter queries; WASM SQLite behavior is the critical constraint
-- @nuxt/ui@4.4.0: UI components — includes Tailwind v4, Reka UI, 125+ components; do not install tailwindcss separately
-- @pinia/nuxt@0.11.3: Reading progress state — Pinia gives persistence plugin for localStorage-backed stores
-- @nuxtjs/sitemap@7.6.0: XML sitemap — required for SEO at 13K pages; integrates with content collections
-- @nuxtjs/feed@2.0.0: RSS feeds — per-novel RSS feeds, v2 targets Nuxt 4
+- `nuxt build` + Netlify preset auto-detection: produces Nitro server function + static assets — the fundamental migration mechanism, zero additional config required
+- `routeRules` in `nuxt.config.ts`: replaces the `nitro.prerender.routes` array and `prerender:routes` hook; controls per-route rendering strategy (prerender/isr/swr/ssr) as the single control surface
+- `netlify.toml` (new file): required for Netlify CI builds; sets `NODE_VERSION=22` and publish directory; eliminates the fragile manual deploy script
+- `content.database.filename: '/tmp/contents.sqlite'`: tells Nuxt Content where to restore the SQL dump on Lambda (only writable path on AWS Lambda)
+- `@netlify/nuxt` module (optional, recommended): provides local dev parity for ISR, Blobs, cache invalidation; zero-config
 
-**Critical version constraints:**
-- Node.js >= 22.5.0 on Netlify (required for `nativeSqlite: true`; Netlify defaults to 18.x — must override in site config)
-- Do NOT install tailwindcss separately — @nuxt/ui v4 manages it internally
+**Path B only (defer unless cold start > 3s):**
+- `@libsql/client`: Turso/LibSQL driver — replaces bundled SQLite dump with a remote database query; eliminates cold start restore penalty entirely
 
 ### Expected Features
 
-This is a rebuild, so "MVP" means parity with the existing Astro site. All P1 features already exist in production; the task is migration without regressions. P2 features are improvements not yet in the Astro site.
+**Must have — P1 (required for migration to be functional):**
+- `routeRules` hybrid rendering config — foundation for all other SSR features
+- Remove `nitro.prerender.routes`, `prerender:routes` hook, and `getChapterSlugs()` function (26K route enumeration via `readdirSync`)
+- Update deploy pipeline from `--dir=.output/public --no-build` to Netlify CI (netlify.toml)
+- Verify all existing pages work in SSR (home, catalog, chapter reader, nav, RSS, sitemap, reading progress, dark mode)
+- Sitemap prerendering — 13K URLs in SSR without prerender will timeout the Lambda
 
-**Must have — parity (P1):**
-- Home page with novel catalog and recent chapters — core entry point
-- Novel detail page with full chapter list — browsing prerequisite
-- Chapter reader with clean prose typography — core product value
-- Prev/next chapter navigation (top + bottom) — serial content requirement; fix known boundary bug from Astro
-- Keyboard navigation (arrow keys) — existing users rely on it
-- Reading progress persistence via localStorage — existing users rely on it
-- Resume reading dropdown across all 10 novels — existing users rely on it
-- RSS feed — existing subscribers depend on it
-- SEO sitemap — existing search ranking depends on it
-- Google Docs import script (ported from Astro) — operational necessity
+**Should have — P2 (high value, leverages SSR):**
+- Full-content RSS feeds — `rawbody` is accessible at SSR render time; requires adding field to collection schema and a markdown-to-HTML pipeline in server routes
+- ISR cache tuning — fine-grained TTLs per route type (chapters: `isr: true`, RSS: `isr: 3600`, sitemaps: `prerender: true`)
+- Elimination of body-stripping pipeline — possible if `_payload.json` from CDN replaces WASM SQLite download in ISR mode (must verify in DevTools)
 
-**Should have — differentiators (P2, add after parity):**
-- Dark mode / light mode toggle with localStorage persistence — HIGH value, LOW complexity; implement with `useColorMode`
-- Novel synopsis page per novel — LOW complexity, improves new visitor conversion
-- Reader settings panel (font size, line height) — MEDIUM complexity; common on Wuxiaworld/Royal Road
+**Defer — P3 (only if cold start or operational problems arise):**
+- On-demand cache invalidation webhook — `purgeCache()` for post-import CDN purging
+- External database migration to Turso — only if cold start with SQLite `/tmp` exceeds 3 seconds
+- Streamlined import pipeline (`import -> deploy -> purge` in one command)
 
-**Defer to v2+:**
-- Chapter jumper sidebar in reader — MEDIUM complexity; useful but not blocking
-- Within-novel chapter search / filter — depends on Nuxt Content query capabilities at 13K scale
-- Scroll position memory within a chapter — LOW priority
-
-**Anti-features (explicitly exclude):**
-- User accounts / authentication — requires full architecture change; out of scope
-- Full-text search across all 13K chapters — 170MB of content; client-side Fuse.js will time out; Algolia requires backend
-- Offline / PWA chapter caching — 170MB makes service worker caching impractical
-- Comments, ratings, monetization — require auth + backend; out of scope per project constraints
+**Anti-features (do not build during migration):**
+- Edge Functions for SSR — Deno runtime, `node:sqlite` unavailable, memory limits incompatible with 64 MB database
+- Full SSR with no caching — 13K unique Lambda invocations is expensive and slow; use ISR
+- Server-side reading progress — scope explosion; localStorage is adequate
 
 ### Architecture Approach
 
-The architecture is pure SSG: all content lives as markdown files under `content/novels/[novel]/`, Nuxt Content v3 parses them into SQLite at build time, `nuxi generate` prerender them to static HTML, and Netlify CDN serves them. The key structural choice is 10 per-novel collections in `content.config.ts` instead of one monolithic collection — this prevents every chapter list query from scanning all 13,318 records. Client-side interactivity (reading progress, keyboard nav, resume reading) lives in composables and is SSR-safe via VueUse's `useLocalStorage`. Chapter-to-chapter navigation after the first page load uses `_payload.json` files (pre-generated per route by `useAsyncData`) rather than the WASM SQLite dump.
+The target architecture is a thin Netlify Function (AWS Lambda, Node 22) running the Nitro server, backed by a per-request SQLite database restored into `/tmp` from a bundled SQL dump. CDN caches ISR responses globally with `durable` directives. Per-novel collections (10 separate dumps) mean only one novel's dump loads on any given request, limiting cold start SQL restoration to a fraction of the full dataset. Client-side navigation fetches `_payload.json` from CDN (Nuxt 4.3+ payload extraction) rather than downloading the full WASM SQLite dump.
 
 **Major components:**
-1. `content.config.ts` — 10 per-novel collection definitions; enforces schema (title, pubDate, stem); required before any page can query content
-2. `app/pages/novels/[novel]/[chapter].vue` — chapter reader; highest-risk component; uses `ContentRenderer`, `queryCollectionItemSurroundings`, chapter layout, keyboard nav, reading progress save
-3. `app/pages/novels/[novel]/index.vue` — chapter listing; metadata-only query with `.select(['path','title','pubDate'])` + `.order('path','ASC')`; validates content query patterns
-4. `app/pages/index.vue` — home page; latest N chapters per novel; builds on listing patterns
-5. `app/composables/useReadingProgress.ts` — VueUse `useLocalStorage` wrapper (SSR-safe); read/write last chapter per novel
-6. `app/composables/useKeyboardNav.ts` — `useEventListener` for arrow key chapter navigation
-7. `server/routes/feed.xml.ts` — per-novel RSS; server-side content query; limit to 50 items per novel
-8. `scripts/import.mjs` — Google Docs to markdown pipeline; port with bug fixes (add retry, remove silent error swallowing, move Doc IDs to .env)
+1. `nuxt.config.ts` — single control surface: `routeRules` (prerender/ISR per route pattern), `content.database` (SQLite `/tmp` path), module list including `@netlify/nuxt`
+2. Netlify CDN edge — serves ISR-cached HTML and `_payload.json`; chapter pages hit CDN after first render, bypassing Lambda entirely
+3. Netlify Function (Lambda, Node 22) — Nitro server handles cache misses; restores per-novel SQLite dump to `/tmp` on cold start; renders Vue SSR and returns HTML + CDN cache headers
+4. `content/` directory — unchanged; 13K markdown files parsed at build time into 10 per-novel SQL dumps bundled into the server function
+5. `server/routes/` — RSS server routes already use server-side `queryCollection(event, ...)`; work unchanged in SSR
+6. `app/` pages and composables — unchanged; `useAsyncData` + `queryCollection` work identically in SSR; localStorage composables already guarded with `import.meta.client`
 
-**Build order (architecture-implied):**
-`content.config.ts` → composables → layouts → components → novel detail page → chapter reader → catalog/home → RSS → Netlify config → scripts
+**Hybrid rendering decision matrix:**
+
+| Route | Strategy | Rationale |
+|-------|----------|-----------|
+| `/`, `/novels` | `prerender: true` | Lightweight, changes only on deploy |
+| `/novels/:novel` | `isr: true` | Chapter listings, rarely changes |
+| `/novels/:novel/:chapter` | `isr: true` | Immutable content, cache until redeploy |
+| `/rss.xml`, `/novels/*/rss.xml` | `isr: 3600` | Hourly refresh for feed readers |
+| `/sitemap*.xml` | `prerender: true` | 13K URLs will timeout Lambda if dynamic |
+| `/200.html`, `/404.html` | `prerender: true` | Error pages must be static |
 
 ### Critical Pitfalls
 
-1. **Netlify build timeout (13K pages)** — Full `nuxt generate` of 13,318 pages will likely run 60-200+ minutes, exceeding Netlify's 30-minute timeout and the 300 build minutes/month free tier. Prevention: selective prerender (listing pages + first 1-3 chapters per novel only); SPA fallback for remaining chapter pages. Must benchmark with 500 chapters in Phase 1 before full content migration.
+1. **SSR requires full chapter bodies — breaks body-stripping strategy** — The current 64 MB dump is stripped to 2.6 MB post-build because all chapter HTML is pre-rendered. SSR chapter rendering would need the full unstripped dump, which exceeds Lambda bundle limits and has prohibitive cold start cost. Prevention: keep chapter pages prerendered via `routeRules`. Only route lightweight metadata-dependent pages (home, catalog) through SSR. If true chapter SSR is ever needed, use Turso (Path B).
 
-2. **WASM SQLite dump downloaded to every browser** — Nuxt Content v3 static sites download the full SQLite database to the browser on the first client-side content query. With 13K chapters, this could be 100MB+. Prevention: wrap every `queryCollection()` in `useAsyncData()` — this is non-negotiable and must be enforced throughout. Never use bare `queryCollection()` in components. Validate SQLite size after ingesting one novel before proceeding.
+2. **Cold start SQLite restore penalty** — Nuxt Content restores the SQL dump into in-memory SQLite on the first query of each cold Lambda instance. Estimated 2-10+ seconds for large dumps. Prevention: use `isr: true` for chapter pages so CDN serves cached responses; only the very first visitor to each chapter post-deploy triggers a Lambda invocation. ISR caching makes cold starts rare and backstage.
 
-3. **`better-sqlite3` native binding failure with pnpm** — pnpm v10+ does not run postinstall scripts by default; `better-sqlite3` installs without its native binary and fails on Netlify CI. Prevention: set `content: { experimental: { nativeSqlite: true } }` in `nuxt.config.ts` AND set Node 22.5+ in Netlify site config. Also add `enable-pre-post-scripts=true` to `.npmrc` as a secondary guard.
+3. **`node:sqlite` availability on Netlify Lambda runtime** — `node:sqlite` was stabilized in v22.13.0; Netlify's Lambda runtime may pin an older Node 22.x minor version. Prevention: deploy a canary `/api/health` endpoint that imports `node:sqlite` and runs a query before any other migration work. Fallback: switch connector to `better-sqlite3` (add to `pnpm.onlyBuiltDependencies`).
 
-4. **Dynamic chapter routes not discovered by Nitro crawler** — Nuxt's prerender crawler follows `<a>` links from the root; if chapter listing pages paginate or omit links, thousands of routes are silently missed. Prevention: add a Nitro hook that enumerates all chapter routes from the content collection at build time (`nitro:config` hook), or ensure every chapter appears as a link in the novel detail page. Verify post-build: `find dist/ -name "*.html" | wc -l` must match expected chapter count.
+4. **Deploy pipeline silently broken after SSR switch** — Deploying only `.output/public/` (current script) after switching to SSR produces a site with no server function; SSR routes return 404 with no visible error. Prevention: add `netlify.toml` and use Netlify CI builds so the framework detection handles the full `.netlify/functions-internal/server/` output structure automatically.
 
-5. **SSR hydration mismatch from `localStorage` access** — accessing `localStorage` or `window` outside `onMounted` crashes SSR/build. Prevention: use VueUse's `useLocalStorage` (SSR-aware) everywhere; wrap `ResumeReading` component in `<ClientOnly>` to prevent hydration warnings.
-
----
+5. **Sitemap generation timeout with 13K URLs in SSR** — Generating 10 sitemaps dynamically triggers cold start + multiple DB queries per request, easily exceeding the 60-second Lambda timeout. Prevention: add all sitemap routes to `routeRules` with `prerender: true`; verify `.output/public/sitemap*.xml` files exist after build.
 
 ## Implications for Roadmap
 
-Based on combined research, 5 phases are suggested. Phases 1-3 achieve full parity; Phase 4 adds differentiators; Phase 5 handles operations.
+Research converges on a 4-phase structure with a hard gate at Phase 1. Each phase validates a critical assumption before the next phase can safely proceed. The ARCHITECTURE.md "Phase 1 is the critical gate" principle is reinforced by PITFALLS.md: all five critical pitfalls are detectable in Phase 1, and most recovery paths are cheap only if caught early.
 
-### Phase 1: Infrastructure and Content Architecture Foundation
+### Phase 1: Infrastructure Validation
 
-**Rationale:** Every other phase depends on a validated build pipeline, correct Netlify configuration, and confirmed content architecture. The WASM SQLite dump size and build time are unknowns at 13K scale — they must be measured before content migration, not after. A wrong answer here requires architecture rewrites.
+**Rationale:** The `node:sqlite` Lambda compatibility and deploy pipeline change are hard blockers. Nothing can be validated until a Netlify Function actually serves requests. This must gate all other phases — if cold start > 3s or `node:sqlite` fails, the architecture changes before investing in config refactor.
 
-**Delivers:** Nuxt 4 project initialized, Netlify configured correctly (Node 22+, nativeSqlite, pnpm .npmrc), `content.config.ts` with 10 per-novel collections defined, one novel's chapters migrated to validate SQLite size and build time, selective prerender strategy confirmed, Netlify deploy pipeline green.
+**Delivers:** Working SSR deployment on Netlify with a verified deploy pipeline and a canary health-check endpoint that imports and queries SQLite. Measured cold start TTFB. Go/no-go decision for SQLite vs Turso.
 
-**Addresses:** Table stakes infrastructure for all P1 features.
+**Addresses:** Deploy pipeline (Pitfall 4), `node:sqlite` compatibility (Pitfall 3), cold start baseline measurement (Pitfall 2)
 
-**Avoids:** Build timeout (Netlify), `better-sqlite3` binding failure, WASM SQLite catastrophe, SPA fallback misconfiguration.
+**Avoids:** Discovering architecture-blocking issues in Phase 2 after large config changes
 
-**Research flag:** Needs validation — SQLite dump size with one novel's chapters is unknown. If `.data/content/contents.sqlite` exceeds 10MB for one novel (~2,300 chapters), the chapter body storage strategy must change before proceeding. This is a go/no-go decision point.
+**Recommended actions:**
+- Add `netlify.toml` with `command = "nuxt build"`, `publish = ".output/public"`, `NODE_VERSION = "22"`
+- Add `@netlify/nuxt` to modules in `nuxt.config.ts`
+- Add `content.database.filename: '/tmp/contents.sqlite'` to content config
+- Deploy to Netlify staging with minimal changes (do NOT yet remove prerender config)
+- Add `/api/health` server route that imports `node:sqlite`, queries a collection, returns 200
+- Measure cold start TTFB after 30 min inactivity
+- GATE: if cold start > 3s, pivot to Turso (Path B) before Phase 2
 
----
+**Research flag:** Does not need deeper research — well-documented patterns, official Nuxt/Netlify docs.
 
-### Phase 2: Core Reading Experience (Chapter Reader)
+### Phase 2: Hybrid Rendering Configuration
 
-**Rationale:** ARCHITECTURE.md identifies the chapter reader as the highest-risk component because it combines the most moving parts: content queries, `ContentRenderer`, `queryCollectionItemSurroundings`, chapter layout, keyboard nav, and reading progress. Build it first to surface Nuxt Content v3 compatibility issues before investing time in catalog/home pages. Novel detail page (chapter listing) is built first as the simpler validation step.
+**Rationale:** Once SSR deploys and cold start is validated, replace the prerender machinery with `routeRules`. This is the largest config change but carries low risk because the patterns are fully documented. Sitemap prerendering must be done here to avoid SEO issues before cutover.
 
-**Delivers:** Fully functional chapter reader with prev/next navigation, keyboard nav (arrow keys), reading progress persistence (localStorage), chapter layout. Novel detail page with full chapter list. Route discovery configuration with Nitro hooks.
+**Delivers:** Full `routeRules` hybrid config; removal of prerender hook and `readdirSync` route generation; ISR for novel/chapter pages; prerendered sitemaps and home/catalog. Build time drops because the 26K route enumeration is gone (though prerender still runs for prerendered routes).
 
-**Addresses:** Chapter reader, prev/next nav, keyboard nav, reading progress (all P1 parity).
+**Addresses:** routeRules setup (P1), sitemap prerendering (Pitfall 5), ISR caching (P2), removal of `getChapterSlugs()` dead code
 
-**Avoids:** Route discovery failure (Nitro hook for enumeration), hydration mismatch (VueUse `useLocalStorage`), metadata-only queries in listing view, WASM SQLite pattern (every query in `useAsyncData`).
+**Avoids:** Pitfall 1 (full chapter bodies at runtime) — chapters remain prerendered; Pitfall 5 (sitemap timeout) — sitemaps prerendered; Pitfall 4 (deploy pipeline) — already fixed in Phase 1
 
-**Research flag:** May need targeted research on `queryCollectionItemSurroundings` behavior when chapter pages use SPA fallback (not prerendered). This exact interaction is not well-documented.
+**Recommended actions:**
+- Remove `getChapterSlugs()`, `nitro.prerender.routes`, `prerender:routes` hook, `nitro.prerender.concurrency`, `nitro.prerender.crawlLinks`
+- Add `routeRules` per the decision matrix above
+- Update `package.json` scripts: `preview` -> `nuxt preview`, `deploy` -> `netlify deploy --prod --no-build`
+- Verify build output: `.output/public/novels/` still contains 13K HTML files (chapters still prerendered via routeRules)
+- Verify CDN cache headers on ISR routes (check `Netlify-CDN-Cache-Control` response header)
+- Test all 10 novels, chapter reader, RSS, and sitemap in staging
 
----
+**Research flag:** Does not need deeper research — `routeRules` is the official Nuxt hybrid rendering API.
 
-### Phase 3: Full Site + Complete Parity
+### Phase 3: SSR-Enabled Features
 
-**Rationale:** Once the chapter reader pipeline is validated end-to-end, the surrounding site (catalog, home, resume reading) can be built quickly. All components follow patterns already proven in Phase 2. RSS and sitemap are build-time outputs with low implementation risk. This phase completes all P1 parity features and makes the site deployable as a production replacement for the Astro site.
+**Rationale:** Once hybrid rendering is stable and ISR-cached pages are verified, implement features that become possible only with SSR. Full-content RSS is the highest-value improvement. Body-stripping elimination reduces build complexity but depends on confirming `_payload.json` replaces WASM SQLite downloads.
 
-**Delivers:** Home page with latest chapters grouped by novel, novel catalog page, `ResumeReading` component (reads localStorage on mount), RSS feed (per-novel, 50 chapters each), sitemap (all 13K routes), complete P1 feature parity.
+**Delivers:** Full-content RSS feeds (chapter markdown/HTML in `<content:encoded>`); fine-tuned cache headers per route; potential elimination of `scripts/strip-dump-bodies.mjs`.
 
-**Addresses:** All remaining P1 features: home, catalog, resume reading, RSS, sitemap.
+**Addresses:** Full-content RSS (P2), ISR cache tuning (P2), body-stripping elimination (P1 simplification)
 
-**Avoids:** RSS feed too large (limit to 50 items per novel; validate with `wc -c`), full chapter body in listing queries (select only metadata), prev/next boundary bugs (fix known Astro bug — test first and last chapter navigation).
+**Recommended actions:**
+- Add `rawbody: z.string()` to relevant collection schemas in `content.config.ts`
+- Update RSS server routes to include `rawbody` and convert markdown to HTML for `<content:encoded>` (evaluate `nuxt-content-body-html` module vs manual remark pipeline)
+- Open a chapter page in DevTools Network tab; confirm no SQL dump download occurs with ISR active
+- If no dump download: remove `scripts/strip-dump-bodies.mjs` and the post-build step that calls it
 
-**Research flag:** Standard patterns — skip `research-phase`. Listing pages, RSS, and sitemap are well-documented with Nuxt Content v3.
+**Research flag:** Needs targeted research during planning. Two approaches exist for full-content RSS (`rawbody` field vs `nuxt-content-body-html` module v4.0.4) with different tradeoffs. The markdown-to-HTML pipeline inside a server route has caveats (no `ContentRenderer` server-side). Use `gsd:research-phase` for this phase.
 
----
+### Phase 4: Validation and Monitoring
 
-### Phase 4: Enhancements (P2)
+**Rationale:** Validate the full site in production and establish performance baselines. Cold start frequency and function invocation costs are production unknowns that cannot be measured in staging.
 
-**Rationale:** After parity is stable in production, add differentiators. All P2 features are LOW-MEDIUM complexity and do not touch the content architecture. Dark mode ships first (lowest complexity, highest user value); synopsis and reader settings follow.
+**Delivers:** Full smoke test across all 10 novels; cold start monitoring; CDN cache hit rate tracking; comparison against SSG baseline; decision point for Turso migration if needed.
 
-**Delivers:** Dark mode / light mode toggle (Nuxt UI `useColorMode`, persisted in localStorage), novel synopsis page per novel (static metadata page), reader settings panel (font size + line height, persisted in localStorage).
+**Addresses:** Cold start risk (Pitfall 2), function invocation costs, overall migration completeness
 
-**Addresses:** P2 features from FEATURES.md.
+**Recommended actions:**
+- Smoke test: all 10 novels, chapter navigation (first/last chapter boundaries), RSS feeds, sitemaps, reading progress persistence, dark mode, resume reading dropdown
+- Monitor Netlify Function invocations (should drop as ISR fills CDN cache)
+- Monitor cold start frequency via Function logs (`INIT_START` events)
+- Compare build time: target <2 min vs current 10 min
+- If cold start TTFB > 3s on any route: evaluate Turso migration (Path B)
 
-**Research flag:** Standard patterns — skip `research-phase`. Nuxt UI `useColorMode` is documented; localStorage settings persistence is established pattern.
-
----
-
-### Phase 5: Operations and Import Pipeline
-
-**Rationale:** The Google Docs import script is a developer workflow tool, not part of the site. It can be ported independently of the site build. Port with known bug fixes (silent error swallowing, missing `await`, no retry logic) and security improvements (Google Doc IDs to `.env`). This phase also addresses build optimization (Netlify build cache, trigger strategy).
-
-**Delivers:** Ported `scripts/import.mjs` with retry logic, visible error handling, and Doc IDs in environment variables. Netlify build trigger strategy (avoid rebuilding on every commit for content-only updates). Build caching configured.
-
-**Avoids:** Import script bugs propagated from Astro, Google Doc ID security issue, Netlify build minutes exhausted from unnecessary rebuilds.
-
-**Research flag:** Standard patterns — skip `research-phase`. Node.js scripting patterns are established.
-
----
+**Research flag:** Does not need deeper research — standard monitoring and validation patterns.
 
 ### Phase Ordering Rationale
 
-- Phase 1 must be first because SQLite dump size and build time are unknown; they gate every downstream decision.
-- Phase 2 must come before catalog/home (Phase 3) because the chapter reader is highest-risk and validates the entire content pipeline.
-- Phase 3 completes parity before adding enhancements; parity must be production-stable first.
-- Phase 4 (enhancements) comes after proven parity to avoid scope creep during the migration.
-- Phase 5 (operations) is decoupled from site development and can overlap with Phase 3-4 if needed.
+- Phase 1 before everything: `node:sqlite` Lambda compatibility and deploy pipeline are hard blockers detectable only via deployment; cold start baseline informs all subsequent architectural decisions
+- Phase 2 before Phase 3: ISR caching must be working and verified before enabling SSR features that depend on it (body content, cache invalidation)
+- Body-stripping stays until Phase 3 confirms `_payload.json` replaces WASM SQLite downloads — removing it prematurely would expose 64 MB dumps to browsers
+- Phase 4 in production, not staging: CDN cache fill behavior and Lambda warm/cold cycle patterns only emerge under real traffic
 
----
+### Research Flags
+
+Phases needing deeper research during planning:
+- **Phase 3 (Full-content RSS):** Two implementation approaches (`rawbody` schema field vs `nuxt-content-body-html` module); markdown-to-HTML pipeline inside server routes has edge cases; module maintenance status as of Feb 2026 needs checking
+
+Phases with standard patterns (skip research-phase):
+- **Phase 1 (Infrastructure):** Official Nuxt/Netlify docs cover the deploy pipeline change exactly; `node:sqlite` canary test is a one-route deployment
+- **Phase 2 (Routing):** `routeRules` is the official Nuxt hybrid rendering API with extensive official documentation
+- **Phase 4 (Validation):** Standard smoke testing and monitoring
 
 ## Confidence Assessment
 
 | Area | Confidence | Notes |
 |------|------------|-------|
-| Stack | HIGH | All versions verified via npm; WASM SQLite behavior verified via official Nuxt Content docs and developer benchmarks |
-| Features | MEDIUM | Table stakes and differentiators verified against Royal Road, Wuxiaworld, NovelUpdates; existing Astro site is authoritative source for parity features |
-| Architecture | MEDIUM | Patterns confirmed via official docs; build-time behavior at 13,318 pages is extrapolated from community benchmarks, not direct measurement |
-| Pitfalls | MEDIUM-HIGH | Build timeout risk is MEDIUM (community-reported, not measured for this exact project); better-sqlite3 failure is HIGH (multiple confirmed issues); WASM SQLite size is MEDIUM (extrapolated from 200-episode podcast case study) |
+| Stack | HIGH | Official Nuxt and Netlify docs; both Path A and Path B are verified deployment patterns; all existing dependencies confirmed compatible |
+| Features | MEDIUM | SSR/ISR routing behavior verified via official docs; cold start performance at 13K-chapter scale is not benchmarked; `_payload.json` replaces WASM SQLite is documented but unverified at this scale |
+| Architecture | MEDIUM-HIGH | Component boundaries and data flow verified via official docs; cold start latency and `/tmp` SQLite persistence on Lambda are project-specific unknowns |
+| Pitfalls | MEDIUM-HIGH | Netlify limits (50 MB bundle, 60s timeout, 1024 MB memory) verified from official docs; `node:sqlite` Lambda minor-version risk is MEDIUM (undocumented guarantee) |
 
-**Overall confidence:** MEDIUM — The approach is well-grounded, but two critical unknowns (SQLite dump size at 13K scale, actual build time) cannot be resolved until Phase 1 benchmarks run. These unknowns have known mitigation paths but must be measured before committing to the full architecture.
+**Overall confidence:** MEDIUM-HIGH — The approach is well-grounded in official documentation. Two critical unknowns (cold start with 64 MB dump, `node:sqlite` on specific Lambda version) cannot be resolved until the Phase 1 canary deployment runs.
 
 ### Gaps to Address
 
-- **SQLite dump size at 13K scale:** No direct measurement exists for this novel corpus. Must measure after ingesting one full novel in Phase 1. If the dump exceeds 10MB per novel, the architecture must shift to Option B (metadata-only in Nuxt Content, separate body rendering pipeline). This is the most consequential unknown.
+- **Cold start latency with full SQL dump:** No benchmark exists for Nuxt Content dump restoration at 13K-chapter scale on Netlify Lambda. Must measure in Phase 1 with the health-check canary after 30 min idle. If > 3s, architecture shifts to Turso (Path B) before Phase 2 begins. This is the highest-impact unknown.
 
-- **Build time at 13K pages:** Community benchmarks suggest 60-200+ minutes. Selective prerender (listing pages + SPA fallback for chapters) is the mitigation, but the exact prerender count and time must be validated in Phase 1. The SPA fallback approach changes UX for deep-linked chapter URLs (no prerendered HTML means slower TTFB and weaker SEO for individual chapters).
+- **`node:sqlite` on Netlify's Lambda Node 22.x minor version:** `node:sqlite` stabilized in v22.13.0. Netlify may pin an older 22.x patch. Cannot determine without deploying. Phase 1 covers this with the canary. Fallback path (`better-sqlite3`) is well-understood.
 
-- **`queryCollectionItemSurroundings` + SPA fallback interaction:** If chapter pages are not prerendered (SPA fallback mode), it is unclear whether `queryCollectionItemSurroundings` behaves correctly for client-rendered routes. May need targeted research or an alternative prev/next implementation using precomputed frontmatter links.
+- **Client-side SQL dump downloads in ISR mode:** ARCHITECTURE.md asserts that `_payload.json` from CDN eliminates WASM SQLite downloads in SSR/ISR mode. This is documented behavior (Nuxt 4.3+) but unverified for this specific project's query patterns. Must confirm in Phase 3 DevTools before removing the body-stripping pipeline.
 
-- **Chapter suffix sorting (`_b`, `_c`):** The existing Astro site has known sorting issues with chapter suffixes. The sort algorithm must be rewritten in Phase 2 (numeric comparison, not lexicographic). No gaps in understanding the fix, but must not be carried over from Astro.
-
----
+- **Full-content RSS implementation path:** Two approaches with different tradeoffs. `rawbody` field requires manual markdown-to-HTML; `nuxt-content-body-html` module (v4.0.4) needs maintenance status check. Research in Phase 3.
 
 ## Sources
 
 ### Primary (HIGH confidence)
-- https://content.nuxt.com/docs/deploy/static — WASM SQLite static hosting behavior
-- https://content.nuxt.com/docs/advanced/database — SQLite dump mechanism
-- https://content.nuxt.com/docs/collections/define — Per-novel collection patterns
-- https://content.nuxt.com/docs/utils/query-collection — queryCollection API
-- https://nuxt.com/blog/v4 — Nuxt 4 release, directory structure changes
-- https://ui.nuxt.com/releases — @nuxt/ui v4.4.0 features
-- https://vueuse.org/core/uselocalstorage/ — SSR-safe localStorage via VueUse
-- https://docs.netlify.com/build/frameworks/framework-setup-guides/nuxt/ — Netlify + Nuxt 4
-- npm registry (verified 2026-02-17) — all package versions
-- Existing Astro site codebase (`/src/layouts/Chapter.astro`, `/src/components/ResumeReading.astro`) — authoritative parity reference
+- [Deploy Nuxt to Netlify](https://nuxt.com/deploy/netlify) — zero-config preset detection, build output structure
+- [Nuxt on Netlify](https://docs.netlify.com/frameworks/nuxt/) — framework docs, `@netlify/nuxt` module, Node version requirements
+- [Netlify Platform Primitives with Nuxt 4](https://www.netlify.com/blog/platform-primitives-with-nuxt-4/) — ISR, Blobs, streaming, Functions v2
+- [ISR and Advanced Caching with Nuxt v4 on Netlify](https://developers.netlify.com/guides/isr-and-advanced-caching-with-nuxt-v4-on-netlify/) — routeRules for ISR, CDN cache headers, purgeCache API
+- [Nuxt Content v3 Serverless Hosting](https://content.nuxt.com/docs/deploy/serverless) — database adapters, cold start dump restoration behavior
+- [Nuxt Content v3 Database Architecture](https://content.nuxt.com/docs/advanced/database) — dump generation at build, runtime restoration, integrity checks
+- [Netlify Functions Overview](https://docs.netlify.com/build/functions/overview/) — 50 MB zip / 250 MB unzip limits, 1024 MB memory, 60s timeout
+- [Nuxt Rendering Modes](https://nuxt.com/docs/4.x/guide/concepts/rendering) — routeRules syntax: prerender, isr, swr, ssr
+- [Node.js SQLite API](https://nodejs.org/api/sqlite.html) — stabilized in v22.13.0
 
 ### Secondary (MEDIUM confidence)
-- https://damieng.com/blog/2024/05/14/nuxt-content-db-and-size/ — SQLite dump size: 200 podcast episodes = 25.1MB
-- https://github.com/nuxt/nuxt/discussions/26689 — SSG build times: 2,500 pages ≈ 17 min
-- https://github.com/nuxt/content/issues/3233 — SQLite BUSY errors during large generate
-- https://github.com/nuxt/content/issues/3483 — better-sqlite3 binding failure with pnpm v10+
-- https://github.com/nuxt/nuxt/issues/14115 — Dynamic routes not auto-discovered in generate
-- https://zhul.in/en/2025/10/20/nuxt-content-v3-z-array-query-challenge/ — Array field LIKE workaround (reason to use per-novel collections instead)
-- Royal Road, Wuxiaworld, NovelUpdates — competitor feature analysis
+- [Nuxt Content Raw Content](https://content.nuxt.com/docs/advanced/raw-content) — `rawbody` schema field availability
+- [nuxt-content-body-html module](https://github.com/dword-design/nuxt-content-body-html) — v4.0.4, Content v3 support, maintenance status needs checking
+- [AWS Lambda cold start with SQLite](https://turso.tech/blog/get-microsecond-read-latency-on-aws-lambda-with-local-databases) — Turso marketing, but plausible technical claims on restore latency
+- Existing codebase inspection — `nuxt.config.ts`, `content.config.ts`, server routes, composables, pages — authoritative for current behavior
 
 ### Tertiary (LOW confidence)
-- https://www.netlify.com/pricing/ — 300 build minutes/month free tier (HIGH confidence for the number, LOW for extrapolated impact)
-- Community forum reports on Netlify OOM errors with large Nuxt builds
+- Netlify Functions cold start forum estimates — general 50-500ms estimates; actual performance at 13K-chapter scale unknown
 
 ---
-
-*Research completed: 2026-02-17*
+*Research completed: 2026-02-18*
 *Ready for roadmap: yes*

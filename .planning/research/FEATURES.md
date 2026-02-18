@@ -1,195 +1,211 @@
-# Feature Research
+# Feature Research: SSR Migration
 
-**Domain:** Novel/web fiction chapter reading site (static, translated novels, no auth)
-**Researched:** 2026-02-17
-**Confidence:** MEDIUM — Table stakes and differentiators verified against Royal Road, Wuxiaworld, NovelUpdates, and WebNovel. Anti-features grounded in PROJECT.md constraints and cross-platform observation. Reader settings UX verified from multiple sources.
+**Domain:** SSR migration for 13K-chapter novel reading site (Nuxt 4.3.1 + Nuxt Content v3, Netlify)
+**Researched:** 2026-02-18
+**Confidence:** MEDIUM -- SSR/ISR behavior on Netlify verified via official docs and Netlify developer guides. Nuxt Content v3 body/rawbody behavior in SSR verified via official docs. Cold start performance for 13K-chapter database is LOW confidence (no benchmarks found at this scale).
+
+---
+
+## Context: SSR vs Current SSG
+
+The site currently uses `nuxt generate` (full SSG) producing 26,694 prerendered HTML files. The SQL database dump is body-stripped post-build from 64MB to 2.6MB. RSS feeds are link-only because `rawbody` was not available during the v1.0 SSG build.
+
+SSR moves rendering from build-time to request-time. Every page request hits a Netlify serverless function that runs Nuxt, which queries the Nuxt Content SQLite database, renders the Vue component to HTML, and returns it. The critical implication: **body content is available at render time**, and **route rules allow mixing SSR, ISR, and prerender per route**.
 
 ---
 
 ## Feature Landscape
 
-### Table Stakes (Users Expect These)
+### Table Stakes (Migration Must Not Break These)
 
-Features users assume exist on any reading site. Missing these makes the product feel broken.
+Existing features that must continue working identically after SSR migration. These are non-negotiable.
 
-| Feature | Why Expected | Complexity | Notes |
-|---------|--------------|------------|-------|
-| Home page / novel catalog | Entry point; users need to see what's available and what's new | LOW | Exists in Astro site — group by novel, show recent chapters |
-| Novel detail page with chapter list | Users browse a novel before committing to read; must see all chapters | LOW | Exists. 1300+ chapters per novel — needs pagination or virtual scroll |
-| Chapter reader with clean prose typography | Core function; hard to read = users leave | LOW | Exists. Max-width ~720px, readable line-height, good contrast |
-| Prev / next chapter navigation | Serial content; users chain-read; no nav = dead end | LOW | Exists. Top and bottom nav bars in chapter layout |
-| Reading progress persistence per novel | Users close the tab and return; must resume where they left off | LOW | Exists via localStorage (saves most recent chapter per novel per device) |
-| Mobile-responsive layout | Majority of novel readers read on phone; unusable mobile = lost audience | MEDIUM | Exists in Astro site but worth validating in Nuxt rebuild |
-| RSS feed for new chapters | Core audience follows ongoing translations; RSS is the standard signal | LOW | Exists. Nuxt can generate via server routes or build-time |
-| SEO + sitemap | Google discoverability for each chapter/novel | LOW | Exists. Nuxt generates sitemap via @nuxtjs/sitemap |
-| Fast page loads | Reading UX degrades immediately with slow loads; 13K chapters makes this non-trivial | MEDIUM | Current Astro site has build memory issues; Nuxt SSG/hybrid needs profiling |
+| Feature | SSR Impact | Complexity | Notes |
+|---------|------------|------------|-------|
+| Home page (latest chapters by novel) | LOW -- `useAsyncData` + `queryCollection` works identically in SSR. Data fetched server-side on request instead of at build. | LOW | No code changes needed. Already uses `useAsyncData`. Will render on every request unless cached via routeRules. |
+| Novel catalog page (chapter counts) | LOW -- Same pattern. `queryCollection().count()` runs server-side per request. | LOW | No code changes needed. Consider ISR caching since counts change infrequently. |
+| Novel detail page (chapter listing) | LOW -- `queryCollection().select().all()` works in SSR. Natural sort in `computed()` runs on server. | LOW | No code changes. 1300+ items sorted server-side per request -- fast given SQLite, but should be cached. |
+| Chapter reader (prose rendering) | MEDIUM -- `queryCollection().path().first()` returns full body AST. `ContentRenderer` renders it server-side. **Body content is no longer stripped.** | MEDIUM | The body-stripping post-build hack is no longer needed or possible. The full 64MB database must be available at runtime. This is the single biggest change. |
+| Prev/next chapter navigation | LOW -- `useChapterNav` composable fetches full chapter list via `useAsyncData`. Works identically. | LOW | No code changes. Consider caching the chapter list query or restructuring to avoid fetching all chapters per request. |
+| Keyboard shortcuts (Cmd+Arrow) | NONE -- Client-only via `defineShortcuts`. No SSR involvement. | NONE | Zero changes needed. |
+| Reading progress (localStorage) | NONE -- Already client-only with `import.meta.client` guards and `ClientOnly` wrapper. | NONE | Zero changes needed. |
+| Resume reading dropdown | NONE -- Client-only via `onMounted` + `ClientOnly` wrapper. | NONE | Zero changes needed. |
+| RSS feeds (global + per-novel) | LOW -- Server routes (`server/routes/rss.xml.ts`) already use `queryCollection(event, ...)`. Work in both SSG and SSR. | LOW | Currently link-only. Will continue to work as-is. Full-content RSS is a separate differentiator, not a regression risk. |
+| Sitemap (multi-sitemap, per-novel) | LOW -- `@nuxtjs/sitemap` v7.6.0 supports SSR natively. Dynamic sitemaps are actually simpler in SSR (no prerender route enumeration needed). | LOW | The `nitro.prerender.routes` and `prerender:routes` hook for 13K chapter enumeration can be removed. Sitemaps generate dynamically from database. |
+| Dark mode | NONE -- Nuxt UI `useColorMode` is hydration-safe by design. | NONE | Zero changes needed. |
+| Auto-hide header | NONE -- Client-only scroll listener. | NONE | Zero changes needed. |
 
-### Differentiators (Competitive Advantage)
+### Differentiators (New Capabilities SSR Enables)
 
-Features that set this site apart from noisy, ad-heavy translation aggregators. Given the no-auth, static-first context, these are achievable without a backend.
+Features that become possible or dramatically simpler with SSR.
 
 | Feature | Value Proposition | Complexity | Notes |
 |---------|-------------------|------------|-------|
-| Dark mode / light mode toggle with localStorage persistence | Reading comfort — users read for hours; dark mode is not optional for night readers; Wuxiaworld defaults dark, Royal Road offers toggle | LOW | Implement in Nuxt with `useColorMode` (Nuxt UI built-in). Persist preference in localStorage. Respect `prefers-color-scheme` as default |
-| Resume reading dashboard (multi-novel) | Returns users back to exact chapter across all 10 novels without friction | LOW | Exists in Astro site. Dropdown showing last-read chapter per novel. Worth refining in Nuxt — show timestamp recency |
-| Keyboard navigation for chapter chaining | Power readers chain chapters without touching mouse; rare on small translation sites | LOW | Exists (Cmd+Arrow). Broaden to plain Arrow keys or Vim-style (j/k) since no text input conflict in reader |
-| Chapter jumper / in-reader chapter list | 1300+ chapter novels need a quick way to jump mid-series without leaving the reader | MEDIUM | Exists as hover sidebar in Astro site. Nuxt version should be a slide-out drawer with virtual scroll for perf |
-| Latest updates feed on home page | Returning users want to see what's new since last visit, per novel | LOW | Exists. Show N most recent chapters per novel sorted by pubDate. Simple and high value |
-| Reader settings panel (font size, line height) | Extended reading sessions benefit from personalization; user-controlled comfort settings persist in localStorage | MEDIUM | NOT in existing site. Common on Wuxiaworld, all major platforms. Font size + line height toggles stored in localStorage. No auth needed |
-| Novel synopsis / description page | Users unfamiliar with the novel need context before starting chapter 1 | LOW | NOT in existing site. One static metadata page per novel with synopsis, chapter count, status. Low effort, high value for new visitors |
-| Clean, ad-free reading experience | Translation aggregators are notoriously ad-heavy; zero ads is a genuine differentiator | LOW | Side effect of static, no-monetization site. Preserve this intentionally — no analytics scripts beyond minimal |
+| Full-content RSS feeds | RSS items include chapter text, not just links. Readers can read in their feed reader without visiting the site. Standard for serious content sites. | MEDIUM | In SSR, `rawbody` field is accessible via `queryCollection`. Add `rawbody: z.string()` to collection schema, then `.select('title', 'path', 'pubDate', 'rawbody')` in RSS server routes. Convert markdown to HTML via a simple remark pipeline for `<content:encoded>`. Alternatively, use `nuxt-content-body-html` module (v4.0.4, maintained, supports Content v3) to get pre-rendered HTML. |
+| ISR caching (instant loads after first hit) | First visitor triggers SSR, subsequent visitors get CDN-cached response until TTL expires. Best of both worlds: fresh content + fast delivery. | LOW | Add `routeRules` in `nuxt.config.ts`. Netlify automatically sets `Netlify-CDN-Cache-Control: public, max-age=N, stale-while-revalidate=31536000, durable`. |
+| Instant new chapter availability | New chapters are available immediately after import without a 10-minute build + deploy cycle. Just import content and it appears on next request. | LOW | This is the core value proposition of SSR. No build step needed for content updates. Deploy the SSR function once; content changes flow through automatically. |
+| Dynamic cache invalidation | Purge specific cached pages when content updates, rather than rebuilding everything. | MEDIUM | Use `@netlify/functions` `purgeCache({ tags: [...] })` with `Netlify-Cache-Tag` headers. Tag chapter pages with novel slug for per-novel purging. Requires a webhook or script to trigger purge after content import. |
+| Elimination of body-stripping hack | No more post-build SQL dump manipulation. The full database is the database -- no 64MB-to-2.6MB compression pipeline. | LOW | Remove the body-stripping build step entirely. SSR serves from the full database. Simplifies the build pipeline. |
+| Zero-build content updates | `pnpm import:docs` adds chapters to `content/` dir. In SSR, the database is rebuilt from content at deploy time (or via external DB like Turso). No `nuxt generate` needed for content-only changes. | MEDIUM | Requires understanding of how Nuxt Content rebuilds its SQLite database in SSR mode. If using file-based SQLite on Netlify, the database dump is bundled at build time and restored on cold start. Content changes still need a rebuild/redeploy of the function, but the build is seconds (just bundling), not 10 minutes (prerendering 26K routes). |
+| Per-route rendering strategy | Mix prerender (home, catalog), ISR (chapter pages), and pure SSR (RSS, sitemap) in the same app. | LOW | `routeRules` in `nuxt.config.ts`. This is the primary architectural tool for the migration. |
+| Cache-Control headers for browsers | Set appropriate `max-age` for static assets, short TTL for chapter pages, long TTL for catalog pages. Fine-grained HTTP caching. | LOW | `routeRules` `headers` option. Example: chapters get `max-age=3600`, home page gets `max-age=300`. |
+| On-demand revalidation via webhook | After Google Docs import, trigger a webhook that purges cached chapter pages so readers see new content instantly. | MEDIUM | Requires a small server route that calls `purgeCache()`. The import script would `curl` this endpoint after importing. |
 
-### Anti-Features (Commonly Requested, Often Problematic)
+### Anti-Features (Do NOT Build During Migration)
 
-Features that seem like natural additions but are wrong for this site's constraints and scope.
-
-| Feature | Why Requested | Why Problematic | Alternative |
-|---------|---------------|-----------------|-------------|
-| User accounts / authentication | "Save my progress to the cloud", "sync across devices" | Entire architecture must change; no DB; Netlify static doesn't support server-side sessions; out of scope per PROJECT.md | localStorage progress is sufficient for single-device use; cloud sync is explicitly out of scope |
-| Comments / community features | Social engagement; reader feedback loop | Requires auth, moderation, backend; PROJECT.md explicitly excludes social features | Readers can discuss via external communities (Reddit, Discord). Site focus is reading, not community |
-| Full-text search across all 13K chapters | "Find that scene where X happens" | 170MB of markdown content; client-side full-text search (e.g. Fuse.js) will time out or be impractical; Algolia/Typesense requires backend | Provide chapter-level search within a single novel's index using a simple filter; acceptable scope |
-| Offline / PWA mode with downloaded chapters | Read without internet | 170MB content makes offline caching impractical; service worker caching all chapters would be enormous; browser limits cap storage | Rely on browser's native caching via HTTP cache headers (Netlify CDN) for recently visited chapters |
-| Rating / review system | "Rate this novel" | Requires auth + backend storage; static site can't persist ratings per user | Link to external aggregators (NovelUpdates) for community ratings |
-| Real-time chapter notifications (push/email) | "Notify me when chapter drops" | Static site with no server; real-time push requires backend service | RSS feed is the correct no-auth notification primitive; works with existing feed readers |
-| Monetization / chapter unlocking | Revenue model | Fundamentally changes user experience; content is translated, not original; legal complexity with unlock paywalls | Keep site free. RSS subscribers and return visitors are the audience |
-| Mobile app (iOS/Android) | Native reading experience | Separate codebase; scope explosion; PWA on a well-built Nuxt site is sufficient for mobile | Ensure mobile web is first-class; consider minimal PWA manifest for "Add to Home Screen" |
+| Feature | Why Tempting | Why Problematic | Alternative |
+|---------|-------------|-----------------|-------------|
+| Edge Functions for SSR | "Lower latency than serverless" | Netlify Edge Functions have strict memory limits. A 64MB content database will exceed them. Edge Functions also lack `/tmp` filesystem for SQLite restoration. The Netlify Nuxt integration already routes to standard Functions. | Use standard Netlify Functions (serverless). Cold start is acceptable with ISR caching. |
+| External database (Turso/D1/Postgres) | "Avoid cold start database restoration" | Adds operational complexity (managing a separate service, auth tokens, network latency). The content is static markdown -- it does not need a live database. The SQLite dump approach works fine for read-only content. | Stick with bundled SQLite dump. Optimize cold start by aggressively caching via ISR. |
+| Full SSR with no caching | "Always fresh content" | 13K chapters each triggering a cold serverless function invocation is expensive and slow. Netlify has function invocation limits on free/pro tiers. | Use ISR with long TTL. Chapters never change after publication. Cache them aggressively. |
+| Server-side reading progress | "Sync progress across devices" | Requires user auth, server-side storage, session management. Scope explosion. | Keep localStorage. This is a migration milestone, not a feature milestone. |
+| Real-time content hot-reload in production | "Push new chapters without redeploy" | Would require a persistent server watching the filesystem or a webhook-triggered database rebuild at runtime. Serverless functions are stateless -- there is no persistent process. | Redeploy after content import. ISR ensures the CDN starts serving new content within TTL. |
+| Pre-rendering all 26K routes alongside SSR | "Keep the old prerender behavior as fallback" | Defeats the purpose of SSR migration. The 10-minute build is what we are trying to eliminate. Prerender only the handful of high-traffic static pages (home, catalog, novel index pages). | Prerender ~25 pages (home, catalog, 10 novel pages, RSS feeds). SSR + ISR the remaining 13K+ chapter pages. |
 
 ---
 
 ## Feature Dependencies
 
 ```
-[Novel catalog (home page)]
-    └──requires──> [Novel detail page]
-                       └──requires──> [Chapter reader]
-                                          └──requires──> [Prev/next nav]
-                                          └──enhances──> [Keyboard nav]
-                                          └──enhances──> [Reading progress]
-                                          └──enhances──> [Reader settings (font/theme)]
+[nuxt.config.ts routeRules setup]
+    |
+    +--requires--> [ISR caching for chapter pages]
+    |                  |
+    |                  +--enables--> [Cache-Control headers]
+    |                  +--enables--> [Dynamic cache invalidation via purgeCache]
+    |
+    +--requires--> [Prerender config for static pages (home, catalog)]
+    |
+    +--requires--> [SSR for chapter reader]
+                       |
+                       +--requires--> [Full content database (no body stripping)]
+                       |                  |
+                       |                  +--enables--> [Full-content RSS feeds]
+                       |                  +--enables--> [Elimination of body-stripping hack]
+                       |
+                       +--requires--> [Netlify Functions deployment (nuxt build, not nuxt generate)]
 
-[Reading progress (localStorage)]
-    └──requires──> [Chapter reader loads]
-    └──enhances──> [Resume reading dashboard] (uses stored progress)
+[Full-content RSS]
+    +--requires--> [rawbody field in collection schema OR nuxt-content-body-html module]
+    +--requires--> [Markdown-to-HTML pipeline in server route]
 
-[Dark mode toggle]
-    └──enhances──> [Reader settings panel] (can bundle together or ship dark mode first)
+[Dynamic cache invalidation]
+    +--requires--> [Netlify-Cache-Tag headers on SSR responses]
+    +--requires--> [purgeCache webhook server route]
+    +--requires--> [Import script triggers webhook after content import]
 
-[Novel synopsis page]
-    └──enhances──> [Novel detail page] (synopsis is part of novel detail or a dedicated page)
-
-[RSS feed]
-    └──independent──> [Sitemap] (both build-time, no runtime dependency)
-
-[Chapter jumper sidebar]
-    └──requires──> [Chapter list data available in reader context]
-    └──enhances──> [Chapter reader]
+[Netlify deployment changes]
+    +--requires--> [Switch from `netlify deploy --dir=.output/public` to Netlify CI build]
+    +--requires--> [Or: `nuxt build` + `netlify deploy --dir=.output` with function support]
 ```
 
 ### Dependency Notes
 
-- **Chapter reader requires prev/next nav:** Serial content without navigation is a dead end — bundle these in the same phase.
-- **Reading progress requires chapter reader:** Progress is saved when a chapter page loads; cannot exist without the reader.
-- **Resume reading dashboard requires reading progress:** The dropdown reads from the same localStorage keys written by the reader.
-- **Chapter jumper requires chapter list data in reader context:** Nuxt's `useAsyncData` or content composables need to fetch the novel's chapter index while inside the chapter route. Verify Nuxt Content v3 supports this query pattern.
-- **Reader settings enhances dark mode:** Dark mode can ship before a full settings panel. Ship dark mode toggle first (LOW complexity), then expand to a settings drawer with font/line-height controls (MEDIUM complexity).
+- **routeRules is the foundation:** Every other SSR feature depends on the hybrid rendering config in `nuxt.config.ts`. This must be the first thing configured and verified.
+- **Full database requires no body stripping:** The body-stripping pipeline and `nuxt generate` are mutually exclusive with SSR. Removing body stripping is a prerequisite for SSR, not a separate feature.
+- **Full-content RSS requires rawbody or body HTML:** Two approaches exist. Adding `rawbody: z.string()` to the schema gives raw markdown (needs conversion). `nuxt-content-body-html` gives rendered HTML directly. Either requires the full database.
+- **Cache invalidation requires ISR:** Without ISR, there is nothing to invalidate. ISR must be working first.
+- **Deployment mechanism change is foundational:** `nuxt build` produces a server bundle. The deploy command changes from `--dir=.output/public` to something that deploys both static assets and the server function.
 
 ---
 
-## MVP Definition
+## Migration Phases: What Changes vs What Stays
 
-This is a rebuild of a proven site, so "MVP" means parity with the existing Astro site, not greenfield exploration. Parity is P1; enhancements are P2/P3.
+### Phase 1: Core SSR Switch (Table Stakes)
 
-### Launch With — Parity (v1)
+The migration must-haves. Goal: site works identically via SSR.
 
-The minimum needed to replace the Astro site without regressions.
+- [ ] Switch `nuxt.config.ts` from `nuxt generate` to `nuxt build` -- the build command change
+- [ ] Remove `nitro.prerender.routes` and `prerender:routes` hook (26K route enumeration)
+- [ ] Remove body-stripping post-build pipeline
+- [ ] Configure `routeRules` for hybrid rendering:
+  - `'/'`: prerender
+  - `'/novels'`: ISR (3600s)
+  - `'/novels/:novel'`: ISR (3600s)
+  - `'/novels/:novel/**'`: ISR (86400s or `true` for until-redeploy)
+  - `'/rss.xml'`: ISR (3600s)
+  - `'/novels/*/rss.xml'`: ISR (3600s)
+- [ ] Update Netlify deployment: build via Netlify CI or update deploy script for SSR output
+- [ ] Verify all existing pages render correctly via SSR
+- [ ] Verify sitemap still works (should be automatic with `@nuxtjs/sitemap` in SSR mode)
+- [ ] Verify RSS feeds still work (server routes are SSR-native)
+- [ ] Verify localStorage-based features work (reading progress, resume dropdown, dark mode)
+- [ ] Cold start performance testing with full 64MB database
 
-- [ ] Home page with novel catalog and recent chapters per novel — core entry point
-- [ ] Novel detail page with full chapter list — browsing prerequisite
-- [ ] Chapter reader with clean prose typography — core value
-- [ ] Prev / next chapter navigation (top + bottom) — serial content requirement
-- [ ] Keyboard navigation (arrow keys) — proven feature, existing users expect it
-- [ ] Reading progress persistence via localStorage — resume reading, existing users rely on it
-- [ ] Resume reading dropdown (multi-novel) — existing users rely on it
-- [ ] RSS feed — existing subscribers depend on it
-- [ ] SEO sitemap — existing search ranking depends on it
-- [ ] Google Docs import script (ported to Nuxt) — operational necessity for adding chapters
-- [ ] Netlify deployment — existing hosting infrastructure
+### Phase 2: SSR-Enabled Improvements (Differentiators)
 
-### Add After Parity (v1.x)
+Features that become possible once SSR is working.
 
-Add once core parity is stable and deployed.
+- [ ] Full-content RSS feeds (add `rawbody` to schema, render to HTML in server routes)
+- [ ] Fine-tuned cache headers per route type
+- [ ] On-demand cache invalidation webhook for post-import purging
 
-- [ ] Dark mode toggle — HIGH user value, LOW complexity; add immediately after parity
-- [ ] Novel synopsis page — LOW complexity, improves new visitor experience
-- [ ] Reader font size / line height settings — MEDIUM value, MEDIUM complexity; add when dark mode is in
+### Phase 3: Operational Improvements (Nice-to-Have)
 
-### Future Consideration (v2+)
-
-Defer until parity is stable and in production.
-
-- [ ] Chapter jumper sidebar in reader — medium complexity; useful for power users navigating deep into a novel
-- [ ] Within-novel chapter search / filter — useful for 1300+ chapter novels; complexity depends on Nuxt Content query capabilities
-- [ ] Scroll position memory within a chapter — minor QoL; low priority compared to chapter-level progress
+- [ ] Streamlined import pipeline (`import -> deploy -> purge cache` in one command)
+- [ ] Monitoring/alerting for cold start latency
+- [ ] Evaluate external database (Turso) if cold start with 64MB SQLite dump proves problematic
 
 ---
 
 ## Feature Prioritization Matrix
 
-| Feature | User Value | Implementation Cost | Priority |
-|---------|------------|---------------------|----------|
-| Home page + novel catalog | HIGH | LOW | P1 |
-| Novel detail page + chapter list | HIGH | LOW | P1 |
-| Chapter reader (typography) | HIGH | LOW | P1 |
-| Prev / next navigation | HIGH | LOW | P1 |
-| Keyboard navigation | MEDIUM | LOW | P1 |
-| Reading progress (localStorage) | HIGH | LOW | P1 |
-| Resume reading dashboard | HIGH | LOW | P1 |
-| RSS feed | MEDIUM | LOW | P1 |
-| Sitemap | LOW | LOW | P1 |
-| Google Docs import script | HIGH (operational) | MEDIUM | P1 |
-| Dark mode toggle | HIGH | LOW | P2 |
-| Novel synopsis page | MEDIUM | LOW | P2 |
-| Reader settings (font/line-height) | MEDIUM | MEDIUM | P2 |
-| Chapter jumper sidebar | MEDIUM | MEDIUM | P3 |
-| Within-novel chapter search | MEDIUM | MEDIUM | P3 |
-| Scroll position memory | LOW | LOW | P3 |
+| Feature | User Value | Implementation Cost | Risk | Priority |
+|---------|------------|---------------------|------|----------|
+| Core SSR switch (`nuxt build`) | HIGH (enables everything) | MEDIUM | MEDIUM (cold start unknowns) | P1 |
+| routeRules hybrid rendering | HIGH (performance) | LOW | LOW (well-documented) | P1 |
+| Remove body-stripping pipeline | HIGH (simplification) | LOW | LOW | P1 |
+| Remove 26K route prerendering | HIGH (build speed) | LOW | LOW | P1 |
+| Netlify SSR deployment | HIGH (foundational) | MEDIUM | MEDIUM (deployment mechanism change) | P1 |
+| Sitemap in SSR mode | MEDIUM (SEO) | LOW | LOW (@nuxtjs/sitemap handles it) | P1 |
+| RSS continuity (link-only) | MEDIUM (existing subscribers) | NONE | LOW (already works) | P1 |
+| Full-content RSS | MEDIUM (reader convenience) | MEDIUM | MEDIUM (rawbody + HTML pipeline) | P2 |
+| ISR cache tuning | MEDIUM (performance) | LOW | LOW | P2 |
+| Cache invalidation webhook | LOW (operational) | MEDIUM | LOW | P3 |
+| External database migration | LOW (cold start mitigation) | HIGH | HIGH (new dependency) | P3 |
 
 **Priority key:**
-- P1: Must have for launch (parity with existing site)
-- P2: Should have, add when possible (improvements over existing site)
-- P3: Nice to have, future consideration
+- P1: Required for SSR migration to be functional
+- P2: Should be included in SSR milestone (high value, leverages SSR)
+- P3: Defer unless cold start or operational issues arise
 
 ---
 
-## Competitor Feature Analysis
+## Cold Start Risk Assessment
 
-| Feature | Royal Road | Wuxiaworld | NovelUpdates | Our Approach |
-|---------|------------|------------|--------------|--------------|
-| Dark/light mode | Toggle available | Dark by default | Light only | Implement toggle, persist in localStorage |
-| Reading progress | Server-side (auth required) | Server-side (auth required) | Reading list (auth) | localStorage, no auth — per-device only |
-| Chapter navigation | Prev/next buttons | Prev/next buttons | External links to source sites | Prev/next buttons + keyboard shortcuts |
-| Chapter list / TOC | Expandable, paginated | Per-novel chapter index | External links | Novel detail page + chapter jumper in reader |
-| Font customization | Size + font family toggle | Basic | None | Font size + line height via reader settings panel |
-| RSS | Yes | Yes | Yes | Yes — core feature |
-| Ads | Yes (heavy) | Yes | Yes (heavy) | No ads — intentional differentiator |
-| Auth required for progress | Yes | Yes | Yes | No — localStorage approach |
-| Mobile app | iOS + Android | iOS + Android | None | Mobile-first web; minimal PWA if warranted |
-| Novel synopsis / description | Yes | Yes | Extensive metadata | Add basic synopsis page per novel |
-| Search | Full site search | Full site search | Genre + tag filters | Not feasible at 13K chapters static; within-novel chapter filter only |
+The biggest unknown in this migration is cold start performance with a 64MB content database on Netlify serverless functions.
+
+| Factor | Current (SSG) | SSR (Expected) |
+|--------|--------------|----------------|
+| First page load | Instant (prerendered HTML from CDN) | Cold start: 500ms-2s (function boot + DB restore). Warm: ~200ms. After ISR cache: instant from CDN. |
+| Build time | ~10 min (26,694 routes) | ~30s (no prerendering, just bundle) |
+| Deploy size | 2.6MB SQL dump + 26K HTML files | 64MB SQL dump + server function bundle |
+| Content update latency | 10 min build + deploy | Instant after deploy (ISR serves stale while revalidating) |
+| Function memory | N/A | 1GB limit on Netlify. 64MB DB should fit. |
+| Function timeout | N/A | 26s limit. Single page render should be <5s. |
+
+**Mitigation strategy:** Aggressively cache with ISR. Chapter pages (which are the bulk of traffic) never change after publication. Use `isr: true` (cache until next deploy) for chapter routes. This means cold start only affects the very first visitor to each chapter after a deploy -- subsequent visitors get CDN-cached HTML.
 
 ---
 
 ## Sources
 
-- [Royal Road features observed directly](https://www.royalroad.com/fictions/best-rated) — MEDIUM confidence (WebFetch, current)
-- [Wuxiaworld features observed directly](https://www.wuxiaworld.com/) — MEDIUM confidence (WebFetch, current)
-- [NovelUpdates reading list and genre features](https://www.novelupdates.com/reading-list/) — MEDIUM confidence (WebSearch + URL)
-- [WebNR: no-auth localStorage reading progress pattern](https://www.webnovel.win/blog/2025/01/14/webnr-10-your-new-favorite-way-to-read-web-novels-without-big-brother-watching/) — LOW confidence (WebSearch only, single source)
-- [Dark mode localStorage persistence patterns](https://www.ma-no.org/en/web-design/css/persistent-dark-mode-with-css-and-js) — MEDIUM confidence (multiple sources agree, well-established pattern)
-- [2026 State of Reading Report — discovery via personal recommendations](https://www.prnewswire.com/news-releases/the-2026-state-of-reading-report-human-recommendations-surpass-algorithms-in-the-ai-era-302637200.html) — LOW confidence (general reading market, not web fiction specific)
-- Existing Astro site codebase (`/src/layouts/Chapter.astro`, `/src/components/ResumeReading.astro`, `/src/pages/index.astro`) — HIGH confidence (direct inspection of proven feature implementations)
-- Project constraints from `.planning/PROJECT.md` — HIGH confidence (authoritative source for scope)
+- [Nuxt Rendering Modes (official docs)](https://nuxt.com/docs/4.x/guide/concepts/rendering) -- HIGH confidence (official docs, routeRules config)
+- [Advanced caching with Nuxt 4 on Netlify](https://developers.netlify.com/guides/isr-and-advanced-caching-with-nuxt-v4-on-netlify/) -- HIGH confidence (official Netlify developer guide, ISR/SWR config, purgeCache API, cache headers)
+- [Netlify Platform Primitives with Nuxt 4](https://www.netlify.com/blog/platform-primitives-with-nuxt-4/) -- HIGH confidence (official Netlify blog, zero-config SSR deployment)
+- [Nuxt Content Serverless Hosting](https://content.nuxt.com/docs/deploy/serverless) -- HIGH confidence (official docs, database behavior in serverless, cold start implications)
+- [Nuxt Content Raw Content](https://content.nuxt.com/docs/advanced/raw-content) -- HIGH confidence (official docs, rawbody schema field)
+- [Nuxt Content Database Architecture](https://content.nuxt.com/docs/advanced/database) -- HIGH confidence (official docs, dump/restore lifecycle)
+- [Nuxt Content Collection Types](https://content.nuxt.com/docs/collections/types) -- HIGH confidence (official docs, body field is AST in page collections)
+- [Nuxt Content queryCollection](https://content.nuxt.com/docs/utils/query-collection) -- HIGH confidence (official docs, select() method, server route usage)
+- [Nuxt Content Netlify Deployment](https://content.nuxt.com/docs/deploy/netlify) -- HIGH confidence (official docs, Node.js version requirement)
+- [nuxt-content-body-html module](https://github.com/dword-design/nuxt-content-body-html) -- MEDIUM confidence (v4.0.4, maintained as of May 2025, supports Content v3)
+- [Nuxt Content RSS with full body HTML](https://sebastianlandwehr.com/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code) -- MEDIUM confidence (community guide, demonstrates bodyHtml approach)
+- [GitHub issue #2019: composable for ContentRenderer HTML](https://github.com/nuxt/content/issues/2019) -- MEDIUM confidence (closed as not-planned, confirms no native server-side HTML rendering API)
+- [Netlify Functions cold start](https://answers.netlify.com/t/functions-potential-cold-start-issues/107322) -- LOW confidence (forum post, general cold start 50-500ms estimates)
+- [Netlify Edge Function memory limits](https://answers.netlify.com/t/nuxt-on-edge-function-memory-limit-error/119473) -- MEDIUM confidence (forum post confirming Edge memory constraints)
+- Existing codebase inspection -- HIGH confidence (direct reading of `nuxt.config.ts`, server routes, composables, pages)
 
 ---
-*Feature research for: novel chapter reading site (static, 10 translated novels, ~13K chapters, no auth)*
-*Researched: 2026-02-17*
+*Feature research for: SSR migration of 13K-chapter novel reading site*
+*Researched: 2026-02-18*
