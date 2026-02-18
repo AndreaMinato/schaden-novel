@@ -2,6 +2,9 @@ import { load } from 'cheerio'
 import { mkdir, appendFile, writeFile, rm } from 'fs/promises'
 import { writeChapters } from './readChapters.mjs'
 
+let imported = 0, failed = 0, skipped = 0
+const errors = []
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -54,9 +57,13 @@ async function loadNovel(_id, novel) {
   for (const id of ids) {
     try {
       const text = await loadGoogleDoc(id)
-      appendFile('./tmp/' + novel + '/chapters.md', '\n\n' + text)
+      await appendFile('./tmp/' + novel + '/chapters.md', '\n\n' + text)
+      imported++
     } catch (error) {
-
+      failed++
+      const msg = `[${novel}] Failed to load doc ${id}: ${error.message}`
+      console.error(msg)
+      errors.push(msg)
     }
   }
 
@@ -85,7 +92,17 @@ async function loadAll() {
   for (const novel of Object.keys(novels)) {
     try {
       await loadNovel(novels[novel], novel)
-    } catch { }
+    } catch (error) {
+      const msg = `[${novel}] Novel import failed: ${error.message}`
+      console.error(msg)
+      errors.push(msg)
+    }
+  }
+
+  console.log(`\nImport complete: ${imported} imported, ${failed} failed, ${skipped} skipped`)
+  if (errors.length > 0) {
+    await writeFile('./import-errors.log', errors.join('\n') + '\n')
+    console.error(`Errors written to import-errors.log`)
   }
 }
 
