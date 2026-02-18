@@ -53,7 +53,10 @@ Plans:
   3. Resume reading dropdown shows the last-read chapter per novel drawn from localStorage, and clicking it navigates directly to that chapter
   4. RSS feed URL returns valid XML with entries for recent chapters
   5. Sitemap URL returns valid XML covering catalog, novel detail, and chapter pages
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — Home page, catalog page, resume reading dropdown, layout navigation
+- [ ] 03-02-PLAN.md — RSS feeds (global + per-novel) and sitemap generation
 
 ### Phase 4: Operations
 **Goal**: Developers can import new chapters from Google Docs into the Nuxt Content structure, and all 13,318 existing chapters are accessible in the rebuilt site without data loss
