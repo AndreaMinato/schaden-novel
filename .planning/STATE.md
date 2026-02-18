@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** Readers can find and read novel chapters with a smooth, uninterrupted reading experience.
-**Current focus:** Phase 3 - Full Site Parity
+**Current focus:** Phase 4 - Operations
 
 ## Current Position
 
-Phase: 3 of 4 (Full Site Parity) -- COMPLETE
-Plan: 2 of 2 in current phase -- COMPLETE
-Status: Phase 3 complete, ready for Phase 4
-Last activity: 2026-02-18 — Completed 03-02-PLAN.md (RSS feeds and sitemap)
+Phase: 4 of 4 (Operations)
+Plan: 1 of 3 in current phase
+Status: Executing Phase 4
+Last activity: 2026-02-18 — Completed 04-01-PLAN.md (import script port)
 
-Progress: [########░░] 75%
+Progress: [########░░] 78%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 9.2min
-- Total execution time: 55min
+- Total plans completed: 7
+- Average duration: 8.1min
+- Total execution time: 57min
 
 **By Phase:**
 
@@ -30,9 +30,10 @@ Progress: [########░░] 75%
 | 01-infrastructure-foundation | 2/2 | 43min | 21.5min |
 | 02-chapter-reader | 2/2 | 6min | 3min |
 | 03-full-site-parity | 2/2 | 6min | 3min |
+| 04-operations | 1/3 | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 02-01 (3min), 02-02 (3min), 03-01 (3min), 03-02 (3min)
+- Last 5 plans: 02-02 (3min), 03-01 (3min), 03-02 (3min), 04-01 (2min)
 - Trend: stable (fast)
 
 *Updated after each plan completion*
@@ -65,6 +66,7 @@ Recent decisions affecting current work:
 - [03-02]: Global RSS link-only, per-novel RSS with full rawbody markdown content
 - [03-02]: Multi-sitemap with per-novel sub-sitemaps via @nuxtjs/sitemap
 - [03-02]: Only mga/lrg RSS prerendered (novels with current content)
+- [04-01]: Refactored import_ids.mjs loadAll to iterate Object.keys(novels) instead of hardcoded per-novel calls
 
 ### Pending Todos
 
@@ -79,5 +81,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 03-02-PLAN.md (RSS feeds and sitemap). Phase 3 complete. Ready for Phase 4.
-Resume file: .planning/phases/03-full-site-parity/03-02-SUMMARY.md
+Stopped at: Completed 04-01-PLAN.md (import script port). Phase 4 in progress.
+Resume file: .planning/phases/04-operations/04-01-SUMMARY.md
