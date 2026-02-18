@@ -5,32 +5,33 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** Readers can find and read novel chapters with a smooth, uninterrupted reading experience.
-**Current focus:** Phase 1 - Infrastructure Foundation
+**Current focus:** Phase 2 - Chapter Reader
 
 ## Current Position
 
-Phase: 1 of 4 (Infrastructure Foundation) -- COMPLETE
-Plan: 2 of 2 in current phase -- COMPLETE
-Status: Phase 01 complete, ready for Phase 02
-Last activity: 2026-02-17 — Completed 01-02-PLAN.md (build pipeline validation + Netlify deploy)
+Phase: 2 of 4 (Chapter Reader)
+Plan: 1 of 2 in current phase -- COMPLETE
+Status: 02-01 complete, ready for 02-02
+Last activity: 2026-02-18 — Completed 02-01-PLAN.md (layout + chapter listing)
 
-Progress: [##░░░░░░░░] 20%
+Progress: [###░░░░░░░] 30%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 21.5min
-- Total execution time: 43min
+- Total plans completed: 3
+- Average duration: 15.3min
+- Total execution time: 46min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-infrastructure-foundation | 2/2 | 43min | 21.5min |
+| 02-chapter-reader | 1/2 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (26min), 01-02 (17min)
+- Last 5 plans: 01-01 (26min), 01-02 (17min), 02-01 (3min)
 - Trend: improving
 
 *Updated after each plan completion*
@@ -53,6 +54,8 @@ Recent decisions affecting current work:
 - [01-02]: Netlify _redirects for SPA fallback — /* -> /200.html 200
 - [01-02]: Content path /{novel}/{slug} distinct from route path /novels/{novel}/{slug}
 - [01-02]: SQLite dump 7.9MB for 2,419 chapters — projects to ~45MB at 13K, body-stripping still recommended
+- [02-01]: Client-side localeCompare({ numeric: true }) for chapter sort — Content v3 SQL sorts alphabetically
+- [02-01]: rAF-throttled scroll detection for auto-hide header — avoids @vueuse/core dependency
 
 ### Pending Todos
 
@@ -66,6 +69,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-17
-Stopped at: Completed 01-02-PLAN.md (build pipeline validation + Netlify deploy). Phase 01 complete.
-Resume file: .planning/phases/01-infrastructure-foundation/01-02-SUMMARY.md
+Last session: 2026-02-18
+Stopped at: Completed 02-01-PLAN.md (layout + chapter listing). Ready for 02-02.
+Resume file: .planning/phases/02-chapter-reader/02-01-SUMMARY.md
