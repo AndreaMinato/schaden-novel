@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** Readers can find and read novel chapters with a smooth, uninterrupted reading experience.
-**Current focus:** Phase 2 - Chapter Reader
+**Current focus:** Phase 3 - Full Site Parity
 
 ## Current Position
 
-Phase: 2 of 4 (Chapter Reader) -- COMPLETE
-Plan: 2 of 2 in current phase -- COMPLETE
-Status: Phase 2 complete, ready for Phase 3
-Last activity: 2026-02-18 — Completed 02-02-PLAN.md (chapter reader)
+Phase: 3 of 4 (Full Site Parity)
+Plan: 1 of 2 in current phase -- COMPLETE
+Status: Plan 03-01 complete, ready for Plan 03-02
+Last activity: 2026-02-18 — Completed 03-01-PLAN.md (home page, catalog, resume reading)
 
-Progress: [#####░░░░░] 50%
+Progress: [######░░░░] 63%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 12.3min
-- Total execution time: 49min
+- Total plans completed: 5
+- Average duration: 10.4min
+- Total execution time: 52min
 
 **By Phase:**
 
@@ -29,10 +29,11 @@ Progress: [#####░░░░░] 50%
 |-------|-------|-------|----------|
 | 01-infrastructure-foundation | 2/2 | 43min | 21.5min |
 | 02-chapter-reader | 2/2 | 6min | 3min |
+| 03-full-site-parity | 1/2 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (26min), 01-02 (17min), 02-01 (3min), 02-02 (3min)
-- Trend: improving
+- Last 5 plans: 01-02 (17min), 02-01 (3min), 02-02 (3min), 03-01 (3min)
+- Trend: stable (fast)
 
 *Updated after each plan completion*
 
@@ -58,6 +59,9 @@ Recent decisions affecting current work:
 - [02-01]: rAF-throttled scroll detection for auto-hide header — avoids @vueuse/core dependency
 - [02-02]: Ascending sort in useChapterNav (prev=lower, next=higher) vs descending in listing page
 - [02-02]: Store route path in localStorage progress (not content path) for direct Phase 3 navigation
+- [03-01]: Central NOVEL_NAMES map in useNovelMeta for consistent display names across all pages
+- [03-01]: UDropdownMenu with nested item arrays for resume reading dropdown
+- [03-01]: ClientOnly wrapper for all localStorage-dependent UI sections
 
 ### Pending Todos
 
@@ -72,5 +76,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 02-02-PLAN.md (chapter reader). Phase 2 complete. Ready for Phase 3.
-Resume file: .planning/phases/02-chapter-reader/02-02-SUMMARY.md
+Stopped at: Completed 03-01-PLAN.md (home page, catalog, resume reading). Ready for Plan 03-02.
+Resume file: .planning/phases/03-full-site-parity/03-01-SUMMARY.md
