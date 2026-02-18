@@ -38,9 +38,9 @@ export default defineEventHandler(async (event) => {
       generator: 'Schaden Novels RSS',
     })
 
-    // Query last 50 chapters with full content
+    // Query last 50 chapters (link-only — body is stripped from SQL dumps)
     const chapters = await queryCollection(event, novel as any)
-      .select('title', 'path', 'pubDate', 'rawbody')
+      .select('title', 'path', 'pubDate')
       .order('pubDate', 'DESC')
       .limit(50)
       .all()
@@ -50,7 +50,6 @@ export default defineEventHandler(async (event) => {
         title: ch.title,
         link: `${SITE_URL}/novels${ch.path}`,
         date: new Date(ch.pubDate),
-        content: (ch as any).rawbody || undefined,
       })
     }
 
