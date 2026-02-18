@@ -38,7 +38,10 @@ Plans:
   3. Prev and next buttons at the top and bottom of the reader navigate to adjacent chapters correctly, including first and last chapters (boundary behavior fixed from Astro)
   4. Pressing the left or right arrow key navigates to the previous or next chapter without triggering any scroll or browser-default behavior
   5. User's last-read chapter per novel is written to localStorage on chapter load and restored correctly after a page refresh or new browser session
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 02-01-PLAN.md — Layout with auto-hide header, scroll-to-top, and novel detail page with descending chapter listing
+- [ ] 02-02-PLAN.md — Chapter reader with typography, prev/next navigation, keyboard shortcuts, and reading progress
 
 ### Phase 3: Full Site Parity
 **Goal**: The complete site matches the existing Astro site's catalog, home page, resume reading experience, and discovery feeds — ready to replace the Astro site in production
@@ -70,6 +73,6 @@ Phases execute in order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Infrastructure Foundation | 0/2 | Not started | - |
-| 2. Chapter Reader | 0/TBD | Not started | - |
+| 2. Chapter Reader | 0/2 | Not started | - |
 | 3. Full Site Parity | 0/TBD | Not started | - |
 | 4. Operations | 0/TBD | Not started | - |
