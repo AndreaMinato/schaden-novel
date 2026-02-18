@@ -5,34 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-02-18)
 
 **Core value:** Readers can find and read novel chapters with a smooth, uninterrupted reading experience.
-**Current focus:** v1.0 complete — planning next milestone
+**Current focus:** v1.1 SSR Migration
 
 ## Current Position
 
-Milestone: v1.0 MVP — SHIPPED
-Status: All phases complete, milestone archived
-Last activity: 2026-02-18 — v1.0 milestone completed
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-02-18 — Milestone v1.1 started
 
-Progress: [##########] 100%
+## Accumulated Context
 
-## Performance Metrics
-
-**Velocity:**
-- Total plans completed: 9
-- Average duration: 7.6min
-- Total execution time: ~68min
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 01-infrastructure-foundation | 2/2 | 43min | 21.5min |
-| 02-chapter-reader | 2/2 | 6min | 3min |
-| 03-full-site-parity | 2/2 | 6min | 3min |
-| 04-operations | 3/3 | 13min | 4.3min |
-
-## Session Continuity
-
-Last session: 2026-02-18
-Stopped at: v1.0 milestone archived. Ready for next milestone or production deploy.
-Resume file: .planning/MILESTONES.md
+**From v1.0:**
+- v1.0 velocity: 9 plans in ~68min (avg 7.6min/plan)
+- EMFILE fix: ignore `src/`, `dist/` in both nuxt.config.ts and .nuxtignore
+- zod@3.25.76+ required for dev server
+- rawbody not available in Nuxt Content v3 server queries
+- Post-build SQL dump body stripping was correct approach for SSG
+- 13K chapters build in ~10 min (26,694 routes)
