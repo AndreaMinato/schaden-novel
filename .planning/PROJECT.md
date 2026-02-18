@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A novel chapter reading site rebuilt from scratch in Nuxt + Nuxt UI, replacing the existing Astro static site. Hosts 10+ translated novels (~13,000 chapters) with a clean reading experience, chapter navigation, and reading progress tracking. Deployed to Netlify.
+A 10-novel, 13,318-chapter reading site built with Nuxt 4 + Nuxt UI + Nuxt Content v3. Deployed to Netlify as a fully prerendered static site. Features clean reading typography, chapter navigation, reading progress tracking, RSS feeds, and sitemaps. Content imported from Google Docs via custom scripts.
 
 ## Core Value
 
@@ -12,68 +12,70 @@ Readers can find and read novel chapters with a smooth, uninterrupted reading ex
 
 ### Validated
 
-<!-- Proven valuable from existing Astro site -->
-
-- ✓ Multi-novel catalog with chapter listings — existing
-- ✓ Individual chapter reader with formatted text — existing
-- ✓ Prev/next chapter navigation — existing
-- ✓ Keyboard shortcuts for chapter navigation — existing
-- ✓ Reading progress persistence via localStorage — existing
-- ✓ Google Docs chapter import workflow — existing
-- ✓ Direct markdown chapter editing — existing
-- ✓ RSS feed for new chapters — existing
-- ✓ SEO sitemap generation — existing
-- ✓ Netlify static deployment — existing
+- ✓ Site built with Nuxt 4 + Nuxt UI, deployed as static site — v1.0
+- ✓ Nuxt Content v3 handles 13K markdown chapters with per-novel collections — v1.0
+- ✓ Build completes in ~10 min for 13K chapters (26,694 routes) — v1.0
+- ✓ Netlify deployment with Node 22.5+ and nativeSqlite — v1.0
+- ✓ Content queries use useAsyncData (no SQLite dump in browser) — v1.0
+- ✓ Home page with latest chapters grouped by novel — v1.0
+- ✓ Novel catalog page with chapter counts — v1.0
+- ✓ Novel detail page with full chapter listing (natural sort) — v1.0
+- ✓ Chapter reader with clean prose typography (65ch, readable line-height) — v1.0
+- ✓ Prev/next chapter navigation via buttons — v1.0
+- ✓ Keyboard navigation (Cmd+Arrow for prev/next) — v1.0
+- ✓ Mobile-responsive reader — v1.0
+- ✓ Reading progress persistence in localStorage — v1.0
+- ✓ Resume reading dropdown in header — v1.0
+- ✓ RSS feeds (global + per-novel) — v1.0
+- ✓ Sitemap generation (multi-sitemap, per-novel) — v1.0
+- ✓ Google Docs import script ported with error handling — v1.0
+- ✓ Import script surfaces errors visibly (no silent failures) — v1.0
+- ✓ All 13,318 chapters migrated to Nuxt Content structure — v1.0
 
 ### Active
 
-- [ ] Rebuild site in Nuxt 4 with Nuxt UI
-- [ ] Migrate existing markdown/MDX chapters to Nuxt content system
-- [ ] Home page with latest chapters grouped by novel
-- [ ] Novel catalog page with chapter counts
-- [ ] Novel detail page with full chapter listing
-- [ ] Chapter reader page with clean typography
-- [ ] Prev/next chapter navigation in reader
-- [ ] Keyboard navigation (arrow keys for prev/next)
-- [ ] Reading progress persistence (localStorage — resume where you left off)
-- [ ] Google Docs import script (port existing scripts)
-- [ ] RSS feed generation
-- [ ] Sitemap generation
-- [ ] Netlify deployment
+(None — next milestone not yet planned)
 
 ### Out of Scope
 
 - Authentication/user accounts — static reading site, no login needed
-- Database backend — content lives as files, no DB
 - Comments or social features — reading-focused
-- Real-time features — static/SSG deployment
-- Mobile app — web only
+- Full-text search across chapters — 170MB content impractical for client-side
+- Offline / PWA mode — content too large for browser cache
+- Mobile app — web is sufficient
+- Real-time notifications — RSS is the notification primitive
 
 ## Context
 
-- Existing Astro site at https://schaden-novel.netlify.app/
-- ~13,318 chapters across 10 novels (170MB of markdown)
-- Content imported from Google Docs via custom scripts (cheerio HTML parsing)
-- Novels: atg, cd, htk, issth, lrg, mga, mw, overgeared, rtw, tmw
-- Current site has build performance issues due to content volume (8GB memory needed)
-- Known bugs in import scripts (silent error swallowing, missing awaits)
-- Chapter sorting algorithm is inefficient for 13K+ chapters
+**Current state:** v1.0 shipped. 1,096 LOC across TypeScript, Vue, and MJS. 13,318 markdown chapters (170MB). Static site with 26,694 prerendered routes. SQL dumps body-stripped from 64MB to 2.6MB for client-side queries.
+
+**Tech stack:** Nuxt 4.3.1, Nuxt UI, Nuxt Content v3, @nuxtjs/sitemap, feed (RSS), Netlify
+**Content:** 10 novels — atg, cd, htk, issth, lrg, mga, mw, overgeared, rtw, tmw
+**Build:** `nuxt generate` → `.output/public/` → `netlify deploy --prod`
+**Import:** `node scripts/import.mjs` (Google Docs → markdown chapters)
 
 ## Constraints
 
-- **Stack**: Nuxt 4 + Nuxt UI — user's chosen framework
-- **Hosting**: Netlify — keep existing deployment platform
-- **Content**: Must migrate ~13K existing markdown chapters
-- **Build**: Must handle 170MB content without excessive memory/time
+- **Stack**: Nuxt 4 + Nuxt UI
+- **Hosting**: Netlify (static deploy, no SSR)
+- **Content**: 13K markdown chapters, SQLite connector (native Node 22.5+)
+- **Build**: ~10 min for full site, body-stripped SQL dumps essential for localStorage limits
 - **No auth**: Static site, no server-side user state
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Nuxt 4 + Nuxt UI over Astro | Better UI components, Vue ecosystem, SSR/dynamic capability | — Pending |
-| Keep Netlify hosting | Already configured, familiar | — Pending |
-| Migrate markdown content | 13K chapters of proven content, not starting fresh | — Pending |
+| Nuxt 4 + Nuxt UI over Astro | Better UI components, Vue ecosystem | ✓ Good |
+| Keep Netlify hosting | Already configured, familiar | ✓ Good |
+| Migrate markdown content | 13K chapters of proven content | ✓ Good |
+| Per-novel content collections | Each novel is a separate Nuxt Content collection | ✓ Good |
+| SPA fallback for chapters | Prerender all routes, /200.html fallback | ✓ Good |
+| Client-side localeCompare sort | Content v3 SQL sorts alphabetically, not numerically | ✓ Good |
+| rAF-throttled scroll for auto-hide header | Avoids @vueuse/core dependency | ✓ Good |
+| Post-build SQL dump body stripping | afterParse hook breaks pre-rendering | ✓ Good |
+| Per-novel RSS link-only | rawbody not available in Nuxt Content v3 server queries | ✓ Good |
+| Filesystem-based prerender routes | readdirSync reads actual filenames, no hardcoded ranges | ✓ Good |
 
 ---
-*Last updated: 2026-02-17 after initialization*
+*Last updated: 2026-02-18 after v1.0 milestone*
