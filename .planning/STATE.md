@@ -9,19 +9,19 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 
 ## Current Position
 
-Phase: 3 of 4 (Full Site Parity)
-Plan: 1 of 2 in current phase -- COMPLETE
-Status: Plan 03-01 complete, ready for Plan 03-02
-Last activity: 2026-02-18 — Completed 03-01-PLAN.md (home page, catalog, resume reading)
+Phase: 3 of 4 (Full Site Parity) -- COMPLETE
+Plan: 2 of 2 in current phase -- COMPLETE
+Status: Phase 3 complete, ready for Phase 4
+Last activity: 2026-02-18 — Completed 03-02-PLAN.md (RSS feeds and sitemap)
 
-Progress: [######░░░░] 63%
+Progress: [########░░] 75%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: 10.4min
-- Total execution time: 52min
+- Total plans completed: 6
+- Average duration: 9.2min
+- Total execution time: 55min
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [######░░░░] 63%
 |-------|-------|-------|----------|
 | 01-infrastructure-foundation | 2/2 | 43min | 21.5min |
 | 02-chapter-reader | 2/2 | 6min | 3min |
-| 03-full-site-parity | 1/2 | 3min | 3min |
+| 03-full-site-parity | 2/2 | 6min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 01-02 (17min), 02-01 (3min), 02-02 (3min), 03-01 (3min)
+- Last 5 plans: 02-01 (3min), 02-02 (3min), 03-01 (3min), 03-02 (3min)
 - Trend: stable (fast)
 
 *Updated after each plan completion*
@@ -62,6 +62,9 @@ Recent decisions affecting current work:
 - [03-01]: Central NOVEL_NAMES map in useNovelMeta for consistent display names across all pages
 - [03-01]: UDropdownMenu with nested item arrays for resume reading dropdown
 - [03-01]: ClientOnly wrapper for all localStorage-dependent UI sections
+- [03-02]: Global RSS link-only, per-novel RSS with full rawbody markdown content
+- [03-02]: Multi-sitemap with per-novel sub-sitemaps via @nuxtjs/sitemap
+- [03-02]: Only mga/lrg RSS prerendered (novels with current content)
 
 ### Pending Todos
 
@@ -76,5 +79,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 03-01-PLAN.md (home page, catalog, resume reading). Ready for Plan 03-02.
-Resume file: .planning/phases/03-full-site-parity/03-01-SUMMARY.md
+Stopped at: Completed 03-02-PLAN.md (RSS feeds and sitemap). Phase 3 complete. Ready for Phase 4.
+Resume file: .planning/phases/03-full-site-parity/03-02-SUMMARY.md
