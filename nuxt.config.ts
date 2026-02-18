@@ -42,7 +42,7 @@ export default defineNuxtConfig({
       sqliteConnector: 'native',  // Node 22.5+ — avoids better-sqlite3 binding issues
     },
     watch: {
-      enabled: false,  // Disable content watching — 13K files in src/ cause EMFILE on dev server
+      enabled: false,  // Disable content watching — 13K chapter files cause EMFILE on dev server
     },
   },
   nitro: {
@@ -51,38 +51,34 @@ export default defineNuxtConfig({
       routes: [
         '/', '/200.html', '/404.html',
         '/rss.xml',
-        '/novels/mga/rss.xml', '/novels/lrg/rss.xml',  // Add more novel RSS routes as content is migrated
+        '/novels/atg/rss.xml', '/novels/cd/rss.xml', '/novels/htk/rss.xml',
+        '/novels/issth/rss.xml', '/novels/lrg/rss.xml', '/novels/mga/rss.xml',
+        '/novels/mw/rss.xml', '/novels/overgeared/rss.xml', '/novels/rtw/rss.xml',
+        '/novels/tmw/rss.xml',
       ],
       concurrency: 4,
     },
     hooks: {
       'prerender:routes': function (routes: Set<string>) {
-        // Prerender all lrg chapters from actual filenames
-        for (const slug of getChapterSlugs('lrg')) {
-          routes.add(`/novels/lrg/${slug}`)
+        const novels = ['atg', 'cd', 'htk', 'issth', 'lrg', 'mga', 'mw', 'overgeared', 'rtw', 'tmw']
+        for (const novel of novels) {
+          routes.add(`/novels/${novel}`)
+          for (const slug of getChapterSlugs(novel)) {
+            routes.add(`/novels/${novel}/${slug}`)
+          }
         }
-        // Prerender first ~500 mga chapters for benchmark
-        const mgaSlugs = getChapterSlugs('mga')
-          .map(Number)
-          .filter(n => !isNaN(n) && n <= 500)
-        for (const slug of mgaSlugs) {
-          routes.add(`/novels/mga/${slug}`)
-        }
-        // Novel index pages
-        routes.add('/novels/lrg')
-        routes.add('/novels/mga')
       },
     },
   },
   routeRules: {
     '/': { prerender: true },
   },
-  ignore: ['src/**', 'dist/**'],
+  ignore: [],
   vite: {
     server: {
       watch: {
         ignored: [
-          '**/src/**', '**/dist/**',
+          '**/content/**',
           '**/tmp/**', '**/build-cache/**', '**/.planning/**',
           '**/.astro/**', '**/.frontmatter/**',
         ],
