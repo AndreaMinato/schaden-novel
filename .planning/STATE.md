@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-17)
 ## Current Position
 
 Phase: 4 of 4 (Operations)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: Executing Phase 4
-Last activity: 2026-02-18 — Completed 04-01-PLAN.md (import script port)
+Last activity: 2026-02-18 — Completed 04-02-PLAN.md (content migration and full-site config)
 
-Progress: [########░░] 78%
+Progress: [#########░] 89%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 8.1min
-- Total execution time: 57min
+- Total plans completed: 8
+- Average duration: 7.8min
+- Total execution time: 62min
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [########░░] 78%
 | 01-infrastructure-foundation | 2/2 | 43min | 21.5min |
 | 02-chapter-reader | 2/2 | 6min | 3min |
 | 03-full-site-parity | 2/2 | 6min | 3min |
-| 04-operations | 1/3 | 2min | 2min |
+| 04-operations | 2/3 | 7min | 3.5min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (3min), 03-01 (3min), 03-02 (3min), 04-01 (2min)
+- Last 5 plans: 03-01 (3min), 03-02 (3min), 04-01 (2min), 04-02 (5min)
 - Trend: stable (fast)
 
 *Updated after each plan completion*
@@ -67,6 +67,8 @@ Recent decisions affecting current work:
 - [03-02]: Multi-sitemap with per-novel sub-sitemaps via @nuxtjs/sitemap
 - [03-02]: Only mga/lrg RSS prerendered (novels with current content)
 - [04-01]: Refactored import_ids.mjs loadAll to iterate Object.keys(novels) instead of hardcoded per-novel calls
+- [04-02]: Content migration already done by 04-01 -- Task 1 was filesystem cleanup only
+- [04-02]: Removed src/dist ignore patterns, replaced with content/** in Vite watcher for EMFILE prevention
 
 ### Pending Todos
 
@@ -81,5 +83,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-18
-Stopped at: Completed 04-01-PLAN.md (import script port). Phase 4 in progress.
-Resume file: .planning/phases/04-operations/04-01-SUMMARY.md
+Stopped at: Completed 04-02-PLAN.md (content migration and full-site config). Phase 4 in progress.
+Resume file: .planning/phases/04-operations/04-02-SUMMARY.md
