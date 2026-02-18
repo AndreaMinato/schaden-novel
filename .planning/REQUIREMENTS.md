@@ -39,7 +39,7 @@ Requirements for SSR migration. Each maps to roadmap phases.
 
 - **OPS-01**: Cold start monitoring and frequency tracking
 - **OPS-02**: Cache invalidation webhook for post-import CDN purging
-- **OPS-03**: Streamlined import pipeline (import → deploy → purge in one command)
+- **OPS-03**: Streamlined import pipeline (import -> deploy -> purge in one command)
 - **OPS-04**: Body-stripping pipeline removal (after verifying _payload.json replaces WASM SQLite downloads)
 
 ### Database Migration
@@ -60,26 +60,26 @@ Requirements for SSR migration. Each maps to roadmap phases.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUILD-01 | — | Pending |
-| BUILD-02 | — | Pending |
-| BUILD-03 | — | Pending |
-| BUILD-04 | — | Pending |
-| RENDER-01 | — | Pending |
-| RENDER-02 | — | Pending |
-| RENDER-03 | — | Pending |
-| RENDER-04 | — | Pending |
-| CLEAN-01 | — | Pending |
-| CLEAN-02 | — | Pending |
-| CLEAN-03 | — | Pending |
-| RSS-01 | — | Pending |
-| RSS-02 | — | Pending |
-| RSS-03 | — | Pending |
+| BUILD-01 | Phase 5 | Pending |
+| BUILD-02 | Phase 5 | Pending |
+| BUILD-03 | Phase 5 | Pending |
+| BUILD-04 | Phase 5 | Pending |
+| RENDER-01 | Phase 6 | Pending |
+| RENDER-02 | Phase 6 | Pending |
+| RENDER-03 | Phase 6 | Pending |
+| RENDER-04 | Phase 6 | Pending |
+| CLEAN-01 | Phase 6 | Pending |
+| CLEAN-02 | Phase 6 | Pending |
+| CLEAN-03 | Phase 6 | Pending |
+| RSS-01 | Phase 7 | Pending |
+| RSS-02 | Phase 7 | Pending |
+| RSS-03 | Phase 7 | Pending |
 
 **Coverage:**
 - v1.1 requirements: 14 total
-- Mapped to phases: 0
-- Unmapped: 14 ⚠️
+- Mapped to phases: 14
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-18*
-*Last updated: 2026-02-18 after initial definition*
+*Last updated: 2026-02-18 after roadmap creation*
