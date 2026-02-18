@@ -14,8 +14,29 @@ function getChapterSlugs(novel: string): string[] {
 }
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxt/ui'],
+  modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/sitemap'],
   css: ['~/assets/css/main.css'],
+  site: {
+    url: 'https://schaden-novel.netlify.app',
+  },
+  sitemap: {
+    sitemaps: {
+      pages: {
+        include: ['/', '/novels', '/novels/*'],
+        exclude: ['/novels/*/*'],
+      },
+      mga: { include: ['/novels/mga/**'] },
+      atg: { include: ['/novels/atg/**'] },
+      overgeared: { include: ['/novels/overgeared/**'] },
+      tmw: { include: ['/novels/tmw/**'] },
+      htk: { include: ['/novels/htk/**'] },
+      issth: { include: ['/novels/issth/**'] },
+      cd: { include: ['/novels/cd/**'] },
+      lrg: { include: ['/novels/lrg/**'] },
+      mw: { include: ['/novels/mw/**'] },
+      rtw: { include: ['/novels/rtw/**'] },
+    },
+  },
   content: {
     experimental: {
       sqliteConnector: 'native',  // Node 22.5+ — avoids better-sqlite3 binding issues
@@ -27,7 +48,11 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: false,  // CRITICAL: prevents discovering 13K chapters
-      routes: ['/', '/200.html', '/404.html'],
+      routes: [
+        '/', '/200.html', '/404.html',
+        '/rss.xml',
+        '/novels/mga/rss.xml', '/novels/lrg/rss.xml',  // Add more novel RSS routes as content is migrated
+      ],
       concurrency: 4,
     },
     hooks: {
@@ -52,11 +77,15 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
   },
+  ignore: ['src/**', 'dist/**'],
   vite: {
     server: {
       watch: {
-        // Ignore old Astro content (13K files) to avoid EMFILE on dev server
-        ignored: ['**/src/**', '**/tmp/**', '**/build-cache/**'],
+        ignored: [
+          '**/src/**', '**/dist/**',
+          '**/tmp/**', '**/build-cache/**', '**/.planning/**',
+          '**/.astro/**', '**/.frontmatter/**',
+        ],
       },
     },
   },

@@ -1,0 +1,7 @@
+src/**
+dist/**
+build-cache/**
+tmp/**
+.planning/**
+.astro/**
+.frontmatter/**
