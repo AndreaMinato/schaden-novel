@@ -24,5 +24,15 @@ export function useReadingProgress() {
     }
   }
 
-  return { save, get }
+  function getAll(): Record<string, string> {
+    if (!import.meta.client) return {}
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY)
+      return raw ? JSON.parse(raw) : {}
+    } catch {
+      return {}
+    }
+  }
+
+  return { save, get, getAll }
 }
