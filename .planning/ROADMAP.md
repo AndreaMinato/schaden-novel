@@ -36,11 +36,11 @@
   2. Site is live on Netlify serving pages through the server function
   3. Health-check endpoint confirms `node:sqlite` works in the Lambda runtime
   4. Cold start TTFB is under 3 seconds after 30 minutes idle
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
+- [ ] 05-01-PLAN.md — SSR build configuration (nuxt.config.ts, deps, netlify.toml, health endpoint)
+- [ ] 05-02-PLAN.md — Deploy and validate SSR on Netlify (build test, live site verification)
 
 ### Phase 6: Hybrid Rendering
 **Goal**: Pages use optimal rendering strategies (prerender/ISR) and SSG-era route generation is eliminated
