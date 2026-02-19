@@ -9,9 +9,9 @@ Requirements for SSR migration. Each maps to roadmap phases.
 
 ### Build Pipeline
 
-- [ ] **BUILD-01**: Build switches from `nuxt generate` to `nuxt build` for SSR output
-- [ ] **BUILD-02**: `netlify.toml` configures Netlify CI build with Node 22
-- [ ] **BUILD-03**: `@netlify/nuxt` module added for ISR and CDN integration
+- [x] **BUILD-01**: Build switches from `nuxt generate` to `nuxt build` for SSR output
+- [x] **BUILD-02**: `netlify.toml` configures Netlify CI build with Node 22
+- [x] **BUILD-03**: `@netlify/nuxt` module added for ISR and CDN integration
 - [ ] **BUILD-04**: Deploy pipeline produces working SSR site on Netlify
 
 ### Hybrid Rendering
@@ -60,9 +60,9 @@ Requirements for SSR migration. Each maps to roadmap phases.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUILD-01 | Phase 5 | Pending |
-| BUILD-02 | Phase 5 | Pending |
-| BUILD-03 | Phase 5 | Pending |
+| BUILD-01 | Phase 5 | Complete |
+| BUILD-02 | Phase 5 | Complete |
+| BUILD-03 | Phase 5 | Complete |
 | BUILD-04 | Phase 5 | Pending |
 | RENDER-01 | Phase 6 | Pending |
 | RENDER-02 | Phase 6 | Pending |
