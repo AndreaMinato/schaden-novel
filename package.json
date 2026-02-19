@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "preview": "npx serve .output/public",
-    "deploy": "pnpm build && netlify deploy --prod --dir=.output/public --no-build",
+    "preview": "nuxt preview",
+    "deploy": "pnpm build && netlify deploy --prod --build",
     "import:all": "node ./scripts/import.mjs",
     "import:docs": "node ./scripts/import_ids.mjs",
     "git:sync": "git add ./src/content && git commit -m 'update' && git push && git checkout .",
