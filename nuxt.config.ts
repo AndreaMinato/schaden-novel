@@ -36,20 +36,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      crawlLinks: false,  // CRITICAL: prevents discovering 13K chapters
-      routes: [
-        '/', '/404.html',
-        '/rss.xml',
-        '/novels/atg/rss.xml', '/novels/cd/rss.xml', '/novels/htk/rss.xml',
-        '/novels/issth/rss.xml', '/novels/lrg/rss.xml', '/novels/mga/rss.xml',
-        '/novels/mw/rss.xml', '/novels/overgeared/rss.xml', '/novels/rtw/rss.xml',
-        '/novels/tmw/rss.xml',
-      ],
-      concurrency: 4,
+      crawlLinks: false,
+      routes: [],  // SSR handles all routes — prerendering OOMs loading 13K chapters into memory
     },
-  },
-  routeRules: {
-    '/': { prerender: true },
   },
   ignore: [],
   vite: {
