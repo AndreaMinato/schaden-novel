@@ -34,7 +34,7 @@
 **Success Criteria** (what must be TRUE):
   1. `nuxt build` produces server function output (not static-only HTML)
   2. Site is live on Netlify serving pages through the server function
-  3. Health-check endpoint confirms `node:sqlite` works in the Lambda runtime
+  3. Health-check endpoint confirms SQLite (better-sqlite3) works in the Lambda runtime
   4. Cold start TTFB is under 3 seconds after 30 minutes idle
 **Plans:** 2 plans
 
