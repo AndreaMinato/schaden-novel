@@ -13,10 +13,12 @@
     "publish": "pnpm import:docs && pnpm git:sync && pnpm run deploy"
   },
   "dependencies": {
+    "@netlify/nuxt": "^0.2.0",
     "@nuxt/content": "latest",
     "@nuxt/ui": "latest",
     "@nuxtjs/sitemap": "^7.6.0",
     "@shikijs/langs": "3.22.0",
+    "better-sqlite3": "^12.5.0",
     "feed": "^5.2.0",
     "nuxt": "latest",
     "shiki": "3.22.0",
@@ -29,6 +31,7 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "better-sqlite3",
       "esbuild",
       "@parcel/watcher",
       "vue-demi"
