@@ -1,9 +1,15 @@
-export async function useChapterNav(novel: string, currentPath: string) {
-  const { data: rawChapters } = await useAsyncData(
-    `nav-${novel}`,
-    () => queryCollection(novel as any)
+import type { Ref, ComputedRef } from 'vue'
+
+export function useChapterNav(
+  novel: Ref<string> | ComputedRef<string>,
+  currentPath: Ref<string> | ComputedRef<string>
+) {
+  const { data: rawChapters } = useAsyncData(
+    () => `nav-${toValue(novel)}`,
+    () => queryCollection(toValue(novel) as any)
       .select('title', 'path', 'stem')
-      .all()
+      .all(),
+    { watch: [novel] }
   )
 
   const sortedChapters = computed(() => {
@@ -14,7 +20,7 @@ export async function useChapterNav(novel: string, currentPath: string) {
   })
 
   const currentIndex = computed(() =>
-    sortedChapters.value.findIndex(ch => ch.path === currentPath)
+    sortedChapters.value.findIndex(ch => ch.path === toValue(currentPath))
   )
 
   const prev = computed(() =>
