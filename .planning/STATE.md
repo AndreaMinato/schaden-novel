@@ -11,18 +11,18 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 
 Milestone: v1.1 SPA Migration
 Phase: 5 of 7 (Build Pipeline + SPA Foundation)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-02-20 -- Completed 05-02-PLAN.md (SPA fallback routing)
+Plan: 2 of 2 in current phase (PHASE COMPLETE)
+Status: Phase 5 complete
+Last activity: 2026-02-20 -- Completed 05-01-PLAN.md (Build pipeline + body extractor)
 
-Progress: [##########..........] 59% (10/17 plans -- v1.0 complete, Phase 5 plan 2 done)
+Progress: [############........] 65% (11/17 plans -- v1.0 complete, Phase 5 complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 6.9min
-- Total execution time: ~69min
+- Total plans completed: 11
+- Average duration: 7.2min
+- Total execution time: ~79min
 
 **By Phase:**
 
@@ -32,7 +32,7 @@ Progress: [##########..........] 59% (10/17 plans -- v1.0 complete, Phase 5 plan
 | 02-chapter-reader | 2/2 | 6min | 3min |
 | 03-full-site-parity | 2/2 | 6min | 3min |
 | 04-operations | 3/3 | 13min | 4.3min |
-| 05-build-pipeline-spa-foundation | 1/2 | 1min | 1min |
+| 05-build-pipeline-spa-foundation | 2/2 | 11min | 5.5min |
 
 ## Accumulated Context
 
@@ -44,14 +44,18 @@ Progress: [##########..........] 59% (10/17 plans -- v1.0 complete, Phase 5 plan
 - ContentRenderer compatibility with composed documents needs empirical validation (Phase 5/6 risk)
 - netlify.toml redirects used over _redirects file (structured, extensible)
 - Targeted /novels/*/* pattern (not catch-all) with force=false to preserve static file serving
+- Body files staged in node_modules/.cache/body-extract (buildDir gets cleaned mid-build)
+- Content cache must be cleared during generate for afterParse hook to fire
+- spaLoadingTemplate: true (not path string) works in Nuxt 4
+- Modules auto-scanned from root modules/ dir; no explicit registration needed
 
 ### Blockers/Concerns
 
 - ContentRenderer may not accept manually composed document objects (body fetched separately from queryCollection). Fallback: custom minimark renderer.
-- Deploy size: 13,318 JSON body files (~200MB) may hit Netlify deploy limits. Need to verify.
+- Deploy size: 13,318 JSON body files (149.8MB actual, not ~200MB). Need to verify Netlify deploy handles it.
 
 ## Session Continuity
 
 Last session: 2026-02-20
-Stopped at: Completed 05-02-PLAN.md
-Resume file: .planning/phases/05-build-pipeline-spa-foundation/05-02-SUMMARY.md
+Stopped at: Completed 05-01-PLAN.md (Phase 5 complete)
+Resume file: .planning/phases/05-build-pipeline-spa-foundation/05-01-SUMMARY.md
