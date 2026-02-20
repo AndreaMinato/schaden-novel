@@ -21,7 +21,7 @@
 
 **Milestone Goal:** Eliminate 10-minute builds by switching from full SSG (26K prerendered routes) to SPA mode with on-demand chapter body loading. Build drops to under 2 minutes.
 
-- [ ] **Phase 5: Build Pipeline + SPA Foundation** - Body-extractor module, stripped SQL dump, minimal prerendering, SPA fallback routing
+- [x] **Phase 5: Build Pipeline + SPA Foundation** - Body-extractor module, stripped SQL dump, minimal prerendering, SPA fallback routing (completed 2026-02-20)
 - [ ] **Phase 6: Chapter Reader** - Client-side chapter rendering with split metadata/body fetches and loading feedback
 - [ ] **Phase 7: SEO + Reading Optimization** - Sitemap/RSS preservation and chapter prefetch/cache for instant navigation
 
@@ -80,6 +80,6 @@ Plans:
 | 2. Chapter Reader | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 3. Full Site Parity | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 4. Operations | v1.0 | 3/3 | Complete | 2026-02-18 |
-| 5. Build Pipeline + SPA Foundation | v1.1 | 1/2 | In Progress | - |
+| 5. Build Pipeline + SPA Foundation | v1.1 | Complete    | 2026-02-20 | - |
 | 6. Chapter Reader | v1.1 | 0/? | Not started | - |
 | 7. SEO + Reading Optimization | v1.1 | 0/? | Not started | - |
