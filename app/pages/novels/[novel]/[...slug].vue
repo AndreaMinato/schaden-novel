@@ -2,38 +2,56 @@
 import type { BreadcrumbItem } from '@nuxt/ui'
 
 const route = useRoute()
-const novel = route.params.novel as string
-const slug = (route.params.slug as string[]).join('/')
 
-// Content path is /{novel}/{slug}, NOT the full route path /novels/{novel}/{slug}
-const contentPath = `/${novel}/${slug}`
+// Reactive route params (critical for SPA navigation)
+const novel = computed(() => route.params.novel as string)
+const slug = computed(() => (route.params.slug as string[]).join('/'))
+const contentPath = computed(() => `/${novel.value}/${slug.value}`)
 
-const { data: chapter } = await useAsyncData(
-  `chapter-${novel}-${slug}`,
-  () => queryCollection(novel as any)
-    .path(contentPath)
-    .first()
+// 1. Metadata from SQLite (fast, local WASM query -- OK to await)
+const { data: chapter, error: metaError } = await useAsyncData(
+  () => `chapter-${novel.value}-${slug.value}`,
+  () => queryCollection(novel.value as any)
+    .select('title', 'path', 'stem')
+    .path(contentPath.value)
+    .first(),
+  { watch: [novel, slug] }
 )
 
-if (!chapter.value) {
-  throw createError({ statusCode: 404, message: 'Chapter not found' })
-}
+// 2. Body from static JSON (network fetch -- do NOT await, show skeleton)
+const { data: bodyData, status: bodyStatus, error: bodyError, refresh: retryBody } = useAsyncData(
+  () => `body-${novel.value}-${slug.value}`,
+  async () => {
+    const url = `/content/novels/${novel.value}/${slug.value}.json`
+    try {
+      return await $fetch(url)
+    } catch (e) {
+      // Silent auto-retry after 2s
+      await new Promise(resolve => setTimeout(resolve, 2000))
+      return await $fetch(url)
+    }
+  },
+  { watch: [novel, slug] }
+)
 
-// Chapter navigation (ascending sort: prev = lower index, next = higher index)
-const { prev, next } = await useChapterNav(novel, contentPath)
+// 3. Chapter navigation (reactive, non-blocking)
+const { prev, next } = useChapterNav(novel, contentPath)
 
-// Reading progress: save route path on mount so Phase 3 can resume directly
+// 4. Reading progress: save on every chapter navigation + initial mount
+watch(contentPath, (path) => {
+  useReadingProgress().save(novel.value, `/novels${path}`)
+})
 onMounted(() => {
-  useReadingProgress().save(novel, `/novels${contentPath}`)
+  useReadingProgress().save(novel.value, `/novels${contentPath.value}`)
 })
 
-// Breadcrumb
+// 5. Breadcrumbs (from metadata, shows immediately)
 const breadcrumbItems = computed<BreadcrumbItem[]>(() => [
-  { label: novel.toUpperCase(), to: `/novels/${novel}` },
-  { label: chapter.value?.title || `Chapter ${slug}` },
+  { label: novel.value.toUpperCase(), to: `/novels/${novel.value}` },
+  { label: chapter.value?.title || `Chapter ${slug.value}` },
 ])
 
-// Keyboard shortcuts (Cmd+Arrow)
+// 6. Keyboard shortcuts (Cmd+Arrow)
 const toast = useToast()
 defineShortcuts({
   meta_arrowleft: () => {
@@ -79,9 +97,30 @@ defineShortcuts({
       />
     </nav>
 
-    <!-- Chapter prose -->
+    <!-- Chapter body area -->
     <article class="prose prose-lg dark:prose-invert max-w-none leading-relaxed">
-      <ContentRenderer v-if="chapter" :value="chapter" />
+      <!-- Loading skeleton (READ-02) -->
+      <div v-if="bodyStatus === 'pending'" class="space-y-4 py-4">
+        <USkeleton class="h-4 w-full" />
+        <USkeleton class="h-4 w-full" />
+        <USkeleton class="h-4 w-[90%]" />
+        <USkeleton class="h-4 w-full" />
+        <USkeleton class="h-4 w-[75%]" />
+        <USkeleton class="h-4 w-full" />
+        <USkeleton class="h-4 w-full" />
+        <USkeleton class="h-4 w-[60%]" />
+        <USkeleton class="h-4 w-[90%]" />
+        <USkeleton class="h-4 w-[75%]" />
+      </div>
+
+      <!-- Body content (instant swap from skeleton, no animation) -->
+      <ContentRenderer v-else-if="bodyData" :value="bodyData" />
+
+      <!-- Error state with retry (inline, minimal tone) -->
+      <div v-else-if="bodyError || metaError" class="py-8 text-center text-sm text-gray-500 dark:text-gray-400">
+        <p>Failed to load chapter.</p>
+        <UButton label="Retry" variant="outline" size="sm" class="mt-2" @click="retryBody()" />
+      </div>
     </article>
 
     <!-- Bottom navigation -->
