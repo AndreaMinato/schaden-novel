@@ -16,8 +16,8 @@ Requirements for SPA Migration milestone. Each maps to roadmap phases.
 
 ### Chapter Reading
 
-- [ ] **READ-01**: Chapter page loads metadata from WASM SQLite and body from static JSON as separate fetches
-- [ ] **READ-02**: Loading skeleton displays while chapter body fetches
+- [x] **READ-01**: Chapter page loads metadata from WASM SQLite and body from static JSON as separate fetches
+- [x] **READ-02**: Loading skeleton displays while chapter body fetches
 - [ ] **READ-03**: Adjacent chapter bodies (prev/next) are prefetched for instant navigation
 - [ ] **READ-04**: Visited chapter bodies are cached in memory to avoid re-fetching
 
@@ -60,8 +60,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | BUILD-02 | Phase 5 | Complete |
 | BUILD-03 | Phase 5 | Complete |
 | BUILD-04 | Phase 5 | Complete |
-| READ-01 | Phase 6 | Pending |
-| READ-02 | Phase 6 | Pending |
+| READ-01 | Phase 6 | Complete |
+| READ-02 | Phase 6 | Complete |
 | READ-03 | Phase 7 | Pending |
 | READ-04 | Phase 7 | Pending |
 | SEO-01 | Phase 7 | Pending |
