@@ -34,7 +34,15 @@ Readers can find and read novel chapters with a smooth, uninterrupted reading ex
 
 ### Active
 
-(None — next milestone not yet planned)
+**Current Milestone: v1.1 SPA Migration**
+
+**Goal:** Eliminate 10-minute builds by switching from full SSG (26K prerendered routes) to SPA mode with on-demand chapter body loading. Build drops to under 2 minutes.
+
+- [ ] SPA mode with client-side rendering
+- [ ] Chapter bodies served as individual static JSON files
+- [ ] Stripped SQL dump for metadata queries (~2.6MB)
+- [ ] All existing reading features preserved
+- [ ] Sitemaps still generated at build time
 
 ### Out of Scope
 
@@ -47,11 +55,11 @@ Readers can find and read novel chapters with a smooth, uninterrupted reading ex
 
 ## Context
 
-**Current state:** v1.0 shipped. 1,096 LOC across TypeScript, Vue, and MJS. 13,318 markdown chapters (170MB). Static site with 26,694 prerendered routes. SQL dumps body-stripped from 64MB to 2.6MB for client-side queries.
+**Current state:** v1.0 shipped. 1,096 LOC across TypeScript, Vue, and MJS. 13,318 markdown chapters (170MB). Static site with 26,694 prerendered routes. SQL dumps body-stripped from 64MB to 2.6MB for client-side queries. SSR migration attempted but hit OOM (64MB database module) and Lambda size limits (78MB > 50MB).
 
 **Tech stack:** Nuxt 4.3.1, Nuxt UI, Nuxt Content v3, @nuxtjs/sitemap, feed (RSS), Netlify
 **Content:** 10 novels — atg, cd, htk, issth, lrg, mga, mw, overgeared, rtw, tmw
-**Build:** `nuxt generate` → `.output/public/` → `netlify deploy --prod`
+**Build:** `nuxt generate` → `.output/public/` → `netlify deploy --prod --no-build`
 **Import:** `node scripts/import.mjs` (Google Docs → markdown chapters)
 
 ## Constraints
@@ -77,5 +85,7 @@ Readers can find and read novel chapters with a smooth, uninterrupted reading ex
 | Per-novel RSS link-only | rawbody not available in Nuxt Content v3 server queries | ✓ Good |
 | Filesystem-based prerender routes | readdirSync reads actual filenames, no hardcoded ranges | ✓ Good |
 
+| SPA mode over SSR | SSR hit OOM + Lambda limits; CSR avoids server entirely | — Pending |
+
 ---
-*Last updated: 2026-02-18 after v1.0 milestone*
+*Last updated: 2026-02-20 after v1.1 milestone start*
