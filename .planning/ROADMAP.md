@@ -37,11 +37,11 @@
   3. Build prerenders only ~25 shell pages (home, catalog, novel listings, RSS, sitemaps) -- not 26K chapter routes
   4. Build completes in under 2 minutes
   5. Visiting a chapter URL directly (deep link) loads the SPA shell instead of returning 404
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
+- [ ] 05-01-PLAN.md -- Body extractor module + build pipeline config (BUILD-01, BUILD-02, BUILD-03, BUILD-04)
+- [ ] 05-02-PLAN.md -- SPA fallback routing + branded loading template (SPA-01)
 
 ### Phase 6: Chapter Reader
 **Goal**: Readers can open and read any chapter through client-side rendering with visual loading feedback
@@ -80,6 +80,6 @@ Plans:
 | 2. Chapter Reader | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 3. Full Site Parity | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 4. Operations | v1.0 | 3/3 | Complete | 2026-02-18 |
-| 5. Build Pipeline + SPA Foundation | v1.1 | 0/? | Not started | - |
+| 5. Build Pipeline + SPA Foundation | v1.1 | 0/2 | Planned | - |
 | 6. Chapter Reader | v1.1 | 0/? | Not started | - |
 | 7. SEO + Reading Optimization | v1.1 | 0/? | Not started | - |
