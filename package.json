@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "nuxt dev",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "preview": "npx serve .output/public",
     "deploy": "pnpm build && netlify deploy --prod --dir=.output/public --no-build",
     "import:all": "node ./scripts/import.mjs",

@@ -1,20 +1,6 @@
-import { readdirSync } from 'node:fs'
-import { resolve } from 'node:path'
-
-// Read actual chapter filenames for prerender routes (avoids hardcoded ranges)
-function getChapterSlugs(novel: string): string[] {
-  try {
-    const dir = resolve('content', novel)
-    return readdirSync(dir)
-      .filter(f => f.endsWith('.md'))
-      .map(f => f.replace('.md', ''))
-  } catch {
-    return []
-  }
-}
-
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/sitemap', '@nuxt/content', '@nuxt/ui'],
+  spaLoadingTemplate: true,
   css: ['~/assets/css/main.css'],
   site: {
     url: 'https://schaden-novel.netlify.app',
@@ -50,24 +36,17 @@ export default defineNuxtConfig({
       crawlLinks: false,  // CRITICAL: prevents discovering 13K chapters
       routes: [
         '/', '/200.html', '/404.html',
+        '/novels',
         '/rss.xml',
+        '/novels/mga', '/novels/atg', '/novels/overgeared', '/novels/tmw',
+        '/novels/htk', '/novels/issth', '/novels/cd', '/novels/lrg',
+        '/novels/mw', '/novels/rtw',
         '/novels/atg/rss.xml', '/novels/cd/rss.xml', '/novels/htk/rss.xml',
         '/novels/issth/rss.xml', '/novels/lrg/rss.xml', '/novels/mga/rss.xml',
         '/novels/mw/rss.xml', '/novels/overgeared/rss.xml', '/novels/rtw/rss.xml',
         '/novels/tmw/rss.xml',
       ],
       concurrency: 4,
-    },
-    hooks: {
-      'prerender:routes': function (routes: Set<string>) {
-        const novels = ['atg', 'cd', 'htk', 'issth', 'lrg', 'mga', 'mw', 'overgeared', 'rtw', 'tmw']
-        for (const novel of novels) {
-          routes.add(`/novels/${novel}`)
-          for (const slug of getChapterSlugs(novel)) {
-            routes.add(`/novels/${novel}/${slug}`)
-          }
-        }
-      },
     },
   },
   routeRules: {

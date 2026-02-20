@@ -1,5 +1,5 @@
 import { defineNuxtModule } from '@nuxt/kit'
-import { mkdirSync, writeFileSync, cpSync } from 'node:fs'
+import { mkdirSync, writeFileSync, cpSync, rmSync, existsSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 
 interface ManifestEntry {
@@ -13,7 +13,24 @@ export default defineNuxtModule({
     // Only run during generate (not dev)
     if (!nuxt.options._generate) return
 
-    const stagingDir = resolve(nuxt.options.buildDir, 'body-extract')
+    // Clear content cache to force re-parsing (afterParse hook only fires on fresh parse, not cached)
+    const contentCachePaths = [
+      resolve(nuxt.options.rootDir, '.data/content'),
+      resolve(nuxt.options.buildDir, 'content'),
+    ]
+    for (const cachePath of contentCachePaths) {
+      if (existsSync(cachePath)) {
+        rmSync(cachePath, { recursive: true })
+        console.log(`[body-extractor] Cleared content cache: ${cachePath}`)
+      }
+    }
+
+    // Stage outside buildDir (buildDir gets cleaned between content parse and close hook)
+    const stagingDir = resolve(nuxt.options.rootDir, 'node_modules/.cache/body-extract')
+    // Clean previous staging to avoid stale files
+    if (existsSync(stagingDir)) {
+      rmSync(stagingDir, { recursive: true })
+    }
     const manifest: ManifestEntry[] = []
     let extractCount = 0
 
