@@ -51,10 +51,10 @@ Plans:
   1. Opening a chapter URL displays the full chapter (title, body text, prev/next navigation) rendered client-side via WASM SQLite metadata + fetched JSON body
   2. A loading skeleton is visible while the chapter body fetches, replaced by content when the fetch completes
   3. All existing chapter features work in SPA mode: keyboard navigation, reading progress tracking, dark mode
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 06-01: TBD
+- [ ] 06-01-PLAN.md -- Split-fetch chapter reader with reactive SPA navigation and USkeleton loading (READ-01, READ-02)
 
 ### Phase 7: SEO + Reading Optimization
 **Goal**: Search engines discover all chapters and readers enjoy instant chapter-to-chapter navigation
@@ -81,5 +81,5 @@ Plans:
 | 3. Full Site Parity | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 4. Operations | v1.0 | 3/3 | Complete | 2026-02-18 |
 | 5. Build Pipeline + SPA Foundation | v1.1 | Complete    | 2026-02-20 | - |
-| 6. Chapter Reader | v1.1 | 0/? | Not started | - |
+| 6. Chapter Reader | v1.1 | 0/1 | Not started | - |
 | 7. SEO + Reading Optimization | v1.1 | 0/? | Not started | - |
