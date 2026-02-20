@@ -11,7 +11,7 @@ Requirements for SPA Migration milestone. Each maps to roadmap phases.
 
 - [ ] **BUILD-01**: Build produces individual JSON body files for all 13,318 chapters via body-extractor module
 - [ ] **BUILD-02**: SQL dump is body-stripped at parse time (64MB -> ~2.6MB), replacing post-build script
-- [ ] **BUILD-03**: Only ~25 shell pages prerendered (home, catalog, novel listings, RSS, sitemaps) — not 26K chapter routes
+- [ ] **BUILD-03**: Only ~25 shell pages prerendered (home, catalog, novel listings, RSS, sitemaps) -- not 26K chapter routes
 - [ ] **BUILD-04**: Build completes in under 2 minutes
 
 ### Chapter Reading
@@ -56,23 +56,23 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUILD-01 | — | Pending |
-| BUILD-02 | — | Pending |
-| BUILD-03 | — | Pending |
-| BUILD-04 | — | Pending |
-| READ-01 | — | Pending |
-| READ-02 | — | Pending |
-| READ-03 | — | Pending |
-| READ-04 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SPA-01 | — | Pending |
+| BUILD-01 | Phase 5 | Pending |
+| BUILD-02 | Phase 5 | Pending |
+| BUILD-03 | Phase 5 | Pending |
+| BUILD-04 | Phase 5 | Pending |
+| READ-01 | Phase 6 | Pending |
+| READ-02 | Phase 6 | Pending |
+| READ-03 | Phase 7 | Pending |
+| READ-04 | Phase 7 | Pending |
+| SEO-01 | Phase 7 | Pending |
+| SEO-02 | Phase 7 | Pending |
+| SPA-01 | Phase 5 | Pending |
 
 **Coverage:**
 - v1.1 requirements: 11 total
-- Mapped to phases: 0
-- Unmapped: 11
+- Mapped to phases: 11
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-20*
-*Last updated: 2026-02-20 after initial definition*
+*Last updated: 2026-02-20 after roadmap creation*
