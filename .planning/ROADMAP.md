@@ -41,7 +41,7 @@
 
 Plans:
 - [ ] 05-01-PLAN.md -- Body extractor module + build pipeline config (BUILD-01, BUILD-02, BUILD-03, BUILD-04)
-- [ ] 05-02-PLAN.md -- SPA fallback routing + branded loading template (SPA-01)
+- [x] 05-02-PLAN.md -- SPA fallback routing + branded loading template (SPA-01) -- completed 2026-02-20
 
 ### Phase 6: Chapter Reader
 **Goal**: Readers can open and read any chapter through client-side rendering with visual loading feedback
@@ -80,6 +80,6 @@ Plans:
 | 2. Chapter Reader | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 3. Full Site Parity | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 4. Operations | v1.0 | 3/3 | Complete | 2026-02-18 |
-| 5. Build Pipeline + SPA Foundation | v1.1 | 0/2 | Planned | - |
+| 5. Build Pipeline + SPA Foundation | v1.1 | 1/2 | In Progress | - |
 | 6. Chapter Reader | v1.1 | 0/? | Not started | - |
 | 7. SEO + Reading Optimization | v1.1 | 0/? | Not started | - |

@@ -11,18 +11,18 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 
 Milestone: v1.1 SPA Migration
 Phase: 5 of 7 (Build Pipeline + SPA Foundation)
-Plan: 0 of ? in current phase
-Status: Ready to plan
-Last activity: 2026-02-20 -- Roadmap created for v1.1
+Plan: 1 of 2 in current phase
+Status: Executing
+Last activity: 2026-02-20 -- Completed 05-02-PLAN.md (SPA fallback routing)
 
-Progress: [##########..........] 57% (9/? plans -- v1.0 complete, v1.1 not yet planned)
+Progress: [##########..........] 59% (10/17 plans -- v1.0 complete, Phase 5 plan 2 done)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: 7.6min
-- Total execution time: ~68min
+- Total plans completed: 10
+- Average duration: 6.9min
+- Total execution time: ~69min
 
 **By Phase:**
 
@@ -32,6 +32,7 @@ Progress: [##########..........] 57% (9/? plans -- v1.0 complete, v1.1 not yet p
 | 02-chapter-reader | 2/2 | 6min | 3min |
 | 03-full-site-parity | 2/2 | 6min | 3min |
 | 04-operations | 3/3 | 13min | 4.3min |
+| 05-build-pipeline-spa-foundation | 1/2 | 1min | 1min |
 
 ## Accumulated Context
 
@@ -41,6 +42,8 @@ Progress: [##########..........] 57% (9/? plans -- v1.0 complete, v1.1 not yet p
 - SPA mode chosen over SSR: keep ssr:true with selective prerendering, NOT ssr:false (breaks Content v3)
 - Body extraction at parse time via afterParse hook (reversal of v1.0 post-build approach)
 - ContentRenderer compatibility with composed documents needs empirical validation (Phase 5/6 risk)
+- netlify.toml redirects used over _redirects file (structured, extensible)
+- Targeted /novels/*/* pattern (not catch-all) with force=false to preserve static file serving
 
 ### Blockers/Concerns
 
@@ -50,5 +53,5 @@ Progress: [##########..........] 57% (9/? plans -- v1.0 complete, v1.1 not yet p
 ## Session Continuity
 
 Last session: 2026-02-20
-Stopped at: Roadmap created for v1.1 SPA Migration
-Resume file: None -- ready for `/gsd:plan-phase 5`
+Stopped at: Completed 05-02-PLAN.md
+Resume file: .planning/phases/05-build-pipeline-spa-foundation/05-02-SUMMARY.md

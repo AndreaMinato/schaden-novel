@@ -28,7 +28,7 @@ Requirements for SPA Migration milestone. Each maps to roadmap phases.
 
 ### SPA Infrastructure
 
-- [ ] **SPA-01**: Netlify redirect rule serves 200.html for all non-prerendered routes (deep link support)
+- [x] **SPA-01**: Netlify redirect rule serves 200.html for all non-prerendered routes (deep link support)
 
 ## Future Requirements
 
@@ -66,7 +66,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | READ-04 | Phase 7 | Pending |
 | SEO-01 | Phase 7 | Pending |
 | SEO-02 | Phase 7 | Pending |
-| SPA-01 | Phase 5 | Pending |
+| SPA-01 | Phase 5 | Complete |
 
 **Coverage:**
 - v1.1 requirements: 11 total
@@ -75,4 +75,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-20*
-*Last updated: 2026-02-20 after roadmap creation*
+*Last updated: 2026-02-20 after 05-02 execution*
