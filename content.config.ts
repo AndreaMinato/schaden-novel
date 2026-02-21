@@ -1,5 +1,4 @@
 import { defineContentConfig, defineCollection } from '@nuxt/content'
-import { asSitemapCollection } from '@nuxtjs/sitemap/content'
 import { z } from 'zod'
 
 const chapterSchema = z.object({
@@ -9,13 +8,11 @@ const chapterSchema = z.object({
 })
 
 function novelCollection(dir: string) {
-  return defineCollection(
-    asSitemapCollection({
-      type: 'page',
-      source: `${dir}/**/*.md`,
-      schema: chapterSchema,
-    })
-  )
+  return defineCollection({
+    type: 'page',
+    source: `${dir}/**/*.md`,
+    schema: chapterSchema,
+  })
 }
 
 export default defineContentConfig({
