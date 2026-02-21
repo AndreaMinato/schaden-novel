@@ -65,10 +65,11 @@ Plans:
   2. RSS feeds (global + per-novel) return valid XML with chapter entries
   3. Navigating to next/previous chapter loads instantly (adjacent bodies prefetched)
   4. Returning to a previously read chapter in the same session loads instantly (body cached in memory)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: TBD
+- [ ] 07-01-PLAN.md -- Sitemap source endpoint + RSS verification (SEO-01, SEO-02)
+- [ ] 07-02-PLAN.md -- Body cache composable + chapter prefetch integration (READ-03, READ-04)
 
 ## Progress
 
@@ -82,4 +83,4 @@ Plans:
 | 4. Operations | v1.0 | 3/3 | Complete | 2026-02-18 |
 | 5. Build Pipeline + SPA Foundation | v1.1 | Complete    | 2026-02-20 | - |
 | 6. Chapter Reader | v1.1 | 0/1 | Not started | - |
-| 7. SEO + Reading Optimization | v1.1 | 0/? | Not started | - |
+| 7. SEO + Reading Optimization | v1.1 | 0/2 | Not started | - |
