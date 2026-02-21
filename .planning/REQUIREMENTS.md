@@ -23,8 +23,8 @@ Requirements for SPA Migration milestone. Each maps to roadmap phases.
 
 ### SEO & Discovery
 
-- [ ] **SEO-01**: Sitemaps generated at build time with explicit URL sources for all chapters
-- [ ] **SEO-02**: RSS feeds (global + per-novel) still functional in SPA mode
+- [x] **SEO-01**: Sitemaps generated at build time with explicit URL sources for all chapters
+- [x] **SEO-02**: RSS feeds (global + per-novel) still functional in SPA mode
 
 ### SPA Infrastructure
 
@@ -64,8 +64,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | READ-02 | Phase 6 | Complete |
 | READ-03 | Phase 7 | Complete |
 | READ-04 | Phase 7 | Complete |
-| SEO-01 | Phase 7 | Pending |
-| SEO-02 | Phase 7 | Pending |
+| SEO-01 | Phase 7 | Complete |
+| SEO-02 | Phase 7 | Complete |
 | SPA-01 | Phase 5 | Complete |
 
 **Coverage:**

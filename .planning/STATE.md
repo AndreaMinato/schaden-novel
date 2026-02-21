@@ -5,24 +5,24 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** Readers can find and read novel chapters with a smooth, uninterrupted reading experience.
-**Current focus:** Phase 7 - SEO & Reading Optimization
+**Current focus:** Phase 7 - SEO & Reading Optimization (COMPLETE)
 
 ## Current Position
 
 Milestone: v1.1 SPA Migration
 Phase: 7 of 7 (SEO & Reading Optimization)
-Plan: 2 of 2 in current phase (07-01 pending, 07-02 done)
-Status: Phase 7 in progress
-Last activity: 2026-02-21 -- Completed 07-02-PLAN.md (Body cache and next-chapter prefetch)
+Plan: 2 of 2 in current phase (PHASE COMPLETE)
+Status: Phase 7 complete -- MILESTONE COMPLETE
+Last activity: 2026-02-21 -- Completed 07-01-PLAN.md (Sitemap + RSS)
 
-Progress: [##################..] 93% (13/14 plans -- v1.0 complete, Phases 5-6 complete, 07-02 done)
+Progress: [####################] 100% (14/14 plans -- v1.0 complete, v1.1 SPA Migration complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
-- Average duration: 6.4min
-- Total execution time: ~83min
+- Total plans completed: 14
+- Average duration: 6.3min
+- Total execution time: ~88min
 
 **By Phase:**
 
@@ -34,7 +34,7 @@ Progress: [##################..] 93% (13/14 plans -- v1.0 complete, Phases 5-6 c
 | 04-operations | 3/3 | 13min | 4.3min |
 | 05-build-pipeline-spa-foundation | 2/2 | 11min | 5.5min |
 | 06-chapter-reader | 1/1 | 2min | 2min |
-| 07-seo-reading-optimization | 1/2 | 2min | 2min |
+| 07-seo-reading-optimization | 2/2 | 7min | 3.5min |
 
 ## Accumulated Context
 
@@ -56,6 +56,8 @@ Progress: [##################..] 93% (13/14 plans -- v1.0 complete, Phases 5-6 c
 - Body cache: module-level Map singleton (survives SPA nav, lost on refresh), unified for prefetch + visited
 - In-memory cache only (no sessionStorage/localStorage persistence)
 - Prefetch next chapter only (not previous, not N+2); fire-and-forget with silent failure
+- Per-child sources required in multi-sitemap mode (top-level sitemap.sources ignored by @nuxtjs/sitemap v7.6.0)
+- Removed asSitemapCollection: ineffective in SPA mode where chapter routes are not prerendered
 
 ### Blockers/Concerns
 
@@ -65,5 +67,5 @@ Progress: [##################..] 93% (13/14 plans -- v1.0 complete, Phases 5-6 c
 ## Session Continuity
 
 Last session: 2026-02-21
-Stopped at: Completed 07-02-PLAN.md (Body cache and prefetch)
-Resume file: .planning/phases/07-seo-reading-optimization/07-02-SUMMARY.md
+Stopped at: Completed 07-01-PLAN.md (Phase 7 complete, Milestone v1.1 complete)
+Resume file: .planning/phases/07-seo-reading-optimization/07-01-SUMMARY.md
