@@ -69,7 +69,7 @@ Plans:
 
 Plans:
 - [ ] 07-01-PLAN.md -- Sitemap source endpoint + RSS verification (SEO-01, SEO-02)
-- [ ] 07-02-PLAN.md -- Body cache composable + chapter prefetch integration (READ-03, READ-04)
+- [x] 07-02-PLAN.md -- Body cache composable + chapter prefetch integration (READ-03, READ-04) -- completed 2026-02-21
 
 ## Progress
 
@@ -82,5 +82,5 @@ Plans:
 | 3. Full Site Parity | v1.0 | 2/2 | Complete | 2026-02-18 |
 | 4. Operations | v1.0 | 3/3 | Complete | 2026-02-18 |
 | 5. Build Pipeline + SPA Foundation | v1.1 | Complete    | 2026-02-20 | - |
-| 6. Chapter Reader | v1.1 | 0/1 | Not started | - |
-| 7. SEO + Reading Optimization | v1.1 | 0/2 | Not started | - |
+| 6. Chapter Reader | v1.1 | 1/1 | Complete | 2026-02-20 |
+| 7. SEO + Reading Optimization | v1.1 | 1/2 | In progress | - |
