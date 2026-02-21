@@ -8,6 +8,9 @@ const novel = computed(() => route.params.novel as string)
 const slug = computed(() => (route.params.slug as string[]).join('/'))
 const contentPath = computed(() => `/${novel.value}/${slug.value}`)
 
+// Body cache for instant navigation (LRU, 5 entries, in-memory only)
+const { getOrFetch, prefetch } = useBodyCache()
+
 // 1. Metadata from SQLite (fast, local WASM query -- OK to await)
 const { data: chapter, error: metaError } = await useAsyncData(
   () => `chapter-${novel.value}-${slug.value}`,
@@ -18,17 +21,17 @@ const { data: chapter, error: metaError } = await useAsyncData(
   { watch: [novel, slug] }
 )
 
-// 2. Body from static JSON (network fetch -- do NOT await, show skeleton)
+// 2. Body from static JSON via cache (do NOT await, show skeleton)
 const { data: bodyData, status: bodyStatus, error: bodyError, refresh: retryBody } = useAsyncData(
   () => `body-${novel.value}-${slug.value}`,
   async () => {
-    const url = `/content/novels/${novel.value}/${slug.value}.json`
+    const url = bodyUrl(novel.value, slug.value)
     try {
-      return await $fetch(url)
+      return await getOrFetch(url)
     } catch (e) {
       // Silent auto-retry after 2s
       await new Promise(resolve => setTimeout(resolve, 2000))
-      return await $fetch(url)
+      return await getOrFetch(url)
     }
   },
   { watch: [novel, slug] }
@@ -36,6 +39,14 @@ const { data: bodyData, status: bodyStatus, error: bodyError, refresh: retryBody
 
 // 3. Chapter navigation (reactive, non-blocking)
 const { prev, next } = useChapterNav(novel, contentPath)
+
+// 3b. Prefetch next chapter body after current loads
+watch([bodyStatus, next], ([status, nextChapter]) => {
+  if (status === 'success' && nextChapter) {
+    const nextSlug = nextChapter.path.split('/').slice(2).join('/')
+    prefetch(bodyUrl(novel.value, nextSlug))
+  }
+})
 
 // 4. Reading progress: save on every chapter navigation + initial mount
 watch(contentPath, (path) => {
