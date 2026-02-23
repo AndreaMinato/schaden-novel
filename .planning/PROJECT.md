@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A 10-novel, 13,318-chapter reading site built with Nuxt 4 + Nuxt UI + Nuxt Content v3. Deployed to Netlify as a fully prerendered static site. Features clean reading typography, chapter navigation, reading progress tracking, RSS feeds, and sitemaps. Content imported from Google Docs via custom scripts.
+A 10-novel, 13,318-chapter reading site built with Nuxt 4 + Nuxt UI + Nuxt Content v3. Deployed to Netlify as an SPA with selective prerendering. Features clean reading typography, chapter navigation with prefetch/cache for instant navigation, reading progress tracking, RSS feeds, and sitemaps. Content imported from Google Docs via custom scripts.
 
 ## Core Value
 
@@ -31,18 +31,21 @@ Readers can find and read novel chapters with a smooth, uninterrupted reading ex
 - ✓ Google Docs import script ported with error handling — v1.0
 - ✓ Import script surfaces errors visibly (no silent failures) — v1.0
 - ✓ All 13,318 chapters migrated to Nuxt Content structure — v1.0
+- ✓ Build produces individual JSON body files for all 13,318 chapters — v1.1
+- ✓ SQL dump body-stripped at parse time (64MB → 2.7MB) — v1.1
+- ✓ Only ~14 shell pages prerendered (not 26K routes) — v1.1
+- ✓ Build completes in 87 seconds — v1.1
+- ✓ SPA fallback routing for chapter deep links — v1.1
+- ✓ Split-fetch chapter reader (SQLite metadata + JSON body) — v1.1
+- ✓ Loading skeleton while chapter body fetches — v1.1
+- ✓ Next-chapter prefetch for instant navigation — v1.1
+- ✓ LRU body cache for visited chapters — v1.1
+- ✓ Programmatic sitemap sources for all 13,318 chapters — v1.1
+- ✓ RSS feeds functional in SPA mode — v1.1
 
 ### Active
 
-**Current Milestone: v1.1 SPA Migration**
-
-**Goal:** Eliminate 10-minute builds by switching from full SSG (26K prerendered routes) to SPA mode with on-demand chapter body loading. Build drops to under 2 minutes.
-
-- [ ] SPA mode with client-side rendering
-- [ ] Chapter bodies served as individual static JSON files
-- [ ] Stripped SQL dump for metadata queries (~2.6MB)
-- [ ] All existing reading features preserved
-- [ ] Sitemaps still generated at build time
+(None — define next milestone with `/gsd:new-milestone`)
 
 ### Out of Scope
 
@@ -52,22 +55,27 @@ Readers can find and read novel chapters with a smooth, uninterrupted reading ex
 - Offline / PWA mode — content too large for browser cache
 - Mobile app — web is sufficient
 - Real-time notifications — RSS is the notification primitive
+- SSR rendering — OOM at 8GB (64MB database module), Lambda bundle 78MB > 50MB limit
 
 ## Context
 
-**Current state:** v1.0 shipped. 1,096 LOC across TypeScript, Vue, and MJS. 13,318 markdown chapters (170MB). Static site with 26,694 prerendered routes. SQL dumps body-stripped from 64MB to 2.6MB for client-side queries. SSR migration attempted but hit OOM (64MB database module) and Lambda size limits (78MB > 50MB).
+**Current state:** v1.1 shipped. SPA mode with selective prerendering. 12 source files changed from v1.0 (355 insertions, 242 deletions). 13,318 markdown chapters (170MB). Build produces 14 HTML pages + 13,318 JSON body files in 87 seconds. SQL dumps body-stripped from 64MB to 2.7MB. Chapter reader uses split-fetch: WASM SQLite metadata (instant) + JSON body (skeleton → content). LRU cache (5 entries) + next-chapter prefetch for instant navigation.
 
 **Tech stack:** Nuxt 4.3.1, Nuxt UI, Nuxt Content v3, @nuxtjs/sitemap, feed (RSS), Netlify
 **Content:** 10 novels — atg, cd, htk, issth, lrg, mga, mw, overgeared, rtw, tmw
 **Build:** `nuxt generate` → `.output/public/` → `netlify deploy --prod --no-build`
 **Import:** `node scripts/import.mjs` (Google Docs → markdown chapters)
 
+**Known tech debt:**
+- Pre-existing typecheck errors in `modules/body-extractor.ts` and `server/routes/*/rss.xml.ts`
+- 5 human verification items (deep link test, loading template visual, prefetch feel, cache DevTools, Search Console)
+
 ## Constraints
 
 - **Stack**: Nuxt 4 + Nuxt UI
 - **Hosting**: Netlify (static deploy, no SSR)
 - **Content**: 13K markdown chapters, SQLite connector (native Node 22.5+)
-- **Build**: ~10 min for full site, body-stripped SQL dumps essential for localStorage limits
+- **Build**: 87s with body extraction, body-stripped SQL dumps essential
 - **No auth**: Static site, no server-side user state
 
 ## Key Decisions
@@ -81,11 +89,16 @@ Readers can find and read novel chapters with a smooth, uninterrupted reading ex
 | SPA fallback for chapters | Prerender all routes, /200.html fallback | ✓ Good |
 | Client-side localeCompare sort | Content v3 SQL sorts alphabetically, not numerically | ✓ Good |
 | rAF-throttled scroll for auto-hide header | Avoids @vueuse/core dependency | ✓ Good |
-| Post-build SQL dump body stripping | afterParse hook breaks pre-rendering | ✓ Good |
 | Per-novel RSS link-only | rawbody not available in Nuxt Content v3 server queries | ✓ Good |
 | Filesystem-based prerender routes | readdirSync reads actual filenames, no hardcoded ranges | ✓ Good |
-
-| SPA mode over SSR | SSR hit OOM + Lambda limits; CSR avoids server entirely | — Pending |
+| SPA mode over SSR | SSR hit OOM + Lambda limits; CSR avoids server entirely | ✓ Good |
+| Body extraction via afterParse hook | Reversal of v1.0 post-build approach; parse-time is cleaner | ✓ Good |
+| Staging dir in node_modules/.cache | buildDir gets cleaned mid-build; external staging persists | ✓ Good |
+| netlify.toml over _redirects | Structured format, more extensible | ✓ Good |
+| Split-fetch chapter reader | Await metadata (fast WASM), skeleton for body (network) | ✓ Good |
+| Module-level Map for body cache | Survives SPA navigation, lost on refresh (acceptable) | ✓ Good |
+| Prefetch next only (not prev/N+2) | Simple, predictable, covers primary reading direction | ✓ Good |
+| Per-child sitemap sources | Top-level sources ignored in multi-sitemap mode | ✓ Good |
 
 ---
-*Last updated: 2026-02-20 after v1.1 milestone start*
+*Last updated: 2026-02-23 after v1.1 milestone*
