@@ -15,10 +15,29 @@
   --link-hover: #003d99;
   --surface: #f5f5f5;
   --max-width: 720px;
+
+  --reader-font-size: 18px;
+  --reader-line-height: 1.8;
+  --reader-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --reader-max-width: 720px;
 }
 
+/* Theme: light (default above) */
+
+/* Theme: dark */
+[data-theme="dark"] {
+  --bg: #1a1a1a;
+  --text: #e0e0e0;
+  --muted: #999;
+  --border: #333;
+  --link: #6db3f2;
+  --link-hover: #9dcbfa;
+  --surface: #252525;
+}
+
+/* Theme: auto — follow OS preference */
 @media (prefers-color-scheme: dark) {
-  :root {
+  [data-theme="auto"] {
     --bg: #1a1a1a;
     --text: #e0e0e0;
     --muted: #999;
@@ -27,6 +46,28 @@
     --link-hover: #9dcbfa;
     --surface: #252525;
   }
+}
+
+/* Theme: sepia */
+[data-theme="sepia"] {
+  --bg: #f4ecd8;
+  --text: #5b4636;
+  --muted: #8b7355;
+  --border: #d4c5a9;
+  --link: #8b5e3c;
+  --link-hover: #6b3f1d;
+  --surface: #ebe0cc;
+}
+
+/* Theme: high-contrast */
+[data-theme="high-contrast"] {
+  --bg: #000;
+  --text: #fff;
+  --muted: #ccc;
+  --border: #555;
+  --link: #ffff00;
+  --link-hover: #ffcc00;
+  --surface: #1a1a1a;
 }
 
 body {
@@ -210,10 +251,23 @@ h2 {
 
 .chapter-content {
   margin: 2rem 0;
+  font-family: var(--reader-font);
+  font-size: var(--reader-font-size);
+  line-height: var(--reader-line-height);
 }
 
 .chapter-content p {
   margin-bottom: 1em;
+}
+
+.chapter-header h1 {
+  font-family: var(--reader-font);
+}
+
+/* Reader max-width override */
+.chapter {
+  max-width: var(--reader-max-width);
+  margin: 0 auto;
 }
 
 .chapter-nav {
@@ -251,4 +305,161 @@ footer {
   gap: 1.5rem;
   justify-content: center;
   font-size: 0.9rem;
+}
+
+/* Settings button */
+.settings-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.settings-toggle:hover {
+  background: var(--surface);
+}
+
+/* Settings panel */
+.settings-panel {
+  display: none;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1rem;
+}
+
+.settings-panel.open {
+  display: block;
+}
+
+.settings-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2rem;
+  align-items: start;
+}
+
+.setting-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.setting-group label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+/* Theme swatches */
+.theme-options {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.theme-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+}
+
+.theme-swatch.active {
+  border-color: var(--link);
+  box-shadow: 0 0 0 2px var(--link);
+}
+
+.theme-swatch[data-theme="auto"] {
+  background: linear-gradient(135deg, #fff 50%, #1a1a1a 50%);
+}
+.theme-swatch[data-theme="light"] { background: #fff; }
+.theme-swatch[data-theme="dark"] { background: #1a1a1a; }
+.theme-swatch[data-theme="sepia"] { background: #f4ecd8; }
+.theme-swatch[data-theme="high-contrast"] { background: #000; border-color: #555; }
+.theme-swatch[data-theme="high-contrast"].active { border-color: #ffff00; box-shadow: 0 0 0 2px #ffff00; }
+
+/* Font select */
+.setting-select {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Stepper controls (font size, line height) */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stepper button {
+  background: var(--bg);
+  color: var(--text);
+  border: none;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.stepper button:hover {
+  background: var(--surface);
+}
+
+.stepper .stepper-value {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  min-width: 3rem;
+  text-align: center;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+/* Width presets */
+.width-options {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.width-btn {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.width-btn:hover {
+  background: var(--surface);
+}
+
+.width-btn.active {
+  background: var(--link);
+  color: #fff;
+  border-color: var(--link);
+}
+
+[data-theme="high-contrast"] .width-btn.active {
+  color: #000;
 }
