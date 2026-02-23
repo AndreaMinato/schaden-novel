@@ -11,12 +11,12 @@
   </div>
 
   <nav class="chapter-nav" aria-label="Chapter navigation">
-    {{ with .PrevInSection }}
+    {{ with .NextInSection }}
       <a href="{{ .Permalink }}" class="prev" id="prev-chapter">← {{ .Title }}</a>
     {{ else }}
       <span class="prev disabled"></span>
     {{ end }}
-    {{ with .NextInSection }}
+    {{ with .PrevInSection }}
       <a href="{{ .Permalink }}" class="next" id="next-chapter">{{ .Title }} →</a>
     {{ else }}
       <span class="next disabled"></span>
@@ -28,12 +28,12 @@
   </div>
 
   <nav class="chapter-nav" aria-label="Chapter navigation">
-    {{ with .PrevInSection }}
+    {{ with .NextInSection }}
       <a href="{{ .Permalink }}" class="prev">← {{ .Title }}</a>
     {{ else }}
       <span class="prev disabled"></span>
     {{ end }}
-    {{ with .NextInSection }}
+    {{ with .PrevInSection }}
       <a href="{{ .Permalink }}" class="next">{{ .Title }} →</a>
     {{ else }}
       <span class="next disabled"></span>

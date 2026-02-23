@@ -1,11 +1,22 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 
-<div class="chapter-listing">
-  {{ range .Pages.ByWeight }}
-    <div class="chapter-entry">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ if .Sections }}
+  {{/* Novels list page — /novels/ */}}
+  {{ range .Sections.ByTitle }}
+    <div class="novel-item">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <span class="chapter-count">{{ len .Pages }} capitoli</span>
     </div>
   {{ end }}
-</div>
+{{ else }}
+  {{/* Novel chapter list page — /novels/atg/ */}}
+  <div class="chapter-listing">
+    {{ range .Pages.ByWeight }}
+      <div class="chapter-entry">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
 {{ end }}
