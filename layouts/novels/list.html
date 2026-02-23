@@ -12,7 +12,7 @@
 {{ else }}
   {{/* Novel chapter list page — /novels/atg/ */}}
   <div class="chapter-listing">
-    {{ range .Pages.ByWeight }}
+    {{ range .Pages.ByWeight.Reverse }}
       <div class="chapter-entry">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </div>
