@@ -1,4 +1,3 @@
-import { load } from 'cheerio'
 import { mkdir, appendFile, writeFile, rm } from 'fs/promises'
 import { writeChapters } from './readChapters.mjs'
 

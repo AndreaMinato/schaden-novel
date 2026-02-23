@@ -1,4 +1,3 @@
-import { load } from 'cheerio'
 import { mkdir, appendFile, writeFile, rm } from 'fs/promises'
 import { writeChapters } from './readChapters.mjs'
 
@@ -13,20 +12,13 @@ function extractDocumentId(url) {
 }
 
 function extractIdsFromHTML(htmlString) {
-  const $ = load(htmlString); // Load the HTML string into cheerio
   const ids = [];
-
-  // Loop through all <a> elements and extract their href attributes
-  $('a').each((i, el) => {
-    const href = $(el).attr('href');
-    if (href) {
-      const id = extractDocumentId(href)
-      if (id) {
-        ids.push(id)
-      }
-    }
-  });
-
+  const regex = /<a\s[^>]*href="([^"]*)"[^>]*>/gi;
+  let match;
+  while ((match = regex.exec(htmlString)) !== null) {
+    const id = extractDocumentId(match[1]);
+    if (id) ids.push(id);
+  }
   return ids;
 }
 
@@ -70,10 +62,10 @@ async function loadNovel(_id, novel) {
 
 const novels = {
   atg: '1UAr63ltyIGu9a8cbxL7nziRYzJeW2X_x96oWyEMxhbA',
-  cd: '1i2opAYNXvXzMrPJI5E4b-8xNtx1vj0iL3lRBFbD-sgk',
+  // cd: '1i2opAYNXvXzMrPJI5E4b-8xNtx1vj0iL3lRBFbD-sgk',
   htk: '1c3IGtRohe6IklxlFy2Cn0Ts__WbQQBX-ikNJ7wCZx30',
   issth: '1XNSlUXLISdDebkLiWmRx90Utc5MfJjbxk0qezNwlqHM',
-  lrg: '1NlmUC5zJDSA1GeOP-zXzeOiSD8LGufki2AIB5equGQE',
+  // lrg: '1NlmUC5zJDSA1GeOP-zXzeOiSD8LGufki2AIB5equGQE',
   mga: '1p_XRL5cg2KaBDZpC2YSkKT1TsO8gUdvj2HZDskB2rOg',
   mw: '17m97EysE3iS2x1ufHCUZHBBXMzpmqyzIo7erIp60Z6A',
   overgeared: '1ltYlFG6qnH-rT8-aPtbCJeGZepsR_AX8x2mK9ieVGng',
