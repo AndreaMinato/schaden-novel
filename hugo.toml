@@ -1,0 +1,21 @@
+baseURL = "https://schaden-novels.netlify.app/"
+languageCode = "it"
+title = "Schaden Novels"
+
+[frontmatter]
+  date = ["pubDate", "date"]
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Performance: skip taxonomies, sitemap, etc. for 12K+ pages
+enableGitInfo = false
+disableKinds = ["taxonomy", "term", "sitemap", "robotsTXT", "404"]
+
+[params]
+  github = "https://github.com/AndreaMinato/schaden-novel"
+  discord = "https://discord.gg/RJu8bnSYWd"

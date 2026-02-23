@@ -1,0 +1,43 @@
+{{ define "main" }}
+<article class="chapter"
+  data-novel="{{ .Parent.File.ContentBaseName }}"
+  data-novel-title="{{ .Parent.Title }}"
+  data-chapter-title="{{ .Title }}"
+  data-chapter-url="{{ .Permalink }}">
+
+  <div class="chapter-header">
+    <a href="{{ .Parent.Permalink }}">← {{ .Parent.Title }}</a>
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    {{ with .PrevInSection }}
+      <a href="{{ .Permalink }}" class="prev" id="prev-chapter">← {{ .Title }}</a>
+    {{ else }}
+      <span class="prev disabled"></span>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a href="{{ .Permalink }}" class="next" id="next-chapter">{{ .Title }} →</a>
+    {{ else }}
+      <span class="next disabled"></span>
+    {{ end }}
+  </nav>
+
+  <div class="chapter-content">
+    {{ .Content }}
+  </div>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    {{ with .PrevInSection }}
+      <a href="{{ .Permalink }}" class="prev">← {{ .Title }}</a>
+    {{ else }}
+      <span class="prev disabled"></span>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a href="{{ .Permalink }}" class="next">{{ .Title }} →</a>
+    {{ else }}
+      <span class="next disabled"></span>
+    {{ end }}
+  </nav>
+</article>
+{{ end }}

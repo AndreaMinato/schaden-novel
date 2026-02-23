@@ -1,0 +1,28 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ $novelsSection := .Site.GetPage "novels" }}
+{{ $novelData := slice }}
+
+{{/* Collect novels with their latest chapter date */}}
+{{ range $novelsSection.Sections }}
+  {{ $pages := .Pages.ByWeight.Reverse }}
+  {{ $latest := index $pages 0 }}
+  {{ $novelData = $novelData | append (dict "section" . "pages" $pages "latestDate" $latest.Date) }}
+{{ end }}
+
+{{/* Sort by latest chapter date descending */}}
+{{ range sort $novelData "latestDate" "desc" }}
+  {{ $novel := .section }}
+  {{ $pages := .pages }}
+  <section class="novel-card">
+    <h2><a href="{{ $novel.Permalink }}">{{ $novel.Title }}</a></h2>
+    <span class="chapter-count">{{ len $novel.Pages }} capitoli</span>
+    <ul class="chapter-list">
+      {{ range first 3 $pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
+{{ end }}

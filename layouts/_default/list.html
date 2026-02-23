@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{/* Novels list page — alphabetical */}}
+{{ range .Sections.ByTitle }}
+  <div class="novel-item">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <span class="chapter-count">{{ len .Pages }} capitoli</span>
+  </div>
+{{ end }}
+{{ end }}

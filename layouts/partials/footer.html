@@ -1,0 +1,15 @@
+<footer>
+  <div class="footer-links">
+    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">GitHub</a>
+    <a href="{{ .Site.Params.discord }}" target="_blank" rel="noopener">Discord</a>
+    {{ with .OutputFormats.Get "RSS" }}
+      <a href="{{ .Permalink }}" target="_blank" rel="noopener">RSS</a>
+    {{ else }}
+      {{ with .Parent }}
+        {{ with .OutputFormats.Get "RSS" }}
+          <a href="{{ .Permalink }}" target="_blank" rel="noopener">RSS</a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+</footer>

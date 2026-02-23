@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<div class="chapter-listing">
+  {{ range .Pages.ByWeight }}
+    <div class="chapter-entry">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

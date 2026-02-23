@@ -1,5 +1,7 @@
 # build output
 dist/
+public/
+resources/
 # generated types
 .astro/
 .claude/
