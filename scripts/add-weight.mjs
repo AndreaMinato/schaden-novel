@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { join, basename } from 'node:path';
 
 const NOVELS_DIR = new URL('../content/novels', import.meta.url).pathname;
@@ -41,6 +41,8 @@ async function main() {
 
   for (const novel of novels.sort()) {
     const novelDir = join(NOVELS_DIR, novel);
+    const st = await stat(novelDir);
+    if (!st.isDirectory()) continue;
     const count = await processNovel(novelDir);
     console.log(`${novel}: ${count} files updated`);
     total += count;
