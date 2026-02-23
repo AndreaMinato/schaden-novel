@@ -3,10 +3,13 @@ import { join, basename } from 'node:path';
 
 const NOVELS_DIR = new URL('../content/novels', import.meta.url).pathname;
 
+const SUFFIX_OFFSET = { a: 1, b: 2, c: 3, d: 4 };
+
 function extractWeight(filename) {
   const base = basename(filename, '.md');
-  const match = base.match(/^(\d+)/);
-  return match ? parseInt(match[1], 10) : null;
+  const match = base.match(/^(\d+)(?:_([a-d]))?$/);
+  if (!match) return null;
+  return parseInt(match[1], 10) * 10 + (SUFFIX_OFFSET[match[2]] || 0);
 }
 
 async function processNovel(novelDir) {
@@ -18,7 +21,8 @@ async function processNovel(novelDir) {
     const filePath = join(novelDir, file);
     const content = await readFile(filePath, 'utf-8');
 
-    if (content.includes('\nweight:')) continue; // already has weight
+    // Replace existing weight or add new one
+    const hasWeight = content.includes('\nweight:');
 
     const weight = extractWeight(file);
     if (weight === null) {
@@ -26,8 +30,12 @@ async function processNovel(novelDir) {
       continue;
     }
 
-    // Inject weight after opening ---
-    const updated = content.replace(/^---\n/, `---\nweight: ${weight}\n`);
+    let updated;
+    if (hasWeight) {
+      updated = content.replace(/\nweight:\s*\d+/, `\nweight: ${weight}`);
+    } else {
+      updated = content.replace(/^---\n/, `---\nweight: ${weight}\n`);
+    }
     await writeFile(filePath, updated, 'utf-8');
     count++;
   }

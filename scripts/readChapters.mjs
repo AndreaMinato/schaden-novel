@@ -2,6 +2,7 @@ import { writeFileSync, createReadStream, existsSync } from 'fs'
 import { createInterface } from 'readline'
 
 const base = `---
+weight: [WEIGHT]
 title: [TITLE]
 pubDate: [DATE]
 tags:
@@ -57,6 +58,14 @@ function createFile({
   writeFileSync(
     path,
     base
+      .replace('[WEIGHT]', (() => {
+        const chNum = parseInt(title.match(/Capitolo\s+(\d+)/i)[1], 10) * 10;
+        if (contains.prima) return chNum + 1;
+        if (contains.seconda) return chNum + 2;
+        if (contains.terza) return chNum + 3;
+        if (contains.quarta) return chNum + 4;
+        return chNum;
+      })())
       .replace('[TAG]', tag)
       .replace('[TITLE]', title.replaceAll(':', '-'))
       .replace('[CONTENT]', content)
