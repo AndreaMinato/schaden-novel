@@ -6,31 +6,31 @@
   "frontMatter.content.pageFolders": [
     {
       "title": "MGA",
-      "path": "[[workspace]]/src/content/novels/mga"
+      "path": "[[workspace]]/content/novels/mga"
     },
     {
       "title": "ATG",
-      "path": "[[workspace]]/src/content/novels/atg"
+      "path": "[[workspace]]/content/novels/atg"
     },
     {
       "title": "TMW",
-      "path": "[[workspace]]/src/content/novels/tmw"
+      "path": "[[workspace]]/content/novels/tmw"
     },
     {
       "title": "HTK",
-      "path": "[[workspace]]/src/content/novels/htk"
+      "path": "[[workspace]]/content/novels/htk"
     },
     {
       "title": "LRG",
-      "path": "[[workspace]]/src/content/novels/lrg"
+      "path": "[[workspace]]/content/novels/lrg"
     },
     {
       "title": "Overgeared",
-      "path": "[[workspace]]/src/content/novels/overgeared"
+      "path": "[[workspace]]/content/novels/overgeared"
     },
     {
       "title": "RTW",
-      "path": "[[workspace]]/src/content/novels/rtw"
+      "path": "[[workspace]]/content/novels/rtw"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [
