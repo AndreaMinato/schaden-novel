@@ -1,5 +1,6 @@
 import { writeFileSync, createReadStream, existsSync } from 'fs'
 import { createInterface } from 'readline'
+import { calculateWeight } from './shared.mjs'
 
 const base = `---
 weight: [WEIGHT]
@@ -58,14 +59,10 @@ function createFile({
   writeFileSync(
     path,
     base
-      .replace('[WEIGHT]', (() => {
-        const chNum = parseInt(title.match(/Capitolo\s+(\d+)/i)[1], 10) * 10;
-        if (contains.prima) return chNum + 1;
-        if (contains.seconda) return chNum + 2;
-        if (contains.terza) return chNum + 3;
-        if (contains.quarta) return chNum + 4;
-        return chNum;
-      })())
+      .replace('[WEIGHT]', calculateWeight(
+        parseInt(title.match(/Capitolo\s+(\d+)/i)[1], 10),
+        contains.prima ? 'a' : contains.seconda ? 'b' : contains.terza ? 'c' : contains.quarta ? 'd' : null
+      ))
       .replace('[TAG]', tag)
       .replace('[TITLE]', title.replaceAll(':', '-'))
       .replace('[CONTENT]', content)

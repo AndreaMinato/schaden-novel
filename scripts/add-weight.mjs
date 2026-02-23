@@ -1,15 +1,14 @@
 import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { join, basename } from 'node:path';
+import { calculateWeight } from './shared.mjs';
 
 const NOVELS_DIR = new URL('../content/novels', import.meta.url).pathname;
-
-const SUFFIX_OFFSET = { a: 1, b: 2, c: 3, d: 4 };
 
 function extractWeight(filename) {
   const base = basename(filename, '.md');
   const match = base.match(/^(\d+)(?:_([a-d]))?$/);
   if (!match) return null;
-  return parseInt(match[1], 10) * 10 + (SUFFIX_OFFSET[match[2]] || 0);
+  return calculateWeight(parseInt(match[1], 10), match[2]);
 }
 
 async function processNovel(novelDir) {
