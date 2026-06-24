@@ -22,7 +22,7 @@ function createFile({
   content,
   tag
 }) {
-  let number = title.match(/Capitolo\s+(\d+)/i)[1]
+  let number = title.match(/(?:Capitolo|Chapter)\s+(\d+)/i)[1]
   const difference = 0// -6000 + parseInt(number)
   const date = Date.now() + difference * 60 * 60 * 1000
 
@@ -60,7 +60,7 @@ function createFile({
     path,
     base
       .replace('[WEIGHT]', calculateWeight(
-        parseInt(title.match(/Capitolo\s+(\d+)/i)[1], 10),
+        parseInt(title.match(/(?:Capitolo|Chapter)\s+(\d+)/i)[1], 10),
         contains.prima ? 'a' : contains.seconda ? 'b' : contains.terza ? 'c' : contains.quarta ? 'd' : null
       ))
       .replace('[TAG]', tag)
@@ -81,7 +81,7 @@ export function writeChapters(path, TAG) {
     let title = ''
     let content = ''
 
-    const titleRegex = /Capitolo\s+[0-9]/g
+    const titleRegex = /(?:Capitolo|Chapter)\s+[0-9]/g
     rl.on('line', function (line) {
       if (titleRegex.test(line)) {
         if (title) {
