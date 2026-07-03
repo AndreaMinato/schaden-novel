@@ -7,3 +7,5 @@ git add content/
 git commit -m "update novels"
 git checkout -- .
 git push
+
+node ./scripts/check-gaps.mjs
