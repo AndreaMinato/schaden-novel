@@ -6,7 +6,7 @@ const NOVELS_DIR = new URL('../content/novels', import.meta.url).pathname;
 
 function extractWeight(filename) {
   const base = basename(filename, '.md');
-  const match = base.match(/^(\d+)(?:_([a-d]))?$/);
+  const match = base.match(/^(\d+)(?:_([a-f]))?$/);
   if (!match) return null;
   return calculateWeight(parseInt(match[1], 10), match[2]);
 }

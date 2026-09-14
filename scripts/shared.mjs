@@ -20,7 +20,7 @@ export async function loadGoogleDoc(id, format = 'txt') {
   return text
 }
 
-const SUFFIX_OFFSET = { a: 1, b: 2, c: 3, d: 4 };
+const SUFFIX_OFFSET = { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6 };
 
 export function calculateWeight(chapterNum, suffix) {
   return chapterNum * 10 + (SUFFIX_OFFSET[suffix] || 0);

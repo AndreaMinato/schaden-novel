@@ -12,10 +12,17 @@ tags:
 [CONTENT]
 `
 
-const regxPrimaInsideBrackets = /[\[\(](.*?prima.*?)[\]\)]/gi
-const regxSecondaInsideBrackets = /[\[\(](.*?seconda.*?)[\]\)]/gi
-const regxTerzaInsideBrackets = /[\[\(](.*?terza.*?)[\]\)]/gi
-const regxQuartaInsideBrackets = /[\[\(](.*?quarta.*?)[\]\)]/gi
+const parts = [
+  { word: 'prima', suffix: 'a' },
+  { word: 'seconda', suffix: 'b' },
+  { word: 'terza', suffix: 'c' },
+  { word: 'quarta', suffix: 'd' },
+  { word: 'quinta', suffix: 'e' },
+  { word: 'sesta', suffix: 'f' },
+].map(({ word, suffix }) => ({
+  suffix,
+  regex: new RegExp(`[\\[\\(](.*?${word}.*?)[\\]\\)]`, 'i')
+}))
 
 function createFile({
   title,
@@ -27,25 +34,10 @@ function createFile({
   const date = Date.now() + difference * 60 * 60 * 1000
 
 
-  const contains = {
-    title,
-    prima: Boolean(title.match(regxPrimaInsideBrackets)),
-    seconda: Boolean(title.match(regxSecondaInsideBrackets)),
-    terza: Boolean(title.match(regxTerzaInsideBrackets)),
-    quarta: Boolean(title.match(regxQuartaInsideBrackets))
-  }
+  const suffix = parts.find(({ regex }) => regex.test(title))?.suffix ?? null
 
-  if (contains.prima) {
-    number += '_a'
-  }
-  else if (contains.seconda) {
-    number += '_b'
-  }
-  else if (contains.terza) {
-    number += '_c'
-  }
-  else if (contains.quarta) {
-    number += '_d'
+  if (suffix) {
+    number += '_' + suffix
   }
   const path = './content/novels/' + tag + '/' + number + '.md'
 
@@ -61,7 +53,7 @@ function createFile({
     base
       .replace('[WEIGHT]', calculateWeight(
         parseInt(title.match(/(?:Capitolo|Chapter)\s+(\d+)/i)[1], 10),
-        contains.prima ? 'a' : contains.seconda ? 'b' : contains.terza ? 'c' : contains.quarta ? 'd' : null
+        suffix
       ))
       .replace('[TAG]', tag)
       .replace('[TITLE]', title.replaceAll(':', '-'))

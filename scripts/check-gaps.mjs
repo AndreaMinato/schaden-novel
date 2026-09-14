@@ -25,7 +25,7 @@ async function checkNovel(novelDir) {
   const numbers = new Set();
   for (const f of files) {
     if (!f.endsWith('.md') || f === '_index.md') continue;
-    const match = f.match(/^(\d+)(?:_[a-d])?\.md$/);
+    const match = f.match(/^(\d+)(?:_[a-f])?\.md$/);
     if (match) numbers.add(parseInt(match[1], 10));
   }
   return numbers;
