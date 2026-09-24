@@ -40,7 +40,10 @@ jobs:
             echo "any=false" >> "$GITHUB_OUTPUT"
           else
             echo "any=true" >> "$GITHUB_OUTPUT"
-            git diff --cached --name-only --diff-filter=A -- content/ | sed 's#^#- #' >> "$GITHUB_STEP_SUMMARY"
+            # e.g. "931_a, 931_b, 932" from content/novels/htk/931_a.md ...
+            chapters=$(git diff --cached --name-only --diff-filter=A -- content/ | sed -E 's#.*/([^/]+)\.md$#\1#' | sort -V | paste -sd ', ' -)
+            echo "chapters=$chapters" >> "$GITHUB_OUTPUT"
+            echo "$chapters" | sed 's#^#- #' >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Validate
@@ -52,13 +55,15 @@ jobs:
           hugo --quiet --renderToMemory
 
       - name: Commit and push
+        id: push
         if: steps.changes.outputs.any == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "update novels (${{ inputs.slug }})"
+          git commit -m "${{ inputs.slug }}: ${{ steps.changes.outputs.chapters }}"
           git pull --rebase origin main
           git push origin HEAD:main
+          echo "sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Gap report
         if: steps.changes.outputs.any == 'true'
@@ -66,3 +71,23 @@ jobs:
           echo '```' >> "$GITHUB_STEP_SUMMARY"
           node scripts/check-gaps.mjs >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Notify Telegram
+        if: always() && (steps.push.outcome == 'success' || failure())
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          OK: ${{ steps.push.outcome == 'success' }}
+          SLUG: ${{ inputs.slug }}
+          CHAPTERS: ${{ steps.changes.outputs.chapters }}
+          SHA: ${{ steps.push.outputs.sha }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [ -n "$TOKEN" ] && [ -n "$CHAT" ] || { echo "telegram secrets missing, skipping"; exit 0; }
+          if [ "$OK" = "true" ]; then
+            text="✅ $SLUG: $CHAPTERS ($SHA)"
+          else
+            text="❌ $SLUG: sync fallito $RUN"
+          fi
+          curl -fsS -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" \
+            --data-urlencode "chat_id=$CHAT" --data-urlencode "text=$text" -o /dev/null

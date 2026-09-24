@@ -3,7 +3,7 @@ name: sync-rtw
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 10 * * 1'
+    - cron: '30 1 * * 2'
 
 permissions:
   contents: write

@@ -3,7 +3,7 @@ name: sync-overgeared
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 9 * * 1'
+    - cron: '30 0 * * 2'
 
 permissions:
   contents: write

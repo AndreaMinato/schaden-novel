@@ -3,7 +3,7 @@ name: sync-tmw
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 11 * * *'
+    - cron: '0 1 * * *'
 
 permissions:
   contents: write
