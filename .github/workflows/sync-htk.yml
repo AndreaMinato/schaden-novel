@@ -20,6 +20,7 @@ concurrency:
 jobs:
   sync:
     uses: ./.github/workflows/sync-novel.yml
+    secrets: inherit
     with:
       notify_test: ${{ inputs.notify_test || false }}
       slug: htk
