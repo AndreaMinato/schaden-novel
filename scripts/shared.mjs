@@ -13,7 +13,7 @@ export async function loadGoogleDoc(id, format = 'txt') {
   const response = await fetch(url)
 
   if (!response.ok) {
-    console.log(response)
+    console.log(`${response.status} ${response.statusText} ${url}`)
     throw new Error("Network response was not ok");
   }
   const text = await response.text();

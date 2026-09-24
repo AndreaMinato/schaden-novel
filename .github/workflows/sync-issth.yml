@@ -1,0 +1,19 @@
+name: sync-issth
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: novel-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync-novel.yml
+    with:
+      slug: issth

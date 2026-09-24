@@ -1,0 +1,19 @@
+name: sync-tmw
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 11 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: novel-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync-novel.yml
+    with:
+      slug: tmw

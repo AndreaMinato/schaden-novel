@@ -1,0 +1,19 @@
+name: sync-overgeared
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: novel-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync-novel.yml
+    with:
+      slug: overgeared
