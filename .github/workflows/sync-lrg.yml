@@ -2,6 +2,11 @@ name: sync-lrg
 
 on:
   workflow_dispatch:
+    inputs:
+      notify_test:
+        description: Send a Telegram test message
+        type: boolean
+        default: false
   schedule:
     - cron: '30 23 * * 1'
 
@@ -16,4 +21,5 @@ jobs:
   sync:
     uses: ./.github/workflows/sync-novel.yml
     with:
+      notify_test: ${{ inputs.notify_test || false }}
       slug: lrg

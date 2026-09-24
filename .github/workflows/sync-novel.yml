@@ -7,6 +7,10 @@ on:
       slug:
         required: true
         type: string
+      notify_test:
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -73,18 +77,21 @@ jobs:
           echo '```' >> "$GITHUB_STEP_SUMMARY"
 
       - name: Notify Telegram
-        if: always() && (steps.push.outcome == 'success' || failure())
+        if: always() && (steps.push.outcome == 'success' || failure() || inputs.notify_test)
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
           OK: ${{ steps.push.outcome == 'success' }}
+          TEST: ${{ inputs.notify_test }}
           SLUG: ${{ inputs.slug }}
           CHAPTERS: ${{ steps.changes.outputs.chapters }}
           SHA: ${{ steps.push.outputs.sha }}
           RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           [ -n "$TOKEN" ] && [ -n "$CHAT" ] || { echo "telegram secrets missing, skipping"; exit 0; }
-          if [ "$OK" = "true" ]; then
+          if [ "$TEST" = "true" ]; then
+            text="🧪 $SLUG: test notifica ok"
+          elif [ "$OK" = "true" ]; then
             text="✅ $SLUG: $CHAPTERS ($SHA)"
           else
             text="❌ $SLUG: sync fallito $RUN"

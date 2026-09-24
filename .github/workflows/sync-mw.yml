@@ -2,6 +2,11 @@ name: sync-mw
 
 on:
   workflow_dispatch:
+    inputs:
+      notify_test:
+        description: Send a Telegram test message
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -14,4 +19,5 @@ jobs:
   sync:
     uses: ./.github/workflows/sync-novel.yml
     with:
+      notify_test: ${{ inputs.notify_test || false }}
       slug: mw

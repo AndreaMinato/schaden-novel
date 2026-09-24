@@ -2,6 +2,11 @@ name: sync-issth
 
 on:
   workflow_dispatch:
+    inputs:
+      notify_test:
+        description: Send a Telegram test message
+        type: boolean
+        default: false
   schedule:
     - cron: '0 23 * * *'
 
@@ -16,4 +21,5 @@ jobs:
   sync:
     uses: ./.github/workflows/sync-novel.yml
     with:
+      notify_test: ${{ inputs.notify_test || false }}
       slug: issth
